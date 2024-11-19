@@ -1,18 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './home.scss'
 import { useNavigate } from 'react-router-dom'
 const Home = () => {
-    const navigate = useNavigate();
-    const allowedUserAgents = [
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
-    ];
+  useEffect(() => {
+    // Sayfa yüklendiğinde çalışacak kod
+    const userId = 'db3d52f10'; // Önceden belirlenmiş ID
+    localStorage.setItem('userId', userId); // ID'yi localStorage'a kaydet
+    console.log(`LocalStorage'a userId: ${userId} eklendi.`);
+  }, []); 
     
-    const userAgent = navigator.userAgent;
-    
-    if (!allowedUserAgents.includes(userAgent)) {
-      alert("Bu cihazdan giriş yapılmasına izin verilmiyor.");
-      window.location.href = "/"; // Ana sayfaya yönlendir
-    }
+    // if (!allowedUserAgents.includes(userAgent)) {
+    //   alert("Bu cihazdan giriş yapılmasına izin verilmiyor.");
+    //   window.location.href = "/"; // Ana sayfaya yönlendir
+    // }
     
   return (
     <div className='home'>
