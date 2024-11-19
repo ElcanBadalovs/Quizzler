@@ -2,9 +2,10 @@ import React, { useEffect } from 'react'
 import './home.scss'
 import { useNavigate } from 'react-router-dom'
 const Home = () => {
-  const userPassword = localStorage.getItem('userPassword');
-  if (!userPassword || userPassword !== '3456712') {
-    window.location.href = "/"; 
+  const navigate = useNavigate();
+  const userPassword = localStorage.getItem('userId');
+  if (!userPassword || userPassword !== 'db3d52f10') {
+    window.location.href = "/error"; 
   }    
   return (
     <div className='home'>

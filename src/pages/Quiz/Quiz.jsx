@@ -13,9 +13,9 @@ const App = () => {
   const [results, setResults] = useState({ correct: 0, incorrect: 0 });
   const [isDisabled, setIsDisabled] = useState(false); // Butonları disable etmek için
 
-  const userPassword = localStorage.getItem('userPassword');
-  if (!userPassword || userPassword !== '3456712') {
-    window.location.href = "/"; 
+  const userPassword = localStorage.getItem('userId');
+  if (!userPassword || userPassword !== 'db3d52f10') {
+    window.location.href = "/error";
   } 
 
   useEffect(() => {
