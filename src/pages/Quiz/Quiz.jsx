@@ -13,6 +13,11 @@ const App = () => {
   const [results, setResults] = useState({ correct: 0, incorrect: 0 });
   const [isDisabled, setIsDisabled] = useState(false); // Butonları disable etmek için
 
+  const userPassword = localStorage.getItem('userPassword');
+  if (!userPassword || userPassword !== '3456712') {
+    window.location.href = "/"; 
+  } 
+
   useEffect(() => {
     const selectedQuestions = shuffleArray(Questions).slice(0, 5);
     const shuffledQuestions = selectedQuestions.map((question) => ({

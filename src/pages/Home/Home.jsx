@@ -2,18 +2,10 @@ import React, { useEffect } from 'react'
 import './home.scss'
 import { useNavigate } from 'react-router-dom'
 const Home = () => {
-  useEffect(() => {
-    // Sayfa yüklendiğinde çalışacak kod
-    const userId = 'db3d52f10'; // Önceden belirlenmiş ID
-    localStorage.setItem('userId', userId); // ID'yi localStorage'a kaydet
-    console.log(`LocalStorage'a userId: ${userId} eklendi.`);
-  }, []); 
-    
-    // if (!allowedUserAgents.includes(userAgent)) {
-    //   alert("Bu cihazdan giriş yapılmasına izin verilmiyor.");
-    //   window.location.href = "/"; // Ana sayfaya yönlendir
-    // }
-    
+  const userPassword = localStorage.getItem('userPassword');
+  if (!userPassword || userPassword !== '3456712') {
+    window.location.href = "/"; 
+  }    
   return (
     <div className='home'>
       <h1>Quizzler</h1>
