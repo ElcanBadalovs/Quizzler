@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Questions from "../../utility/Questions"; // Soruların bulunduğu dosyadan import
+import Questions from "../../utility/Questions.js"; // Soruların bulunduğu dosyadan import
+
 import { useNavigate } from "react-router-dom"; // Sayfa yönlendirmesi için import
 import "./quiz.scss"; // SCSS dosyasını içeri aktarma
 
 const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
-const App = () => {
+const Quiz = () => {
   const navigate = useNavigate(); // Sayfa yönlendirmesi için useNavigate
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
@@ -19,7 +20,7 @@ const App = () => {
   } 
 
   useEffect(() => {
-    const selectedQuestions = shuffleArray(Questions).slice(0, 5);
+    const selectedQuestions = shuffleArray(Questions).slice(0, 50);
     const shuffledQuestions = selectedQuestions.map((question) => ({
       ...question,
       answers: shuffleArray(question.answers),
@@ -58,7 +59,7 @@ const App = () => {
     setShowResults(false);
     setIsDisabled(false);
     // Yeni soruları getir
-    const selectedQuestions = shuffleArray(Questions).slice(0, 5);
+    const selectedQuestions = shuffleArray(Questions).slice(0, 50);
     const shuffledQuestions = selectedQuestions.map((question) => ({
       ...question,
       answers: shuffleArray(question.answers),
@@ -68,6 +69,16 @@ const App = () => {
 
   const handleHome = () => {
     navigate("/"); // Home sayfasına yönlendirme
+  };
+
+  const formatQuestionText = (text) => {
+    // `\n` karakterini <br /> etiketiyle değiştir
+    return text.split("\n").map((str, index) => (
+      <React.Fragment key={index}>
+        {str}
+        {index !== text.split("\n").length - 1 && <br />}
+      </React.Fragment>
+    ));
   };
 
   return (
@@ -85,7 +96,7 @@ const App = () => {
           }`}
         >
           <h3 className="question-title">
-            {index + 1}. {q.Question}
+          {index + 1}. {formatQuestionText(q.Question)}
           </h3>
           {q.answers.map((answer, answerIndex) => {
             const isSelected = answers[index] === answer.answer;
@@ -137,4 +148,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Quiz;
