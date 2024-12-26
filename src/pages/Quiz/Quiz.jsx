@@ -12,12 +12,7 @@ const Quiz = () => {
   const [answers, setAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState({ correct: 0, incorrect: 0 });
-  const [isDisabled, setIsDisabled] = useState(false); // Butonları disable etmek için
-
-  const userPassword = localStorage.getItem('userId');
-  if (!userPassword || userPassword !== 'db3d52f10') {
-    window.location.href = "/error";
-  } 
+  const [isDisabled, setIsDisabled] = useState(false); // Butonları disable etmek için 
 
   useEffect(() => {
     const selectedQuestions = shuffleArray(Questions).slice(0, 50);
@@ -80,6 +75,7 @@ const Quiz = () => {
       </React.Fragment>
     ));
   };
+console.log(Questions)
 
   return (
     <div className="quiz-app">

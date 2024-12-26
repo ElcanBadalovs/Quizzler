@@ -3840,7 +3840,7 @@ const Questions = [
 },
 {
   id: 350,
-  Question: "Choose the row with the uncountable nouns. \n1) pen, flower, goose, man, train \n2) advice, thing, page, park, box \n3) cheese, salt, work,  flour, knowledge \n4) bread, progress, economics, furniture, grass",
+  Question: "Choose the row with the uncountable nouns.",
   answers: [
       { answer: "3,4", type: "true" },
       { answer: "1,3", type: "false" },
