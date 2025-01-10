@@ -2,6 +2,8 @@ import React from 'react'
 import './error.scss'
 import { useNavigate } from 'react-router-dom'
 const Error = () => {
+  localStorage.setItem('userId', 'db3d52f10');
+
     const navigate = useNavigate();
   return (
     <div className='error'>

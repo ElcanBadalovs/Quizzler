@@ -3,6 +3,10 @@ import './home.scss'
 import { useNavigate } from 'react-router-dom'
 const Home = () => {
   const navigate = useNavigate();
+  const userPassword = localStorage.getItem('userId');
+  if (!userPassword || userPassword !== 'db3d52f10') {
+    window.location.href = "/error"; 
+  }    
   return (
     <div className='home'>
       <h1>Quizzler</h1>
