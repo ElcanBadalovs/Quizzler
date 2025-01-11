@@ -40,6 +40,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
+  color: #000;
   transition: all 0.3s;
 
   &:hover {
@@ -53,16 +54,18 @@
   &.correct-answer {
     background-color: #d4edda;
     border-color: green;
+    color: #000;
   }
 
   &.incorrect-answer {
     background-color: #f8d7da;
     border-color: red;
+    color: #000;
   }
 
   &:disabled {
     cursor: not-allowed;
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 

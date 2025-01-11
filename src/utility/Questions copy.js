@@ -1,1468 +1,1569 @@
 // Questions.js
 const Questions = [
   {
-    id: 1,
-    Question: "hesablayın: \\( \\int \\frac{dx}{5 + 4x} \\)",
-    answers: [
-      { answer: "\\( \\ln \\sqrt[4]{5 + 4x} + C \\)", type: "true" },
-      { answer: "\\( \\frac{x}{2} + 5 + 4x + C \\)", type: "false" },
-      {
-        answer:
-          "\\( \\frac{x^3}{3} - \\frac{x^4}{4} + \\frac{x^5}{5} - \\frac{x^6}{6} + \\frac{x^7}{7} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{x^4}{4} + \\frac{x^5}{5} - \\frac{x^6}{6} + \\frac{x^7}{7} + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{x^3}{3} - 500 \\frac{x^4}{4} + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 2,
-    Question:
-      "\\( M(x)dx + N(y)dy = 0 \\) şəklində tənliyə nə cür tənlik deyilir?",
-    answers: [
-      { answer: "Dəyişənlərinə ayrılmış diferensial tənlik", type: "false" },
-      { answer: "Tam diferensial tənlik", type: "false" },
-      {
-        answer: "Dəyişənlərinə ayrıla bilən diferensial tənlik",
-        type: "false",
-      },
-      { answer: "Birinci dərəcəli diferensial tənlik", type: "false" },
-      { answer: "Birinci tərtibli xətti diferensial tənlik", type: "true" },
-    ],
-  },
-  {
-    id: 3,
-    Question: "hesablayın \\( \\int \\frac{x}{\\sqrt{x^2 - 1}} dx \\)",
-    answers: [
-      { answer: "\\( \\sqrt{x^2 - 1} + C \\)", type: "true" },
-      {
-        answer:
-          "\\( x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - \\frac{24}{17}x^{12}\\sqrt{x^5} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{4}{5}x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - x^{12}\\sqrt{x^5} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{4}{5}x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - \\frac{24}{16}x^{12}\\sqrt{x^5} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{4}{7}x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - \\frac{24}{17}x^{12}\\sqrt{x^5} + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 4,
-    Question: "\\( \\int (1 + \\sin x + \\cos x) \\, dx \\)",
-    answers: [
-      { answer: "\\( x - \\cos x + \\sin x + C \\)", type: "true" },
-      { answer: "\\( -\\cos x + \\sin x + C \\)", type: "false" },
-      { answer: "\\( x - \\cos x - \\sin x + C \\)", type: "false" },
-      { answer: "\\( x + \\cos x + \\sin x + C \\)", type: "false" },
-      { answer: "\\( x - \\tan x + \\sin x + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 5,
-    Question: "\\( \\int \\cot^2 x \\, dx \\)",
-    answers: [
-      { answer: "\\( -x - {ctg} x + C \\)", type: "true" },
-      { answer: "\\( -x - {tg} x + C \\)", type: "false" },
-      { answer: "\\( x + {ct} x + C \\)", type: "false" },
-      { answer: "\\( x - \\cos x + C \\)", type: "false" },
-      { answer: "\\( x - \\sin x + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 6,
-    Question:
-      "\\( \\int \\frac{\\sqrt{x^2 + 1} + \\sqrt{x^2 - 1}}{\\sqrt{x^4 - 1}} \\, dx \\)",
-    answers: [
-      {
-        answer: "\\( \\arcsin x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
-        type: "true",
-      },
-      {
-        answer: "\\( \\arccos x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\operatorname{arcctg} x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\operatorname{arcctg} x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\sin x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 7,
-    Question: "\\( \\int \\frac{dx}{x - a} \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\ln|x - a| + C \\)", type: "true" },
-      { answer: "\\( \\ln|x + \\sqrt{x^2 + 1}| + C \\)", type: "false" },
-      { answer: "\\( \\ln|x - \\sqrt{x^2 - 1}| + C \\)", type: "false" },
-      { answer: "\\( \\ln|x + \\sqrt{x^2 - 1}| + C \\)", type: "false" },
-      { answer: "\\( \\ln|x - \\sqrt{x^2 + 1}| + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 8,
-    Question:
-      "\\( \\int \\frac{\\sqrt{1 - 2x + x^2}}{1 - x} \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer: "\\( -\\frac{5}{2}(1 - x)^{\\frac{2}{5}} + C \\)",
-        type: "true",
-      },
-      { answer: "\\( -\\frac{3}{5}(1 - x)^{\\frac{5}{2}} \\)", type: "false" },
-      { answer: "\\( -\\frac{2}{7}(1 - x)^{\\frac{5}{2}} \\)", type: "false" },
-      { answer: "\\( -\\frac{2}{5}(2 - x)^{\\frac{5}{2}} \\)", type: "false" },
-      { answer: "\\( -\\frac{2}{5}(2 + x)^{\\frac{5}{2}} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 9,
-    Question: "\\( \\int \\frac{dx}{e^x + e^{-x}} \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\operatorname{arctge}^x + C \\)", type: "true" },
-      { answer: "\\( \\ln(1 + e^x) + C \\)", type: "false" },
-      { answer: "\\( \\arccos(1 + e^x) + C \\)", type: "false" },
-      { answer: "\\( \\arcsin(1 + e^x) + C \\)", type: "false" },
-      { answer: "\\( \\operatorname{ctg}(1 + e^x) + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 10,
-    Question: "\\( y \\frac{dy}{dx} = 3 \\) diferensial tənliyinin həllini tap",
-    answers: [
-      { answer: "\\( y^2 = 6x + C \\)", type: "true" },
-      { answer: "\\( y^2 = 5x + C \\)", type: "false" },
-      { answer: "\\( y^2 = 6 + x + C \\)", type: "false" },
-      { answer: "\\( y^2 = 6 - x + C \\)", type: "false" },
-      { answer: "\\( y^2 = \\frac{x^2}{2} + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 11,
-    Question:
-      "\\( \\frac{dy}{dx} = y \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y = Ce^x \\)", type: "true" },
-      { answer: "\\( y = Ce^{2x} \\)", type: "false" },
-      { answer: "\\( y = Ce^{\\frac{x}{2}} \\)", type: "false" },
-      { answer: "\\( y = Ce^{3x} \\)", type: "false" },
-      { answer: "\\( y = 3e^x + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 12,
-    Question:
-      "\\( y \\frac{dy}{dx} = 5 \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y^2 = 10x + C \\)", type: "true" },
-      { answer: "\\( y = Ce^{\\frac{x}{2}} \\)", type: "false" },
-      { answer: "\\( y = Ce^{5x} \\)", type: "false" },
-      { answer: "\\( y = Ce^{\\frac{x}{4}} \\)", type: "false" },
-      { answer: "\\( y = Ce^{\\frac{x}{3}} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 13,
-    Question:
-      "\\( y \\frac{dy}{dx} = 2x \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y^2 = 2x^2 + C \\)", type: "true" },
-      { answer: "\\( y = Cx^2 \\)", type: "false" },
-      { answer: "\\( y = C + x^2 \\)", type: "false" },
-      { answer: "\\( y = C - x^2 \\)", type: "false" },
-      { answer: "\\( y = Cx^3 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 14,
-    Question:
-      "\\( y dy = 3x^2 dx \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y^2 = 2x^3 + C \\)", type: "true" },
-      { answer: "\\( 2x = 3 + y^2 + C \\)", type: "false" },
-      { answer: "\\( x = 3y^2 + C \\)", type: "false" },
-      { answer: "\\( 2x = 3 - y^2 + C \\)", type: "false" },
-      { answer: "\\( 2x = 3y^3 + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 15,
-    Question:
-      "\\( \\frac{dy}{dx} = -\\frac{y}{x} \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y = C - x \\)", type: "true" },
-      { answer: "\\( y = x + C \\)", type: "false" },
-      { answer: "\\( y = \\frac{C}{x} \\)", type: "false" },
-      { answer: "\\( y = Cx \\)", type: "false" },
-      { answer: "\\( y = \\frac{C}{x^2} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 16,
-    Question:
-      "\\( x^2 dx + y^2 dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( x^3 + y^3 = C \\)", type: "true" },
-      { answer: "\\( \\frac{x^3}{3} = C \\)", type: "false" },
-      { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
-      { answer: "\\( y = x + C \\)", type: "false" },
-      { answer: "\\( y = x + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 17,
-    Question:
-      "\\( (a + x)y dx + x dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y = Cx^{-a}e^{-x} \\)", type: "true" },
-      { answer: "\\( y = Cx^a e^{-x} \\)", type: "false" },
-      { answer: "\\( y = Cx^{-a} e^x \\)", type: "false" },
-      { answer: "\\( y = Cx^{-a} e^{-3x} \\)", type: "false" },
-      { answer: "\\( y = Cx^{-a} e^{-2x} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 18,
-    Question:
-      "\\( y dx - (x^2 - 1)dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y^2 = C \\frac{x - 1}{x + 1} \\)", type: "true" },
-      { answer: "\\( y^2 = C \\frac{2x - 1}{x + 1} \\)", type: "false" },
-      { answer: "\\( y^2 = C \\frac{x + 1}{x - 1} \\)", type: "false" },
-      { answer: "\\( y^2 = C(x - 1) \\)", type: "false" },
-      { answer: "\\( y^2 = Cx \\)", type: "false" },
-    ],
-  },
-  {
-    id: 19,
-    Question:
-      "\\( (n - 1)y dx - x dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y = Cx^{n - 1} \\)", type: "true" },
-      { answer: "\\( y = Cx^n \\)", type: "false" },
-      { answer: "\\( y = \\frac{x^3}{C} \\)", type: "false" },
-      { answer: "\\( y = Cx + x^{-1} \\)", type: "false" },
-      { answer: "\\( y = C \\frac{x + x^{-1}}{y^2} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 20,
-    Question:
-      "\\( 2xdy + ydx = 0 \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( y^2x = C \\)", type: "true" },
-      { answer: "\\( y^2 + x + C \\)", type: "false" },
-      { answer: "\\( \\frac{y^2}{x} = C \\)", type: "false" },
-      { answer: "\\( y = x^2 + C \\)", type: "false" },
-      { answer: "\\( y = x^2 - yC \\)", type: "false" },
-    ],
-  },
-  {
-    id: 21,
-    Question:
-      "\\( x = y \\frac{dy}{dx} \\) diferensial tənliyinin ümumi həllini yazın",
-    answers: [
-      { answer: "\\( x^2 - y^2 = C \\)", type: "true" },
-      { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
-      { answer: "\\( x^3 - y^3 = C \\)", type: "false" },
-      { answer: "\\( x^3 + y^3 = C \\)", type: "false" },
-      { answer: "\\( x^2 = Cy^2 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 22,
-    Question: "\\( \\int_{4}^{5} x \\sqrt{x^2 - 16} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "9", type: "true" },
-      { answer: "3", type: "false" },
-      { answer: "4", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "8", type: "false" },
-    ],
-  },
-  {
-    id: 23,
-    Question: "Aşağıdakılardan hansı hissə-hissə inteqrallama düsturudur",
-    answers: [
-      {
-        answer: "\\( \\int_a^b u dv = uv \\Big|_a^b - \\int_a^b v du \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( \\int_a^b f(x) dx = \\int_a^\\beta f[\\varphi(t)] \\varphi'(t) dt \\)",
-        type: "false",
-      },
-      { answer: "\\( \\int f(x) dx = F(x) + C \\)", type: "false" },
-      { answer: "\\( \\int_a^b f(t) dt = F(b) - F(a) \\)", type: "false" },
-      { answer: "\\( \\int f(x) dx = \\int f(t) dt + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 24,
-    Question: "\\( \\int_1^2 \\frac{4x + 2}{2x - 1} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( 2 + 2 \\ln 3 \\)", type: "true" },
-      { answer: "1", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "\\( 3 + 2 \\ln 3 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 25,
-    Question: "\\( \\int_4^9 \\frac{e^x dx}{e^x - 1} \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\ln|e^x - 1| + C \\)", type: "true" },
-      { answer: "1", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "\\( 7 + 2 \\ln 3 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 26,
-    Question: "\\( \\int_e^{e^2} \\frac{2 \\ln x + 1}{x} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "4", type: "true" },
-      { answer: "1", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "3", type: "false" },
-    ],
-  },
-  {
-    id: 27,
-    Question: "\\( \\int_0^7 \\frac{dx}{\\sqrt{2x + 1}} \\, \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\sqrt{15} - 1 \\)", type: "true" },
-      { answer: "1", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "3", type: "false" },
-    ],
-  },
-  {
-    id: 28,
-    Question:
-      "\\( \\int_{\\ln 3}^{\\ln 8} \\frac{e^x  dx}{\\sqrt{e^x + 1}} \\) HESABLAYIN",
-    answers: [
-      { answer: "2", type: "true" },
-      { answer: "1", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "8", type: "false" },
-    ],
-  },
-  {
-    id: 29,
-    Question: "\\( \\int_0^{\\ln 2} xe^x \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\ln 4 - 1 \\)", type: "true" },
-      { answer: "\\( \\ln 2 - 2 \\)", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "7", type: "false" },
-      { answer: "8", type: "false" },
-    ],
-  },
-  {
-    id: 30,
-    Question: "\\( \\int_0^1 \\arccos x \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "1", type: "true" },
-      { answer: "6", type: "false" },
-      { answer: "8", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "3", type: "false" },
-    ],
-  },
-  {
-    id: 31,
-    Question: "\\( \\int_0^1 \\frac{dx}{x^2 + 2x + 2} \\) HESABLAYIN",
-    answers: [
-      {
-        answer: "\\( \\operatorname{arctg} 2 - \\frac{\\pi}{4} \\)",
-        type: "true",
-      },
-      { answer: "\\( \\frac{\\pi}{3} \\)", type: "false" },
-      { answer: "\\( \\frac{\\pi}{2} \\)", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "6", type: "false" },
-    ],
-  },
-  {
-    id: 32,
-    Question: "\\( \\int_1^2 \\frac{dx}{x^2 + 2x} \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\ln \\frac{\\sqrt{3}}{2} \\)", type: "true" },
-      { answer: "\\( \\frac{1}{3} \\ln 1.5 \\)", type: "false" },
-      { answer: "4", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "5", type: "false" },
-    ],
-  },
-  {
-    id: 33,
-    Question: "\\( \\int_0^1 e^{2x} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\frac{1}{2} (e^2 - 1) \\)", type: "true" },
-      { answer: "\\( \\frac{1}{3} (e^2 + 1) \\)", type: "false" },
-      { answer: "\\( \\frac{1}{5} (e^2 + 1) \\)", type: "false" },
-      { answer: "\\( \\frac{1}{7} (e^2 + 1) \\)", type: "false" },
-      { answer: "\\( \\frac{1}{4} (e^2 - 1) \\)", type: "false" },
-    ],
-  },
-  {
-    id: 34,
-    Question:
-      "\\( \\int_0^{\\pi/2} \\varphi \\sin 2\\varphi \\, d\\varphi \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\frac{\\pi}{4} \\)", type: "true" },
-      { answer: "\\( -\\frac{\\pi}{4} \\)", type: "false" },
-      { answer: "6", type: "false" },
-      { answer: "2", type: "false" },
-      { answer: "5", type: "false" },
-    ],
-  },
-  {
-    id: 35,
-    Question: "\\( \\int_1^e \\ln x \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "1", type: "true" },
-      { answer: "-1", type: "false" },
-      { answer: "0", type: "false" },
-      { answer: "8", type: "false" },
-      { answer: "2", type: "false" },
-    ],
-  },
-  {
-    id: 36,
-    Question:
-      "\\( \\int_0^{\\sqrt{3}} x \\operatorname{arctg} x \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer: "\\( \\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{2} \\)",
-        type: "true",
-      },
-      {
-        answer: "\\( \\frac{2\\pi}{5} - \\frac{\\sqrt{3}}{2} \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{2\\pi}{3} + \\frac{\\sqrt{3}}{2} \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{2} \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{2\\pi}{7} - \\frac{\\sqrt{3}}{2} \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 37,
-    Question:
-      "\\( \\int \\frac{\\operatorname{arctg} x}{1 + x^2} \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer: "\\( \\frac{1}{2} \\operatorname{arctg}^2 x + C \\)",
-        type: "true",
-      },
-      {
-        answer: "\\( \\frac{1}{3} \\operatorname{arctg} x + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{1}{7} \\operatorname{arctg} x + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{1}{5} \\operatorname{arctg} x + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{1}{4} \\operatorname{arctg} x + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 38,
-    Question: "\\( \\int \\frac{1 + x}{1 - x} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( -x - 2 \\ln|1 - x| + C \\)", type: "true" },
-      { answer: "\\( x - 2 \\ln|1 - x| + C \\)", type: "false" },
-      { answer: "\\( x + 2 \\ln|1 - x| + C \\)", type: "false" },
-      { answer: "\\( -2 \\ln|1 + x| + C \\)", type: "false" },
-      { answer: "\\( 2 - 2 \\ln|1 - x| + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 39,
-    Question: "39. \\( \\int \\frac{x+1}{\\sqrt{x}} \\, dx \\) tapın",
-    answers: [
-      {
-        answer: "\\( \\frac{2}{3} x \\sqrt{x} + 2 \\sqrt{x} + C \\)",
-        type: "true",
-      },
-      { answer: "\\( \\sqrt{x} - 1 + C \\)", type: "false" },
-      { answer: "\\( 3 \\sqrt{x} + C \\)", type: "false" },
-      { answer: "\\( \\sqrt{3x} + C \\)", type: "false" },
-      { answer: "\\( x \\sqrt{5} + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 40,
-    Question: "40. \\( \\int \\operatorname{arctg} x \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( \\operatorname{arctg} x - \\frac{1}{2} \\ln|1 + x^2| + C \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( \\operatorname{arctg} x - \\frac{1}{2} \\ln|1 + x| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\operatorname{arctg} x + \\frac{1}{2} \\ln|1 + x^2| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\operatorname{arctg} x - \\frac{1}{3} \\ln|1 + x^2| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\operatorname{arctg} x - \\frac{1}{5} \\ln|1 + x^2| + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 41,
-    Question: "41. \\( \\int_0^1 \\arccos x \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "1", type: "true" },
-      { answer: "2", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "9", type: "false" },
-      { answer: "10", type: "false" },
-    ],
-  },
-  {
-    id: 42,
-    Question: "42. \\( \\int \\frac{1}{1 + x^2} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\operatorname{arctg} x + C \\)", type: "true" },
-      {
-        answer: "\\( \\frac{1}{2} \\operatorname{arctg} x + C \\)",
-        type: "false",
-      },
-      { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
-      { answer: "\\( \\ln x \\)", type: "false" },
-      { answer: "-9", type: "false" },
-    ],
-  },
-  {
-    id: 43,
-    Question: "43. \\( \\int \\frac{e^x}{2 + e^x} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\ln|2 + e^x| + C \\)", type: "true" },
-      { answer: "\\( 2 + x + C \\)", type: "false" },
-      { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
-      { answer: "\\( \\ln x \\)", type: "false" },
-      { answer: "-9", type: "false" },
-    ],
-  },
-  {
-    id: 44,
-    Question:
-      "44. \\( \\int \\frac{\\sin x}{\\sqrt{\\cos^3 x}} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\frac{2}{\\sqrt{\\cos x}} + C \\)", type: "true" },
-      { answer: "\\( \\arcsin x + C \\)", type: "false" },
-      { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
-      { answer: "\\( \\cos x \\)", type: "false" },
-      { answer: "2", type: "false" },
-    ],
-  },
-  {
-    id: 45,
-    Question:
-      "45. \\( \\int \\frac{a^{2x} - 1}{\\sqrt{a^x}} \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( \\frac{2}{\\ln a} \\left( \\frac{1}{3} a^{\\frac{3x}{2}} + a^{-\\frac{x}{2}} \\right) \\)",
-        type: "true",
-      },
-      { answer: "\\( \\arcsin x + C \\)", type: "false" },
-      { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
-      { answer: "\\( \\sqrt{a^x} + C \\)", type: "false" },
-      { answer: "2", type: "false" },
-    ],
-  },
-  {
-    id: 46,
-    Question: "46. \\( \\int \\frac{dx}{\\sin^3 x} \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( -\\frac{\\cos x}{2 \\sin^2 x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( -\\frac{\\cos x}{2 \\sin x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( -\\frac{\\cos x}{2 \\sin^3 x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( -\\frac{\\cos x}{2 \\sin^2 x} + \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{\\cos x}{2 \\sin^2 x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 47,
-    Question:
-      "47. \\( \\int \\frac{\\sin^4 x}{\\cos^5 x} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\frac{\\tan^5 x}{5} + C \\)", type: "true" },
-      { answer: "\\( \\frac{1}{2} \\ln|\\tan x| + C \\)", type: "false" },
-      { answer: "\\( \\tan^3 x + C \\)", type: "false" },
-      { answer: "\\( \\tan x - 2 + C \\)", type: "false" },
-      { answer: "\\( \\ln|\\cos x| + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 48,
-    Question:
-      "48. \\( \\int \\sin \\frac{x}{2} \\cos \\frac{x}{2} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( -\\frac{1}{2} \\cos x + C \\)", type: "true" },
-      { answer: "\\( \\frac{1}{2} \\sin x + C \\)", type: "false" },
-      { answer: "\\( -\\frac{1}{2} \\sin x + C \\)", type: "false" },
-      { answer: "\\( -\\frac{1}{3} \\cos x + C \\)", type: "false" },
-      { answer: "\\( -\\frac{1}{5} \\cos x + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 49,
-    Question: "49. \\( \\int \\cos^7 x \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( \\sin x - \\sin^3 x + \\frac{3}{5} \\sin^5 x - \\frac{1}{7} \\sin^7 x + C \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( \\sin^3 x + \\frac{3}{5} \\sin^5 x - \\frac{1}{7} \\sin^7 x + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\sin x - \\sin^3 x + \\frac{3}{5} \\sin^5 x + \\frac{1}{7} \\sin^7 x + C \\)",
-        type: "false",
-      },
-      { answer: "\\( \\sin x - \\sin^3 x + \\sin^5 x + C \\)", type: "false" },
-      {
-        answer: "\\( \\sin^3 x + \\frac{3}{5} \\sin^5 x - \\sin^7 x + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 50,
-    Question:
-      "50. \\( (x+1) dx + (y-1) dy = 0 \\) diferensial tənliyini həll edin",
-    answers: [
-      { answer: "\\( (x+1)^2 + (y-1)^2 = C^2 \\)", type: "true" },
-      { answer: "\\( (x+1)^2 - (y-1)^2 = C^2 \\)", type: "false" },
-      { answer: "\\( (x+1)^2 + (y+1)^2 = C^2 \\)", type: "false" },
-      { answer: "\\( (x-1)^2 + (y-1)^2 = C^2 \\)", type: "false" },
-      { answer: "\\( (x-1)^2 - (y-1)^2 = C^2 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 51,
-    Question:
-      "51. \\( x dx - 2 dy = 0 \\), \\( y = 1 \\), \\( x = 3 \\), başlanğıc şərtini ödəyən diferensial tənliyin ümumi həllini tapın",
-    answers: [
-      { answer: "\\( x^2 = 4y + 5 \\)", type: "true" },
-      { answer: "\\( x^2 = 2y + 5 \\)", type: "false" },
-      { answer: "\\( x^2 = 5y + 5 \\)", type: "false" },
-      { answer: "\\( x^2 = 4y + 4 \\)", type: "false" },
-      { answer: "\\( x^2 = 3y + 5 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 52,
-    Question:
-      "52. \\( (y-4) dx - (x+1) dy = 0 \\), \\( y = 10 \\), \\( x = 1 \\), başlanğıc şərtini ödəyən diferensial tənliyin ümumi həllini tapın",
-    answers: [
-      { answer: "\\( \\ln|y - 4| = \\ln C|x + 1| \\)", type: "true" },
-      { answer: "\\( \\ln|y - 2| = \\ln |x + 1| \\)", type: "false" },
-      { answer: "\\( \\ln|y - 4| = \\ln C|x - 1| \\)", type: "false" },
-      { answer: "\\( \\ln|y - 4| = |x + 1| \\)", type: "false" },
-      { answer: "\\( \\ln|y + 4| = \\ln C|x + 1| \\)", type: "false" },
-    ],
-  },
-  {
-    id: 53,
-    Question: "53. \\( \\int (e^t - e^{-t}) \\, dt \\)",
-    answers: [
-      { answer: "\\( e^t + e^{-t} + C \\)", type: "true" },
-      { answer: "\\( 2e^t + e^{-t} + C \\)", type: "false" },
-      { answer: "\\( e + e^{-t} + C \\)", type: "false" },
-      { answer: "\\( 2e^t - C \\)", type: "false" },
-      { answer: "\\( 2e^t + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 54,
-    Question:
-      "54. \\( \\int \\left( e^{\\frac{x}{a}} + e^{-\\frac{x}{a}} \\right)^2 dx \\)",
-    answers: [
-      {
-        answer:
-          "\\( \\frac{a}{2} e^{\\frac{2x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( \\frac{a}{3} e^{\\frac{2x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{a}{2} e^{\\frac{2x}{a}} + 3x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{a}{2} e^{\\frac{x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{a}{2} e^{\\frac{2x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{x}{a}} + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 55,
-    Question: "55. \\( \\int \\operatorname{arctg} x \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( x \\operatorname{arctg} x - \\frac{1}{2} \\ln|1 + x^2| + C \\)",
-        type: "true",
-      },
-      { answer: "\\( \\frac{1}{2} \\ln|1 + x^2| + C \\)", type: "false" },
-      { answer: "\\( \\frac{1}{2} \\ln|1 - x^2| + C \\)", type: "false" },
-      { answer: "\\( \\frac{1}{3} \\ln|1 + x^2| + C \\)", type: "false" },
-      { answer: "\\( \\frac{1}{2} \\ln|1 + x| + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 56,
-    Question:
-      "56. \\( \\int \\frac{\\operatorname{tg} x}{\\cos^2 x} \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer: "\\( \\frac{1}{2} \\operatorname{tg}^2 x + C \\)",
-        type: "true",
-      },
-      {
-        answer: "\\( \\frac{2}{5} \\sqrt{\\operatorname{tg}^3 x} + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{2}{7} \\sqrt{\\operatorname{tg}^3 x} + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{2}{3} \\sqrt{\\operatorname{ctg}^3 x} + C \\)",
-        type: "false",
-      },
-      { answer: "\\( \\sqrt{\\operatorname{tg}^3 x} + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 57,
-    Question:
-      "57. \\( \\int \\frac{\\sin^2 x}{\\cos^6 x} \\, dx \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( \\frac{1}{3} \\operatorname{tg}^3 x + \\frac{1}{5} \\operatorname{tg}^5 x + C \\)",
-        type: "true",
-      },
-      {
-        answer: "\\( \\frac{3}{4} \\left(1 + \\ln x \\right)^2 + C \\)",
-        type: "false",
-      },
-      { answer: "\\( \\frac{3}{4} \\sqrt{1 + \\ln x} + C \\)", type: "false" },
-      { answer: "\\( \\frac{2}{5} \\sqrt{1 + \\ln x} + C \\)", type: "false" },
-      { answer: "\\( \\frac{3}{5} \\sqrt{1 + \\ln x} + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 58,
-    Question: "58. \\( \\int \\frac{dx}{\\sin x \\cos x} \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\ln|\\operatorname{tg} x| + C \\)", type: "true" },
-      { answer: "\\( \\ln|\\operatorname{ct} x| + C \\)", type: "false" },
-      { answer: "\\( \\ln|\\operatorname{tg} ax| + C \\)", type: "false" },
-      {
-        answer: "\\( \\frac{1}{a} \\ln|\\operatorname{tg} ax| + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( -\\frac{1}{a} \\ln|\\operatorname{tg} ax| + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 59,
-    Question:
-      "59. \\( \\int \\frac{(\\arcsin x)^2}{\\sqrt{1 - x^2}} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\frac{\\arcsin^3 x}{3} + C \\)", type: "true" },
-      { answer: "\\( \\arccos x + C \\)", type: "false" },
-      { answer: "\\( \\operatorname{arctg} x + C \\)", type: "false" },
-      { answer: "\\( \\sin x + C \\)", type: "false" },
-      { answer: "\\( \\operatorname{tg} x + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 60,
-    Question: "60. \\( \\int \\frac{dx}{x^2 + 7} \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{7}} \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
-        type: "true",
-      },
-      {
-        answer: "\\( \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( -\\frac{1}{\\sqrt{7}} \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{6}} \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{7}} \\operatorname{arctg} \\frac{x}{\\sqrt{6}} + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 61,
-    Question: "61. \\( \\int \\frac{x^2 + 5x + 7}{x + 3} \\, dx \\) HESABLAYIN",
-    answers: [
-      { answer: "\\( \\frac{x^2}{2} + 2x + \\ln|x + 3| + C \\)", type: "true" },
-      {
-        answer: "\\( \\frac{x^2}{3} + 2x + \\ln|x + 3| + C \\)",
-        type: "false",
-      },
-      {
-        answer: "\\( \\frac{x^2}{2} + 3x + \\ln|x + 3| + C \\)",
-        type: "false",
-      },
-      { answer: "\\( \\frac{x^2}{2} + \\ln|x + 3| + C \\)", type: "false" },
-      { answer: "\\( x^2 + 3x + \\ln|x + 3| + C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 62,
-    Question: "62. \\( \\int \\frac{dx}{\\sqrt{7 - 5x^2}} \\) HESABLAYIN",
-    answers: [
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{5}} \\arcsin \\sqrt{\\frac{5}{7}} x + C \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( \\arcsin \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{3}} \\arcsin \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{5}} \\arcsin \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{1}{\\sqrt{5}} \\arccos \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 63,
-    Question:
-      "63. \\( \\iint_D x y \\, dx \\, dy \\), \\( 3 \\leq x \\leq 5, \\, 0 \\leq y \\leq 1 \\)",
-    answers: [
-      { answer: "2", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 64,
-    Question:
-      "64. \\( \\iint_D x y^3 \\, dx \\, dy \\), \\( 2 \\leq x \\leq 4, \\, 0 \\leq y \\leq 1 \\)",
-    answers: [
-      { answer: "\\( \\frac{3}{2} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 65,
-    Question:
-      "65. \\( \\iint_D x^2 y \\, dx \\, dy \\), \\( 3 \\leq x \\leq 6, \\, 0 \\leq y \\leq 2 \\)",
-    answers: [
-      { answer: "126", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 66,
-    Question: "66. \\( \\int_{1}^{e} \\frac{dx}{x} \\int_{4}^{6} y \\, dy \\)",
-    answers: [
-      { answer: "10", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 67,
-    Question:
-      "67. \\( \\iint_D (x - y) \\, dx \\, dy \\), \\( 1 \\leq x \\leq 4, \\, 1 \\leq y \\leq 3 \\)",
-    answers: [
-      { answer: "3", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "4", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "7", type: "false" },
-    ],
-  },
-  {
-    id: 68,
-    Question:
-      "68. \\( \\iint_D (x + y) \\, dx \\, dy \\), \\( 3 \\leq x \\leq 5, \\, 0 \\leq y \\leq 2 \\)",
-    answers: [
-      { answer: "20", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-    ],
-  },
-  {
-    id: 69,
-    Question: "69. \\( \\int_{2}^{3} \\, dx \\int_{1}^{2} (x + y^2) \\, dy \\)",
-    answers: [
-      { answer: "\\( 4 \\frac{5}{6} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 70,
-    Question:
-      "70. \\( \\iint_D (x^2 + y) \\, dx \\, dy \\), \\( 1 \\leq x \\leq 2, \\; 0 \\leq y \\leq 1 \\)",
-    answers: [
-      { answer: "\\( 2 \\frac{5}{6} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 71,
-    Question:
-      "71. \\( \\int \\int_D (x^2 + y^2) \\, dx \\, dy \\), \\( 0 \\leq x \\leq 1, \\; 0 \\leq y \\leq 1 \\)",
-    answers: [
-      { answer: "\\( \\frac{2}{3} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 72,
-    Question:
-      "72. \\( \\iint_D \\frac{3y^2 \\, dx \\, dy}{1 + x^2} \\), \\( 0 \\leq x \\leq 1, \\; 0 \\leq y \\leq 1 \\)",
-    answers: [
-      { answer: "\\( \\frac{\\pi}{4} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 73,
-    Question:
-      "73. \\( \\iint_D (3y x^2 - 2x^3) \\, dx \\, dy \\), \\( 0 \\leq x \\leq 1, \\; 1 \\leq y \\leq 2 \\)",
-    answers: [
-      { answer: "1", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "5", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 74,
-    Question:
-      "74. \\( \\iint_D \\sin(x + y) \\, dx \\, dy \\), \\( 0 \\leq x \\leq \\frac{\\pi}{2}, \\; 0 \\leq y \\leq \\frac{\\pi}{2} \\)",
-    answers: [
-      { answer: "2", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "6", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 75,
-    Question:
-      "75. \\( \\iint_D x e^{xy} \\, dx \\, dy \\), \\( 0 \\leq x \\leq 1, \\; -1 \\leq y \\leq 0 \\)",
-    answers: [
-      { answer: "\\( \\frac{1}{e} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 76,
-    Question:
-      "76. \\( \\iint_G (x - y) \\, dx \\, dy \\), \\( x = 0, y = 0, x + y = 2 \\)",
-    answers: [
-      { answer: "0", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 77,
-    Question:
-      "77. \\( \\iiint_V (x + y - z) \\, dx \\, dy \\, dz \\), \\( x = -1, x = 1, y = 0, y = 1, z = 0, z = 2 \\)",
-    answers: [
-      { answer: "-2", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 78,
-    Question:
-      "78. \\( \\iiint_V (x + y + z) \\, dx \\, dy \\, dz \\), \\( x = 0, x = 1, y = 0, y = 1, z = 0, z = 1 \\)",
-    answers: [
-      { answer: "\\( \\frac{3}{2} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 79,
-    Question:
-      "79. \\( \\iiint_V x y z \\, dx \\, dy \\, dz \\), \\( x = 1, x = 2, y = -2, y = -1, z = 0, z = \\frac{1}{2} \\)",
-    answers: [
-      { answer: "\\( -\\frac{9}{8} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 80,
-    Question:
-      "80. \\( \\iiint_V \\frac{dx \\, dy \\, dz}{(x + y + z)^3} \\), \\( x = 1, x = 2, y = 1, y = 2, z = 1, z = 2 \\)",
-    answers: [
-      { answer: "\\( \\frac{1}{2} \\ln \\frac{128}{125} \\)", type: "true" },
-      { answer: "-9", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 81,
-    Question:
-      "81. \\( \\iiint_V (4x + 3y + 3z + 1) \\, dx \\, dy \\, dz \\), \\( x = 0, x = 3, y = 0, y = 2, z = 0, z = 3 \\)",
-    answers: [
-      { answer: "261", type: "true" },
-      { answer: "-10", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "4", type: "false" },
-    ],
-  },
-  {
-    id: 82,
-    Question:
-      "82. \\( \\int_{2}^{4} \\, dx \\int_{1}^{2} \\, xydy \\) HESABLAYIN",
-    answers: [
-      { answer: "9", type: "true" },
-      { answer: "4", type: "false" },
-      { answer: "3", type: "false" },
-      { answer: "1", type: "false" },
-      { answer: "2", type: "false" },
-    ],
-  },
-  {
-    id: 83,
-    Question:
-      "83. \\( x dx - 2dy = 0 \\) diferensial tənliyinin \\( x = 3, y = 1 \\) şərtini ödəyən həllini tapın:",
-    answers: [
-      { answer: "\\( x^2 = 4y + 5 \\)", type: "true" },
-      { answer: "\\( x^2 = 2y + 5 \\)", type: "false" },
-      { answer: "\\( x^2 = y - 5 \\)", type: "false" },
-      { answer: "\\( x^2 = y + x \\)", type: "false" },
-      { answer: "\\( x^2 = 5y + 4 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 84,
-    Question:
-      "84. \\( (y - 4)dx - (x + 1)dy = 0 \\) dəyişənlərinə ayrılan diferensial tənliyin \\( x = 1 \\) olduqda \\( y = 10 \\) şərtini ödəyən həllini tapın:",
-    answers: [
-      { answer: "\\( y = 3x + 7 \\)", type: "true" },
-      { answer: "\\( y = 2x + 7 \\)", type: "false" },
-      { answer: "\\( y = 3x + 12 \\)", type: "false" },
-      { answer: "\\( y = 2x - 5 \\)", type: "false" },
-      { answer: "\\( y = 2x + 6 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 85,
-    Question:
-      "85. Dəyişənlərinə ayrılan birinci tərtib diferensial tənlik hansıdır?",
-    answers: [
-      { answer: "\\( M(x)N(y)dx + M_1(x)N_1(y)dy = 0 \\)", type: "true" },
-      { answer: "\\( [M(x) - N(y)]dx + M_1(x)N_1(y)dy = 0 \\)", type: "false" },
-      {
-        answer: "\\( \\frac{M(x)}{N(y)} + \\frac{M_1(y)}{N_1(x)} = 0 \\)",
-        type: "false",
-      },
-      { answer: "\\( M(x)N(y)dx - M_1(x)N_1(y)dy = 0 \\)", type: "false" },
-      { answer: "\\( M(x)N(y) - M_1(x)N_1(y) = 0 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 86,
-    Question:
-      "86. Birinci tərtibli diferensial tənlik ümumi şəkildə necə ifadə olunur?",
-    answers: [
-      { answer: "\\( F(x, y, y') = 0 \\)", type: "true" },
-      { answer: "\\( F(y, y') = 0 \\)", type: "false" },
-      { answer: "\\( F(x, y) = 0 \\)", type: "false" },
-      { answer: "\\( F(x, y, y'') = 0 \\)", type: "false" },
-      { answer: "\\( F(x, y') = 0 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 87,
-    Question:
-      "87. \\( n \\)-tərtibli adi diferensial tənlik ümumi şəkildə necə yazılır?",
-    answers: [
-      {
-        answer: "\\( F(x, y, y', y'', \\ldots, y^{(n)}) = 0 \\)",
-        type: "true",
-      },
-      { answer: "\\( F(y', y'') = 0 \\)", type: "false" },
-      { answer: "\\( F(x, y) = 0 \\)", type: "false" },
-      { answer: "\\( F(x, y') = 0 \\)", type: "false" },
-      { answer: "\\( F(x, y, y^{(n-1)}) = 0 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 88,
-    Question:
-      "88. \\( y'' - y = 0 \\) adi diferensial tənliyinin ümumi həlli hansıdır?",
-    answers: [
-      { answer: "\\( y = C_1e^x + C_2e^{-x} \\)", type: "true" },
-      { answer: "\\( y = e^x \\)", type: "false" },
-      { answer: "\\( y = e^{-2x} \\)", type: "false" },
-      { answer: "\\( y = C_1e^{2x} \\)", type: "false" },
-      { answer: "\\( y = C_1e^{2x} - C_2e^{-2x} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 89,
-    Question: "89. \\( y'' + 2y' = 0 \\) diferensial tənliyini həll edin:",
-    answers: [
-      { answer: "\\( y = C_1 + C_2e^{-2x} \\)", type: "true" },
-      { answer: "\\( y = C_2e^{2x} \\)", type: "false" },
-      { answer: "\\( y = C_2e^x \\)", type: "false" },
-      { answer: "\\( y = C_2e^{3x} \\)", type: "false" },
-      { answer: "\\( y = C_2e^{-x} \\)", type: "false" },
-    ],
-  },
-  {
-    id: 90,
-    Question:
-      "90. \\( \\sqrt{1 - x^2} dy - 3dx = 0 \\) diferensial tənliyini inteqrallayın:",
-    answers: [
-      { answer: "\\( y = 3 \\arcsin x + C \\)", type: "true" },
-      { answer: "\\( y = \\arcsin x + C \\)", type: "false" },
-      { answer: "\\( y = \\arccos x + C \\)", type: "false" },
-      { answer: "\\( y = arctg x + C \\)", type: "false" },
-      { answer: "\\( y = \\arcsin x - 5 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 91,
-    Question:
-      "91. \\( F(x,y) \\) funksiyasına nə zaman \\( m \\)-ölçülü bircins funksiya deyilir?",
-    answers: [
-      {
-        answer:
-          "\\( \\forall t \\) üçün \\( F(tx, ty) = t^mF(x, y) \\) eyniliyi ödəndikdə,",
-        type: "true",
-      },
-      {
-        answer: "\\( F(tx, ty) = tF(tx, ty) \\) eyniliyi ödəndikdə,",
-        type: "false",
-      },
-      {
-        answer: "\\( F(tx, ty) = F(x, ty) \\) eyniliyi ödəndikdə,",
-        type: "false",
-      },
-      {
-        answer: "\\( F(tx, ty) = t^2F(tx, ty) \\) eyniliyi ödəndikdə,",
-        type: "false",
-      },
-      {
-        answer: "\\( F(tx, ty) = t^2F(tx, ty) \\) eyniliyi ödəndikdə,",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 92,
-    Question:
-      "92. \\( P(x, y)dx + Q(x, y)dy = 0 \\) birtərtibli diferensial tənliyi nə zaman bircins diferensial tənlik adlanır?",
-    answers: [
-      {
-        answer:
-          "\\( P(x, y) \\) və \\( Q(x, y) \\) funksiyaları eyni ölçülü bircins funksiyalar olduqda",
-        type: "true",
-      },
-      { answer: "\\( P(x, y) = Q(x, y) \\) olduqda", type: "false" },
-      { answer: "\\( P(x, y) \\cdot Q(x, y) = 0 \\) olduqda", type: "false" },
-      { answer: "\\( P(x, y) = Q^m(x, y) \\) olduqda", type: "false" },
-      { answer: "\\( P(x, y) = 2Q(x, y) \\) olduqda", type: "false" },
-    ],
-  },
-  {
-    id: 93,
-    Question:
-      "93. \\( \\frac{dy}{dx} - \\frac{y}{x} = x \\) Birtərtibli xətli diferensial tənliyi həll edin:",
-    answers: [
-      { answer: "\\( y = x^2 + Cx \\)", type: "true" },
-      { answer: "\\( y = x^2 + C + x \\)", type: "false" },
-      { answer: "\\( y = 2x^2 + Cx \\)", type: "false" },
-      { answer: "\\( y = x^3 + C \\)", type: "false" },
-      { answer: "\\( y = x^2 - Cx \\)", type: "false" },
-    ],
-  },
-  {
-    id: 94,
-    Question:
-      "94. \\( (x + y)dx + (x - y)dy = 0 \\) bircins diferensial tənliyinin ümumi həllini tapın:",
-    answers: [
-      { answer: "\\( x^2 + 2xy - y^2 = C \\)", type: "true" },
-      { answer: "\\( x^2 - y^2 = C \\)", type: "false" },
-      { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
-      { answer: "\\( x^2 + 2xy = C \\)", type: "false" },
-      { answer: "\\( x^2 - 2xy - y^2 = C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 95,
-    Question:
-      "95. Birtərtibli xətli diferensial tənliyin ümumi şəkildə yazılışı nədir?",
-    answers: [
-      { answer: "\\( y' + p(x)y = q(x) \\)", type: "true" },
-      { answer: "\\( y' + y = p(x) \\)", type: "false" },
-      { answer: "\\( y' - y'' = q(x) \\)", type: "false" },
-      { answer: "\\( y' + p(x)y' = q(x) \\)", type: "false" },
-      { answer: "\\( y' + y = y'' \\)", type: "false" },
-    ],
-  },
-  {
-    id: 96,
-    Question:
-      "96. \\( \\frac{dy}{x} + \\frac{y}{x} = -xy^2 \\) Bernulli tənliyini həll edin:",
-    answers: [
-      { answer: "\\( y(x^2 + Cx) = 1 \\)", type: "true" },
-      { answer: "\\( x^2 + 2xy - y^2 = C \\)", type: "false" },
-      { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
-      { answer: "\\( x^2 - 2xy - y^2 = C \\)", type: "false" },
-      { answer: "\\( x^2 - y^2 = C \\)", type: "false" },
-    ],
-  },
-  {
-    id: 97,
-    Question: "97. Xətli diferensial tənliyin həlli hansı şəkildə axtarılır?",
-    answers: [
-      { answer: "\\( y = u(x) \\cdot v(x) \\)", type: "true" },
-      { answer: "\\( y = \\frac{u(x)}{v(x)} \\)", type: "false" },
-      { answer: "\\( y = C \\cdot u(x) \\)", type: "false" },
-      { answer: "\\( y = u(x) - v(x) \\)", type: "false" },
-      { answer: "\\( y = u(x) + v(x) \\)", type: "false" },
-    ],
-  },
-  {
-    id: 98,
-    Question:
-      "98. \\( \\frac{dy}{dx} + \\frac{2y}{x} = x^3 \\) Birtərtibli xətli diferensial tənliyi həll edin:",
-    answers: [
-      { answer: "\\( y = \\frac{x^4}{6} + \\frac{C}{x^2} \\)", type: "true" },
-      { answer: "\\( xy = 1 \\)", type: "false" },
-      { answer: "\\( y = 1 - x \\)", type: "false" },
-      { answer: "\\( xy = C_1x^2 + 3 \\)", type: "false" },
-      { answer: "\\( xy(C_1 - \\frac{x}{2}) = 1 \\)", type: "false" },
-    ],
-  },
-  {
-    id: 99,
-    Question:
-      "99. \\( P(x, y)dx + Q(x, y)dy = 0 \\) diferensial tənliyinə nə zaman tam diferensiallı tənlik deyil?",
-    answers: [
-      {
-        answer: "\\( P(x, y)dx + Q(x, y)dy = dU(x, y) \\) olduqda",
-        type: "true",
-      },
-      { answer: "\\( P(x, y)dx = Q(x, y)dy \\) olduqda", type: "false" },
-      { answer: "\\( P(x, y)dx = du(x, y) \\) olduqda", type: "false" },
-      { answer: "\\( Q(x, y)dy - P(x, y)dx = 0 \\) olduqda", type: "false" },
-      {
-        answer: "\\( Q(x, y)dy - P(x, y)dx = dU(x, y) \\) olduqda",
-        type: "false",
-      },
-    ],
-  },
-  {
-    id: 100,
-    Question:
-      "100. \\( P(x, y)dx + Q(x, y)dy = 0 \\) diferensial tənliyinin tam diferensiallı tənlik olması üçün zəruri və kafi şərt hansıdır?",
-    answers: [
-      {
-        answer:
-          "\\( \\frac{\\partial P}{\\partial y} = \\frac{\\partial Q}{\\partial x} \\)",
-        type: "true",
-      },
-      {
-        answer:
-          "\\( \\frac{\\partial P}{\\partial x} = \\frac{\\partial Q}{\\partial y} \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{\\partial^2 P}{\\partial x \\partial y} = \\frac{\\partial^2 Q}{\\partial x \\partial y} \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{\\partial^2 P}{\\partial x \\partial y} = \\frac{\\partial Q}{\\partial y} \\)",
-        type: "false",
-      },
-      {
-        answer:
-          "\\( \\frac{\\partial^2 P}{\\partial x \\partial y} = \\frac{\\partial Q}{\\partial x} \\)",
-        type: "false",
-      },
-    ],
-  },
+    count: 0,
+       id: 1,
+     Question: "1. hesablayın: \\( \\int \\frac{dx}{5 + 4x} \\)",
+     answers: [
+       { answer: "\\( \\ln \\sqrt[4]{5 + 4x} + C \\)", type: "true" },
+       { answer: "\\( \\frac{x}{2} + 5 + 4x + C \\)", type: "false" },
+       {
+         answer:
+           "\\( \\frac{x^3}{3} - \\frac{x^4}{4} + \\frac{x^5}{5} - \\frac{x^6}{6} + \\frac{x^7}{7} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{x^4}{4} + \\frac{x^5}{5} - \\frac{x^6}{6} + \\frac{x^7}{7} + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{x^3}{3} - 500 \\frac{x^4}{4} + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 2,
+     Question:
+       "2. \\( M(x)dx + N(y)dy = 0 \\) şəklində tənliyə nə cür tənlik deyilir?",
+     answers: [
+       { answer: "Dəyişənlərinə ayrılmış diferensial tənlik", type: "true" },
+       { answer: "Tam diferensial tənlik", type: "false" },
+       {
+         answer: "Dəyişənlərinə ayrıla bilən diferensial tənlik",
+         type: "false",
+       },
+       { answer: "Birinci dərəcəli diferensial tənlik", type: "false" },
+       { answer: "Birinci tərtibli xətti diferensial tənlik", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 3,
+     Question: "3. hesablayın \\( \\int \\frac{x}{\\sqrt{x^2 - 1}} dx \\)",
+     answers: [
+       { answer: "\\( \\sqrt{x^2 - 1} + C \\)", type: "true" },
+       {
+         answer:
+           "\\( x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - \\frac{24}{17}x^{12}\\sqrt{x^5} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{4}{5}x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - x^{12}\\sqrt{x^5} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{4}{5}x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - \\frac{24}{16}x^{12}\\sqrt{x^5} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{4}{7}x^{4}\\sqrt{x} + \\frac{4}{3\\sqrt{x^3}} - \\frac{24}{17}x^{12}\\sqrt{x^5} + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 4,
+     Question: "4. \\( \\int (1 + \\sin x + \\cos x) \\, dx \\)",
+     answers: [
+       { answer: "\\( x - \\cos x + \\sin x + C \\)", type: "true" },
+       { answer: "\\( -\\cos x + \\sin x + C \\)", type: "false" },
+       { answer: "\\( x - \\cos x - \\sin x + C \\)", type: "false" },
+       { answer: "\\( x + \\cos x + \\sin x + C \\)", type: "false" },
+       { answer: "\\( x - \\tan x + \\sin x + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 5,
+     Question: "5. \\( \\int \\cot^2 x \\, dx \\)",
+     answers: [
+       { answer: "\\( -x - {ctg} x + C \\)", type: "true" },
+       { answer: "\\( -x - {tg} x + C \\)", type: "false" },
+       { answer: "\\( x + {ct} x + C \\)", type: "false" },
+       { answer: "\\( x - \\cos x + C \\)", type: "false" },
+       { answer: "\\( x - \\sin x + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 6,
+     Question:
+       "6. \\( \\int \\frac{\\sqrt{x^2 + 1} + \\sqrt{x^2 - 1}}{\\sqrt{x^4 - 1}} \\, dx \\)",
+     answers: [
+       {
+         answer: "\\( \\arcsin x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
+         type: "true",
+       },
+       {
+         answer: "\\( \\arccos x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\operatorname{arcctg} x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\operatorname{arcctg} x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\sin x + \\ln |x + \\sqrt{1 + x^2}| + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 7,
+     Question: "7. \\( \\int \\frac{dx}{x - a} \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\ln|x - a| + C \\)", type: "true" },
+       { answer: "\\( \\ln|x + \\sqrt{x^2 + 1}| + C \\)", type: "false" },
+       { answer: "\\( \\ln|x - \\sqrt{x^2 - 1}| + C \\)", type: "false" },
+       { answer: "\\( \\ln|x + \\sqrt{x^2 - 1}| + C \\)", type: "false" },
+       { answer: "\\( \\ln|x - \\sqrt{x^2 + 1}| + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 8,
+     Question:
+       "8. \\( \\int \\frac{\\sqrt{1 - 2x + x^2}}{1 - x} \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer: "\\( -\\frac{5}{2}(1 - x)^{\\frac{2}{5}} + C \\)",
+         type: "true",
+       },
+       { answer: "\\( -\\frac{3}{5}(1 - x)^{\\frac{5}{2}} \\)", type: "false" },
+       { answer: "\\( -\\frac{2}{7}(1 - x)^{\\frac{5}{2}} \\)", type: "false" },
+       { answer: "\\( -\\frac{2}{5}(2 - x)^{\\frac{5}{2}} \\)", type: "false" },
+       { answer: "\\( -\\frac{2}{5}(2 + x)^{\\frac{5}{2}} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 9,
+     Question: "9. \\( \\int \\frac{dx}{e^x + e^{-x}} \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\operatorname{arctge}^x + C \\)", type: "true" },
+       { answer: "\\( \\ln(1 + e^x) + C \\)", type: "false" },
+       { answer: "\\( \\arccos(1 + e^x) + C \\)", type: "false" },
+       { answer: "\\( \\arcsin(1 + e^x) + C \\)", type: "false" },
+       { answer: "\\( \\operatorname{ctg}(1 + e^x) + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 10,
+     Question: "10. \\( y \\frac{dy}{dx} = 3 \\) diferensial tənliyinin həllini tap",
+     answers: [
+       { answer: "\\( y^2 = 6x + C \\)", type: "true" },
+       { answer: "\\( y^2 = 5x + C \\)", type: "false" },
+       { answer: "\\( y^2 = 6 + x + C \\)", type: "false" },
+       { answer: "\\( y^2 = 6 - x + C \\)", type: "false" },
+       { answer: "\\( y^2 = \\frac{x^2}{2} + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 11,
+     Question:
+       "11. \\( \\frac{dy}{dx} = y \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y = Ce^x \\)", type: "true" },
+       { answer: "\\( y = Ce^{2x} \\)", type: "false" },
+       { answer: "\\( y = Ce^{\\frac{x}{2}} \\)", type: "false" },
+       { answer: "\\( y = Ce^{3x} \\)", type: "false" },
+       { answer: "\\( y = 3e^x + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 12,
+     Question:
+       "12. \\( y \\frac{dy}{dx} = 5 \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y^2 = 10x + C \\)", type: "true" },
+       { answer: "\\( y = Ce^{\\frac{x}{2}} \\)", type: "false" },
+       { answer: "\\( y = Ce^{5x} \\)", type: "false" },
+       { answer: "\\( y = Ce^{\\frac{x}{4}} \\)", type: "false" },
+       { answer: "\\( y = Ce^{\\frac{x}{3}} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 13,
+     Question:
+       "13. \\( y \\frac{dy}{dx} = 2x \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y^2 = 2x^2 + C \\)", type: "true" },
+       { answer: "\\( y = Cx^2 \\)", type: "false" },
+       { answer: "\\( y = C + x^2 \\)", type: "false" },
+       { answer: "\\( y = C - x^2 \\)", type: "false" },
+       { answer: "\\( y = Cx^3 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 14,
+     Question:
+       "14. \\( y dy = 3x^2 dx \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y^2 = 2x^3 + C \\)", type: "true" },
+       { answer: "\\( 2x = 3 + y^2 + C \\)", type: "false" },
+       { answer: "\\( x = 3y^2 + C \\)", type: "false" },
+       { answer: "\\( 2x = 3 - y^2 + C \\)", type: "false" },
+       { answer: "\\( 2x = 3y^3 + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 15,
+     Question:
+       "15. \\( \\frac{dy}{dx} = -\\frac{y}{x} \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y = C - x \\)", type: "true" },
+       { answer: "\\( y = x + C \\)", type: "false" },
+       { answer: "\\( y = \\frac{C}{x} \\)", type: "false" },
+       { answer: "\\( y = Cx \\)", type: "false" },
+       { answer: "\\( y = \\frac{C}{x^2} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 16,
+     Question:
+       "16. \\( x^2 dx + y^2 dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( x^3 + y^3 = C \\)", type: "true" },
+       { answer: "\\( \\frac{x^3}{3} = C \\)", type: "false" },
+       { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
+       { answer: "\\( y = x + C \\)", type: "false" },
+       { answer: "\\( y = x + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 17,
+     Question:
+       "17. \\( (a + x)y dx + x dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y = Cx^{-a}e^{-x} \\)", type: "true" },
+       { answer: "\\( y = Cx^a e^{-x} \\)", type: "false" },
+       { answer: "\\( y = Cx^{-a} e^x \\)", type: "false" },
+       { answer: "\\( y = Cx^{-a} e^{-3x} \\)", type: "false" },
+       { answer: "\\( y = Cx^{-a} e^{-2x} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 18,
+     Question:
+       "18. \\( y dx - (x^2 - 1)dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y^2 = C \\frac{x - 1}{x + 1} \\)", type: "true" },
+       { answer: "\\( y^2 = C \\frac{2x - 1}{x + 1} \\)", type: "false" },
+       { answer: "\\( y^2 = C \\frac{x + 1}{x - 1} \\)", type: "false" },
+       { answer: "\\( y^2 = C(x - 1) \\)", type: "false" },
+       { answer: "\\( y^2 = Cx \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 19,
+     Question:
+       "19. \\( (n - 1)y dx - x dy = 0 \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y = Cx^{n - 1} \\)", type: "true" },
+       { answer: "\\( y = Cx^n \\)", type: "false" },
+       { answer: "\\( y = \\frac{x^3}{C} \\)", type: "false" },
+       { answer: "\\( y = Cx + x^{-1} \\)", type: "false" },
+       { answer: "\\( y = C \\frac{x + x^{-1}}{y^2} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 20,
+     Question:
+       "20. \\( 2xdy + ydx = 0 \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( y^2x = C \\)", type: "true" },
+       { answer: "\\( y^2 + x + C \\)", type: "false" },
+       { answer: "\\( \\frac{y^2}{x} = C \\)", type: "false" },
+       { answer: "\\( y = x^2 + C \\)", type: "false" },
+       { answer: "\\( y = x^2 - yC \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 21,
+     Question:
+       "21. \\( x = y \\frac{dy}{dx} \\) diferensial tənliyinin ümumi həllini yazın",
+     answers: [
+       { answer: "\\( x^2 - y^2 = C \\)", type: "true" },
+       { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
+       { answer: "\\( x^3 - y^3 = C \\)", type: "false" },
+       { answer: "\\( x^3 + y^3 = C \\)", type: "false" },
+       { answer: "\\( x^2 = Cy^2 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 22,
+     Question: "22. \\( \\int_{4}^{5} x \\sqrt{x^2 - 16} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "9", type: "true" },
+       { answer: "3", type: "false" },
+       { answer: "4", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "8", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 23,
+     Question: "23. Aşağıdakılardan hansı hissə-hissə inteqrallama düsturudur",
+     answers: [
+       {
+         answer: "\\( \\int_a^b u dv = uv \\Big|_a^b - \\int_a^b v du \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( \\int_a^b f(x) dx = \\int_a^\\beta f[\\varphi(t)] \\varphi'(t) dt \\)",
+         type: "false",
+       },
+       { answer: "\\( \\int f(x) dx = F(x) + C \\)", type: "false" },
+       { answer: "\\( \\int_a^b f(t) dt = F(b) - F(a) \\)", type: "false" },
+       { answer: "\\( \\int f(x) dx = \\int f(t) dt + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 24,
+     Question: "24. \\( \\int_1^2 \\frac{4x + 2}{2x - 1} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( 2 + 2 \\ln 3 \\)", type: "true" },
+       { answer: "1", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "\\( 3 + 2 \\ln 3 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 25,
+     Question: "25. \\( \\int_4^9 \\frac{e^x dx}{e^x - 1} \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\ln|e^x - 1| + C \\)", type: "true" },
+       { answer: "1", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "\\( 7 + 2 \\ln 3 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 26,
+     Question: "26. \\( \\int_e^{e^2} \\frac{2 \\ln x + 1}{x} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "4", type: "true" },
+       { answer: "1", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "3", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 27,
+     Question: "27. \\( \\int_0^7 \\frac{dx}{\\sqrt{2x + 1}} \\, \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\sqrt{15} - 1 \\)", type: "true" },
+       { answer: "1", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "3", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 28,
+     Question:
+       "28. \\( \\int_{\\ln 3}^{\\ln 8} \\frac{e^x  dx}{\\sqrt{e^x + 1}} \\) HESABLAYIN",
+     answers: [
+       { answer: "2", type: "true" },
+       { answer: "1", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "8", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 29,
+     Question: "29. \\( \\int_0^{\\ln 2} xe^x \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\ln 4 - 1 \\)", type: "true" },
+       { answer: "\\( \\ln 2 - 2 \\)", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "7", type: "false" },
+       { answer: "8", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 30,
+     Question: "30. \\( \\int_0^1 \\arccos x \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "1", type: "true" },
+       { answer: "6", type: "false" },
+       { answer: "8", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "3", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 31,
+     Question: "31. \\( \\int_0^1 \\frac{dx}{x^2 + 2x + 2} \\) HESABLAYIN",
+     answers: [
+       {
+         answer: "\\( \\operatorname{arctg} 2 - \\frac{\\pi}{4} \\)",
+         type: "true",
+       },
+       { answer: "\\( \\frac{\\pi}{3} \\)", type: "false" },
+       { answer: "\\( \\frac{\\pi}{2} \\)", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "6", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 32,
+     Question: "32. \\( \\int_1^2 \\frac{dx}{x^2 + 2x} \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\ln \\frac{\\sqrt{3}}{2} \\)", type: "true" },
+       { answer: "\\( \\frac{1}{3} \\ln 1.5 \\)", type: "false" },
+       { answer: "4", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "5", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 33,
+     Question: "33. \\( \\int_0^1 e^{2x} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\frac{1}{2} (e^2 - 1) \\)", type: "true" },
+       { answer: "\\( \\frac{1}{3} (e^2 + 1) \\)", type: "false" },
+       { answer: "\\( \\frac{1}{5} (e^2 + 1) \\)", type: "false" },
+       { answer: "\\( \\frac{1}{7} (e^2 + 1) \\)", type: "false" },
+       { answer: "\\( \\frac{1}{4} (e^2 - 1) \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 34,
+     Question:
+       "34. \\( \\int_0^{\\pi/2} \\varphi \\sin 2\\varphi \\, d\\varphi \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\frac{\\pi}{4} \\)", type: "true" },
+       { answer: "\\( -\\frac{\\pi}{4} \\)", type: "false" },
+       { answer: "6", type: "false" },
+       { answer: "2", type: "false" },
+       { answer: "5", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 35,
+     Question: "35. \\( \\int_1^e \\ln x \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "1", type: "true" },
+       { answer: "-1", type: "false" },
+       { answer: "0", type: "false" },
+       { answer: "8", type: "false" },
+       { answer: "2", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 36,
+     Question:
+       "36. \\( \\int_0^{\\sqrt{3}} x \\operatorname{arctg} x \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer: "\\( \\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{2} \\)",
+         type: "true",
+       },
+       {
+         answer: "\\( \\frac{2\\pi}{5} - \\frac{\\sqrt{3}}{2} \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{2\\pi}{3} + \\frac{\\sqrt{3}}{2} \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{3} \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{2\\pi}{7} - \\frac{\\sqrt{3}}{2} \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 37,
+     Question:
+       "37. \\( \\int \\frac{\\operatorname{arctg} x}{1 + x^2} \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer: "\\( \\frac{1}{2} \\operatorname{arctg}^2 x + C \\)",
+         type: "true",
+       },
+       {
+         answer: "\\( \\frac{1}{3} \\operatorname{arctg} x + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{1}{7} \\operatorname{arctg} x + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{1}{5} \\operatorname{arctg} x + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{1}{4} \\operatorname{arctg} x + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 38,
+     Question: "38.\\( \\int \\frac{1 + x}{1 - x} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( -x - 2 \\ln|1 - x| + C \\)", type: "true" },
+       { answer: "\\( x - 2 \\ln|1 - x| + C \\)", type: "false" },
+       { answer: "\\( x + 2 \\ln|1 - x| + C \\)", type: "false" },
+       { answer: "\\( -2 \\ln|1 + x| + C \\)", type: "false" },
+       { answer: "\\( 2 - 2 \\ln|1 - x| + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 39,
+     Question: "39. \\( \\int \\frac{x+1}{\\sqrt{x}} \\, dx \\) tapın",
+     answers: [
+       {
+         answer: "\\( \\frac{2}{3} x \\sqrt{x} + 2 \\sqrt{x} + C \\)",
+         type: "true",
+       },
+       { answer: "\\( \\sqrt{x} - 1 + C \\)", type: "false" },
+       { answer: "\\( 3 \\sqrt{x} + C \\)", type: "false" },
+       { answer: "\\( \\sqrt{3x} + C \\)", type: "false" },
+       { answer: "\\( x \\sqrt{5} + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 40,
+     Question: "40. \\( \\int \\operatorname{arctg} x \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( \\operatorname{arctg} x - \\frac{1}{2} \\ln|1 + x^2| + C \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( \\operatorname{arctg} x - \\frac{1}{2} \\ln|1 + x| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\operatorname{arctg} x + \\frac{1}{2} \\ln|1 + x^2| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\operatorname{arctg} x - \\frac{1}{3} \\ln|1 + x^2| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\operatorname{arctg} x - \\frac{1}{5} \\ln|1 + x^2| + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 41,
+     Question: "41. \\( \\int_0^1 \\arccos x \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "1", type: "true" },
+       { answer: "2", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "9", type: "false" },
+       { answer: "10", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 42,
+     Question: "42. \\( \\int \\frac{1}{1 + x^2} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\operatorname{arctg} x + C \\)", type: "true" },
+       {
+         answer: "\\( \\frac{1}{2} \\operatorname{arctg} x + C \\)",
+         type: "false",
+       },
+       { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
+       { answer: "\\( \\ln x \\)", type: "false" },
+       { answer: "-9", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 43,
+     Question: "43. \\( \\int \\frac{e^x  dx}{2 + e^x} \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\ln|2 + e^x| + C \\)", type: "true" },
+       { answer: "\\( 2 + x + C \\)", type: "false" },
+       { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
+       { answer: "\\( \\ln x \\)", type: "false" },
+       { answer: "-9", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 44,
+     Question:
+       "44. \\( \\int \\frac{\\sin x}{\\sqrt{\\cos^3 x}} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\frac{2}{\\sqrt{\\cos x}} + C \\)", type: "true" },
+       { answer: "\\( \\arcsin x + C \\)", type: "false" },
+       { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
+       { answer: "\\( \\cos x \\)", type: "false" },
+       { answer: "2", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 45,
+     Question:
+       "45. \\( \\int \\frac{a^{2x} - 1}{\\sqrt{a^x}} \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( \\frac{2}{\\ln a} \\left( \\frac{1}{3} a^{\\frac{3x}{2}} + a^{-\\frac{x}{2}} \\right) \\)",
+         type: "true",
+       },
+       { answer: "\\( \\arcsin x + C \\)", type: "false" },
+       { answer: "\\( \\operatorname{arctg}^2 x + C \\)", type: "false" },
+       { answer: "\\( \\sqrt{a^x} + C \\)", type: "false" },
+       { answer: "2", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 46,
+     Question: "46. \\( \\int \\frac{dx}{\\sin^3 x} \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( -\\frac{\\cos x}{2 \\sin^2 x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( -\\frac{\\cos x}{2 \\sin x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( -\\frac{\\cos x}{2 \\sin^3 x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( -\\frac{\\cos x}{2 \\sin^2 x} + \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{\\cos x}{2 \\sin^2 x} + \\frac{1}{2} \\ln \\left| \\operatorname{tg} \\frac{x}{2} \\right| + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 47,
+     Question:
+       "47. \\( \\int \\frac{\\sin^4 x}{\\cos^5 x} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\frac{\\tan^5 x}{5} + C \\)", type: "true" },
+       { answer: "\\( \\frac{1}{2} \\ln|\\tan x| + C \\)", type: "false" },
+       { answer: "\\( \\tan^3 x + C \\)", type: "false" },
+       { answer: "\\( \\tan x - 2 + C \\)", type: "false" },
+       { answer: "\\( \\ln|\\cos x| + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 48,
+     Question:
+       "48. \\( \\int \\sin \\frac{x}{2} \\cos \\frac{x}{2} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( -\\frac{1}{2} \\cos x + C \\)", type: "true" },
+       { answer: "\\( \\frac{1}{2} \\sin x + C \\)", type: "false" },
+       { answer: "\\( -\\frac{1}{2} \\sin x + C \\)", type: "false" },
+       { answer: "\\( -\\frac{1}{3} \\cos x + C \\)", type: "false" },
+       { answer: "\\( -\\frac{1}{5} \\cos x + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 49,
+     Question: "49. \\( \\int \\cos^7 x \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( \\sin x - \\sin^3 x + \\frac{3}{5} \\sin^5 x - \\frac{1}{7} \\sin^7 x + C \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( \\sin^3 x + \\frac{3}{5} \\sin^5 x - \\frac{1}{7} \\sin^7 x + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\sin x - \\sin^3 x + \\frac{3}{5} \\sin^5 x + \\frac{1}{7} \\sin^7 x + C \\)",
+         type: "false",
+       },
+       { answer: "\\( \\sin x - \\sin^3 x + \\sin^5 x + C \\)", type: "false" },
+       {
+         answer: "\\( \\sin^3 x + \\frac{3}{5} \\sin^5 x - \\sin^7 x + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 50,
+     Question:
+       "50. \\( (x+1) dx + (y-1) dy = 0 \\) diferensial tənliyini həll edin",
+     answers: [
+       { answer: "\\( (x+1)^2 + (y-1)^2 = C^2 \\)", type: "true" },
+       { answer: "\\( (x+1)^2 - (y-1)^2 = C^2 \\)", type: "false" },
+       { answer: "\\( (x+1)^2 + (y+1)^2 = C^2 \\)", type: "false" },
+       { answer: "\\( (x-1)^2 + (y-1)^2 = C^2 \\)", type: "false" },
+       { answer: "\\( (x-1)^2 - (y-1)^2 = C^2 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 51,
+     Question:
+       "51. \\( x dx - 2 dy = 0 \\), \\( y = 1 \\), \\( x = 3 \\), başlanğıc şərtini ödəyən diferensial tənliyin ümumi həllini tapın",
+     answers: [
+       { answer: "\\( x^2 = 4y + 5 \\)", type: "true" },
+       { answer: "\\( x^2 = 2y + 5 \\)", type: "false" },
+       { answer: "\\( x^2 = 5y + 5 \\)", type: "false" },
+       { answer: "\\( x^2 = 4y + 4 \\)", type: "false" },
+       { answer: "\\( x^2 = 3y + 5 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 52,
+     Question:
+       "52. \\( (y-4) dx - (x+1) dy = 0 \\), \\( y = 10 \\), \\( x = 1 \\), başlanğıc şərtini ödəyən diferensial tənliyin ümumi həllini tapın",
+     answers: [
+       { answer: "\\( \\ln|y - 4| = \\ln C|x + 1| \\)", type: "true" },
+       { answer: "\\( \\ln|y - 2| = \\ln |x + 1| \\)", type: "false" },
+       { answer: "\\( \\ln|y - 4| = \\ln C|x - 1| \\)", type: "false" },
+       { answer: "\\( \\ln|y - 4| = |x + 1| \\)", type: "false" },
+       { answer: "\\( \\ln|y + 4| = \\ln C|x + 1| \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 53,
+     Question: "53. \\( \\int (e^t - e^{-t}) \\, dt \\)",
+     answers: [
+       { answer: "\\( e^t + e^{-t} + C \\)", type: "true" },
+       { answer: "\\( 2e^t + e^{-t} + C \\)", type: "false" },
+       { answer: "\\( e + e^{-t} + C \\)", type: "false" },
+       { answer: "\\( 2e^t - C \\)", type: "false" },
+       { answer: "\\( 2e^t + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 54,
+     Question:
+       "54. \\( \\int \\left( e^{\\frac{x}{a}} + e^{-\\frac{x}{a}} \\right)^2 dx \\)",
+     answers: [
+       {
+         answer:
+           "\\( \\frac{a}{2} e^{\\frac{2x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( \\frac{a}{3} e^{\\frac{2x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{a}{2} e^{\\frac{2x}{a}} + 3x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{a}{2} e^{\\frac{x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{2x}{a}} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{a}{2} e^{\\frac{2x}{a}} + 2x - \\frac{a}{2} e^{-\\frac{x}{a}} + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 55,
+     Question: "55. \\( \\int \\operatorname{arctg} x \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( x \\operatorname{arctg} x - \\frac{1}{2} \\ln|1 + x^2| + C \\)",
+         type: "true",
+       },
+       { answer: "\\( \\frac{1}{2} \\ln|1 + x^2| + C \\)", type: "false" },
+       { answer: "\\( \\frac{1}{2} \\ln|1 - x^2| + C \\)", type: "false" },
+       { answer: "\\( \\frac{1}{3} \\ln|1 + x^2| + C \\)", type: "false" },
+       { answer: "\\( \\frac{1}{2} \\ln|1 + x| + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 56,
+     Question:
+       "56. \\( \\int \\frac{\\operatorname{tg} x}{\\cos^2 x} \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer: "\\( \\frac{1}{2} \\operatorname{tg}^2 x + C \\)",
+         type: "true",
+       },
+       {
+         answer: "\\( \\frac{2}{5} \\sqrt{\\operatorname{tg}^3 x} + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{2}{7} \\sqrt{\\operatorname{tg}^3 x} + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{2}{3} \\sqrt{\\operatorname{ctg}^3 x} + C \\)",
+         type: "false",
+       },
+       { answer: "\\( \\sqrt{\\operatorname{tg}^3 x} + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 57,
+     Question:
+       "57. \\( \\int \\frac{\\sin^2 x}{\\cos^6 x} \\, dx \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( \\frac{1}{3} \\operatorname{tg}^3 x + \\frac{1}{5} \\operatorname{tg}^5 x + C \\)",
+         type: "true",
+       },
+       {
+         answer: "\\( \\frac{3}{4} \\left(1 + \\ln x \\right)^2 + C \\)",
+         type: "false",
+       },
+       { answer: "\\( \\frac{3}{4} \\sqrt{1 + \\ln x} + C \\)", type: "false" },
+       { answer: "\\( \\frac{2}{5} \\sqrt{1 + \\ln x} + C \\)", type: "false" },
+       { answer: "\\( \\frac{3}{5} \\sqrt{1 + \\ln x} + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 58,
+     Question: "58. \\( \\int \\frac{dx}{\\sin x \\cos x} \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\ln|\\operatorname{tg} x| + C \\)", type: "true" },
+       { answer: "\\( \\ln|\\operatorname{ct} x| + C \\)", type: "false" },
+       { answer: "\\( \\ln|\\operatorname{tg} ax| + C \\)", type: "false" },
+       {
+         answer: "\\( \\frac{1}{a} \\ln|\\operatorname{tg} ax| + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( -\\frac{1}{a} \\ln|\\operatorname{tg} ax| + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 59,
+     Question:
+       "59. \\( \\int \\frac{(\\arcsin x)^2}{\\sqrt{1 - x^2}} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\frac{\\arcsin^3 x}{3} + C \\)", type: "true" },
+       { answer: "\\( \\arccos x + C \\)", type: "false" },
+       { answer: "\\( \\operatorname{arctg} x + C \\)", type: "false" },
+       { answer: "\\( \\sin x + C \\)", type: "false" },
+       { answer: "\\( \\operatorname{tg} x + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 60,
+     Question: "60. \\( \\int \\frac{dx}{x^2 + 7} \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{7}} \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
+         type: "true",
+       },
+       {
+         answer: "\\( \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( -\\frac{1}{\\sqrt{7}} \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{6}} \\operatorname{arctg} \\frac{x}{\\sqrt{7}} + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{7}} \\operatorname{arctg} \\frac{x}{\\sqrt{6}} + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 61,
+     Question: "61. \\( \\int \\frac{x^2 + 5x + 7}{x + 3} \\, dx \\) HESABLAYIN",
+     answers: [
+       { answer: "\\( \\frac{x^2}{2} + 2x + \\ln|x + 3| + C \\)", type: "true" },
+       {
+         answer: "\\( \\frac{x^2}{3} + 2x + \\ln|x + 3| + C \\)",
+         type: "false",
+       },
+       {
+         answer: "\\( \\frac{x^2}{2} + 3x + \\ln|x + 3| + C \\)",
+         type: "false",
+       },
+       { answer: "\\( \\frac{x^2}{2} + \\ln|x + 3| + C \\)", type: "false" },
+       { answer: "\\( x^2 + 3x + \\ln|x + 3| + C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 62,
+     Question: "62. \\( \\int \\frac{dx}{\\sqrt{7 - 5x^2}} \\) HESABLAYIN",
+     answers: [
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{5}} \\arcsin \\sqrt{\\frac{5}{7}} x + C \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( \\arcsin \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{3}} \\arcsin \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{5}} \\arcsin \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{1}{\\sqrt{5}} \\arccos \\left( \\frac{\\sqrt{3}}{\\sqrt{7}} x \\right) + C \\)",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 63,
+     Question:
+       "63. \\( \\iint_D x y \\, dx \\, dy \\), \\( 3 \\leq x \\leq 5, \\, 0 \\leq y \\leq 1 \\)",
+     answers: [
+       { answer: "2", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 64,
+     Question:
+       "64. \\( \\iint_D x y^3 \\, dx \\, dy \\), \\( 2 \\leq x \\leq 4, \\, 0 \\leq y \\leq 1 \\)",
+     answers: [
+       { answer: "\\( \\frac{3}{2} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 65,
+     Question:
+       "65. \\( \\iint_D x^2 y \\, dx \\, dy \\), \\( 3 \\leq x \\leq 6, \\, 0 \\leq y \\leq 2 \\)",
+     answers: [
+       { answer: "126", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 66,
+     Question: "66. \\( \\int_{1}^{e} \\frac{dx}{x} \\int_{4}^{6} y \\, dy \\)",
+     answers: [
+       { answer: "10", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 67,
+     Question:
+       "67. \\( \\iint_D (x - y) \\, dx \\, dy \\), \\( 1 \\leq x \\leq 4, \\, 1 \\leq y \\leq 3 \\)",
+     answers: [
+       { answer: "3", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "4", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "7", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 68,
+     Question:
+       "68. \\( \\iint_D (x + y) \\, dx \\, dy \\), \\( 3 \\leq x \\leq 5, \\, 0 \\leq y \\leq 2 \\)",
+     answers: [
+       { answer: "20", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 69,
+     Question: "69. \\( \\int_{2}^{3} \\, dx \\int_{1}^{2} (x + y^2) \\, dy \\)",
+     answers: [
+       { answer: "\\( 4 \\frac{5}{6} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 70,
+     Question:
+       "70. \\( \\iint_D (x^2 + y) \\, dx \\, dy \\), \\( 1 \\leq x \\leq 2, \\; 0 \\leq y \\leq 1 \\)",
+     answers: [
+       { answer: "\\( 2 \\frac{5}{6} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 71,
+     Question:
+       "71. \\( \\int \\int_D (x^2 + y^2) \\, dx \\, dy \\), \\( 0 \\leq x \\leq 1, \\; 0 \\leq y \\leq 1 \\)",
+     answers: [
+       { answer: "\\( \\frac{2}{3} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 72,
+     Question:
+       "72. \\( \\iint_D \\frac{3y^2 \\, dx \\, dy}{1 + x^2} \\), \\( 0 \\leq x \\leq 1, \\; 0 \\leq y \\leq 1 \\)",
+     answers: [
+       { answer: "\\( \\frac{\\pi}{4} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 73,
+     Question:
+       "73. \\( \\iint_D (3y x^2 - 2x^3) \\, dx \\, dy \\), \\( 0 \\leq x \\leq 1, \\; 1 \\leq y \\leq 2 \\)",
+     answers: [
+       { answer: "1", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "5", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 74,
+     Question:
+       "74. \\( \\iint_D \\sin(x + y) \\, dx \\, dy \\), \\( 0 \\leq x \\leq \\frac{\\pi}{2}, \\; 0 \\leq y \\leq \\frac{\\pi}{2} \\)",
+     answers: [
+       { answer: "2", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "6", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 75,
+     Question:
+       "75. \\( \\iint_D x e^{xy} \\, dx \\, dy \\), \\( 0 \\leq x \\leq 1, \\; -1 \\leq y \\leq 0 \\)",
+     answers: [
+       { answer: "\\( \\frac{1}{e} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 76,
+     Question:
+       "76. \\( \\iint_G (x - y) \\, dx \\, dy \\), \\( x = 0, y = 0, x + y = 2 \\)",
+     answers: [
+       { answer: "0", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 77,
+     Question:
+       "77. \\( \\iiint_V (x + y - z) \\, dx \\, dy \\, dz \\), \\( x = -1, x = 1, y = 0, y = 1, z = 0, z = 2 \\)",
+     answers: [
+       { answer: "-2", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 78,
+     Question:
+       "78. \\( \\iiint_V (x + y + z) \\, dx \\, dy \\, dz \\), \\( x = 0, x = 1, y = 0, y = 1, z = 0, z = 1 \\)",
+     answers: [
+       { answer: "\\( \\frac{3}{2} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 79,
+     Question:
+       "79. \\( \\iiint_V x y z \\, dx \\, dy \\, dz \\), \\( x = 1, x = 2, y = -2, y = -1, z = 0, z = \\frac{1}{2} \\)",
+     answers: [
+       { answer: "\\( -\\frac{9}{8} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 80,
+     Question:
+       "80. \\( \\iiint_V \\frac{dx \\, dy \\, dz}{(x + y + z)^3} \\), \\( x = 1, x = 2, y = 1, y = 2, z = 1, z = 2 \\)",
+     answers: [
+       { answer: "\\( \\frac{1}{2} \\ln \\frac{128}{125} \\)", type: "true" },
+       { answer: "-9", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 81,
+     Question:
+       "81. \\( \\iiint_V (4x + 3y + 3z + 1) \\, dx \\, dy \\, dz \\), \\( x = 0, x = 3, y = 0, y = 2, z = 0, z = 3 \\)",
+     answers: [
+       { answer: "261", type: "true" },
+       { answer: "-10", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "4", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 82,
+     Question:
+       "82. \\( \\int_{2}^{4} \\, dx \\int_{1}^{2} \\, xydy \\) HESABLAYIN",
+     answers: [
+       { answer: "9", type: "true" },
+       { answer: "4", type: "false" },
+       { answer: "3", type: "false" },
+       { answer: "1", type: "false" },
+       { answer: "2", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 83,
+     Question:
+       "83. \\( x dx - 2dy = 0 \\) diferensial tənliyinin \\( x = 3, y = 1 \\) şərtini ödəyən həllini tapın:",
+     answers: [
+       { answer: "\\( x^2 = 4y + 5 \\)", type: "true" },
+       { answer: "\\( x^2 = 2y + 5 \\)", type: "false" },
+       { answer: "\\( x^2 = y - 5 \\)", type: "false" },
+       { answer: "\\( x^2 = y + x \\)", type: "false" },
+       { answer: "\\( x^2 = 5y + 4 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 84,
+     Question:
+       "84. \\( (y - 4)dx - (x + 1)dy = 0 \\) dəyişənlərinə ayrılan diferensial tənliyin \\( x = 1 \\) olduqda \\( y = 10 \\) şərtini ödəyən həllini tapın:",
+     answers: [
+       { answer: "\\( y = 3x + 7 \\)", type: "true" },
+       { answer: "\\( y = 2x + 7 \\)", type: "false" },
+       { answer: "\\( y = 3x + 12 \\)", type: "false" },
+       { answer: "\\( y = 2x - 5 \\)", type: "false" },
+       { answer: "\\( y = 2x + 6 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 85,
+     Question:
+       "85. Dəyişənlərinə ayrılan birinci tərtib diferensial tənlik hansıdır?",
+     answers: [
+       { answer: "\\( M(x)N(y)dx + M_1(x)N_1(y)dy = 0 \\)", type: "true" },
+       { answer: "\\( [M(x) - N(y)]dx + M_1(x)N_1(y)dy = 0 \\)", type: "false" },
+       {
+         answer: "\\( \\frac{M(x)}{N(y)} + \\frac{M_1(y)}{N_1(x)} = 0 \\)",
+         type: "false",
+       },
+       { answer: "\\( M(x)N(y)dx - M_1(x)N_1(y)dy = 0 \\)", type: "false" },
+       { answer: "\\( M(x)N(y) - M_1(x)N_1(y) = 0 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 86,
+     Question:
+       "86. Birinci tərtibli diferensial tənlik ümumi şəkildə necə ifadə olunur?",
+     answers: [
+       { answer: "\\( F(x, y, y') = 0 \\)", type: "true" },
+       { answer: "\\( F(y, y') = 0 \\)", type: "false" },
+       { answer: "\\( F(x, y) = 0 \\)", type: "false" },
+       { answer: "\\( F(x, y, y'') = 0 \\)", type: "false" },
+       { answer: "\\( F(x, y') = 0 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 87,
+     Question:
+       "87. \\( n \\)-tərtibli adi diferensial tənlik ümumi şəkildə necə yazılır?",
+     answers: [
+       {
+         answer: "\\( F(x, y, y', y'', \\ldots, y^{(n)}) = 0 \\)",
+         type: "true",
+       },
+       { answer: "\\( F(y', y'') = 0 \\)", type: "false" },
+       { answer: "\\( F(x, y) = 0 \\)", type: "false" },
+       { answer: "\\( F(x, y') = 0 \\)", type: "false" },
+       { answer: "\\( F(x, y, y^{(n-1)}) = 0 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 88,
+     Question:
+       "88. \\( y'' - y = 0 \\) adi diferensial tənliyinin ümumi həlli hansıdır?",
+     answers: [
+       { answer: "\\( y = C_1e^x + C_2e^{-x} \\)", type: "true" },
+       { answer: "\\( y = e^x \\)", type: "false" },
+       { answer: "\\( y = e^{-2x} \\)", type: "false" },
+       { answer: "\\( y = C_1e^{2x} \\)", type: "false" },
+       { answer: "\\( y = C_1e^{2x} - C_2e^{-2x} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 89,
+     Question: "89. \\( y'' + 2y' = 0 \\) diferensial tənliyini həll edin:",
+     answers: [
+       { answer: "\\( y = C_1 + C_2e^{-2x} \\)", type: "true" },
+       { answer: "\\( y = C_2e^{2x} \\)", type: "false" },
+       { answer: "\\( y = C_2e^x \\)", type: "false" },
+       { answer: "\\( y = C_2e^{3x} \\)", type: "false" },
+       { answer: "\\( y = C_2e^{-x} \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 90,
+     Question:
+       "90. \\( \\sqrt{1 - x^2} dy - 3dx = 0 \\) diferensial tənliyini inteqrallayın:",
+     answers: [
+       { answer: "\\( y = 3 \\arcsin x + C \\)", type: "true" },
+       { answer: "\\( y = \\arcsin x + C \\)", type: "false" },
+       { answer: "\\( y = \\arccos x + C \\)", type: "false" },
+       { answer: "\\( y = arctg x + C \\)", type: "false" },
+       { answer: "\\( y = \\arcsin x - 5 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 91,
+     Question:
+       "91. \\( F(x,y) \\) funksiyasına nə zaman \\( m \\)-ölçülü bircins funksiya deyilir?",
+     answers: [
+       {
+         answer:
+           "\\( \\forall t \\) üçün \\( F(tx, ty) = t^mF(x, y) \\) eyniliyi ödəndikdə,",
+         type: "true",
+       },
+       {
+         answer: "\\( F(tx, ty) = tF(tx, ty) \\) eyniliyi ödəndikdə,",
+         type: "false",
+       },
+       {
+         answer: "\\( F(tx, ty) = F(x, ty) \\) eyniliyi ödəndikdə,",
+         type: "false",
+       },
+       {
+         answer: "\\( F(tx, ty) = t^2F(tx, ty) \\) eyniliyi ödəndikdə,",
+         type: "false",
+       },
+       {
+         answer: "\\( F(tx, ty) = t^2F(tx, ty) \\) eyniliyi ödəndikdə,",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 92,
+     Question:
+       "92. \\( P(x, y)dx + Q(x, y)dy = 0 \\) birtərtibli diferensial tənliyi nə zaman bircins diferensial tənlik adlanır?",
+     answers: [
+       {
+         answer:
+           "\\( P(x, y) \\) və \\( Q(x, y) \\) funksiyaları eyni ölçülü bircins funksiyalar olduqda",
+         type: "true",
+       },
+       { answer: "\\( P(x, y) = Q(x, y) \\) olduqda", type: "false" },
+       { answer: "\\( P(x, y) \\cdot Q(x, y) = 0 \\) olduqda", type: "false" },
+       { answer: "\\( P(x, y) = Q^m(x, y) \\) olduqda", type: "false" },
+       { answer: "\\( P(x, y) = 2Q(x, y) \\) olduqda", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 93,
+     Question:
+       "93. \\( \\frac{dy}{dx} - \\frac{y}{x} = x \\) Birtərtibli xətli diferensial tənliyi həll edin:",
+     answers: [
+       { answer: "\\( y = x^2 + Cx \\)", type: "true" },
+       { answer: "\\( y = x^2 + C + x \\)", type: "false" },
+       { answer: "\\( y = 2x^2 + Cx \\)", type: "false" },
+       { answer: "\\( y = x^3 + C \\)", type: "false" },
+       { answer: "\\( y = x^2 - Cx \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 94,
+     Question:
+       "94. \\( (x + y)dx + (x - y)dy = 0 \\) bircins diferensial tənliyinin ümumi həllini tapın:",
+     answers: [
+       { answer: "\\( x^2 + 2xy - y^2 = C \\)", type: "true" },
+       { answer: "\\( x^2 - y^2 = C \\)", type: "false" },
+       { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
+       { answer: "\\( x^2 + 2xy = C \\)", type: "false" },
+       { answer: "\\( x^2 - 2xy - y^2 = C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 95,
+     Question:
+       "95. Birtərtibli xətli diferensial tənliyin ümumi şəkildə yazılışı nədir?",
+     answers: [
+       { answer: "\\( y' + p(x)y = q(x) \\)", type: "true" },
+       { answer: "\\( y' + y = p(x) \\)", type: "false" },
+       { answer: "\\( y' - y'' = q(x) \\)", type: "false" },
+       { answer: "\\( y' + p(x)y' = q(x) \\)", type: "false" },
+       { answer: "\\( y' + y = y'' \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 96,
+     Question:
+       "96. \\( \\frac{dy}{x} + \\frac{y}{x} = -xy^2 \\) Bernulli tənliyini həll edin:",
+     answers: [
+       { answer: "\\( y(x^2 + Cx) = 1 \\)", type: "true" },
+       { answer: "\\( x^2 + 2xy - y^2 = C \\)", type: "false" },
+       { answer: "\\( x^2 + y^2 = C \\)", type: "false" },
+       { answer: "\\( x^2 - 2xy - y^2 = C \\)", type: "false" },
+       { answer: "\\( x^2 - y^2 = C \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 97,
+     Question: "97. Xətli diferensial tənliyin həlli hansı şəkildə axtarılır?",
+     answers: [
+       { answer: "\\( y = u(x) \\cdot v(x) \\)", type: "true" },
+       { answer: "\\( y = \\frac{u(x)}{v(x)} \\)", type: "false" },
+       { answer: "\\( y = C \\cdot u(x) \\)", type: "false" },
+       { answer: "\\( y = u(x) - v(x) \\)", type: "false" },
+       { answer: "\\( y = u(x) + v(x) \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 98,
+     Question:
+       "98. \\( \\frac{dy}{dx} + \\frac{2y}{x} = x^3 \\) Birtərtibli xətli diferensial tənliyi həll edin:",
+     answers: [
+       { answer: "\\( y = \\frac{x^4}{6} + \\frac{C}{x^2} \\)", type: "true" },
+       { answer: "\\( xy = 1 \\)", type: "false" },
+       { answer: "\\( y = 1 - x \\)", type: "false" },
+       { answer: "\\( xy = C_1x^2 + 3 \\)", type: "false" },
+       { answer: "\\( xy(C_1 - \\frac{x}{2}) = 1 \\)", type: "false" },
+     ],
+   },
+   {
+    count: 0,
+       id: 99,
+     Question:
+       "99. \\( P(x, y)dx + Q(x, y)dy = 0 \\) diferensial tənliyinə nə zaman tam diferensiallı tənlik deyil?",
+     answers: [
+       {
+         answer: "\\( P(x, y)dx + Q(x, y)dy = dU(x, y) \\) olduqda",
+         type: "true",
+       },
+       { answer: "\\( P(x, y)dx = Q(x, y)dy \\) olduqda", type: "false" },
+       { answer: "\\( P(x, y)dx = du(x, y) \\) olduqda", type: "false" },
+       { answer: "\\( Q(x, y)dy - P(x, y)dx = 0 \\) olduqda", type: "false" },
+       {
+         answer: "\\( Q(x, y)dy - P(x, y)dx = dU(x, y) \\) olduqda",
+         type: "false",
+       },
+     ],
+   },
+   {
+    count: 0,
+       id: 100,
+     Question:
+       "100. \\( P(x, y)dx + Q(x, y)dy = 0 \\) diferensial tənliyinin tam diferensiallı tənlik olması üçün zəruri və kafi şərt hansıdır?",
+     answers: [
+       {
+         answer:
+           "\\( \\frac{\\partial P}{\\partial y} = \\frac{\\partial Q}{\\partial x} \\)",
+         type: "true",
+       },
+       {
+         answer:
+           "\\( \\frac{\\partial P}{\\partial x} = \\frac{\\partial Q}{\\partial y} \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{\\partial^2 P}{\\partial x \\partial y} = \\frac{\\partial^2 Q}{\\partial x \\partial y} \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{\\partial^2 P}{\\partial x \\partial y} = \\frac{\\partial Q}{\\partial y} \\)",
+         type: "false",
+       },
+       {
+         answer:
+           "\\( \\frac{\\partial^2 P}{\\partial x \\partial y} = \\frac{\\partial Q}{\\partial x} \\)",
+         type: "false",
+       },
+     ],
+   },
   {
     id: 101,
     Question:
@@ -2078,8 +2179,8 @@ const Questions = [
     Question:
       "149. \\( y = x \\frac{dy}{dx} \\) Diferensial tənliyində \\( y = 2, x = 3 \\) olduqda xüsusi həllini tapın",
     answers: [
-      { answer: "\\( y = \\frac{2}{3}x \\)", type: "false" },
-      { answer: "\\( y = 2x \\)", type: "true" },
+      { answer: "\\( y = \\frac{2}{3}x \\)", type: "true" },
+      { answer: "\\( y = 2x \\)", type: "false" },
       { answer: "\\( y = 3x \\)", type: "false" },
       { answer: "\\( y = x \\)", type: "false" },
       { answer: "\\( y = 6x \\)", type: "false" },
@@ -2577,11 +2678,11 @@ const Questions = [
     Question:
       "188. \\( \\frac{dy}{dx} = -\\frac{y}{x} \\) diferensial tənliyinin ümumi həllini tapın.",
     answers: [
-      { answer: "\\( y = \\frac{c}{x} \\)", type: "false" },
+      { answer: "\\( y = \\frac{c}{x} \\)", type: "true" },
       { answer: "\\(  y = C \\ln x \\)", type: "false" },
       { answer: "\\( y = c \\frac{1}{x^2} \\)", type: "false" },
       { answer: "\\( y = \\frac{c}{3x} \\)", type: "false" },
-      { answer: "\\( y = x + C \\)", type: "true" },
+      { answer: "\\( y = x + C \\)", type: "false" },
     ],
   },
   {
@@ -2624,9 +2725,9 @@ const Questions = [
     id: 192,
     Question: "192. İnteqralı hesablayın: \\( \\int \\frac{dx}{e^{2x - 1}} \\)",
     answers: [
-      { answer: "\\( -0.5e^{1-2x} + C \\)", type: "false" },
+      { answer: "\\( -0.5e^{1-2x} + C \\)", type: "true" },
       { answer: "\\( xe^{2x+1} + C \\)", type: "false" },
-      { answer: "\\( 2e^{1-2x} + C \\)", type: "true" },
+      { answer: "\\( 2e^{1-2x} + C \\)", type: "false" },
       { answer: "\\( xe^{2x} + C \\)", type: "false" },
       { answer: "\\( (1 - 2x)e^{1-2x} + C \\)", type: "false" },
     ],
@@ -2647,8 +2748,8 @@ const Questions = [
     Question:
       "194. İnteqralı hesablayın: \\( \\int \\frac{\\cos^3x}{\\sin^2x} dx \\)",
     answers: [
-      { answer: "\\( -\\frac{1}{\\cos^2x} + \\cos x + C \\)", type: "false" },
-      { answer: "\\( \\frac{1}{\\sin x} - \\cos x + C \\)", type: "true" },
+      { answer: "\\( -\\frac{1}{\\cos^2x} + \\cos x + C \\)", type: "true" },
+      { answer: "\\( \\frac{1}{\\sin x} - \\cos x + C \\)", type: "false" },
       { answer: "\\( \\frac{1}{\\sin x} + \\sin^2x + C \\)", type: "false" },
       { answer: "\\( -\\frac{1}{\\sin x} - \\sin x + C \\)", type: "false" },
       { answer: "\\( -\\cos x + C \\)", type: "false" },
@@ -2696,9 +2797,9 @@ const Questions = [
     id: 198,
     Question: "198. \\( \\int \\sin x \\cos 7x dx \\) tapın:",
     answers: [
-      { answer: "\\( -\\frac{\\cos^8 x}{8} + C \\)", type: "false" },
+      { answer: "\\( -\\frac{\\cos^8 x}{8} + C \\)", type: "true" },
       { answer: "\\( \\frac{\\sin 8x}{8} + C \\)", type: "false" },
-      { answer: "\\( -\\frac{\\sin 7x}{7} + C \\)", type: "true" },
+      { answer: "\\( -\\frac{\\sin 7x}{7} + C \\)", type: "false" },
       { answer: "\\( \\frac{\\cos 7x}{7} + C \\)", type: "false" },
       { answer: "\\( \\sin 7x + C \\)", type: "false" },
     ],
@@ -2719,10 +2820,10 @@ const Questions = [
     Question:
       "200. \\( \\lim_{n \\to \\infty} \\left( \\frac{3x + 5}{3x - 1} \\right)^{2x^2} \\) hesablayın.",
     answers: [
-      { answer: "\\( \\infty \\)", type: "false" },
+      { answer: "\\( \\infty \\)", type: "true" },
       { answer: "\\( \\frac{1}{2} \\)", type: "false" },
       { answer: "\\( 0 \\)", type: "false" },
-      { answer: "\\( e^2 \\)", type: "true" },
+      { answer: "\\( e^2 \\)", type: "false" },
       { answer: "\\( \\frac{1}{e} \\)", type: "false" },
     ],
   },
