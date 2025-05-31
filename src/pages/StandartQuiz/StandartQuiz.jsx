@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Questions from "../../utility/Questions"; // Sorular buradan alınıyor
 import { useNavigate } from "react-router-dom";
-import "./quiz.scss";
+import "./standartQuiz.scss";
 
 // Diziyi rastgele karıştırma fonksiyonu
 const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
-// Rastgele 50 soru seçen fonksiyon
-const randomlySelectQuestions = (questions, num) => {
-  return shuffleArray([...questions]).slice(0, num);
-};
-
 // \n karakterlerini <br /> ile değiştirme fonksiyonu
 const formatHTML = (text) => text.replace(/\n/g, "<br />");
 
-const Quiz = () => {
+const StandartQuiz = () => {
   const navigate = useNavigate();
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
@@ -23,12 +18,12 @@ const Quiz = () => {
   const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
-    const selectedQuestions = randomlySelectQuestions(Questions, 50); // Rastgele soru seç
-    const shuffledQuestions = selectedQuestions.map((question) => ({
+    // Soru sırasını sabit tut, sadece cevapları karıştır
+    const limitedQuestions = Questions.slice(0, 150).map((question) => ({
       ...question,
-      answers: shuffleArray(question.answers), // Cevapları rastgele sırala
+      answers: shuffleArray([...question.answers]),
     }));
-    setQuizQuestions(shuffledQuestions);
+    setQuizQuestions(limitedQuestions);
 
     window.MathJax && window.MathJax.typesetPromise().catch((err) => console.error(err));
   }, []);
@@ -50,11 +45,9 @@ const Quiz = () => {
   const handleFinishQuiz = () => {
     let correct = 0;
     let incorrect = 0;
-    const updatedQuestions = [...quizQuestions];
-
     const updatedCounts = [];
 
-    updatedQuestions.forEach((q, index) => {
+    quizQuestions.forEach((q, index) => {
       const selectedAnswer = answers[index];
       const isCorrect =
         q.answers.find((a) => a.answer === selectedAnswer)?.type === "true";
@@ -77,7 +70,6 @@ const Quiz = () => {
 
     console.log("Doğru cevaplanan soruların güncellenmiş count değerleri:", updatedCounts);
 
-    setQuizQuestions(updatedQuestions);
     setResults({ correct, incorrect });
     setShowResults(true);
     setIsDisabled(true);
@@ -89,12 +81,11 @@ const Quiz = () => {
     setShowResults(false);
     setIsDisabled(false);
 
-    const selectedQuestions = randomlySelectQuestions(Questions, 50);
-    const shuffledQuestions = selectedQuestions.map((question) => ({
+    const limitedQuestions = Questions.slice(0, 50).map((question) => ({
       ...question,
-      answers: shuffleArray(question.answers),
+      answers: shuffleArray([...question.answers]),
     }));
-    setQuizQuestions(shuffledQuestions);
+    setQuizQuestions(limitedQuestions);
   };
 
   const handleHome = () => {
@@ -167,4 +158,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default StandartQuiz;
