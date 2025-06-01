@@ -2323,7 +2323,7 @@ const Questions = [
       { answer: "I am not understanding the problem.", type: "true" },
       { answer: "I don’t understand the problem.", type: "false" },
       { answer: "I am not understand the problem.", type: "false" },
-      { answer: "I am not understanding the problem.", type: "false" },
+      { answer: "I not understanding the problem.", type: "false" },
       { answer: "I not understand the problem.", type: "false" },
     ],
   },
@@ -3493,8 +3493,8 @@ const Questions = [
     Question:
       "288. Choose the correct variant\n… are you studying at university?",
     answers: [
-      { answer: "where", type: "true" },
-      { answer: "what", type: "false" },
+      { answer: "what", type: "true" },
+      { answer: "where", type: "false" },
       { answer: "which", type: "false" },
       { answer: "how many", type: "false" },
       { answer: "how much", type: "false" },
@@ -4750,7 +4750,7 @@ const Questions = [
 },
 {
   "id": 397,
-  "Question": "397. Choose the correct answer.\nWhat group do the words belong to?\n1. Africa, Europe, Asia, America\n2. doctor, dentist, teacher, actor\n3. rainy, sunny, cloudy, snowy",
+  "Question": "397. Choose the correct answer.\nWhat group do the words belong to?\n1. Africa, Europe, Asia, America\n2. doctor, dentist, teacher, actor\n3. rainy, sunny, cloudy, snowy \n a)Weather \n b)Job \n c)Continent",
   "answers": [
     { "answer": "1-c, 2-b, 3-a", "type": "true" },
     { "answer": "1-b, 2-c, 3-a", "type": "false" },
