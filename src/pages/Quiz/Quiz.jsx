@@ -1,20 +1,40 @@
 import React, { useEffect, useState } from "react";
-import Questions from "../../utility/Questions"; // Sorular buradan alınıyor
+import Questions from "../../utility/Questions";
 import { useNavigate } from "react-router-dom";
-import "./quiz.scss";
+import "./standartQuiz.scss";
 
-// Diziyi rastgele karıştırma fonksiyonu
-const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
-
-// Rastgele 50 soru seçen fonksiyon
-const randomlySelectQuestions = (questions, num) => {
-  return shuffleArray([...questions]).slice(0, num);
+const loadCountsFromStorage = () => {
+  const data = localStorage.getItem("questionCounts");
+  return data ? JSON.parse(data) : {};
 };
 
-// \n karakterlerini <br /> ile değiştirme fonksiyonu
+const saveCountsToStorage = (countsObj) => {
+  localStorage.setItem("questionCounts", JSON.stringify(countsObj));
+};
+
+const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
+
+const randomlySelectQuestions = (questions, num) => {
+  const sorted = [...questions].sort((a, b) => (a.count || 0) - (b.count || 0));
+  const result = [];
+  let remaining = num;
+  let currentCount = sorted[0]?.count || 0;
+
+  while (remaining > 0 && sorted.length > 0) {
+    const sameCountGroup = sorted.filter(q => (q.count || 0) === currentCount);
+    const selected = shuffleArray(sameCountGroup).slice(0, remaining);
+    result.push(...selected);
+    remaining = num - result.length;
+    sorted.splice(0, sameCountGroup.length);
+    currentCount++;
+  }
+
+  return result;
+};
+
 const formatHTML = (text) => text.replace(/\n/g, "<br />");
 
-const Quiz = () => {
+const StandartQuiz = () => {
   const navigate = useNavigate();
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
@@ -23,12 +43,18 @@ const Quiz = () => {
   const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
-    const selectedQuestions = randomlySelectQuestions(Questions, 50); // Rastgele soru seç
-    const shuffledQuestions = selectedQuestions.map((question) => ({
+    const localCounts = loadCountsFromStorage();
+    Questions.forEach((q) => {
+      const savedCount = localCounts[q.id.toString()];
+      q.count = savedCount !== undefined ? savedCount : 0;
+    });
+
+    const selectedQuestions = randomlySelectQuestions(Questions, 50).map((question) => ({
       ...question,
-      answers: shuffleArray(question.answers), // Cevapları rastgele sırala
+      answers: shuffleArray([...question.answers]),
     }));
-    setQuizQuestions(shuffledQuestions);
+
+    setQuizQuestions(selectedQuestions);
 
     window.MathJax && window.MathJax.typesetPromise().catch((err) => console.error(err));
   }, []);
@@ -50,34 +76,34 @@ const Quiz = () => {
   const handleFinishQuiz = () => {
     let correct = 0;
     let incorrect = 0;
-    const updatedQuestions = [...quizQuestions];
+    const updatedCounts = {};
+    const localCounts = loadCountsFromStorage();
 
-    const updatedCounts = [];
-
-    updatedQuestions.forEach((q, index) => {
+    quizQuestions.forEach((q, index) => {
       const selectedAnswer = answers[index];
-      const isCorrect =
-        q.answers.find((a) => a.answer === selectedAnswer)?.type === "true";
+      const isCorrect = q.answers.find((a) => a.answer === selectedAnswer)?.type === "true";
+
+      const originalQuestion = Questions.find((item) => item.id === q.id);
+      const qid = originalQuestion?.id.toString();
 
       if (isCorrect) {
         correct++;
-
-        const originalQuestion = Questions.find((item) => item.id === q.id);
         if (originalQuestion) {
           originalQuestion.count = (originalQuestion.count || 0) + 1;
-          updatedCounts.push({
-            question: originalQuestion.Question,
-            newCount: originalQuestion.count,
-          });
+          updatedCounts[qid] = originalQuestion.count;
         }
       } else {
         incorrect++;
+        if (originalQuestion) {
+          originalQuestion.count = (originalQuestion.count || 0) - 1;
+          updatedCounts[qid] = originalQuestion.count;
+        }
       }
     });
 
-    console.log("Doğru cevaplanan soruların güncellenmiş count değerleri:", updatedCounts);
+    const mergedCounts = { ...localCounts, ...updatedCounts };
+    saveCountsToStorage(mergedCounts);
 
-    setQuizQuestions(updatedQuestions);
     setResults({ correct, incorrect });
     setShowResults(true);
     setIsDisabled(true);
@@ -89,12 +115,18 @@ const Quiz = () => {
     setShowResults(false);
     setIsDisabled(false);
 
-    const selectedQuestions = randomlySelectQuestions(Questions, 50);
-    const shuffledQuestions = selectedQuestions.map((question) => ({
+    const localCounts = loadCountsFromStorage();
+    Questions.forEach((q) => {
+      const savedCount = localCounts[q.id.toString()];
+      q.count = savedCount !== undefined ? savedCount : 0;
+    });
+
+    const selectedQuestions = randomlySelectQuestions(Questions, 50).map((question) => ({
       ...question,
-      answers: shuffleArray(question.answers),
+      answers: shuffleArray([...question.answers]),
     }));
-    setQuizQuestions(shuffledQuestions);
+
+    setQuizQuestions(selectedQuestions);
   };
 
   const handleHome = () => {
@@ -167,4 +199,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default StandartQuiz;

@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Questions from "../../utility/Questions"; // Sorular buradan alınıyor
+import Questions from "../../utility/Questions";
 import { useNavigate } from "react-router-dom";
 import "./standartQuiz.scss";
 
-// Diziyi rastgele karıştırma fonksiyonu
+const loadCountsFromStorage = () => {
+  const data = localStorage.getItem("questionCounts");
+  return data ? JSON.parse(data) : {};
+};
+
+const saveCountsToStorage = (countsObj) => {
+  localStorage.setItem("questionCounts", JSON.stringify(countsObj));
+};
+
 const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
-// \n karakterlerini <br /> ile değiştirme fonksiyonu
 const formatHTML = (text) => text.replace(/\n/g, "<br />");
 
 const StandartQuiz = () => {
@@ -18,12 +25,21 @@ const StandartQuiz = () => {
   const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
-    // Soru sırasını sabit tut, sadece cevapları karıştır
-    const limitedQuestions = Questions.slice(0, 150).map((question) => ({
-      ...question,
-      answers: shuffleArray([...question.answers]),
-    }));
-    setQuizQuestions(limitedQuestions);
+    const localCounts = loadCountsFromStorage();
+    Questions.forEach((q) => {
+      const savedCount = localCounts[q.id.toString()];
+      q.count = savedCount !== undefined ? savedCount : 0;
+    });
+
+    const selectedQuestions = [...Questions]
+      .sort((a, b) => (a.count || 0) - (b.count || 0))
+      .slice(0, 50)
+      .map((question) => ({
+        ...question,
+        answers: shuffleArray([...question.answers]),
+      }));
+
+    setQuizQuestions(selectedQuestions);
 
     window.MathJax && window.MathJax.typesetPromise().catch((err) => console.error(err));
   }, []);
@@ -45,30 +61,34 @@ const StandartQuiz = () => {
   const handleFinishQuiz = () => {
     let correct = 0;
     let incorrect = 0;
-    const updatedCounts = [];
+    const updatedCounts = {};
+    const localCounts = loadCountsFromStorage();
 
     quizQuestions.forEach((q, index) => {
       const selectedAnswer = answers[index];
       const isCorrect =
         q.answers.find((a) => a.answer === selectedAnswer)?.type === "true";
 
+      const originalQuestion = Questions.find((item) => item.id === q.id);
+      const qid = originalQuestion?.id.toString();
+
       if (isCorrect) {
         correct++;
-
-        const originalQuestion = Questions.find((item) => item.id === q.id);
         if (originalQuestion) {
           originalQuestion.count = (originalQuestion.count || 0) + 1;
-          updatedCounts.push({
-            question: originalQuestion.Question,
-            newCount: originalQuestion.count,
-          });
+          updatedCounts[qid] = originalQuestion.count;
         }
       } else {
         incorrect++;
+        if (originalQuestion) {
+          originalQuestion.count = (originalQuestion.count || 0) - 1;
+          updatedCounts[qid] = originalQuestion.count;
+        }
       }
     });
 
-    console.log("Doğru cevaplanan soruların güncellenmiş count değerleri:", updatedCounts);
+    const mergedCounts = { ...localCounts, ...updatedCounts };
+    saveCountsToStorage(mergedCounts);
 
     setResults({ correct, incorrect });
     setShowResults(true);
@@ -81,11 +101,21 @@ const StandartQuiz = () => {
     setShowResults(false);
     setIsDisabled(false);
 
-    const limitedQuestions = Questions.slice(0, 50).map((question) => ({
-      ...question,
-      answers: shuffleArray([...question.answers]),
-    }));
-    setQuizQuestions(limitedQuestions);
+    const localCounts = loadCountsFromStorage();
+    Questions.forEach((q) => {
+      const savedCount = localCounts[q.id.toString()];
+      q.count = savedCount !== undefined ? savedCount : 0;
+    });
+
+    const selectedQuestions = [...Questions]
+      .sort((a, b) => (a.count || 0) - (b.count || 0))
+      .slice(0, 50)
+      .map((question) => ({
+        ...question,
+        answers: shuffleArray([...question.answers]),
+      }));
+
+    setQuizQuestions(selectedQuestions);
   };
 
   const handleHome = () => {
