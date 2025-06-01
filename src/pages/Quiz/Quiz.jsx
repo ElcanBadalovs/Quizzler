@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Questions from "../../utility/Questions";
 import { useNavigate } from "react-router-dom";
-import "./standartQuiz.scss";
+import "./quiz.scss";
 
 const loadCountsFromStorage = () => {
   const data = localStorage.getItem("questionCounts");
