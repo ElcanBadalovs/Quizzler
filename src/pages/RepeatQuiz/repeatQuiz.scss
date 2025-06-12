@@ -1,0 +1,132 @@
+.quiz-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  min-height: 100dvh;
+}
+
+.quiz-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.quiz-question {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &.incorrect-question {
+    border-color: red;
+  }
+}
+
+.question-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.answer-button {
+  display: block;
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: #e2e6ea;
+  }
+
+  &.selected-answer {
+    border: 2px solid blue;
+  }
+
+  &.correct-answer {
+    background-color: #d4edda;
+    border-color: green;
+    color: #000;
+  }
+
+  &.incorrect-answer {
+    background-color: #f8d7da;
+    border-color: red;
+    color: #000;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+  }
+}
+
+.finish-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.result-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  .restart-button,
+  .home-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .home-button {
+    background-color: #28a745;
+    color: white;
+  }
+
+  .restart-button {
+    background-color: #ffc107;
+    color: white;
+  }
+}
+
+.results {
+  margin-top: 30px;
+  text-align: center;
+
+  .results-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}
+
