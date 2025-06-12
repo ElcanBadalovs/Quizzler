@@ -1,3103 +1,3323 @@
 const Questions = [
   {
     id: 1,
-    Question: "1. Choose odd one out",
+    Question:
+      "1. Ölkədə daimi yaşamayan insanların ölkə ərazisində turizm məqsədi ilə səyahəti necə adlanır?",
     answers: [
-      { answer: "Image", type: "true" },
-      { answer: "Comedy", type: "false" },
-      { answer: "Romance", type: "false" },
-      { answer: "An action film", type: "false" },
-      { answer: "An adventure film", type: "false" },
+      { answer: "gəlmə turizm", type: "true" },
+      { answer: "getmə turizm", type: "false" },
+      { answer: "yerli turizm", type: "false" },
+      { answer: "ölkə daxili turizm", type: "false" },
+      { answer: "daimi turizm", type: "false" },
     ],
   },
   {
     id: 2,
-    Question: "2. Choose the wrong variant",
+    Question:
+      "2. Ölkədə daimi yaşayan insanların ölkə xaricində turizm məqsədi ilə səyahəti necə adlanır?",
     answers: [
-      { answer: "Historic film", type: "true" },
-      { answer: "Historical film", type: "false" },
-      { answer: "Romance", type: "false" },
-      { answer: "Comedy", type: "false" },
-      { answer: "An action film", type: "false" },
+      { answer: "getmə turizm", type: "true" },
+      { answer: "gəlmə turizm", type: "false" },
+      { answer: "xarici turizm", type: "false" },
+      { answer: "ölkə xarici turizm", type: "false" },
+      { answer: "müvəqqəti turizm", type: "false" },
     ],
   },
   {
     id: 3,
-    Question: "3. Choose the wrong variant",
+    Question:
+      "3. Ölkəmizdə keçmiş sovetlər ittifaqının vaxtında Nazirlər Sovetinin Azərbaycanda 2000-ci ilə qədər turizmin inkişaf sxemi haqqında 381 saylı qərarı neçənci ildə qəbul olunmuşdur?",
     answers: [
-      { answer: "An adventurous film", type: "true" },
-      { answer: "An adventure film", type: "false" },
-      { answer: "Sci-fi film", type: "false" },
-      { answer: "Comedy", type: "false" },
-      { answer: "Romance", type: "false" },
+      { answer: "12 oktyabr 1984-cü ildə", type: "true" },
+      { answer: "16 iyul 1982-ci ildə", type: "false" },
+      { answer: "18 avqust 1981-ci ildə", type: "false" },
+      { answer: "12 noyabr 1989-cu ildə", type: "false" },
+      { answer: "22 dekabr 1987-ci ildə", type: "false" },
     ],
   },
   {
     id: 4,
-    Question: "4. Choose the right spelling",
+    Question:
+      "4. Xəzərin Azərbaycan sahillərində ümumittifaq əhəmiyyətli istirahət zonasının yaradılması barədə SSRİ Nazirlər Sovetinin 375 saylı Qətnaməsi neçənci ildə qəbul edilmişdir?",
     answers: [
-      { answer: "A science film", type: "true" },
-      { answer: "A sience film", type: "false" },
-      { answer: "A sciense film", type: "false" },
-      { answer: "A scince film", type: "false" },
-      { answer: "A scientifice film", type: "false" },
+      { answer: "28 aprel 1983-cü ildə", type: "true" },
+      { answer: "12 aprel 1982-ci ildə", type: "false" },
+      { answer: "12 mart 1978-ci ildə", type: "false" },
+      { answer: "16 iyun 1988-ci ildə", type: "false" },
+      { answer: "2 iyul 1985-ci ildə", type: "false" },
     ],
   },
   {
     id: 5,
-    Question: "5. Choose the right variant. Comedy is …..",
+    Question:
+      "5. Turoperator və nəqliyyat təşkilatları arasındakı münasibətlər hansı qanunla nizamlanır?",
     answers: [
-      { answer: "Type of film, play, or book that is funny.", type: "true" },
-      { answer: "Type of film, play, or book that is sad.", type: "false" },
-      { answer: "Type of film, play, or book that is boring.", type: "false" },
-      { answer: "Type of film, play, or book that is serious", type: "false" },
-      { answer: "Type of film, play, or book that is slow.", type: "false" },
+      { answer: "nəqliyyat hüququ ilə", type: "true" },
+      { answer: "turizm haqqında qanunla", type: "false" },
+      { answer: "turoperatorun fəaliyyət proqramı ilə", type: "false" },
+      { answer: "nəqliyyatın hərəkət qrafiki ilə", type: "false" },
+      {
+        answer: "turizm sahəsində olan normativ texniki sənədlərlə",
+        type: "false",
+      },
     ],
   },
   {
     id: 6,
-    Question: "6. Choose the correct spelling.",
+    Question:
+      "6 .Turist sərnişinlərinə təqdin olunan xidmətlər aşağıdak sıraların hansında göstərilmişdir \n1. Məxsusi nəqliyyat xidmətlərinin göstərilməsi \n2. Maşınqayırma sənayesinin inkişaf etdirilməsi \n3. Yolda turistlərə təqdim olunan xidmətlər  \n4. Turistlərin nəqliyyatın təmirinə cəlb olunması \n5. Vağzallarda  turistlərə yaradılan xidmətlər\n6. Nəqliyyat vasitələrinə texniki baxışın həyata keçirilməsi ",
     answers: [
-      { answer: "Frightening", type: "true" },
-      { answer: "Frighteninge", type: "false" },
-      { answer: "Frightenin", type: "false" },
-      { answer: "Frihtening", type: "false" },
-      { answer: "Fraitening", type: "false" },
+      { answer: "1; 3; 5", type: "true" },
+      { answer: "1; 4; 5", type: "false" },
+      { answer: "2; 3; 6", type: "false" },
+      { answer: "2; 4; 5", type: "false" },
+      { answer: "1; 3; 6", type: "false" },
     ],
   },
   {
     id: 7,
-    Question: "7. Find the correct opposites.",
+    Question:
+      "7. Turizm sahəsində əvvəlcədən ehtimal olunmuş (nəzərdə tutulmuş) və ya müəyyən edilmiş hərəkət etmə yolu, istiqaməti və yol qaydaları  necə adlanır?",
     answers: [
-      { answer: "Boring – exciting.", type: "true" },
-      { answer: "Slow –funny", type: "false" },
-      { answer: "Funny – romantic", type: "false" },
-      { answer: "Fast-moving-exciting", type: "false" },
-      { answer: "Romantic – happy", type: "false" },
+      { answer: "turistlərərin marşrutu", type: "true" },
+      { answer: "turistlərərin  hərəkət istiqaməti", type: "false" },
+      { answer: "turistlərərin hərəkət qrafiki", type: "false" },
+      { answer: "turistlərərin məkanı", type: "false" },
+      { answer: "turistlərərin hərəkət qaydaları", type: "false" },
     ],
   },
   {
     id: 8,
-    Question: "8. Find the correct opposites.",
+    Question:
+      "8. Turistlərərin marşrutunu layihələndirən və tur iştirakçılarının səyahətdə olma  (destinasiyada) proqramını işləyib hazırlayan mütəxəssis necə adlanır?",
     answers: [
-      { answer: "Slow – fast-moving", type: "true" },
-      { answer: "Serious – sad", type: "false" },
-      { answer: "Funny – enjoyable", type: "false" },
-      { answer: "Exciting – frightening", type: "false" },
-      { answer: "Sad-slow", type: "false" },
+      { answer: "turoperator", type: "true" },
+      { answer: "mühəndis", type: "false" },
+      { answer: "texnaloq", type: "false" },
+      { answer: "turist bələdçisi", type: "false" },
+      { answer: "turist", type: "false" },
     ],
   },
   {
     id: 9,
-    Question: "9. Find the correct opposites",
+    Question:
+      "9. Qısamüddətli istirahətə dayanan avtoturistlərə xidmət göstərən müəssisə necə adlanır?",
     answers: [
-      { answer: "Sad-funny", type: "true" },
-      { answer: "Funny-exciting", type: "false" },
-      { answer: "Exciting-slow", type: "false" },
-      { answer: "Happy-funny", type: "false" },
-      { answer: "Fast-moving-frightening", type: "false" },
+      { answer: "mehmanxana", type: "true" },
+      { answer: "yeməkxana", type: "false" },
+      { answer: "istirahət mərkəzi", type: "false" },
+      { answer: "çayxana", type: "false" },
+      { answer: "bağ evi", type: "false" },
     ],
   },
   {
     id: 10,
-    Question: "10. Choose the correct definition. Boring is……..",
+    Question:
+      "10. Mehmanxanaların layihələndirilməsi zamanı normativ sənədlərin tələblərinə uyğun olaraq iki nəfərlik otağın ümumi sahəsi neçə metr kvadratına bərabər olmalıdır?",
     answers: [
-      { answer: "Not interesting, or exciting", type: "true" },
-      { answer: "Interesting, or exciting", type: "false" },
-      { answer: "Loving", type: "false" },
-      { answer: "Something that makes you laugh", type: "false" },
-      { answer: "Something that makes you cry", type: "false" },
+      { answer: "23...28 \\( m^2 \\)", type: "true" },
+      { answer: "21...24 \\( m^2 \\)", type: "false" },
+      { answer: "18...22 \\( m^2 \\)", type: "false" },
+      { answer: "25...30 \\( m^2 \\)", type: "false" },
+      { answer: "26...32 \\( m^2 \\)", type: "false" },
     ],
   },
   {
     id: 11,
-    Question: "11. Choose the correct definition. Serious is ……",
+    Question:
+      "11. Avtomobilin yanacaq sistemindəki tənzimləmələrin pozulması neçə faizdən çox dəm qazını artıra bilər?",
     answers: [
-      { answer: "Not joking or intended to be funny", type: "true" },
-      { answer: "Romantic", type: "false" },
-      { answer: "Happy", type: "false" },
-      { answer: "Very sad", type: "false" },
-      { answer: "Very slow", type: "false" },
+      { answer: "70% - dən", type: "true" },
+      { answer: "40% - dən", type: "false" },
+      { answer: "90% - dən", type: "false" },
+      { answer: "35% - dən", type: "false" },
+      { answer: "100% - dən", type: "false" },
     ],
   },
   {
     id: 12,
-    Question: "12. Choose the correct definition. Arrange is …….",
+    Question:
+      "12. Xətti yanacaq sərfi turistlərin (sərnişinlərin) daşınmasında görülən səmərəli işə nisbəti necə adlanır?",
     answers: [
-      { answer: "To plan, prepare for, or organize something;", type: "true" },
-      { answer: "To look at something for a period of time;", type: "false" },
-      { answer: "To make or be something", type: "false" },
-      { answer: "To make something into a particular form", type: "false" },
-      { answer: "Prepare and cook food", type: "false" },
+      { answer: "xüsusi yanacaq sərfi", type: "true" },
+      { answer: "nəzarət yanacaq sərfi", type: "false" },
+      { answer: "dövri hərəkətdə yanacaq xarakteristikası", type: "false" },
+      { answer: "maksimum yanacaq sərfi", type: "false" },
+      { answer: "minimum yanacaq sərfi", type: "false" },
     ],
   },
   {
     id: 13,
-    Question: "13. Choose the correct opposites. Evening out - …",
+    Question:
+      "13. Nəqliyyatın texniki vəziyyətinə dair ilkin məlumatların alınmasını təmin edən texnoloji proses necə adlanır?",
     answers: [
-      { answer: "Evening in", type: "true" },
-      { answer: "Evening inside", type: "false" },
-      { answer: "Evening outside", type: "false" },
-      { answer: "Evening on", type: "false" },
-      { answer: "Evening into", type: "false" },
+      { answer: "diaqnostika", type: "true" },
+      { answer: "təmir", type: "false" },
+      { answer: "yoxlama", type: "false" },
+      { answer: "sınaq", type: "false" },
+      { answer: "cari təmir", type: "false" },
     ],
   },
   {
     id: 14,
-    Question: "14. Choose the correct definition. Luxury is ……",
+    Question:
+      "14. Avtomobil nəqliyyatının yol verilən sürtgü materiallarının sərfi, hansı göstəriciyə görə müəyyən olunur?",
     answers: [
-      {
-        answer:
-          "Something very expensive that is beautiful but is not necessary.",
-        type: "true",
-      },
-      { answer: "Something very cheap and ugly.", type: "false" },
-      { answer: "Cheap but good or enjoyable.", type: "false" },
-      { answer: "Very sad film.", type: "false" },
-      { answer: "Fast-moving story.", type: "false" },
+      { answer: "işlətdiyi yanacağın miqdarına görə", type: "true" },
+      { answer: "avtomobilin sürətinə görə", type: "false" },
+      { answer: "təkərlərin sayına görə", type: "false" },
+      { answer: "daşıdığı yükün miqdarına görə", type: "false" },
+      { answer: "sürətlər qutusunun pillələrinin sayına görə", type: "false" },
     ],
   },
   {
     id: 15,
-    Question: "15. Choose the correct definition. Entertainment is ………",
+    Question:
+      "15. Benzinlə işləyən avtomobil mühərrikləri üçün 100 litr yanacağa görə neçə litr yağ sərf edə bilər?",
     answers: [
-      {
-        answer: "Things such as films, television, games that interest people.",
-        type: "true",
-      },
-      { answer: "Something that makes people cry", type: "false" },
-      { answer: "Something that makes people laugh", type: "false" },
-      { answer: "Something that people do to write a story.", type: "false" },
-      { answer: "The work of making films.", type: "false" },
+      { answer: "3,5 litr", type: "true" },
+      { answer: "1.5 litr", type: "false" },
+      { answer: "1.2 litr", type: "false" },
+      { answer: "4.5 litr", type: "false" },
+      { answer: "5,2 litr", type: "false" },
     ],
   },
   {
     id: 16,
-    Question: "16. Choose the correct synonyms.",
+    Question:
+      "16. Turistlərə nəqliyyat xidmətlərinin keyfiyyətini qiymətləndirmə üsullarına aid tələbləri əks etdirən sənəd necə adlanır?",
     answers: [
-      { answer: "Funny – enjoyable", type: "true" },
-      { answer: "Romantic – frightening", type: "false" },
-      { answer: "Frightening – sad", type: "false" },
-      { answer: "Happy – exciting", type: "false" },
-      { answer: "Sad – romantic", type: "false" },
+      { answer: "normativ sənəd", type: "true" },
+      { answer: "atesttat", type: "false" },
+      { answer: "sertifikat", type: "false" },
+      { answer: "lisenziya", type: "false" },
+      { answer: "keyfiyyət ilgəyi", type: "false" },
     ],
   },
   {
     id: 17,
-    Question: "17. Choose the correct past form.",
+    Question:
+      "17. Dizellə işləyən avtomobil mühərrikləri üçün 100 litr yanacağa görə neçə litr yağ sərf edə bilər?",
     answers: [
-      { answer: "Fight – fought", type: "true" },
-      { answer: "Fight – foughted", type: "false" },
-      { answer: "Fight – foute", type: "false" },
-      { answer: "Fight – fights", type: "false" },
-      { answer: "Fight – fighted", type: "false" },
+      { answer: "5 litr", type: "true" },
+      { answer: "2 litr", type: "false" },
+      { answer: "2,5 litr", type: "false" },
+      { answer: "6 litr", type: "false" },
+      { answer: "7,5 litr", type: "false" },
     ],
   },
   {
     id: 18,
-    Question: "18. Choose the correct past form.",
+    Question: "18. Paravozun ixtira edilməsi nəyə səbəb oldu?",
     answers: [
-      { answer: "Arrange- arranged", type: "true" },
-      { answer: "Fight - fighted", type: "false" },
-      { answer: "Describe – describd", type: "false" },
-      { answer: "Wear – weared", type: "false" },
-      { answer: "Drive – drave", type: "false" },
+      { answer: "dəmir yolu şəbəkəsinin yaranmasına", type: "true" },
+      { answer: "su nəqliyyatından geniş istifadə olunmasına", type: "false" },
+      {
+        answer: "avtomobil nəqliyyatından geniş istifadə olunmasına",
+        type: "false",
+      },
+      {
+        answer: "hava yolları nəqliyyatından geniş istifadə olunmasına",
+        type: "false",
+      },
+      { answer: "yükün keyfiyyətinin artırılmasına", type: "false" },
     ],
   },
   {
     id: 19,
-    Question: "19. Choose the correct variant",
+    Question:
+      "19. Yol nəqliyyat iştirakçılarının beynəlxalq ittifaqı və beynəlxalq mehmanxana asossiasiyası arasında 1994-cü ildə bağlanmış müqavilə neçə maddədən ibarətdir?",
     answers: [
-      { answer: "Make phone calls", type: "true" },
-      { answer: "Do phone calls", type: "false" },
-      { answer: "Prepare phone calls", type: "false" },
-      { answer: "Take phone calls", type: "false" },
-      { answer: "Put phone calls", type: "false" },
+      { answer: "4 maddədən", type: "true" },
+      { answer: "2 maddədən", type: "false" },
+      { answer: "3 maddədən", type: "false" },
+      { answer: "5 maddədən", type: "false" },
+      { answer: "7 maddədən", type: "false" },
     ],
   },
   {
     id: 20,
-    Question: "20. Choose the correct variant",
+    Question:
+      "20. Yol nəqliyyat iştirakçılarının beynəlxalq ittifaqı və beynəlxalq mehmanxana asossiasiyası arasında neçənci ildə müqavilə bağlanmışdır?",
     answers: [
-      { answer: "Have baths", type: "true" },
-      { answer: "Do baths", type: "false" },
-      { answer: "Prepare baths", type: "false" },
-      { answer: "Arrange baths", type: "false" },
-      { answer: "Put baths", type: "false" },
+      { answer: "1994-cü ildə", type: "true" },
+      { answer: "1992-ci ildə", type: "false" },
+      { answer: "1987-ci ildə", type: "false" },
+      { answer: "1996-cı ildə", type: "false" },
+      { answer: "1998-ci ildə", type: "false" },
     ],
   },
   {
     id: 21,
-    Question: "21. Choose the correct preposition.\n\nListen … the radio.",
+    Question:
+      "21. Nəqliyyat xidmətlərinə ödəniş qabiliyyətli tələbatın formalaşdırılması nöqteyi-nəzərindən sərnişinləri neçə kateqoriyaya ayırmaq olar?",
     answers: [
-      { answer: "To", type: "true" },
-      { answer: "In", type: "false" },
-      { answer: "With", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "Of", type: "false" },
+      { answer: "dörd kateqoriyaya", type: "true" },
+      { answer: "beş kateqoriyaya", type: "false" },
+      { answer: "iki kateqoriyaya", type: "false" },
+      { answer: "üç kateqoriyaya", type: "false" },
+      { answer: "altı kateqoriyaya", type: "false" },
     ],
   },
   {
     id: 22,
-    Question: "22. Choose the correct variant\n\nAccording … many people.",
+    Question:
+      "22. Nəqliyyat xidmətlərinə ödəniş qabiliyyətli tələbatın formalaşdırılması nöqteyi-nəzərindən doğru olmayan variant hansıdır?",
     answers: [
-      { answer: "To", type: "true" },
-      { answer: "With", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "By", type: "false" },
-      { answer: "Into", type: "false" },
+      {
+        answer: "pulsuz gediş hüququ olan bütün xarici ölkə vətandaşları",
+        type: "true",
+      },
+      {
+        answer:
+          "öz şəxsi vəsaitləri hesabına gediş biletini əldə edən sərnişinlər",
+        type: "false",
+      },
+      {
+        answer:
+          "öz şəxsi vəsaiti hesabına və güzəştli şərtlərlə gediş biletini əldə edən sərnişinlər",
+        type: "false",
+      },
+      {
+        answer: "müəssisənin vəsaiti hesabına ezamiyyətdə olan şəxslər",
+        type: "false",
+      },
+      {
+        answer:
+          "pulsuz gediş hüququ olan nəqliyyat işçiləri, müharibə veteranları və onlara ailələri",
+        type: "false",
+      },
     ],
   },
   {
     id: 23,
-    Question: "23. Choose the correct variant\n\nKill herself … a snake",
+    Question:
+      "23. Magistral yolayrıclarında, iri şəhərlər arasında yerləşən mehmanxanalar neçə nəfər sərnişin tutumuna malik olurlar?",
     answers: [
-      { answer: "With", type: "true" },
-      { answer: "By", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "To", type: "false" },
-      { answer: "Of", type: "false" },
+      { answer: "150...400 nəfər", type: "true" },
+      { answer: "100...150 nəfər", type: "false" },
+      { answer: "500...600 nəfər", type: "false" },
+      { answer: "50...60 nəfər", type: "false" },
+      { answer: "1000...1200 nəfər", type: "false" },
     ],
   },
   {
     id: 24,
-    Question: "24. Choose the correct definition.\n\nPoison is …….",
+    Question: "24. Reklamın başlıca məqsəd və vəzifəsi nədən ibarətdir?",
     answers: [
       {
-        answer:
-          "Something that can make people or animals ill or kill them if they eat or drink it;",
+        answer: "turistlərə realizə edilən xidmətlərinə diqqəti yönəltməkdən",
         type: "true",
       },
-      { answer: "Something that makes people healthy", type: "false" },
-      { answer: "Something that makes a cake sweet", type: "false" },
-      { answer: "Something that people use to kill insects.", type: "false" },
       {
-        answer: "Something that people use to do the washing-up",
+        answer: "istirahət mərkəzində çalışan işçiləri tanıtmaqdan",
+        type: "false",
+      },
+      {
+        answer:
+          "turistlərə istirahət mərkəzində görülən abadlaşdırma işlərini çatdırmaqdan",
+        type: "false",
+      },
+      {
+        answer: "turistlərə istirahət mərkəzinin rəhbərini tanıtmaqdan",
+        type: "false",
+      },
+      {
+        answer:
+          "istirahət mərkəzindəki xidmətlərin qiymətini əvvəlcədən bildirməkdən",
         type: "false",
       },
     ],
   },
   {
     id: 25,
-    Question: "25. Choose the correct spelling",
+    Question:
+      "25. Aşağıdakı sıraların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəriciləri göstərilmişdir?      \n1. nəqliyyat vasitəsinin hərəkət təhlükəsizliyi\n2. nəqliyyat vasitəsinin rəngi\n3. nəqliyyat vasitəsinin dəyanətliliyi\n4. nəqliyyat vasitəsinin uzunluğu\n5. nəqliyyat vasitəsinin imtinasızlığı və təmirə yararlılığı\n6. nəqliyyat vasitələrinin estetik görnüşü",
     answers: [
-      { answer: "Ancient", type: "true" },
-      { answer: "Ansient", type: "false" },
-      { answer: "Ansiente", type: "false" },
-      { answer: "Ancint", type: "false" },
-      { answer: "Encient", type: "false" },
+      { answer: "1; 3; 5", type: "true" },
+      { answer: "2; 4; 5", type: "false" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 4; 6", type: "false" },
+      { answer: "3; 4; 6", type: "false" },
     ],
   },
   {
     id: 26,
-    Question: "26. Choose the correct variant\n\nTo fall … love… her.",
+    Question:
+      "26. Turistlərin səyahətinin təşkili zamanı onların həyatının və fəaliyyətinin təhlükəsizliyi təmin edilməsi nəqliyyatın hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "In; with", type: "true" },
-      { answer: "With; in", type: "false" },
-      { answer: "With; -", type: "false" },
-      { answer: "In; -", type: "false" },
-      { answer: "In; of", type: "false" },
+      { answer: "təhlükəsizlik", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "dayanıqlılıq", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "istismar", type: "false" },
     ],
   },
   {
     id: 27,
-    Question: "27. Choose the correct past variant",
+    Question:
+      "27. Ümumi təyinatlı daşınmalar hansı təşkilatlar tərəfindən həyata keçirilir?",
     answers: [
-      { answer: "Think –thought", type: "true" },
-      { answer: "Think – thinked", type: "false" },
-      { answer: "Think – thoughted", type: "false" },
-      { answer: "Think – thoughte", type: "false" },
-      { answer: "Think – thanked", type: "false" },
+      { answer: "komersiya təşkilatları tərəfindən", type: "true" },
+      { answer: "istehsal sahəsi tərəfindən", type: "false" },
+      { answer: "akkreditləşdirmə üzrə orqan tərəfindən", type: "false" },
+      { answer: "sertifinatlaşdırma üzrə orqan tərəfindən", type: "false" },
+      { answer: "standartlaşdırma üzrə orqan tərəfindən", type: "false" },
     ],
   },
   {
     id: 28,
-    Question: "28. Choose the correct preposition\n\nFight …. Romans.",
+    Question:
+      "28. Nəqliyyat vasitəsindən istifadə prosesində qarşıya çıxan və onun istismar imkanlarını müəyyən edən texniki göstərici hansı variantda verilmişdir?",
     answers: [
-      { answer: "Against", type: "true" },
-      { answer: "By", type: "false" },
-      { answer: "Of", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "To", type: "false" },
+      { answer: "istismar xüsusiyyətləri", type: "true" },
+      { answer: "texniki qulluq", type: "false" },
+      { answer: "avtomobilin istismarı", type: "false" },
+      { answer: "nəqliyyatın növü", type: "false" },
+      { answer: "işləmə qabiliyyəti", type: "false" },
     ],
   },
   {
     id: 29,
-    Question: "29. Choose the right definition\n\nA legend is …",
+    Question:
+      "29. Nəqliyyat vasitəsinin öz funksiyalarını texniki sənədlərin tələbləri ilə müəyyən olunmuş parametrlərlə yerinə yetirməsi nəyi xarakterizə edir?",
     answers: [
-      {
-        answer:
-          "A very old story from ancient times, or stories that are not always true, that people tell about a famous event or person.",
-        type: "true",
-      },
-      {
-        answer:
-          "A short story that tells a moral truth often using animals as characters.",
-        type: "false",
-      },
-      { answer: "A false idea", type: "false" },
-      { answer: "A very funny story", type: "false" },
-      { answer: "A religious story", type: "false" },
+      { answer: "işləmə qabiliyyətini", type: "true" },
+      { answer: "nəqliyyatın sürətini", type: "false" },
+      { answer: "nəqliyyatın dəyanətliliyini", type: "false" },
+      { answer: "nəqliyyatın yanacaq qənaətliliyini", type: "false" },
+      { answer: "tormoz xüsusiyyətlərini", type: "false" },
     ],
   },
   {
     id: 30,
-    Question: "30. Choose the correct variant",
+    Question:
+      "30. Avtonəqliyyat vasitəsinin bütün parametrlərinin baxılan zaman anında normativ texniki sənədlərdə verilmiş tələblərə uyğunluğu onun hansı vəziyyətini xarakterizə edir?",
     answers: [
-      { answer: "Egyptian; Greek", type: "true" },
-      { answer: "Egyption; Greecian", type: "false" },
-      { answer: "Egyptian; Greeke", type: "false" },
-      { answer: "Egyptianese; Greek", type: "false" },
-      { answer: "Egyptian; Greekard", type: "false" },
+      { answer: "işçi vəziyyətdə olmasını", type: "true" },
+      { answer: "nasaz olmasını", type: "false" },
+      { answer: "yüklü olmasını", type: "false" },
+      { answer: "yüksüz olmasını", type: "false" },
+      { answer: "tormoz xüsusiyyətini", type: "false" },
     ],
   },
   {
     id: 31,
     Question:
-      "31. Choose the correct variant\n\nNo one … what she looked like.",
+      "31. Nəqliyyatın əsas funksiyalarını yerinə yetirilməsi xassəsini təyin edən və tətbiqolunma sahəsini müəyyənləşdirilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Knows", type: "true" },
-      { answer: "Know", type: "false" },
-      { answer: "Don’t know", type: "false" },
-      { answer: "Do knows", type: "false" },
-      { answer: "Does knows", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
     ],
   },
   {
     id: 32,
     Question:
-      "32. Choose the correct variant\n\nCleopatra didn’t ……. baths in milk.",
+      "32. Nəqliyyatın formasının rasionallığını və bədii ifadəliliyinin xarakterizə edilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Take", type: "true" },
-      { answer: "Took", type: "false" },
-      { answer: "Takes", type: "false" },
-      { answer: "Tooke", type: "false" },
-      { answer: "Toke", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "iqtisadi", type: "false" },
     ],
   },
   {
     id: 33,
-    Question: "33. Choose the correct variant\n\nThe …………. beauty of Egypt",
+    Question:
+      "33. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "Greatest", type: "true" },
-      { answer: "More greatest", type: "false" },
-      { answer: "Most greatest", type: "false" },
-      { answer: "More greate", type: "false" },
-      { answer: "Most greate", type: "false" },
+      { answer: "nəqliyyat vasitəsinin sərnişin tutumu", type: "true" },
+      { answer: "nəqliyyat vasitələrinin estetik görnüşü", type: "false" },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
     ],
   },
   {
     id: 34,
-    Question: "34. Choose the correct variant",
+    Question:
+      "34. Turistlərə xidmət zamanı nəqliyyatın işçi personalınin təhlükəsizliyini təmin edən xüsusiyyətinin xarakterizə edilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Decide", type: "true" },
-      { answer: "Deciede", type: "false" },
-      { answer: "Deside", type: "false" },
-      { answer: "Desiede", type: "false" },
-      { answer: "Desided", type: "false" },
+      { answer: "təhlükəsizlik", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "ekaloji", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "istismar", type: "false" },
     ],
   },
   {
     id: 35,
-    Question: "35. Choose the correct variant\n\nGo… a walk.",
+    Question:
+      "35. Avtonəqliyyat vasitəsinə baxılan zaman anında normativ texniki sənədlərdə verilmiş tələblərin birinə və yaxud bir neçəsinə uyğunsuzluğu onun hansı vəziyyətini xarakterizə edir?",
     answers: [
-      { answer: "For", type: "true" },
-      { answer: "With", type: "false" },
-      { answer: "In", type: "false" },
-      { answer: "Into", type: "false" },
-      { answer: "–", type: "false" },
+      { answer: "nasaz olmasını", type: "true" },
+      { answer: "saz olmasını", type: "false" },
+      { answer: "dəyanətliliyini", type: "false" },
+      { answer: "yüklü olmasını", type: "false" },
+      { answer: "yüksüz olmasını", type: "false" },
     ],
   },
   {
     id: 36,
-    Question: "36. Choose the correct variant",
+    Question:
+      "36. Aşağıdakı sıraların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəriciləri göstərilmişdir? \n1. nəqliyyat vasitəsinin hərəkət təhlükəsizliyi\n2. nəqliyyat vasitəsinin rəngi\n3. nəqliyyat vasitəsinin dəyanətliliyi\n4. nəqliyyat vasitəsinin uzunluğu\n5. nəqliyyat vasitəsinin imtinasızlığı və təmirə yararlılığı\n6. nəqliyyat vasitələrinin estetik görnüşü",
     answers: [
-      { answer: "Cook dinner for friends", type: "true" },
-      { answer: "Play to a musical", type: "false" },
-      { answer: "Download to the theatre", type: "false" },
-      { answer: "Listen music", type: "false" },
-      { answer: "Watch to a party", type: "false" },
+      { answer: "1; 3; 5", type: "true" },
+      { answer: "2; 4; 5", type: "false" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 4; 6", type: "false" },
+      { answer: "3; 4; 6", type: "false" },
     ],
   },
   {
     id: 37,
-    Question: "37. The song We Will Rock You ………out in 1970.",
+    Question:
+      "37. Aşağıdakı sıraların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəriciləri göstərilmişdir? \n1. nəqliyyat vasitəsinin yanacaq qənaətliliyi\n2. nəqliyyat vasitəsinin hündürlüyü\n3. nəqliyyat vasitəsinin dəyanətliliyi\n4. nəqliyyat vasitəsinin eni\n5. nəqliyyat vasitəsinin etibarlığı və uzunömürlülüyü\n6. nəqliyyat vasitələrinin estetik görnüşü",
     answers: [
-      { answer: "Came", type: "true" },
-      { answer: "Come", type: "false" },
-      { answer: "Comes", type: "false" },
-      { answer: "Was come", type: "false" },
-      { answer: "Is coming", type: "false" },
+      { answer: "1; 3; 5", type: "true" },
+      { answer: "2; 4; 5", type: "false" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 4; 6", type: "false" },
+      { answer: "3; 4; 6", type: "false" },
     ],
   },
   {
     id: 38,
     Question:
-      "38. Choose the correct variant\n\nAll the songs in the musical are … Queen.",
+      "38. Hansı variantda nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "By", type: "true" },
-      { answer: "With", type: "false" },
-      { answer: "In", type: "false" },
-      { answer: "Into", type: "false" },
-      { answer: "From", type: "false" },
+      { answer: "nəqliyyat vasitəsinin yanacaq qənaətliliyi", type: "true" },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitəsinin eni", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
     ],
   },
   {
     id: 39,
     Question:
-      "39. Choose the correct variant\n\nThe musical … to Japan in 2003.",
+      "39. Hansı keyfiyyət göstəricisinin təyin olunması zamanı nəqliyyatın əsas funksiyalarının yerinə yetirilməsi xassəsini təyin edən və onun tətbiqolunma sahəsinin müəyyənləşdirilməsi yerinə yetirilir?",
     answers: [
-      { answer: "Went", type: "true" },
-      { answer: "Go", type: "false" },
-      { answer: "Is going", type: "false" },
-      { answer: "Goes", type: "false" },
-      { answer: "Was gone", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "estetik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 40,
-    Question:
-      "40. Choose the correct variant\n\nI (see) the TV news yesterday.",
+    Question: "40.Dəmir yolu nəqliyyatı hansı nəqliyyat növünə aiddir?",
     answers: [
-      { answer: "Saw", type: "true" },
-      { answer: "Sees", type: "false" },
-      { answer: "See", type: "false" },
-      { answer: "Seeing", type: "false" },
-      { answer: "Sawn", type: "false" },
+      { answer: "texniki nəqliyyat", type: "true" },
+      { answer: "avtomobil nəqliyyatı", type: "false" },
+      { answer: "hava nəqliyyatı", type: "false" },
+      { answer: "kənd təsərrüfatı nəqliyyatı", type: "false" },
+      { answer: "dəniz nəqliyyatı", type: "false" },
     ],
   },
   {
     id: 41,
-    Question: "41. Choose the correct variant\n\nI (speak) English yesterday.",
+    Question:
+      "41. Kruiz gəmilərində kayutların təsnifatına aid olmayan hansı variantıdır?",
     answers: [
-      { answer: "Spoke", type: "true" },
-      { answer: "Speaks", type: "false" },
-      { answer: "Speaking", type: "false" },
-      { answer: "Speake", type: "false" },
-      { answer: "Is speaking", type: "false" },
+      { answer: "xəzər", type: "true" },
+      { answer: "superior suit", type: "false" },
+      { answer: "delüks", type: "false" },
+      { answer: "ailə kayutu", type: "false" },
+      { answer: "şahzadə apartamentləri", type: "false" },
     ],
   },
   {
     id: 42,
     Question:
-      "42. Choose the correct variant\n\nQueen ….. in 1971 with …… singer Freddie Mercury.",
+      "42. Kruiz gəmilərində kayutların təsnifatına aid olan hansı variantda verilmişdir?",
     answers: [
-      { answer: "Formed; lead", type: "true" },
-      { answer: "Form; main", type: "false" },
-      { answer: "Forms; principal", type: "false" },
-      { answer: "Forms; leads;", type: "false" },
-      { answer: "Form; first", type: "false" },
+      { answer: "delüks", type: "true" },
+      { answer: "kür", type: "false" },
+      { answer: "xəzər", type: "false" },
+      { answer: "beynəlxalq kayut", type: "false" },
+      { answer: "məkan kayut", type: "false" },
     ],
   },
   {
     id: 43,
     Question:
-      "43. Choose the correct variant\n\nFreddie Mercury (to die) in 1991 and John Deacon (to leave) the band in 1997.",
+      "43. Kruiz gəmilərində kayutların təsnifatına aid olmayan variantı müəyyən edin?",
     answers: [
-      { answer: "Died; left", type: "true" },
-      { answer: "Dyed; left", type: "false" },
-      { answer: "Died; leaves", type: "false" },
-      { answer: "Dies; leaves", type: "false" },
-      { answer: "Die; leave", type: "false" },
+      { answer: "beynəlxalq kayut", type: "true" },
+      { answer: "ailə kayutu", type: "false" },
+      { answer: "oyners suit", type: "false" },
+      { answer: "qrand suit", type: "false" },
+      { answer: "royal faemili suit", type: "false" },
     ],
   },
   {
     id: 44,
-    Question: "44. Choose the correct synonym\n\nHuge is …",
+    Question:
+      "44. Kruiz gəmilərində kayutların təsnifatına aid olan hansı variantda verilmişdir?",
     answers: [
-      { answer: "Very big", type: "true" },
-      { answer: "Very small", type: "false" },
-      { answer: "Very beautiful", type: "false" },
-      { answer: "Very famous", type: "false" },
-      { answer: "Very fast", type: "false" },
+      { answer: "ailə kayutu", type: "true" },
+      { answer: "beynəlxalq kayut", type: "false" },
+      { answer: "məkan kayut", type: "false" },
+      { answer: "bəy kayut", type: "false" },
+      { answer: "lider kayut", type: "false" },
     ],
   },
   {
     id: 45,
     Question:
-      "45. Choose the correct variant\n\n…….. you play a musical instrument when you were a child?",
+      "45. Hansı nəqliyyat vasitələri XIX əsrin sonu XX əsrin əvvəllərində meydana gəlmişdir?",
     answers: [
-      { answer: "Did", type: "true" },
-      { answer: "Does", type: "false" },
-      { answer: "Do", type: "false" },
-      { answer: "Was", type: "false" },
-      { answer: "Is", type: "false" },
+      { answer: "avtomobillər və təyyarələr", type: "true" },
+      { answer: "dəmir yolu nəqliyyatı", type: "false" },
+      { answer: "su yolu nəqliyyatı", type: "false" },
+      { answer: "gəmilər və borular", type: "false" },
+      { answer: "gəmilər və paravoz", type: "false" },
     ],
   },
   {
     id: 46,
-    Question:
-      "46. Choose the correct variant\n\nWhen did you (to start) learning English?",
+    Question: "46. Avtomobil nəqliyyatı hansı nəqliyyat növünə aiddir?",
     answers: [
-      { answer: "Start", type: "true" },
-      { answer: "Started", type: "false" },
-      { answer: "Starts", type: "false" },
-      { answer: "Starting", type: "false" },
-      { answer: "To start", type: "false" },
+      { answer: "texniki nəqliyyat", type: "true" },
+      { answer: "hava nəqliyyatı", type: "false" },
+      { answer: "kənd təsərrüfatı nəqliyyatı", type: "false" },
+      { answer: "dəmiryolu nəqliyyatı", type: "false" },
+      { answer: "tibbi nəqliyyat", type: "false" },
     ],
   },
   {
     id: 47,
     Question:
-      "47. Choose the correct variant\n\nWhat music did you … listen to?",
+      "47. Nəqliyyat vasitəsinin istismarı prosesində dəyişən, baxılan zaman anında ölçülmüş və kəmiyyətcə qiymətləndirilmiş istismar xüsusiyyətlərinin toplusu ilə təyin olunması onun hansı xüsusiyyətini xarakterizə edir?",
     answers: [
-      { answer: "Last", type: "true" },
-      { answer: "Latest", type: "false" },
-      { answer: "The last", type: "false" },
-      { answer: "A last", type: "false" },
-      { answer: "The latest", type: "false" },
+      { answer: "texniki vəziyyətini", type: "true" },
+      { answer: "təmir olmasını", type: "false" },
+      { answer: "işçi vəziyyətini", type: "false" },
+      { answer: "nasaz olmasını", type: "false" },
+      { answer: "dəyanətliliyini", type: "false" },
     ],
   },
   {
     id: 48,
-    Question:
-      "48. Choose the correct variant\n\nDid your parents read books … you?",
+    Question: "48. Mürəkkəb maşınlar hansı xüsusiyyətlərə malikdir?",
     answers: [
-      { answer: "To", type: "true" },
-      { answer: "By", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "Of", type: "false" },
-      { answer: "In", type: "false" },
+      { answer: "funksional və etibarlıq", type: "true" },
+      { answer: "etibarlıq, estetik, təhlükəsizlik", type: "false" },
+      { answer: "funksional, təhlükəsizlik, təyinat", type: "false" },
+      { answer: "etibarlıq, erqonomik", type: "false" },
+      { answer: "funksional, erqonomik", type: "false" },
     ],
   },
   {
     id: 49,
     Question:
-      "49. Choose the correct variant\n\nYesterday I watched a film …. TV.",
+      "49. Aşağıdakılardan hansı mürəkkəb maşınların xüsusiyyətlər qrupuna aiddir?",
     answers: [
-      { answer: "On", type: "true" },
-      { answer: "By", type: "false" },
-      { answer: "With", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "Into", type: "false" },
+      { answer: "etibarlıq", type: "true" },
+      { answer: "aqreqatlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "simplifikatlaşdırma", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 50,
     Question:
-      "50. Choose the correct variant.\n\nGood reviews/the musical/did/ get?",
+      "50. Avtomobilin işləmə qabiliyyətini saxlamaq imkanını xarakterizə edən xüsusiyyəti necə adlanır?",
     answers: [
-      { answer: "Did the musical get good reviews?", type: "true" },
-      { answer: "The musical did get good reviews?", type: "false" },
-      { answer: "Good reviews get did the musical?", type: "false" },
-      { answer: "The musical good reviews did get?", type: "false" },
-      { answer: "Get the musical did good reviews?", type: "false" },
+      { answer: "etibarlıq xüsusiyyəti", type: "true" },
+      { answer: "funksional xüsusiyyəti", type: "false" },
+      { answer: "tormoz xüsusiyyəti", type: "false" },
+      { answer: "idarəolunma xüsusiyyəti", type: "false" },
+      { answer: "təhlükəsizlik xüsusiyyəti", type: "false" },
     ],
   },
   {
     id: 51,
-    Question: "51. This sportsman ____ the competition twice.",
+    Question:
+      "51. Aşağıdakılardan hansı avtomobilin istismar xüsusiyyətləri qrupuna aid deyil?",
     answers: [
-      { answer: "has won", type: "true" },
-      { answer: "have won", type: "false" },
-      { answer: "has win", type: "false" },
-      { answer: "had won", type: "false" },
-      { answer: "has wined", type: "false" },
+      { answer: "qabarit ölçüləri", type: "true" },
+      { answer: "tormoz", type: "false" },
+      { answer: "yanacaq qənaətliliyi", type: "false" },
+      { answer: "idarəolunma", type: "false" },
+      { answer: "dəyanəklik", type: "false" },
     ],
   },
   {
     id: 52,
-    Question: "52. Have you ever _____ to China?",
+    Question:
+      "52. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "been", type: "true" },
-      { answer: "seen", type: "false" },
-      { answer: "visited", type: "false" },
-      { answer: "went", type: "false" },
-      { answer: "met", type: "false" },
+      { answer: "nəqliyyat vasitəsinin dinamikliyi", type: "true" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin eni", type: "false" },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
     ],
   },
   {
     id: 53,
-    Question: "53. Have you ____ a famous painter?",
+    Question:
+      "53. Məmulatın formasının rasionallığının, kompazisiyasının bütövlülüyünün, bədii ifadəliliyinin xarakterizə edilməsi hansı keyfiyyət göstəricisi aiddir?",
     answers: [
-      { answer: "Ever / met", type: "true" },
-      { answer: "Always / met", type: "false" },
-      { answer: "Usually / meet", type: "false" },
-      { answer: "Often / met", type: "false" },
-      { answer: "Ever / meet", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 54,
-    Question: "54. Has your computer had a ____?",
+    Question:
+      "54. Obyektin müəyyən edilmiş və nəzərdə tutulan tələbatları ödəmə qabiliyyətinə aid xarakteristikalarının məcmusu necə adlanır?",
     answers: [
-      { answer: "Virus", type: "true" },
-      { answer: "Speech", type: "false" },
-      { answer: "Plan", type: "false" },
-      { answer: "Business", type: "false" },
-      { answer: "Shirt", type: "false" },
+      { answer: "keyfiyyət", type: "true" },
+      { answer: "sertifikat", type: "false" },
+      { answer: "standart", type: "false" },
+      { answer: "ekspeditor", type: "false" },
+      { answer: "ölçmə", type: "false" },
     ],
   },
   {
     id: 55,
-    Question: "55. She ____ never  ___ in love.",
+    Question:
+      "55. Aşağıdakı sıraların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəriciləri göstərilmişdir? \n1. nəqliyyat vasitəsinin dinamikliyi\n2. nəqliyyat vasitəsinin hündürlüyü\n3. nəqliyyat vasitəsinin dəyanətliliyi\n4. nəqliyyat vasitəsinin uzunluğu\n5. nəqliyyat vasitəsinin keçiciliyi\n6. nəqliyyat vasitələrinin estetik görnüşü",
     answers: [
-      { answer: "Has / been", type: "true" },
-      { answer: "did / been", type: "false" },
-      { answer: "Have / been", type: "false" },
-      { answer: "Does / been", type: "false" },
-      { answer: "Was / been", type: "false" },
+      { answer: "1; 3; 5", type: "true" },
+      { answer: "2; 4; 5", type: "false" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 4; 6", type: "false" },
+      { answer: "3; 4; 6", type: "false" },
     ],
   },
   {
     id: 56,
-    Question: "56. ____ it ever ____ in Dubai?",
+    Question:
+      "56. Xidmətlərin keyfiyyətini qiymətləndirmə üsullarına aid tələbləri əks etdirən sənəd necə adlanır?",
     answers: [
-      { answer: "Has / snowed", type: "true" },
-      { answer: "Has / snow", type: "false" },
-      { answer: "Have / snowed", type: "false" },
-      { answer: "Did / snow", type: "false" },
-      { answer: "Does / snowed", type: "false" },
+      { answer: "normativ sənəd", type: "true" },
+      { answer: "keyfiyyət ilgəyi", type: "false" },
+      { answer: "protokol", type: "false" },
+      { answer: "sertifikat", type: "false" },
+      { answer: "qaimə", type: "false" },
     ],
   },
   {
     id: 57,
-    Question: "57. My friends have ____ ____ the USA many times.",
+    Question:
+      "57. Hansı keyfiyyət göstəricisinə nəqliyyatın istifadəsi zamanı onun işçi personalının təhlükəsizliyini təmin edən xüsusiyyətinin xarakterizə edilməsi aiddir?",
     answers: [
-      { answer: "Flown / to", type: "true" },
-      { answer: "Flew / to", type: "false" },
-      { answer: "Fly / across", type: "false" },
-      { answer: "Flew / in", type: "false" },
-      { answer: "Fly / around", type: "false" },
+      { answer: "təhlükəsizlik", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "istismar", type: "false" },
     ],
   },
   {
     id: 58,
-    Question: "58. I ____ never ___ my wallet.",
+    Question:
+      "58. Hansı sənəddə məhsula və xidmətə, həmçinin onların keyfiyyətini qiymətləndirmə üsullarına aid tələblər verilir?",
     answers: [
-      { answer: "Have / lost", type: "true" },
-      { answer: "Had / lose", type: "false" },
-      { answer: "Has / lost", type: "false" },
-      { answer: "Have / lose", type: "false" },
-      { answer: "Had / lost", type: "false" },
+      { answer: "normativ sənəd", type: "true" },
+      { answer: "protokol", type: "false" },
+      { answer: "sertifikat", type: "false" },
+      { answer: "lisenziya", type: "false" },
+      { answer: "qaimə", type: "false" },
     ],
   },
   {
     id: 59,
-    Question: "59. How many accounts are there ____ your computer?",
+    Question:
+      "59. Mühərrikin xüsusi yanacaq sərfi onun iş prosesi zamanı neçə saatlıq sərf etdiyi yanacağın kütləsinin effektiv gücünə nisbəti ilə müəyyən olunur?",
     answers: [
-      { answer: "on", type: "true" },
-      { answer: "in", type: "false" },
-      { answer: "within", type: "false" },
-      { answer: "at", type: "false" },
-      { answer: "over", type: "false" },
+      { answer: "bir saatlıq", type: "true" },
+      { answer: "iki saatlıq", type: "false" },
+      { answer: "beş saatlıq", type: "false" },
+      { answer: "on saatlıq", type: "false" },
+      { answer: "on iki saatlıq", type: "false" },
     ],
   },
   {
     id: 60,
-    Question: "60. Many young people are ____ to their phones.",
+    Question:
+      "60. Turistlərə xidmətin yerinə yetirilmə üsuluna görə nəqliyyat vasitələri neçə yerə bölünür?",
     answers: [
-      { answer: "addicted", type: "true" },
-      { answer: "interested", type: "false" },
-      { answer: "famous", type: "false" },
-      { answer: "popular", type: "false" },
-      { answer: "successful", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "8", type: "false" },
+      { answer: "6", type: "false" },
+      { answer: "4", type: "false" },
     ],
   },
   {
     id: 61,
-    Question: "61. Can I ____ a phone call now?",
+    Question:
+      "61. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "Make", type: "true" },
-      { answer: "Do", type: "false" },
-      { answer: "Communicate", type: "false" },
-      { answer: "Leave", type: "false" },
-      { answer: "Use", type: "false" },
+      { answer: "nəqliyyat vasitəsinin hərəkət təhlükəsizliyi", type: "true" },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+      {
+        answer: "nəqliyyat vasitəsinin minimum yük götürmə qabliyyəti",
+        type: "false",
+      },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görnüşü", type: "false" },
     ],
   },
   {
     id: 62,
     Question:
-      "62. How many people have ____ to the Internet in developing countries?",
+      "62. Nəqliyyat vasitəsinin öz işləmə qabiliyyətini tam və ya qismən itirməsi necə adlanır?",
     answers: [
-      { answer: "Access", type: "true" },
-      { answer: "Anti-virus", type: "false" },
-      { answer: "Hacker", type: "false" },
-      { answer: "Mobile phone", type: "false" },
-      { answer: "Account", type: "false" },
+      { answer: "imtina", type: "true" },
+      { answer: "qəza", type: "false" },
+      { answer: "təmirə yararlı", type: "false" },
+      { answer: "təmirə yararsız", type: "false" },
+      { answer: "dəyanətlilik", type: "false" },
     ],
   },
   {
     id: 63,
-    Question: "63. Have you got a Facebook ____?",
+    Question:
+      "63. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "Account", type: "true" },
-      { answer: "Hotspot", type: "false" },
-      { answer: "Virus", type: "false" },
-      { answer: "Software", type: "false" },
-      { answer: "Video chat", type: "false" },
+      { answer: "nəqliyyat vasitəsinin dəyanətliliyi", type: "true" },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+      {
+        answer: "nəqliyyat vasitəsinin minimum yük götürmə qabliyyəti",
+        type: "false",
+      },
+      { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görnüşü", type: "false" },
     ],
   },
   {
     id: 64,
-    Question: "64. What’s wrong ___ your mobile phone?",
+    Question:
+      "64. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "With", type: "true" },
-      { answer: "On", type: "false" },
-      { answer: "About", type: "false" },
-      { answer: "In", type: "false" },
-      { answer: "Of", type: "false" },
+      { answer: "nəqliyyat vasitəsinin keçiciliyi", type: "true" },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+      { answer: "nəqliyyat vasitəsinin eni və uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görnüşü", type: "false" },
     ],
   },
   {
     id: 65,
-    Question: "65. I haven’t had ____ ____ my computer so far.",
+    Question: "65. Kruiz gəmilərində dərəcələr hansı göstəricilərdən asılıdır?",
     answers: [
-      { answer: "Anti-virus software / on", type: "true" },
-      { answer: "Human brains / about", type: "false" },
-      { answer: "Logs / under", type: "false" },
-      { answer: "Personal meaning/ in", type: "false" },
-      { answer: "Hackers / off", type: "false" },
+      {
+        answer: "illüminator, pəncərə və eyvanların və s. olmasından",
+        type: "true",
+      },
+      { answer: "kuriz gəmisinin limana çatma vaxtından", type: "false" },
+      { answer: "kuriz gəmisinin sürətindən", type: "false" },
+      { answer: "gəminin ay ərzindəki gəlirindən", type: "false" },
+      { answer: "gəminin il ərzindəki gəlirindən", type: "false" },
     ],
   },
   {
     id: 66,
-    Question: "66. You can ___ online ____.",
+    Question:
+      "66. Son beş ildə hava nəqliyyatı ilə turistlərin 1000...3000 km diapazonlarında hərəkətliliyi neçə faizdən çox artmışdır?",
     answers: [
-      { answer: "Do / banking", type: "true" },
-      { answer: "Wake up / banking", type: "false" },
-      { answer: "Spend / banking", type: "false" },
-      { answer: "Stay / banking", type: "false" },
-      { answer: "Read / banking", type: "false" },
+      { answer: "100%-dən çox", type: "true" },
+      { answer: "60%-dən çox", type: "false" },
+      { answer: "40%-dən çox", type: "false" },
+      { answer: "50%-dən çox", type: "false" },
+      { answer: "200%-dən çox", type: "false" },
     ],
   },
   {
     id: 67,
     Question:
-      "67. Form question to the words in bold.\nYou have to type in your personal information while using Wi-Fi.",
+      "67. Hava nəqliyyatında daşıma haqqına edilən endirim kimlərə tətbiq edilir?",
     answers: [
-      { answer: "What do we have to type in while using WI-FI?", type: "true" },
-      { answer: "What have we to do while using WI-FI?", type: "false" },
-      { answer: "What do we do while using WI-FI?", type: "false" },
+      { answer: "xidməti ezamiyyətə gedənlərə", type: "true" },
+      { answer: "18 yaşı tamam olmayan uşaqlara", type: "false" },
+      { answer: "yaşı 60-dan çox olan insanlara", type: "false" },
       {
-        answer:
-          "What kind of information do we have to type in while using WI-FI?",
+        answer: "dəmir yol nəqliyyatında çalışan bütün işçilərə",
         type: "false",
       },
-      {
-        answer: "When do we have to type in while using WI-FI?",
-        type: "false",
-      },
+      { answer: "istirahət mərkəzinin bütün işçilərinə", type: "false" },
     ],
   },
   {
     id: 68,
     Question:
-      "68. Choose the correct variant.\nThere … a lot of rooms in this house.",
+      "68. Hava nəqliyyatında daşıma haqqına edilən endirim hansı halda tətbiq edilir?",
     answers: [
-      { answer: "are", type: "true" },
-      { answer: "is", type: "false" },
-      { answer: "isn’t", type: "false" },
-      { answer: "has", type: "false" },
-      { answer: "have", type: "false" },
+      {
+        answer:
+          "tədris prosesi ilə bağlı olan, istehsalatdan ayrılmaqla oxuyan şəxslər uçuşdan istifadə etdikdə",
+        type: "true",
+      },
+      {
+        answer:
+          "18 yaşı tamam olmayan uşaqlar hava nəqliyyatında uçuşdan istifadə etdikdə",
+        type: "false",
+      },
+      {
+        answer:
+          "yaşı 60-dan çox olan insanlar hava nəqliyyatında uçuşdan istifadə etdikdə",
+        type: "false",
+      },
+      {
+        answer:
+          "il ərzində hava nəqliyyatında 10 dəfədən çox uçuşdan istifadə edən insanlar",
+        type: "false",
+      },
+      {
+        answer:
+          "ilk dəfə hava nəqliyyatında uçuşdan istifadə edən bütün insanlar",
+        type: "false",
+      },
     ],
   },
   {
     id: 69,
-    Question: "69. Yesterday we ____ some great songs ____ the Internet.",
+    Question:
+      "69. Turistlərə nəqliyyat xidməti zamanı hər 15 nəfərdən ibarət qrupda kimlərə sərnişinlərə göstərilən eyni xidmətlərdən və bərabər səviyyəli yemək və mehmanxana xidmətləri pulsuz göstərilməlidir?",
     answers: [
-      { answer: "Downloaded / from", type: "true" },
-      { answer: "Wrote / at", type: "false" },
-      { answer: "Left / with", type: "false" },
-      { answer: "Preferred / with", type: "false" },
-      { answer: "Shut / around", type: "false" },
+      { answer: "bir sürücüyə və bir ödənişsiz bələdçiyə", type: "true" },
+      { answer: "istirahət mərkəzinin xidmətçilərinə", type: "false" },
+      { answer: "mehmanxana xidmətçilərinə", type: "false" },
+      { answer: "yeməkxana xidmətçilərinə", type: "false" },
+      { answer: "qrupda olan bir yaşlı qadına və bir kişiyə", type: "false" },
     ],
   },
   {
     id: 70,
-    Question: "70. I lost all my files because my computer had a ____.",
+    Question:
+      "70. Neçə nəfərdən ibarət qrupda bir sürücüyə və bir ödənişsiz bələdçiyə sərnişinlərə göstərilən eyni xidmətlərdən və bərabər səviyyəli yemək və mehmanxana xidmətləri pulsuz göstərilməlidir?",
     answers: [
-      { answer: "Virus", type: "true" },
-      { answer: "Password", type: "false" },
-      { answer: "Hotspot", type: "false" },
-      { answer: "Access", type: "false" },
-      { answer: "Video chat", type: "false" },
+      { answer: "15 nəfərdən", type: "true" },
+      { answer: "12 nəfərdən", type: "false" },
+      { answer: "25 nəfərdən", type: "false" },
+      { answer: "10 nəfərdən", type: "false" },
+      { answer: "20 nəfərdən", type: "false" },
     ],
   },
   {
     id: 71,
-    Question: "71. Does the hotel have a ____?\nI have to check my e-mail.",
+    Question:
+      "71. Sərnişin daşimalarının həcmi və strukturunu müəyyən edən əsas amillər aid olmayan variantı müəyyən edin.",
     answers: [
-      { answer: "WI-FI hotspot", type: "true" },
-      { answer: "Hacker", type: "false" },
-      { answer: "Bank account", type: "false" },
-      { answer: "Voice message", type: "false" },
-      { answer: "Attachment", type: "false" },
+      { answer: "kənd təsərrüfatının inkişafı", type: "true" },
+      { answer: "ölkə əhalisinin siyahısı və onun artımı", type: "false" },
+      { answer: "şəhər əhalisinin artımı", type: "false" },
+      {
+        answer: "əhalinin həyatının maddi-mədəni səviyyəsinin yüksəldilməsi",
+        type: "false",
+      },
+      {
+        answer:
+          "sərnişin nəqliyyatının müxtəlif növlərinin inkişafı və daşıma tariflərinin səviyyəsi",
+        type: "false",
+      },
     ],
   },
   {
     id: 72,
-    Question: "72. I want ____ some photos ___ my website.",
+    Question:
+      "72. Nəqliyyatın istismara başladığı andan son həddinə (silinənə) qədər işləmə müddətinə (yürüşünə) nə deyilir?",
     answers: [
-      { answer: "To upload / to", type: "true" },
-      { answer: "To check / at", type: "false" },
-      { answer: "To access / from", type: "false" },
-      { answer: "To send / under", type: "false" },
-      { answer: "To access / over", type: "false" },
+      { answer: "resurs", type: "true" },
+      { answer: "dəyanətlilik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "sürətlənmə", type: "false" },
+      { answer: "uzunömürlülük", type: "false" },
     ],
   },
   {
     id: 73,
-    Question: "73. I need to buy some ___, then my computer will be safe.",
+    Question:
+      "73. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "anti-virus software", type: "true" },
-      { answer: "bank account", type: "false" },
-      { answer: "access", type: "false" },
-      { answer: "mobile phone", type: "false" },
-      { answer: "voicemail", type: "false" },
+      {
+        answer: "nəqliyyat vasitəsinin etibarlığı və uzunömürlülüyü",
+        type: "true",
+      },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin eni", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görnüşü", type: "false" },
     ],
   },
   {
     id: 74,
-    Question: "74. We can’t use video chat with ___",
+    Question:
+      "74. Nasazlıqların yaranmasının qarşısını almaqla və hissələrin yeyilməsini azaltmaqla avtomobilin uzun müddət texniki saz və işləməyə hazır vəziyyətdə saxlamaq məqsədilə yerinə yetirilən profilaktik əməliyyatların məcmusu necə adlanır?",
     answers: [
-      { answer: "A landline", type: "true" },
-      { answer: "A smartphone", type: "false" },
-      { answer: "A laptop", type: "false" },
-      { answer: "A computer", type: "false" },
-      { answer: "Mobile phone", type: "false" },
+      { answer: "texniki qulluq", type: "true" },
+      { answer: "bərpa etmə", type: "false" },
+      { answer: "nəzarət etmə", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "dəyanətlilik", type: "false" },
     ],
   },
   {
     id: 75,
-    Question: "75. ____ your father and mother ever travelled ___ plane?",
+    Question: "75. Serviz xidmətləri neçə yerə bölünür?",
     answers: [
-      { answer: "Have / by", type: "true" },
-      { answer: "Do / in", type: "false" },
-      { answer: "Has / on", type: "false" },
-      { answer: "Have / near", type: "false" },
-      { answer: "Had / by", type: "false" },
+      { answer: "6", type: "true" },
+      { answer: "8", type: "false" },
+      { answer: "9", type: "false" },
+      { answer: "12", type: "false" },
+      { answer: "16", type: "false" },
     ],
   },
   {
     id: 76,
     Question:
-      "76. A good way to keep ____ touch ____ old friends is to use a ____.",
+      "76. Azərbaycan Dəmiryolu nəqliyyatında neçə əsas konvensiya mövcuddur?",
     answers: [
-      { answer: "in / with / mobile phone", type: "true" },
-      { answer: "in / to / newspaper", type: "false" },
-      { answer: "on / for / ball", type: "false" },
-      { answer: "of / into / animal", type: "false" },
-      { answer: "at / with / science", type: "false" },
+      { answer: "3", type: "true" },
+      { answer: "6", type: "false" },
+      { answer: "8", type: "false" },
+      { answer: "9", type: "false" },
+      { answer: "4", type: "false" },
     ],
   },
   {
     id: 77,
-    Question: "77. I phoned but she didn’t answer, so I left her a _____.",
+    Question:
+      "77. Aşağdakı müqavilələrdən (konvensiyasından) hansı dəmiryolu nəqliyyatında hazırda qüvvədədir?",
     answers: [
-      { answer: "Voice message", type: "true" },
-      { answer: "Connection", type: "false" },
-      { answer: "Tablet computer", type: "false" },
-      { answer: "Laptop", type: "false" },
-      { answer: "Landline", type: "false" },
+      {
+        answer:
+          "beynəlxalaq dəmir yolu daşınmaları haqqında 1980-ci il müqaviləsi",
+        type: "true",
+      },
+      {
+        answer:
+          "beynəlxalaq dəmir yolu yükləmələri haqqında 1987-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "beynəlxalaq dəmir yolu daşınmaları haqqında 1985-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer: "müstəqil dəmir yolu sahəsində 1975-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "Azərbaycan Respublikası Dəmir yolu haqqında 1957-ci il müqaviləsi",
+        type: "false",
+      },
     ],
   },
   {
     id: 78,
-    Question: "78. A hacker tried to learn my ____ and ____.",
+    Question:
+      "78. İşləmə qabiliyyətini itirmiş avtomobilin texniki vəziyyətinin bərpasına yönəlmiş texniki təsirlərin məcmusu necə adlanır?",
     answers: [
-      { answer: "Username / password", type: "true" },
-      { answer: "Competition / car", type: "false" },
-      { answer: "Jumper / shirt", type: "false" },
-      { answer: "Bicycle / boat", type: "false" },
-      { answer: "Holiday / party", type: "false" },
+      { answer: "təmir", type: "true" },
+      { answer: "nasazlıq", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "dəyanətlilik", type: "false" },
+      { answer: "resurs", type: "false" },
     ],
   },
   {
     id: 79,
-    Question: "79. I often use video chat ___ my sister ___ the USA.",
+    Question:
+      "79. Nasazlıqların yaranmasının qarşısını almaqla və hissələrin yeyilməsini azaltmaqla avtomobilin uzun müddət texniki saz və işləməyə hazır vəziyyətdə saxlamaq məqsədilə yerinə yetirilən profilaktik əməliyyatların məcmusu necə adlanır?",
     answers: [
-      { answer: "with / in", type: "true" },
-      { answer: "to / at", type: "false" },
-      { answer: "with / on", type: "false" },
-      { answer: "of / in", type: "false" },
-      { answer: "from / over", type: "false" },
+      { answer: "texniki qulluq", type: "true" },
+      { answer: "bərpa etmə", type: "false" },
+      { answer: "nəzarət etmə", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "dəyanətlilik", type: "false" },
     ],
   },
   {
     id: 80,
-    Question: "80. You can send a _____ with a laptop.",
+    Question:
+      "80. Kruiz gəmilərində kayutların təsnifatına aid olan variantı müəyyən edin?",
     answers: [
-      { answer: "message", type: "true" },
-      { answer: "horse", type: "false" },
-      { answer: "sympathy", type: "false" },
-      { answer: "harvest", type: "false" },
-      { answer: "competition", type: "false" },
+      { answer: "şahzadə apartamentləri", type: "true" },
+      { answer: "beynəlxalq kayut", type: "false" },
+      { answer: "səma kayut", type: "false" },
+      { answer: "bəy apartamentləri", type: "false" },
+      { answer: "paris kayut", type: "false" },
     ],
   },
   {
     id: 81,
-    Question: "81. ____ you ____ my e-mails today?",
+    Question:
+      "81. Kruiz gəmilərində kayutların təsnifatına aid olmayan variantı müəyyən edin?",
     answers: [
-      { answer: "Have / received", type: "true" },
-      { answer: "Is / received", type: "false" },
-      { answer: "Has / receiving", type: "false" },
-      { answer: "Are / received", type: "false" },
-      { answer: "Did / received", type: "false" },
+      { answer: "lider kayut", type: "true" },
+      { answer: "oyners suit", type: "false" },
+      { answer: "royal faemili suit", type: "false" },
+      { answer: "superior suit", type: "false" },
+      { answer: "adi kayut", type: "false" },
     ],
   },
   {
     id: 82,
-    Question: "82. I ____ ____ my holiday this year.",
+    Question:
+      "82. Avtomobilin dinamik keyfiyyətini xarakterizə edən əmsal necə adlanır?",
     answers: [
-      { answer: "haven’t had", type: "true" },
-      { answer: "hasn’t had", type: "false" },
-      { answer: "don’t have", type: "false" },
-      { answer: "didn’t have", type: "false" },
-      { answer: "didn’t had", type: "false" },
+      { answer: "momentə görə uyğunlaşma əmsalı", type: "true" },
+      { answer: "fırlanma tezliyinə görə uyğunlaşma əmsalı", type: "false" },
+      { answer: "ilişmə əmsalı", type: "false" },
+      { answer: "uzununa qüvvə əmsalı", type: "false" },
+      { answer: "diyirlənmədə müqavimət əmsalı", type: "false" },
     ],
   },
   {
     id: 83,
-    Question: "83. She ___ ___ the most boring weekend ever so far.",
+    Question:
+      "83. Avtomobil nəqliyyatının istismarı prosesində baş verən imtina və nasazlıqların aradan qaldırılması necə adlanır?",
     answers: [
-      { answer: "Hasn’t had", type: "true" },
-      { answer: "Haven’t had", type: "false" },
-      { answer: "Doesn’t have", type: "false" },
-      { answer: "Didn’t have", type: "false" },
-      { answer: "Don’t have", type: "false" },
+      { answer: "cari təmir", type: "true" },
+      { answer: "dövrü təmir", type: "false" },
+      { answer: "nasazlıq", type: "false" },
+      { answer: "daimi təmir", type: "false" },
+      { answer: "nəzarət", type: "false" },
     ],
   },
   {
     id: 84,
-    Question: "84. I ___ ___ any book by Mark Twain.",
+    Question:
+      "84. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "haven’t read", type: "true" },
-      { answer: "didn’t read", type: "false" },
-      { answer: "don’t read", type: "false" },
-      { answer: "hasn’t read", type: "false" },
-      { answer: "wasn’t read", type: "false" },
+      {
+        answer: "nəqliyyat vasitəsinin imtinasızlığı və rahatlığı",
+        type: "true",
+      },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
+      { answer: "nəqliyyat vasitələrinin eni", type: "false" },
     ],
   },
   {
     id: 85,
-    Question: "85. Mary ____ already ____ music on her computer.",
+    Question:
+      "85. Avtomobilin yanacaq qənaətliliyi xarakteristikası bir çox faktorlardan asılıdır. Bu faktorlar hansı variantda düzgün göstərilmişdir?\n1. mühərrikin və transmissiyanın parametrlərindən\n2. avtomobilin etibarlıq xüsusiyyətindən\n3. avtomobilin çəki və tərtibat parametrləri\n4. avtomobilin keçicilik xüsusiyyətindən\n5. şinlərin xarakteristikaları\n6. avtomobilin dəyanətlilik xüsusiyyətindən\n7. istismar şəraiti.",
     answers: [
-      { answer: "has / downloaded", type: "true" },
-      { answer: "have / upload", type: "false" },
-      { answer: "have / used", type: "false" },
-      { answer: "had / emailed", type: "false" },
-      { answer: "have / received", type: "false" },
+      { answer: "1; 3; 5; 7", type: "true" },
+      { answer: "2; 3; 5; 6", type: "false" },
+      { answer: "2; 4; 6; 7", type: "false" },
+      { answer: "2; 4; 5; 6", type: "false" },
+      { answer: "1; 2; 4; 7", type: "false" },
     ],
   },
   {
     id: 86,
-    Question: "86. Password is a ____.",
+    Question:
+      "86. Avtomobilin sürәtlәnmәsinin təyini sınağı neçə metrlik yol sahәsindә aparılır?",
     answers: [
-      { answer: "sign", type: "true" },
-      { answer: "lecture", type: "false" },
-      { answer: "chat", type: "false" },
-      { answer: "voice", type: "false" },
-      { answer: "call", type: "false" },
+      { answer: "2000 m-lik", type: "true" },
+      { answer: "3000 m-lik", type: "false" },
+      { answer: "2500 m-lik", type: "false" },
+      { answer: "1500 m-lik", type: "false" },
+      { answer: "500 m-lik", type: "false" },
     ],
   },
   {
     id: 87,
-    Question: "87. To update the status means _____ .",
+    Question:
+      "87. Nəqliyyat vasitəsinin istismarı prosesində dəyişən, baxılan zaman anında ölçülmüş və kəmiyyətcə qiymətləndirilmiş istismar xüsusiyyətlərinin toplusu ilə təyin olunması onun hansı xüsusiyyətini xarakterizə edir?",
     answers: [
-      { answer: "renew", type: "true" },
-      { answer: "access", type: "false" },
-      { answer: "increase", type: "false" },
-      { answer: "compose", type: "false" },
-      { answer: "control", type: "false" },
+      { answer: "texniki vəziyyətini", type: "true" },
+      { answer: "təmir olmasını", type: "false" },
+      { answer: "işçi vəziyyətini", type: "false" },
+      { answer: "nasaz olmasını", type: "false" },
+      { answer: "dəyanətliliyini", type: "false" },
     ],
   },
   {
     id: 88,
-    Question: "88. Up-to-date means ____.",
+    Question:
+      "88. Avtomobilin yanacaq qənaətliliyini qiymətləndirmək üçün istifadə edilən göstəricilər hansı variantda düzgün göstərilib?\n1. qərarlaşmış hərəkətdə yanacaq xarakteristikası\n2. yüksək temperatur şəraitində yanacaq xarakteristikası\n3. nəzarət yanacaq sərfi\n4. minimum sürətdə yanacaq xarakteristikası\n5. magistral-təpəli yollarda yanacaq-sürət xarakteristikası\n6. maksimum sürətdə yanacaq xarakteristikası\n7. dövri hərəkətdə yanacaq xarakteristikası",
     answers: [
-      { answer: "modern", type: "true" },
-      { answer: "special", type: "false" },
-      { answer: "native", type: "false" },
-      { answer: "confident", type: "false" },
-      { answer: "annual", type: "false" },
+      { answer: "1; 3; 5; 7", type: "true" },
+      { answer: "2; 4; 6; 7", type: "false" },
+      { answer: "1; 4; 6; 7", type: "false" },
+      { answer: "2; 3; 4; 5", type: "false" },
+      { answer: "1; 3; 5; 6", type: "false" },
     ],
   },
   {
     id: 89,
-    Question: "89. Software means a ___.",
+    Question: "89. Sərnişin avtobusu hansı oxa nəzərən simmetrikdir?",
     answers: [
-      { answer: "program", type: "true" },
-      { answer: "access", type: "false" },
-      { answer: "virus", type: "false" },
-      { answer: "message", type: "false" },
-      { answer: "chat", type: "false" },
+      { answer: "uzununa", type: "true" },
+      { answer: "eninə", type: "false" },
+      { answer: "üfüqi", type: "false" },
+      { answer: "şaquli", type: "false" },
+      { answer: "koordinat", type: "false" },
     ],
   },
   {
     id: 90,
-    Question: "90. A hacker means a (an) ____.",
+    Question:
+      "90. Aşağıdakı müqavilələrdən (konvensiyasından) hansı avtomobil nəqliyyatında hazırda qüvvədədir?",
     answers: [
-      { answer: "attacker", type: "true" },
-      { answer: "virus", type: "false" },
-      { answer: "account", type: "false" },
-      { answer: "software", type: "false" },
-      { answer: "access", type: "false" },
+      {
+        answer:
+          "beynəlxalaq avtomobil magistralı haqqında 1975-ci il avropa müqaviləsi",
+        type: "true",
+      },
+      {
+        answer:
+          "Azərbaycan Respublikası Dəmir yolu haqqında 1957-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "təhlükəsiz yüklərin beynəlxalq daşınması haqqında 1960-cı il Avropa müqaviləsi",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalaq sərnişin daşınmaları haqqında müqaviləsi",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalaq yük daşınmaları haqqında müqavilə",
+        type: "false",
+      },
     ],
   },
   {
     id: 91,
-    Question: "91. A laptop means ____.",
+    Question:
+      "91. Yanacaq sərfinin hesablaması zamanı benzinin sıxlığını hansı variantdakı ədədi qəbul etmək olar?",
     answers: [
-      { answer: "notebook", type: "true" },
-      { answer: "connection", type: "false" },
-      { answer: "voicemail", type: "false" },
-      { answer: "attachment", type: "false" },
-      { answer: "landline", type: "false" },
+      { answer: "0,73 kq/litr", type: "true" },
+      { answer: "0,83 kq/litr", type: "false" },
+      { answer: "0,75 kq/litr", type: "false" },
+      { answer: "0,71 kq/litr", type: "false" },
+      { answer: "0,68 kq/litr", type: "false" },
     ],
   },
   {
     id: 92,
     Question:
-      "92. Form question to the words in bold.\nThere are about 2 billion internet users in the world.",
+      "92. Nəqliyyat vasitəsi ilə turistlərə göstərilən xidmətə həmçinin onun keyfiyyətinin qiymətləndirmə üsullarına aid tələbləri əks etdirən sənəd necə adlanır?",
     answers: [
-      {
-        answer: "How many internet users are there in the world?",
-        type: "true",
-      },
-      {
-        answer: "How much internet users are there in the world?",
-        type: "false",
-      },
-      {
-        answer: "How many billion internet users in the world?",
-        type: "false",
-      },
-      {
-        answer: "How many internet users were there in the world?",
-        type: "false",
-      },
-      {
-        answer: "How much internet users are there in the country?",
-        type: "false",
-      },
+      { answer: "normativ sənəd", type: "true" },
+      { answer: "müqavilə", type: "false" },
+      { answer: "standart", type: "false" },
+      { answer: "lisenziya", type: "false" },
+      { answer: "qaimə", type: "false" },
     ],
   },
   {
     id: 93,
     Question:
-      "93. Form question to the words in bold.\n500 million people in the world have a Facebook account.",
+      "93. Turistlərə xidmət zamanı avtomobilin xüsusi yanacaq sərfi xətti yanacaq sərfinin hansı göstəricisinə nisbəti ilə təyin edilir?",
     answers: [
       {
-        answer: "How many people in the world have a Facebook account?",
+        answer: "turistlərin (sərnişinlərin) daşınmasında görülən səmərəli işə",
         type: "true",
       },
-      {
-        answer: "How many accounts do people have in the world?",
-        type: "false",
-      },
-      {
-        answer: "How many Facebook accounts have people in the country?",
-        type: "false",
-      },
-      {
-        answer: "How many have people Facebook accounts in the world?",
-        type: "false",
-      },
-      {
-        answer: "How many people a Facebook account in the world?",
-        type: "false",
-      },
+      { answer: "avtomobilin dövri hərəkətdə yanacaq sərfinə", type: "false" },
+      { answer: "düzxətli yolda avtomobilin orta sürətinə", type: "false" },
+      { answer: "avtomobilin maksimum yanacaq sərfinə", type: "false" },
+      { answer: "avtomobilin minimum yanacaq sərfinə", type: "false" },
     ],
   },
   {
     id: 94,
-    Question: "94. ___ Sarah ___ ___ own business before?",
+    Question:
+      "94. Qaimə hansı nəqliyyat növü üçün əsas daşıma sənədi hesab edilir?",
     answers: [
-      { answer: "Has / had / her", type: "true" },
-      { answer: "Has / has / she", type: "false" },
-      { answer: "Have / had / his", type: "false" },
-      { answer: "Had / has / him", type: "false" },
-      { answer: "Have / have / my", type: "false" },
+      { answer: "dəmir yolu nəqliyyatında", type: "true" },
+      { answer: "neft nəql edən boru-kəmər nəqliyyatında", type: "false" },
+      { answer: "su nəql edən boru-kəmər nəqliyyatında", type: "false" },
+      { answer: "hava yolu nəqliyyatında", type: "false" },
+      { answer: "hərbi təyyarələrlə", type: "false" },
     ],
   },
   {
     id: 95,
-    Question: "95. _____ they always lived ___ the same house?",
+    Question:
+      "95. Beynəlxalq avtomobil nəqliyyatı ittifaqı nə vaxt yaradılmışdır?",
     answers: [
-      { answer: "Have / in", type: "true" },
-      { answer: "Have / for", type: "false" },
-      { answer: "Had / in", type: "false" },
-      { answer: "Has / at", type: "false" },
-      { answer: "Had / with", type: "false" },
+      { answer: "1948-ci ilin mart ayında", type: "true" },
+      { answer: "1972-ci ilin mart ayında", type: "false" },
+      { answer: "1981-ci ilin may ayında", type: "false" },
+      { answer: "1944-ci ilin dekabr ayında", type: "false" },
+      { answer: "1945-ci ilin mart ayında", type: "false" },
     ],
   },
   {
     id: 96,
-    Question: "96. I have ____ my status twice ___ this month.",
+    Question: "96. Hava nəqliyyatında əsas beynəlxalq təşkilat hansıdır?",
     answers: [
-      { answer: "Updated / ---", type: "true" },
-      { answer: "Update / in", type: "false" },
-      { answer: "Updating / on", type: "false" },
-      { answer: "Update / for", type: "false" },
-      { answer: "To update / at", type: "false" },
+      { answer: "beynəlxalq mülki aviasiya təşkilatı", type: "true" },
+      { answer: "avropa hava nəqliyyatı assosasiyası", type: "false" },
+      { answer: "ölkə daxili mülki aviasiya təşkilatı", type: "false" },
+      { answer: "şəhərlər arası mülki aviasiya təşkilatı", type: "false" },
+      { answer: "asiya hava nəqliyyatı assosasiyası", type: "false" },
     ],
   },
   {
     id: 97,
     Question:
-      "97. I haven’t spoken to the doctor as I haven’t ___ ___ the Internet.",
+      "97. Beynəlxalq mülki aviasiya təşkilatı neçənci ildə yaranmışdır?",
     answers: [
-      { answer: "Access / to", type: "true" },
-      { answer: "Account / with", type: "false" },
-      { answer: "Password / into", type: "false" },
-      { answer: "Voicemail / at", type: "false" },
-      { answer: "Attachment / over", type: "false" },
+      { answer: "1947-ci ildə", type: "true" },
+      { answer: "1934-cü ildə", type: "false" },
+      { answer: "1971-ci ildə", type: "false" },
+      { answer: "1957-ci ildə", type: "false" },
+      { answer: "1942-ci ildə", type: "false" },
     ],
   },
   {
     id: 98,
     Question:
-      "98. Make up a sentence:\n1. Down  2. Their  3. Username  4. Write  5. Both  6. People  7. Many  8. And  9. password",
+      "98. Beynəlxalq mülki aviasiya təşkilatından sonra digər beynəlxalq təşkilat hansı hesab edilir?",
     answers: [
-      { answer: "7, 6, 4, 1, 5, 2, 9, 8, 3", type: "true" },
-      { answer: "4, 1, 5, 3, 8, 9, 2, 7, 6", type: "false" },
-      { answer: "6, 7, 4, 1, 5, 9, 8, 3, 2", type: "false" },
-      { answer: "2, 7, 4, 5, 9, 8, 1, 6, 3", type: "false" },
-      { answer: "5, 4, 1, 9, 3, 7, 6, 8, 2", type: "false" },
+      { answer: "beynəlxalq hava nəqliyyatı assosasiyası", type: "true" },
+      { answer: "avropa hava nəqliyyatı assosasiyası", type: "false" },
+      { answer: "asiya hava nəqliyyatı assosasiyası", type: "false" },
+      { answer: "ölkə daxili mülki aviasiya təşkilatı", type: "false" },
+      { answer: "afrika hava nəqliyyatı assosasiyası", type: "false" },
     ],
   },
   {
     id: 99,
-    Question:
-      "99. Make up a sentence:\n1. user  2. you  3. become  4. when  5. first  6. an  7. did  8. Internet",
+    Question: "99. Nəqliyyatın növü neçə əsas alt sistemdən ibarətdir?",
     answers: [
-      { answer: "4, 7, 2, 5, 3, 6, 8, 1", type: "true" },
-      { answer: "8, 6, 1, 3, 4, 2, 7, 5", type: "false" },
-      { answer: "4, 5, 3, 7, 1, 8, 6, 2", type: "false" },
-      { answer: "4, 2, 7, 5, 8, 1, 3, 6", type: "false" },
-      { answer: "7, 2, 3, 4, 5, 6, 1, 8", type: "false" },
+      { answer: "3", type: "true" },
+      { answer: "4", type: "false" },
+      { answer: "2", type: "false" },
+      { answer: "1", type: "false" },
+      { answer: "5", type: "false" },
     ],
   },
   {
     id: 100,
-    Question:
-      "100. Make up a sentence:\n1. anti-virus.  2. haven’t  3. on  4. my  5. computer  6. I  7. got  8. Software",
+    Question: "100. Beynəlxalq hava nəqliyyatı assosasiyası necə təşkilatdır?",
     answers: [
-      { answer: "6, 2, 7, 1, 8, 3, 4, 5", type: "true" },
-      { answer: "4, 5, 2, 7, 1, 6, 3, 8", type: "false" },
-      { answer: "1, 2, 3, 4, 5, 8, 6, 7", type: "false" },
-      { answer: "6, 2, 8, 5, 3, 1, 4, 7", type: "false" },
-      { answer: "2, 7, 1, 8, 2, 3, 4, 5", type: "false" },
+      { answer: "qeyri-dövlət təşkilatı", type: "true" },
+      { answer: "dövlət təşkilatı", type: "false" },
+      {
+        answer: "həmkarlar ittifaqının nəzdində dövlət təşkilatı",
+        type: "false",
+      },
+      {
+        answer: "nəqliyyat nazirliyinin nəzdində dövlət təşkilatı",
+        type: "false",
+      },
+      {
+        answer: "akkreditləşdirmə üzrə orqanın nəzdində dövlət təşkilatı",
+        type: "false",
+      },
     ],
   },
   {
     id: 101,
-    Question: "101. Find the correct opposites.",
+    Question:
+      "101. Aşağıdakı müqavilələrdən (konvensiyasından) hansı su nəqliyyatında hazırda qüvvədədir?",
     answers: [
-      { answer: "Fast-slow", type: "true" },
-      { answer: "Expensive-economical", type: "false" },
-      { answer: "Stylish-comfortable", type: "false" },
-      { answer: "Pretty-unusual", type: "false" },
-      { answer: "Powerful-strong", type: "false" },
+      {
+        answer: "dəniz yük daşımaları haqqında BMT-nin 1978-ci il müqaviləsi",
+        type: "true",
+      },
+      {
+        answer:
+          "beynəlxalaq sərnişin daşınmaları haqqında 1967-cu il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalaq yük daşınmaları haqqında 1987-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalaq yük daşınmaları haqqında 1998-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "beynəlxalaq sərnişin daşınmaları haqqında 19974-ci il müqaviləsi",
+        type: "false",
+      },
     ],
   },
   {
     id: 102,
-    Question: "102. Find the correct opposites.",
+    Question: "102. Su nəqliyyatında əsas beynəlxalq təşkilat hansıdır?",
     answers: [
-      { answer: "Old-new", type: "true" },
-      { answer: "Big-large", type: "false" },
-      { answer: "Fast-quick", type: "false" },
-      { answer: "Famous-well-known", type: "false" },
-      { answer: "New-contemporary", type: "false" },
+      { answer: "beynəlxalq su nəqliyyatı təşkilatı", type: "true" },
+      { answer: "avropa su nəqliyyatı təşkilatı", type: "false" },
+      { answer: "afrika su nəqliyyatı təşkilatı", type: "false" },
+      { answer: "asiya su nəqliyyatı təşkilatı", type: "false" },
+      { answer: "amerika su nəqliyyatı təşkilatı", type: "false" },
     ],
   },
   {
     id: 103,
-    Question:
-      "103. Choose the correct antonym of the given word.\nHe is an UNKNOWN person.",
+    Question: "103. Beynəlxalq dəniz təşkilatı neçənci ildə yaradılmışdır?",
     answers: [
-      { answer: "a famous", type: "true" },
-      { answer: "an old", type: "false" },
-      { answer: "an ancient", type: "false" },
-      { answer: "modern", type: "false" },
-      { answer: "huge", type: "false" },
+      { answer: "1958-ci ildə", type: "true" },
+      { answer: "1981-ci ildə", type: "false" },
+      { answer: "1972-ci ildə", type: "false" },
+      { answer: "1952-ci ildə", type: "false" },
+      { answer: "1948-ci ildə", type: "false" },
     ],
   },
   {
     id: 104,
-    Question:
-      "104. Choose the correct antonym of the given word.\na DIFFICULT question",
+    Question: "104. Beynəlxalq dəniz təşkilatı harada yerləşir?",
     answers: [
-      { answer: "easy", type: "true" },
-      { answer: "different", type: "false" },
-      { answer: "large", type: "false" },
-      { answer: "quiet", type: "false" },
-      { answer: "long", type: "false" },
+      { answer: "Londonda", type: "true" },
+      { answer: "Parisdə", type: "false" },
+      { answer: "Romada", type: "false" },
+      { answer: "Bakıda", type: "false" },
+      { answer: "Berlində", type: "false" },
     ],
   },
   {
     id: 105,
     Question:
-      "105. Choose the correct antonym of the given word.\nUNCOMFORTABLE shoes",
+      "105. Azərbaycan beynəlxalq dəniz təşkilatının neçənci ildən üzvüdür?",
     answers: [
-      { answer: "comfortable", type: "true" },
-      { answer: "inconvenient", type: "false" },
-      { answer: "safe", type: "false" },
-      { answer: "usual", type: "false" },
-      { answer: "constant", type: "false" },
+      { answer: "1995-ci ildən", type: "true" },
+      { answer: "1997-ci ildən", type: "false" },
+      { answer: "2001-ci ildən", type: "false" },
+      { answer: "1991-ci ildən", type: "false" },
+      { answer: "1994-cü ildən", type: "false" },
     ],
   },
   {
     id: 106,
     Question:
-      "106. Choose the correct degree of comparison of adjective.\nMy jacket is … than yours.",
+      "106. Aşağıdakı müqavilələrdən və yaxud konvensiyasından hansı su nəqliyyatında hazırda qüvvədədir?",
     answers: [
-      { answer: "Newer", type: "true" },
-      { answer: "More new", type: "false" },
-      { answer: "Most new", type: "false" },
-      { answer: "The newest", type: "false" },
-      { answer: "Much more new", type: "false" },
+      {
+        answer: "dəniz hüquq üzrə BMT-nin 1982-ci il konvensiyası",
+        type: "true",
+      },
+      {
+        answer:
+          "beynəlxalaq sərnişin daşınmaları haqqında 1967-ci il konvensiyası",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalaq yük daşınmaları haqqında 1978-ci il konvensiyası",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalaq yük daşınmaları haqqında 1989 konvensiyası",
+        type: "false",
+      },
+      {
+        answer:
+          "beynəlxalaq sərnişin daşınmaları haqqında 2002-ci il konvensiyası",
+        type: "false",
+      },
     ],
   },
   {
     id: 107,
     Question:
-      "107. Choose the correct degree of comparison of adjective.\nA taxi is … than a bus.",
+      "107. Nəqliyyat müqavilələri əsasında yaranan mülki hüquqi münasibətlər necə adlanır?",
     answers: [
-      { answer: "More expensive", type: "true" },
-      { answer: "Most expensive", type: "false" },
-      { answer: "The expensive", type: "false" },
-      { answer: "More much expensive", type: "false" },
-      { answer: "The most expensive", type: "false" },
+      { answer: "nəqliyyat öhdəlikləri", type: "true" },
+      { answer: "nəqliyyatın növünün seçilməsi", type: "false" },
+      { answer: "nəqliyyatın hüququ", type: "false" },
+      { answer: "mülki münasibət", type: "false" },
+      { answer: "hüquqi münasibətlər", type: "false" },
     ],
   },
   {
     id: 108,
     Question:
-      "108. Choose the correct degree of comparison of adjective.\nWhich is … for you, speaking or understanding English?",
+      "108. Aşağıdakı müqavilələrdən (konvensiyasından) hansı avtomobil nəqliyyatında hazırda qüvvədədir?",
     answers: [
-      { answer: "Easier", type: "true" },
-      { answer: "More easy", type: "false" },
-      { answer: "Much more easy", type: "false" },
-      { answer: "The easiest", type: "false" },
-      { answer: "More easier", type: "false" },
+      {
+        answer:
+          "təhlükəli yüklərin beynəlxalq daşınması haqqında 1957-ci il Avropa müqaviləsi",
+        type: "true",
+      },
+      {
+        answer:
+          "təhlükəsiz yüklərin beynəlxalq daşınması haqqında 1956-cı il Avropa müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "Azərbaycan Respublikası Dəmir yolu haqqında 1947-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "beynəlxalaq sərnişin daşınmaları haqqında 1971-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer: "beynəlxalq avtoyollar haqqında 1997-ci il Asiya müqaviləsi",
+        type: "false",
+      },
     ],
   },
   {
     id: 109,
     Question:
-      "109. Choose the correct degree of comparison of adjective.\nWhich is … for you, having a well-paid job or an interesting job?",
+      "109. Qaimə hansı nəqliyyat növü ilə əsas daşıma sənədi hesab edilir?",
     answers: [
-      { answer: "More important", type: "true" },
-      { answer: "Most important", type: "false" },
-      { answer: "The important", type: "false" },
-      { answer: "The most important", type: "false" },
-      { answer: "Much important", type: "false" },
+      { answer: "avtomobil nəqliyyatında", type: "true" },
+      { answer: "neft nəql edən boru-kəmər nəqliyyatında", type: "false" },
+      { answer: "su nəql edən boru-kəmər nəqliyyatında", type: "false" },
+      { answer: "hava yolu nəqliyyatında", type: "false" },
+      { answer: "hərbi vertalyotla", type: "false" },
     ],
   },
   {
     id: 110,
     Question:
-      "110. Choose the correct degree of comparison of adjective.\nWho is …, you or your sister?",
+      "110. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri neçə coğrafi zona üzrə qruplaşdırılır?",
     answers: [
-      { answer: "Taller", type: "true" },
-      { answer: "Much more tall", type: "false" },
-      { answer: "More taller", type: "false" },
-      { answer: "Much tall", type: "false" },
-      { answer: "The tallest", type: "false" },
+      { answer: "8", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "12", type: "false" },
+      { answer: "9", type: "false" },
     ],
   },
   {
     id: 111,
     Question:
-      "111. Choose the correct variant.\nThe … month of the year for me is March.",
+      "111. Nəqliyyat müqaviləsinin bağlanmasında neçə tərəf iştirak edir?",
     answers: [
-      { answer: "Busiest", type: "true" },
-      { answer: "Most busy", type: "false" },
-      { answer: "Most busiest", type: "false" },
-      { answer: "Busy", type: "false" },
-      { answer: "More busiest", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "7", type: "false" },
+      { answer: "4", type: "false" },
+      { answer: "5", type: "false" },
     ],
   },
   {
     id: 112,
     Question:
-      "112. Choose the correct answer.\n… subject at school was history.",
+      "112. Nəqliyyat müqaviləsinə görə daşıyıcı funksiyasını kimlər icra edə bilərlər?",
     answers: [
-      { answer: "The most difficult", type: "true" },
-      { answer: "The difficult", type: "false" },
-      { answer: "Difficult", type: "false" },
-      { answer: "More difficult", type: "false" },
-      { answer: "Most difficult", type: "false" },
+      { answer: "hüquqi şəxslər və fərdi sahibkar", type: "true" },
+      { answer: "istehsal müəssisəsinin baş mühəndisi", type: "false" },
+      { answer: "istehsal müəssisəsinin texnoloqu", type: "false" },
+      {
+        answer: "istehsal müəssisəsinin texniki nəzarət şöbəsi",
+        type: "false",
+      },
+      { answer: "yük göndərən və yük alan", type: "false" },
     ],
   },
   {
     id: 113,
     Question:
-      "113. Choose the correct answer.\n… fruit in the world is the banana.",
+      "113. Aşağıdakı sıraların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəriciləri göstərilmişdir?\n1. nəqliyyat vasitələrinin təmirə yararlığı\n2. nəqliyyat vasitələrinin rəngi\n3. nəqliyyat vasitələrinin etibarlığı və uzunömürlülüyü\n4. nəqliyyat vasitələrinin uzunluğu\n5. nəqliyyat vasitələrinin imtinasızlığı və təmirə yararlılığı\n6. nəqliyyat vasitələrinin estetik görünüşü",
     answers: [
-      { answer: "The most popular", type: "true" },
-      { answer: "Most popular", type: "false" },
-      { answer: "The short", type: "false" },
-      { answer: "The popular", type: "false" },
-      { answer: "More well-known", type: "false" },
+      { answer: "1; 3; 5", type: "true" },
+      { answer: "2; 4; 5", type: "false" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 4; 6", type: "false" },
+      { answer: "3; 4; 6", type: "false" },
     ],
   },
   {
     id: 114,
     Question:
-      "114. Choose the correct answer.\n… waterfall in the world is Angel Falls in Venezuela. It is 979 m.",
+      "114. Azərbaycan Respublikasının hava nəqliyyatı haqqında qanunda xüsusi müqavilənin bağlanması üçün neçə şərt göstərilmişdir?",
     answers: [
-      { answer: "The highest", type: "true" },
-      { answer: "The tall", type: "false" },
-      { answer: "Biggest", type: "false" },
-      { answer: "Shortest", type: "false" },
-      { answer: "Most popular", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "4", type: "false" },
+      { answer: "3", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "7", type: "false" },
     ],
   },
   {
     id: 115,
     Question:
-      "115. Choose the correct answer.\n… plane flight in the world is from Westray to Papa Westray near Scotland. It takes only two minutes.",
+      "115. Avtomobilin dinamikliyi əsasən hansı göstəricilərlə qiymətləndirilir?",
     answers: [
-      { answer: "The shortest", type: "true" },
-      { answer: "The tallest", type: "false" },
-      { answer: "The highest", type: "false" },
-      { answer: "The biggest", type: "false" },
-      { answer: "The oldest", type: "false" },
+      { answer: "avtomobilin texniki və istismar sürətləri ilə", type: "true" },
+      { answer: "avtomobilin dəyanətlilik xüsusiyyəti ilə", type: "false" },
+      { answer: "avtomobilin etibarlılıq xüsusiyyəti ilə", type: "false" },
+      { answer: "avtomobilin keçicilik xüsusiyyəti ilə", type: "false" },
+      { answer: "işləmə qabiliyyəti ilə", type: "false" },
     ],
   },
   {
     id: 116,
-    Question: "116. Choose the wrong variant.",
+    Question:
+      "116. Yanacaq sərfinin hesablaması zamanı benzinin sıxlığını hansı variantdakı ədədi qəbul etmək olar?",
     answers: [
-      { answer: "My new phone is very easier to use.", type: "true" },
-      { answer: "She wears very unusual clothes.", type: "false" },
-      { answer: "It’s very old now.", type: "false" },
-      { answer: "My red bag is quite expensive.", type: "false" },
-      { answer: "She is not as tall as her sister.", type: "false" },
+      { answer: "0,73 kq/litr", type: "true" },
+      { answer: "0,86 kq/litr", type: "false" },
+      { answer: "0,72 kq/litr", type: "false" },
+      { answer: "0,92 kq/litr", type: "false" },
+      { answer: "0,68 kq/litr", type: "false" },
     ],
   },
   {
     id: 117,
-    Question: "117. Choose the correct answer.",
+    Question:
+      "117. Xarici qüvvələrin təsiri altında olan avtomobilin sürücünün iştirakı olmadan hərəkət istiqamətini saxlaya bilmək xüsusiyyəti necə adlanır?",
     answers: [
-      {
-        answer: "I went to the estate agent’s because I want to rent a flat.",
-        type: "true",
-      },
-      { answer: "I took my dirty jacket to the bookshop.", type: "false" },
-      { answer: "We got some new boots at the dry-cleaner’s.", type: "false" },
-      {
-        answer: "Can you buy some chicken at the baker’s today?",
-        type: "false",
-      },
-      { answer: "I went to the pharmacy to post a letter.", type: "false" },
+      { answer: "dəyanətlik", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "sərbəst hərəkət", type: "false" },
+      { answer: "düzxətli hərəkət", type: "false" },
+      { answer: "dövrü hərəkət", type: "false" },
     ],
   },
   {
     id: 118,
-    Question: "118. Choose the wrong variant.",
+    Question:
+      "118. Avtomobilin maksimal sürəti yolun üfüqi hamar sahəsində neçə metr uzunluqlu ölçü sahəsini keçmə vaxtını ölçməklə əldə edilir?",
     answers: [
-      {
-        answer: "She went to the bookshop and had a haircut yesterday.",
-        type: "true",
-      },
-      {
-        answer:
-          "He had an eye test and got some new glasses at the optician’s.",
-        type: "false",
-      },
-      {
-        answer: "They bought her a birthday cake from the baker’s.",
-        type: "false",
-      },
-      {
-        answer:
-          "She went to the gift shop to buy a present for her best friend.",
-        type: "false",
-      },
-      { answer: "I got some medicine at the pharmacy.", type: "false" },
+      { answer: "1000 m uzunluqlu ölçü sahəsini", type: "true" },
+      { answer: "3000 m uzunluqlu ölçü sahəsini", type: "false" },
+      { answer: "1500 m uzunluqlu ölçü sahəsini", type: "false" },
+      { answer: "100 m uzunluqlu ölçü sahəsini", type: "false" },
+      { answer: "750 m uzunluqlu ölçü sahəsini", type: "false" },
     ],
   },
   {
     id: 119,
-    Question: "119. Choose the correct variant.",
+    Question:
+      "119. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
+      { answer: "nəqliyyat vasitəsinin yanacaq qənaətliliyi", type: "true" },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
       {
-        answer:
-          "I can’t buy the computer I want because it is too expensive – it’s $ 4000.",
-        type: "true",
-      },
-      {
-        answer:
-          "My mom got her mobile in 2008. She likes it but it is very fashionable.",
+        answer: "nəqliyyat vasitəsinin minimum yük götürmə qabiliyyəti",
         type: "false",
       },
-      {
-        answer:
-          "Nobody has the same clothes as her. She wears very usual clothes.",
-        type: "false",
-      },
-      {
-        answer:
-          "I’d like to buy an expensive bag - something not more than $10.",
-        type: "false",
-      },
-      {
-        answer: "I need to take my shoes off. They are very stylish.",
-        type: "false",
-      },
+      { answer: "nəqliyyat vasitəsinin eni və uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
     ],
   },
   {
     id: 120,
-    Question: "120. Choose the wrong variant.",
+    Question:
+      "120. Sərnişin avtobuslarının alçaq rəqs tezliyi hansı aralıqda dəyişir?",
     answers: [
-      { answer: "A scooter is more slower than a motorbike.", type: "true" },
-      { answer: "A train is faster than a car.", type: "false" },
-      { answer: "A taxi is more expensive than a bus.", type: "false" },
-      { answer: "A car is easier to drive than a bus.", type: "false" },
-      { answer: "A scooter is faster than a motorbike.", type: "false" },
+      { answer: "1,5...2,5 Hz", type: "true" },
+      { answer: "2...3,5 Hz", type: "false" },
+      { answer: "1,2...2 Hz", type: "false" },
+      { answer: "0,5...1,5 Hz", type: "false" },
+      { answer: "2,5...4,5 Hz", type: "false" },
     ],
   },
   {
     id: 121,
-    Question: "121. Choose the correct variant.",
+    Question:
+      "121. Avtomobilin təyinatına görə müəyyən edilmiş funksiyaları yerinə yetirmək imkanı hansı xüsusiyyəti adlanır?",
     answers: [
-      { answer: "Walking to work is cheaper than driving.", type: "true" },
-      {
-        answer: "A big car is the more difficult to park than a small car.",
-        type: "false",
-      },
-      { answer: "Trains are usually more bigger than buses.", type: "false" },
-      {
-        answer: "Riding a bicycle is more healthier than driving a car.",
-        type: "false",
-      },
-      { answer: "A scooter is more slower than a motorbike.", type: "false" },
+      { answer: "funksional xüsusiyyəti", type: "true" },
+      { answer: "etibarlıq xüsusiyyəti", type: "false" },
+      { answer: "aqreqatlaşdırma xüsusiyyəti", type: "false" },
+      { answer: "unifikasiya xüsusiyyəti", type: "false" },
+      { answer: "təhlükəsizlik xüsusiyyəti", type: "false" },
     ],
   },
   {
     id: 122,
     Question:
-      "122. Choose the correct translation.\nShinsegae means ‘new world’ in Korean.",
+      "122. Nəqliyyat vasitəsindən ətraf mühitə atılan zərərli qarışığın miqdarının təyin olunması hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      {
-        answer: "Shinsegae Koreya dilində 'yeni dünya' deməkdir.",
-        type: "true",
-      },
-      {
-        answer: "Shinsegae Koreya dilində 'köhnə dünya' deməkdir.",
-        type: "false",
-      },
-      { answer: "Shinsegae Koreya dili 'yeni dünya' deməkdir.", type: "false" },
-      {
-        answer: "Shinsegae Koreya dilində 'yeni dünya' demək deyil.",
-        type: "false",
-      },
-      {
-        answer: "Shinsegae Koreya dilində 'yeni dünya' kimi tərcümə olunur.",
-        type: "false",
-      },
+      { answer: "ekoloji", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "sertifikatlaşdırma", type: "false" },
     ],
   },
   {
     id: 123,
     Question:
-      "123. Choose the correct variant.\nHe writes ….. his school magazine.",
+      "123. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "for", type: "true" },
-      { answer: "in", type: "false" },
-      { answer: "on", type: "false" },
-      { answer: "of", type: "false" },
-      { answer: "by", type: "false" },
+      { answer: "nəqliyyat vasitəsinin təmirə yararlığı", type: "true" },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin eni", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
     ],
   },
   {
     id: 124,
     Question:
-      "124. Choose the correct answer.\nWhere is the tallest hotel … the world?",
+      "124. Rusyalı mütəxəssis V.Kasatkin aviaçarter daşımalarının realizə edilməsinin neçə əsas formasını qeyd edir?",
     answers: [
-      { answer: "In", type: "true" },
-      { answer: "On", type: "false" },
-      { answer: "At", type: "false" },
-      { answer: "Off", type: "false" },
-      { answer: "To", type: "false" },
+      { answer: "üç", type: "true" },
+      { answer: "iki", type: "false" },
+      { answer: "beş", type: "false" },
+      { answer: "bir", type: "false" },
+      { answer: "yeddi", type: "false" },
     ],
   },
   {
     id: 125,
     Question:
-      "125. Choose the correct answer.\nThousands of visitors come here every day – making it one … the busiest shops … the world.",
+      "125. Təyyarənin icarə xarakterinə görə aviaçarter daşımalarının neçə növü mövcuddur?",
     answers: [
-      { answer: "Of, in", type: "true" },
-      { answer: "Of, on", type: "false" },
-      { answer: "Of, at", type: "false" },
-      { answer: "In, in", type: "false" },
-      { answer: "Of, for", type: "false" },
+      { answer: "iki", type: "true" },
+      { answer: "üç", type: "false" },
+      { answer: "beş", type: "false" },
+      { answer: "dörd", type: "false" },
+      { answer: "doqquz", type: "false" },
     ],
   },
   {
     id: 126,
     Question:
-      "126. Choose the correct answer.\nIf you are looking ... something perfect, come ... Senbikiya ...Tokyo.",
+      "126. Birbaşa-geriyə istiqamətlərdə inklüziv-turu almış şəxslərin daşınması üçün bir və ya bir sıra turist şirkətləri təyyarənin təmamilə icarəyə götürülməsi necə adlanır?",
     answers: [
-      { answer: "For, to, in", type: "true" },
-      { answer: "For, -, in", type: "false" },
-      { answer: "For, to, -", type: "false" },
-      { answer: "At, in, in", type: "false" },
-      { answer: "Up, to, in", type: "false" },
+      { answer: "inkilüziv-tur-çarter", type: "true" },
+      { answer: "çarter", type: "false" },
+      { answer: "qaimə", type: "false" },
+      { answer: "rent-a-car", type: "false" },
+      { answer: "inkilüziv-tur", type: "false" },
     ],
   },
   {
     id: 127,
-    Question: "127. Choose the correct interrogative sentence.",
+    Question:
+      "127. Nəqliyyat vasitəsindən zərərli hissəciklərin, qazların və şüalanmanın ətraf mühitə normadan artıq qatılıqda atılmasının müəyyənləşdirilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "What is the biggest shop you know?", type: "true" },
-      { answer: "What is yours favourite shop in your town?", type: "false" },
-      { answer: "Which shops is the smallest?", type: "false" },
-      { answer: "Which shop has cheapest designer clothes?", type: "false" },
-      {
-        answer: "How often do he go shopping for clothes and shoes?",
-        type: "false",
-      },
+      { answer: "ekoloji", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "sertifikatlaşdırma", type: "false" },
     ],
   },
   {
     id: 128,
     Question:
-      "128. Choose the correct answer.\nWhere do you go to post letters and parcels?",
+      "128. Avtomobilin öz funksiyasını minimum yanacaq sərfi ilə yerinə yetirmə qabiliyyəti necə adlanır?",
     answers: [
-      { answer: "Post office", type: "true" },
-      { answer: "Pharmacy", type: "false" },
-      { answer: "A shoe shop", type: "false" },
-      { answer: "An optician’s", type: "false" },
-      { answer: "A baker’s", type: "false" },
+      { answer: "yanacaq qənaətliliyi", type: "true" },
+      { answer: "maksimum yanacaq sərfiyyatı", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 129,
     Question:
-      "129. Choose the correct answer.\nWhere do you buy sausages and other meat?",
+      "129. Inter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona A qrupuna hansı ölkələr daxildir?\nİngiltərə, Cənubi İrlandiya və Şimali İrlandiya\nİspaniya, Portuqaliya və Hollandiya\nMərakeş, Macarıstan və Xorvatiya\nNorveç, Finlandiya və Macarıstan\nSlovakiya, İspaniya və Şimali İrlandiya",
     answers: [
-      { answer: "A butcher’s", type: "true" },
-      { answer: "A baker’s", type: "false" },
-      { answer: "A gift shop", type: "false" },
-      { answer: "A bookshop", type: "false" },
-      { answer: "An estate agent’s", type: "false" },
+      {
+        answer: "İngiltərə, Cənubi İrlandiya və Şimali İrlandiya",
+        type: "true",
+      },
+      { answer: "İspaniya, Portuqaliya və Hollandiya", type: "false" },
+      { answer: "Mərakeş, Macarıstan və Xorvatiya", type: "false" },
+      { answer: "Norveç, Finlandiya və Macarıstan", type: "false" },
+      { answer: "Slovakiya, İspaniya və Şimali İrlandiya", type: "false" },
     ],
   },
   {
     id: 130,
     Question:
-      "130. Choose the correct answer.\nWhere do you get glasses and sunglasses?",
+      "130. Inter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona B qrupuna hansı ölkələr daxildir?\nİsveç, Norveç və Finlandiya\nCənubi İrlandiya, Macarıstan və Xorvatiya\nPolşa, Slovakiya və Macarıstan\nİspaniya, Portuqaliya və Mərakeş\nXorvatiya, İspaniya və Polşa",
     answers: [
-      { answer: "An optician’s", type: "true" },
-      { answer: "A hairdresser’s", type: "false" },
-      { answer: "A dry-cleaner", type: "false" },
-      { answer: "A bookshop", type: "false" },
-      { answer: "A gift shop", type: "false" },
+      { answer: "İsveç, Norveç və Finlandiya", type: "true" },
+      { answer: "Cənubi İrlandiya, Macarıstan və Xorvatiya", type: "false" },
+      { answer: "Polşa, Slovakiya və Macarıstan", type: "false" },
+      { answer: "İspaniya, Portuqaliya və Mərakeş", type: "false" },
+      { answer: "Xorvatiya, İspaniya və Polşa", type: "false" },
     ],
   },
   {
     id: 131,
-    Question: "131. Choose the correct synonym of the word SLIM.",
+    Question:
+      "131. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona C qrupuna hansı ölkələr daxildir?",
     answers: [
-      { answer: "Thin", type: "true" },
-      { answer: "Fat", type: "false" },
-      { answer: "Tall", type: "false" },
-      { answer: "Light", type: "false" },
-      { answer: "Comfortable", type: "false" },
+      { answer: "Danimarka, Almaniya, İsveçrə və Avstriya", type: "true" },
+      { answer: "Cənubi İrlandiya, Macarıstan və Polşa", type: "false" },
+      { answer: "Xorvatiya, Yuqaslaviya və Bolqarıstan", type: "false" },
+      { answer: "Rumıniya, Yuqoslaviya və Avstriya", type: "false" },
+      { answer: "Bolqarıstan, Polşa, Rumıniya və İtaliya", type: "false" },
     ],
   },
   {
     id: 132,
-    Question: "132. Choose the correct synonym of the word TALL.",
+    Question:
+      "132. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona F qrupuna hansı ölkələr daxildir?",
     answers: [
-      { answer: "High", type: "true" },
-      { answer: "Small", type: "false" },
-      { answer: "Bad", type: "false" },
-      { answer: "Good", type: "false" },
-      { answer: "Fat", type: "false" },
+      { answer: "İspaniya, Portuqaliya və Mərakeş", type: "true" },
+      { answer: "Bolqarıstan, Rumıniya və Fransa", type: "false" },
+      { answer: "Macarıstan, Xorvatiya və Avstriya", type: "false" },
+      { answer: "Bolqarıstan, İtaliya və Sloveniya", type: "false" },
+      { answer: "Rumıniya, Avstriya və Çexiya", type: "false" },
     ],
   },
   {
     id: 133,
     Question:
-      "133. Choose the correct translation.\n1. a beautiful city                              a) tarixi qala\n2. a historical castle                          b) gözəl şəhər\n3. a magnificent cathedral         c) balaca göl\n4. a small lake                                  d) möhtəşəm kilsə",
+      "133. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona D qrupuna hansı ölkələr daxildir?",
     answers: [
-      { answer: "1-b, 2-a, 3-d, 4-c", type: "true" },
-      { answer: "1-b, 2-d, 3-a, 4-c", type: "false" },
-      { answer: "1-d, 2-b, 3-c, 4-a", type: "false" },
-      { answer: "1-d, 2-c, 3-a, 4-b", type: "false" },
-      { answer: "1-a, 2-b, 3-c, 4-d", type: "false" },
+      {
+        answer: "Polşa, Çexiya, Slovakiya, Macarıstan və Xorvatiya",
+        type: "true",
+      },
+      { answer: "İspaniya, Avstriya, Portuqaliya və Mərakeş", type: "false" },
+      { answer: "Danimarka, Almaniya, İsveçrə və Avstriya", type: "false" },
+      { answer: "İtaliya, Sloveniya, Yunanıstan və Türkiyə", type: "false" },
+      { answer: "Fransa, Belçika, Hollandiya və İtaliya", type: "false" },
     ],
   },
   {
     id: 134,
     Question:
-      "134. Choose the correct translation.\n1. cloudy         a) buludlu\n2. cool              b) sərin\n3. foggy           c) dumanlı",
+      "134. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona E qrupuna hansı ölkələr daxildir?",
     answers: [
-      { answer: "1-a, 2-b, 3-c", type: "true" },
-      { answer: "1-b, 2-a, 3-c", type: "false" },
-      { answer: "1-a, 2-c, 3-b", type: "false" },
-      { answer: "1-c, 2-b, 3-a", type: "false" },
-      { answer: "1-b, 2-c, 3-a", type: "false" },
+      { answer: "Fransa, Belçika, Hollandiya və Lüksemburq", type: "true" },
+      { answer: "İspaniya, İtaliya, Portuqaliya və Mərakeş", type: "false" },
+      { answer: "Rumıniya, Polşa, Türkiyə və Çexiya", type: "false" },
+      { answer: "Bolqarıstan, İtaliya və Yuqoslaviya", type: "false" },
+      { answer: "Sloveniya, Yunanıstan və Türkiyə", type: "false" },
     ],
   },
   {
     id: 135,
-    Question: "135. Choose the correct answer. \nTo eat something I put it in my ______.",
+    Question:
+      "135. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona G qrupuna hansı ölkələr daxildir?",
     answers: [
-      { answer: "mouth", type: "true" },
-      { answer: "elbow", type: "false" },
-      { answer: "nose", type: "false" },
-      { answer: "neck", type: "false" },
-      { answer: "arms", type: "false" },
+      { answer: "İtaliya, Sloveniya, Yunanıstan və Türkiyə", type: "true" },
+      { answer: "Bolqarıstan, Polşa, Rumıniya və İtaliya", type: "false" },
+      { answer: "Slovakiya, İspaniya və Şimali İrlandiya", type: "false" },
+      { answer: "Rumıniya, Yuqoslaviya və Avstriya", type: "false" },
+      { answer: "İspaniya, Portuqaliya və Hollandiya", type: "false" },
     ],
   },
   {
     id: 136,
-    Question: "136. Choose the correct answer. \nShe waited ______ the bus in the bus stop.",
+    Question:
+      "136. İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Zona H qrupuna hansı ölkələr daxildir?",
     answers: [
-      { answer: "for", type: "true" },
-      { answer: "in", type: "false" },
-      { answer: "of", type: "false" },
-      { answer: "with", type: "false" },
-      { answer: "to", type: "false" },
+      {
+        answer: "Bolqarıstan, Rumıniya, Yuqoslaviya və Makedoniya",
+        type: "true",
+      },
+      { answer: "İtaliya, Sloveniya, Yunanıstan və Türkiyə", type: "false" },
+      { answer: "Fransa, Belçika, Hollandiya və İtaliya", type: "false" },
+      { answer: "Rumıniya, Polşa, Türkiyə və Çexiya", type: "false" },
+      { answer: "Sloveniya, Almaniya, Yunanıstan və Türkiyə", type: "false" },
     ],
   },
   {
     id: 137,
-    Question: "137. Choose the correct answer. \nWho is the man ______ the red tie?",
+    Question:
+      "137. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "with", type: "true" },
-      { answer: "on", type: "false" },
-      { answer: "at", type: "false" },
-      { answer: "into", type: "false" },
-      { answer: "of", type: "false" },
+      {
+        answer: "nəqliyyat vasitəsinin yük götürmə qabiliyyəti və tutumu",
+        type: "true",
+      },
+      { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
     ],
   },
   {
     id: 138,
-    Question: "138. Choose the correct answer. \nWe stand in a bus ______ to wait for a bus.",
+    Question:
+      "138. Avtomobilin yanacaq qənaətliliyi hansı göstərici ilə qiymətləndirilir?",
     answers: [
-      { answer: "station", type: "true" },
-      { answer: "road", type: "false" },
-      { answer: "shelf", type: "false" },
-      { answer: "corner", type: "false" },
-      { answer: "port", type: "false" },
+      { answer: "xüsusi yanacaq sərfi ilə", type: "true" },
+      { answer: "yanacağın keyfiyyəti ilə", type: "false" },
+      { answer: "yanacağın növü ilə", type: "false" },
+      { answer: "yanacağın maksimum miqdarı ilə", type: "false" },
+      { answer: "nəqliyyatın növü ilə", type: "false" },
     ],
   },
   {
     id: 139,
-    Question: "139. Choose the correct answer. \nWe sit on a ______ to rest in the park.",
+    Question:
+      "139. Avtobusun sərnişin daşımalarında minimum vaxtda yerinə yetirə bilmə qabiliyyəti necə adlanır?",
     answers: [
-      { answer: "bench", type: "true" },
-      { answer: "floor", type: "false" },
-      { answer: "television", type: "false" },
-      { answer: "table", type: "false" },
-      { answer: "roof", type: "false" },
+      { answer: "dinamiklik", type: "true" },
+      { answer: "dəyanətlilik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "keçicilik", type: "false" },
+      { answer: "işləmə qabiliyyəti", type: "false" },
     ],
   },
   {
     id: 140,
-    Question: "140. Choose the correct answer. \nI am ______ my glasses. Where can it be?",
+    Question:
+      "140. Ölkə daxili su nəqliyyatı vasitəsi ilə daşımanın təşkili haqqında bağlanmış müqavilə necə adlanır?",
     answers: [
-      { answer: "looking for", type: "true" },
-      { answer: "using", type: "false" },
-      { answer: "dancing", type: "false" },
-      { answer: "finding", type: "false" },
-      { answer: "watching", type: "false" },
+      { answer: "naviqasiya müqaviləsi", type: "true" },
+      { answer: "su nəqliyyatı müqaviləsi", type: "false" },
+      { answer: "lisenziya müqaviləsi", type: "false" },
+      { answer: "gömrük müqaviləsi", type: "false" },
+      { answer: "ticarət müqaviləsi", type: "false" },
     ],
   },
   {
     id: 141,
-    Question: "141. Choose the correct answer. \nWe use a ______ to cut paper.",
+    Question:
+      "141. Hava nəqliyyatı sahəsində daşımaların təşkili haqqında müqavilə hansı müqavilə kimi qəbul olunur?",
     answers: [
-      { answer: "scissors", type: "true" },
-      { answer: "bottle", type: "false" },
-      { answer: "table", type: "false" },
-      { answer: "box", type: "false" },
-      { answer: "shoe", type: "false" },
+      { answer: "təşkilati müqavilə", type: "true" },
+      { answer: "məcburi müqavilə", type: "false" },
+      { answer: "könüllü müqavilə", type: "false" },
+      { answer: "ümumi müqavilə", type: "false" },
+      { answer: "qarışıq müqavilə", type: "false" },
     ],
   },
   {
     id: 142,
-    Question: "142. Choose the correct answer. \nMy brother is ______ a book.",
+    Question:
+      "142. Hansı hadisə dünyanın bir sıra ölkələrində dəmir yolu şəbəkəsinin yaranmasına səbəb oldu?",
     answers: [
-      { answer: "reading", type: "true" },
-      { answer: "riding", type: "false" },
-      { answer: "listening", type: "false" },
-      { answer: "speaking", type: "false" },
-      { answer: "playing", type: "false" },
+      { answer: "paravozun ixtira edilməsi", type: "true" },
+      { answer: "ekspeditorların fəaliyyətinin genişlənməsi", type: "false" },
+      {
+        answer: "dünyanın bir sıra ölkələrində dəniz nəqliyyatının yaranması",
+        type: "false",
+      },
+      { answer: "ölkələr arası ticarətin genişlənməsi", type: "false" },
+      {
+        answer:
+          "dəmir yolu ilə daşınması nəzərdə tutulan yüklərin həcminin artması",
+        type: "false",
+      },
     ],
   },
   {
     id: 143,
-    Question: "143. Choose the correct answer. \nDo you want to ______ biscuit?",
+    Question:
+      "143. Nəqliyyat vasitəsinin yanacaq qənaətliliyi hansı göstərici ilə qiymətləndirilir?",
     answers: [
-      { answer: "eat", type: "true" },
-      { answer: "see", type: "false" },
-      { answer: "play", type: "false" },
-      { answer: "read", type: "false" },
-      { answer: "drive", type: "false" },
+      { answer: "xüsusi yanacaq sərfi ilə", type: "true" },
+      { answer: "yanacağın keyfiyyəti ilə", type: "false" },
+      { answer: "nəqliyyatın sürəti ilə", type: "false" },
+      { answer: "yanacağın növü ilə", type: "false" },
+      { answer: "nəqliyyatın növü ilə", type: "false" },
     ],
   },
   {
     id: 144,
-    Question: "144. Choose the correct answer. \nMy answer was ______, not wrong.",
+    Question: "144. Təyyarələr hansı oxa nəzərən simmetrikdir?",
     answers: [
-      { answer: "right", type: "true" },
-      { answer: "write", type: "false" },
-      { answer: "ride", type: "false" },
-      { answer: "light", type: "false" },
-      { answer: "sight", type: "false" },
+      { answer: "uzununa", type: "true" },
+      { answer: "eninə", type: "false" },
+      { answer: "maili", type: "false" },
+      { answer: "üfüqi", type: "false" },
+      { answer: "şaquli", type: "false" },
     ],
   },
   {
     id: 145,
-    Question: "145. Choose the correct answer. \nWho are you ______ for?",
+    Question:
+      "145. Sərnişin nəqliyyatının öz funksiyasını minimum yanacaq sərfi ilə yerinə yetirmə qabiliyyəti necə adlanır?",
     answers: [
-      { answer: "waiting", type: "true" },
-      { answer: "seeing", type: "false" },
-      { answer: "meeting", type: "false" },
-      { answer: "doing", type: "false" },
-      { answer: "watching", type: "false" },
+      { answer: "yanacaq qənaətliliyi", type: "true" },
+      { answer: "maksimum yanacaq sərfiyyatı", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 146,
-    Question: "146. Choose the correct answer. \nWhere do we go to buy things?",
+    Question:
+      "146. Turizm sahəsində bağlanmış daşıma müqaviləsi öz hüquqi təbiətinə görə hansı müqavilə növünə aiddir?",
     answers: [
-      { answer: "shop", type: "true" },
-      { answer: "bank", type: "false" },
-      { answer: "bath", type: "false" },
-      { answer: "shore", type: "false" },
-      { answer: "coast", type: "false" },
+      { answer: "əsas müqavilə", type: "true" },
+      { answer: "ilkin müqavilə", type: "false" },
+      { answer: "əlavə müqavilə", type: "false" },
+      { answer: "şərti müqavilə", type: "false" },
+      { answer: "nəqliyyat müqaviləsi", type: "false" },
     ],
   },
   {
     id: 147,
-    Question: "147. Choose the correct answer. \nWhen I saw him, he was ______ bicycle.",
+    Question:
+      "147. Turizmdə əsas nəqliyyat müqaviləsi münasibətdə əlavə müqavilə kimi bağlanan müqavilə dedikdə nə başa düşülür?",
     answers: [
-      { answer: "riding", type: "true" },
-      { answer: "driving", type: "false" },
-      { answer: "playing", type: "false" },
-      { answer: "lying", type: "false" },
-      { answer: "arriving", type: "false" },
+      { answer: "yardımçı müqavilə", type: "true" },
+      { answer: "yük müqaviləsi", type: "false" },
+      { answer: "nəqliyyat müqaviləsi", type: "false" },
+      { answer: "daimi müqavilə", type: "false" },
+      { answer: "dövrü müqavilə", type: "false" },
     ],
   },
   {
     id: 148,
-    Question: "148. Choose the word which is out of the logic list.",
+    Question:
+      "148. Nəqliyyat müqaviləsinin bağlanmasında neçə nəfər iştirak edir?",
     answers: [
-      { answer: "cry", type: "true" },
-      { answer: "read", type: "false" },
-      { answer: "write", type: "false" },
-      { answer: "speak", type: "false" },
-      { answer: "listen", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "4", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "7", type: "false" },
     ],
   },
   {
     id: 149,
-    Question: "149. Choose the correct answer. \nThe ______ is cloudy today.",
+    Question:
+      "149. Turizmdə daha çox hansı nəqliyyat növündən istifadə olunur?",
     answers: [
-      { answer: "sky", type: "true" },
-      { answer: "air", type: "false" },
-      { answer: "world", type: "false" },
-      { answer: "room", type: "false" },
-      { answer: "classroom", type: "false" },
+      { answer: "avtomobil nəqliyyatından", type: "true" },
+      { answer: "dəniz nəqliyyatından", type: "false" },
+      { answer: "çay nəqliyyatından", type: "false" },
+      { answer: "təyyarədən", type: "false" },
+      { answer: "vertaliyotdan", type: "false" },
     ],
   },
   {
     id: 150,
     Question:
-      "150. Choose the correct answer. \nThank you for the books. They will be very ______ for my studies.",
+      "150. Tərəflərin qarşısındakı daşımanın təşkili ilə bağlı hüquq vəzifələrin toplusu dedikdə nə başa düşülür?",
     answers: [
-      { answer: "useful", type: "true" },
-      { answer: "harmful", type: "false" },
-      { answer: "colorful", type: "false" },
-      { answer: "tasteful", type: "false" },
-      { answer: "hopeful", type: "false" },
+      { answer: "müqavilənin məzmunu", type: "true" },
+      { answer: "müqavilənin hazırlanması", type: "false" },
+      { answer: "müqavilənin həcmi", type: "false" },
+      { answer: "müqavilənin miqdarı", type: "false" },
+      { answer: "müqavilənin ölçüsü", type: "false" },
     ],
   },
   {
     id: 151,
     Question:
-      "151. Choose the correct modal verb.\nAnn wants to play the piano well. So she ... practice hard.",
+      "151. Turistlərə nəqliyyat xidmətinin göstərilməsi haqqında müqavilə nəqliyyatın hansı növünə görə bağlana bilər?",
     answers: [
-      { answer: "has to", type: "true" },
-      { answer: "can’t", type: "false" },
-      { answer: "doesn’t have to", type: "false" },
-      { answer: "hasn’t", type: "false" },
-      { answer: "have to", type: "false" },
+      { answer: "bütün nəqliyyat növlərinə", type: "true" },
+      { answer: "yalnız çay nəqliyyatına", type: "false" },
+      { answer: "yalnız avtomobil nəqliyyatına", type: "false" },
+      { answer: "yalnız dəniz nəqliyyatına", type: "false" },
+      { answer: "yalnız hava nəqliyyatına", type: "false" },
     ],
   },
   {
     id: 152,
     Question:
-      "152. Choose the correct modal verb.\nThe new law ... improve people’s living conditions.",
+      "152. Turistlərə hava nəqliyyatı xidmətinin təşkili haqqında müqavilə təşkilati müqavilə kimi qəbul olunur və necə adlanır?",
     answers: [
-      { answer: "has to", type: "true" },
-      { answer: "have to", type: "false" },
-      { answer: "must not to", type: "false" },
-      { answer: "hadn’t to", type: "false" },
-      { answer: "can to", type: "false" },
+      { answer: "xüsusi müqavilə", type: "true" },
+      { answer: "ümumi müqavilə", type: "false" },
+      { answer: "qarışıq müqavilə", type: "false" },
+      { answer: "könüllü müqavilə", type: "false" },
+      { answer: "məcburi müqavilə", type: "false" },
     ],
   },
   {
     id: 153,
     Question:
-      "153. Choose the correct variant.\nWe listen to music with ______.",
+      "153. Nəqliyyatın hansı keyfiyyət göstəricisi onun istehsalı, bərpası və təmiri zamanı yüksək əmək məhsuldarlığını təmin etmək üçün konstruktiv - texnoloji işlərin effektivliyini xarakterizə edir?",
     answers: [
-      { answer: "headphones", type: "true" },
-      { answer: "plate", type: "false" },
-      { answer: "pencil", type: "false" },
-      { answer: "spoon", type: "false" },
-      { answer: "lamp", type: "false" },
+      { answer: "texnolojilik", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 154,
     Question:
-      "154. Make up an interrogative sentence.\nHe/have to/use a computer?",
+      "154. Hansı göstərici avtomobilin dinamik xüsusiyyətlərinə aiddir?",
     answers: [
-      { answer: "Does he have to use a computer?", type: "true" },
-      { answer: "Have he use to a computer?", type: "false" },
-      { answer: "Do he have to use a computer?", type: "false" },
-      { answer: "Did he had to use a computer?", type: "false" },
-      { answer: "He has to use a computer, hasn’t he?", type: "false" },
+      { answer: "dartıcı-sürət və tormoz", type: "true" },
+      { answer: "dəyanətlik və idarəolunma", type: "false" },
+      { answer: "keçicilik və yanacaq qənaətliliyi", type: "false" },
+      { answer: "idarəolunma və hərəkət səlisliyi", type: "false" },
+      { answer: "hərəkət səlisliyi və keçicilik", type: "false" },
     ],
   },
   {
     id: 155,
     Question:
-      "155. Make up an interrogative sentence.\nThey/have to/travel a lot?",
+      "155. Nəqliyyat vasitəsinin öz funksiyalarını texniki sənədlərin tələbləri ilə müəyyən olunmuş parametrlərlə yerinə yetirməsi nəyi xarakterizə edir?",
     answers: [
-      { answer: "Do they have to travel a lot?", type: "true" },
-      { answer: "Does they have to travel a lot?", type: "false" },
-      { answer: "Did they had to travel a lot?", type: "false" },
-      { answer: "Why they have to travel a lot?", type: "false" },
-      { answer: "Do they have to travel a lot, don’t they?", type: "false" },
+      { answer: "işləmə qabiliyyətini", type: "true" },
+      { answer: "nəqliyyatın sürətini", type: "false" },
+      { answer: "nəqliyyatın dəyanətliliyini", type: "false" },
+      { answer: "nəqliyyatın yanacaq qənaətliliyini", type: "false" },
+      { answer: "tormoz xüsusiyyətlərini", type: "false" },
     ],
   },
   {
     id: 156,
     Question:
-      "156. Make up an interrogative sentence.\nGeorge/have to/serve food?",
+      "156. Avtonəqliyyat vasitəsinin bütün parametrlərinin baxılan zaman anında normativ texniki sənədlərdə verilmiş tələblərə uyğunluğu onun hansı vəziyyətini xarakterizə edir?",
     answers: [
-      { answer: "Does George have to serve food?", type: "true" },
-      { answer: "Do George have to serve food?", type: "false" },
-      { answer: "Did George had to serve food?", type: "false" },
-      { answer: "Why George have to serve food?", type: "false" },
-      { answer: "Do George have to serve food, don’t he?", type: "false" },
+      { answer: "yararlı olmasını", type: "true" },
+      { answer: "nasaz olmasını", type: "false" },
+      { answer: "yüklü olmasını", type: "false" },
+      { answer: "yüksüz olmasını", type: "false" },
+      { answer: "tormoz xüsusiyyətini", type: "false" },
     ],
   },
   {
     id: 157,
-    Question:
-      "157. Make up an interrogative sentence.\nAlisa and Meera/ have to/wear a uniform?",
+    Question: "157. Hava yolları nəqliyyatı hansı nəqliyyat növünə aiddir?",
     answers: [
-      { answer: "Do Alisa and Meera have to wear a uniform?", type: "true" },
-      { answer: "Does Alisa and Meera have to wear a uniform?", type: "false" },
-      { answer: "Did Alisa and Meera had to wear a uniform?", type: "false" },
-      { answer: "Why Alisa and Meera have to wear a uniform?", type: "false" },
-      {
-        answer: "Do Alisa and Meera have to wear a uniform, don’t they?",
-        type: "false",
-      },
+      { answer: "texniki nəqliyyat", type: "true" },
+      { answer: "tibbi nəqliyyat", type: "false" },
+      { answer: "hərbi nəqliyyat", type: "false" },
+      { answer: "dəniz nəqliyyatı", type: "false" },
+      { answer: "çay nəqliyyatı", type: "false" },
     ],
   },
   {
     id: 158,
-    Question: "158. Make up an interrogative sentence.\nHe/have to/look smart?",
+    Question:
+      "158. Ümumi təyinatlı daşınma xidmətləri hansı təşkilatlar tərəfindən həyata keçirilir?",
     answers: [
-      { answer: "Does he have to look smart?", type: "true" },
-      { answer: "Do he have to look smart?", type: "false" },
-      { answer: "Did he had to look smart?", type: "false" },
-      { answer: "Why he have to look smart?", type: "false" },
-      { answer: "Do he have to look smart, don’t he?", type: "false" },
+      { answer: "komersiya təşkilatları tərəfindən", type: "true" },
+      { answer: "istirahət mərkəzləri tərəfindən", type: "false" },
+      { answer: "akkreditləşdirmə üzrə orqan tərəfindən", type: "false" },
+      { answer: "sertifikatlaşdırma üzrə orqan tərəfindən", type: "false" },
+      { answer: "standartlaşdırma üzrə orqan tərəfindən", type: "false" },
     ],
   },
   {
     id: 159,
     Question:
-      "159. Choose the correct interrogative sentence for the given word.\nNowadays, THOUSANDS OF TOURISTS come to see the bridge.",
+      "159. Nəqliyyatın əsas funksiyalarının yerinə yetirilməsi xassəsini təyin edən və onun tətbiqolunma sahəsinin müəyyənləşdirilməsi hansı keyfiyyət göstəricisinin təyin olunması zamanı yerinə yetirilir?",
     answers: [
-      { answer: "Who comes to see the bridge?", type: "true" },
-      { answer: "When they come to see the bridge?", type: "false" },
-      { answer: "What do tourists do?", type: "false" },
-      { answer: "Where do the tourists come?", type: "false" },
-      { answer: "Why do the tourists come to see the bridge?", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "estetik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "texnolojilik", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 160,
-    Question: "160. Choose the correct variant.\nWe wear ______ on our feet.",
+    Question:
+      "160. Nəqliyyatın istismarı zamanı onun ətraf mühitə ziyanlı təsirinin səviyyəsinin xarakterizə edilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "shoes", type: "true" },
-      { answer: "gloves", type: "false" },
-      { answer: "hat", type: "false" },
-      { answer: "ring", type: "false" },
-      { answer: "scarf", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "estetik", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 161,
     Question:
-      "161. Choose the correct interrogative sentence for the given word.\nThere are not one but FIVE Guggenheim Museums.",
+      "161. Nəqliyyat vasitəsindən istifadə prosesində qarşıya çıxan və onun istismar imkanlarını müəyyən edən texniki göstərici hansı variantda verilmişdir?",
     answers: [
-      { answer: "How many Guggenheim Museums are there?", type: "true" },
-      { answer: "What is Guggenheim Museum?", type: "false" },
-      { answer: "What is a museum?", type: "false" },
-      { answer: "Where is Guggenheim Museum?", type: "false" },
-      { answer: "When is Guggenheim Museum open?", type: "false" },
+      { answer: "istismar xüsusiyyətləri", type: "true" },
+      { answer: "texniki qulluq", type: "false" },
+      { answer: "avtomobilin istismarı", type: "false" },
+      { answer: "nəqliyyatın növü", type: "false" },
+      { answer: "işləmə qabiliyyəti", type: "false" },
     ],
   },
   {
     id: 162,
     Question:
-      "162. Choose the correct interrogative sentence for the given word.\nIt is now one of Spain’s biggest tourist attractions, and every year HUNDREDS OF THOUSANDS of people come to see the paintings and other works of art.",
+      "162. Avtonəqliyyat vasitəsinə baxılan zaman anında normativ texniki sənədlərdə verilmiş tələblərin birinə və yaxud bir neçəsinə uyğunsuzluğu onun hansı vəziyyətini xarakterizə edir?",
     answers: [
-      {
-        answer:
-          "How many people come to see the paintings and other works of art every year?",
-        type: "true",
-      },
-      {
-        answer: "What is one of Spain’s biggest tourist attractions?",
-        type: "false",
-      },
-      {
-        answer: "Where is one of Spain’s biggest tourist attractions situated?",
-        type: "false",
-      },
-      {
-        answer:
-          "Why do hundreds of thousands of people come to see the paintings and other works of art?",
-        type: "false",
-      },
-      { answer: "How many tourist attractions are there?", type: "false" },
+      { answer: "nasaz olmasını", type: "true" },
+      { answer: "saz olmasını", type: "false" },
+      { answer: "dəyanətliliyini", type: "false" },
+      { answer: "yüklü olmasını", type: "false" },
+      { answer: "yüksüz olmasını", type: "false" },
     ],
   },
   {
     id: 163,
     Question:
-      "163. Choose the correct variant.\nWe brush our teeth with a ______.",
+      "163. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
     answers: [
-      { answer: "toothbrush", type: "true" },
-      { answer: "comb", type: "false" },
-      { answer: "fork", type: "false" },
-      { answer: "broom", type: "false" },
-      { answer: "sock", type: "false" },
+      { answer: "nəqliyyat vasitəsinin təmirə yararlığı", type: "true" },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin eni", type: "false" },
+      { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
     ],
   },
   {
     id: 164,
     Question:
-      "164. Make up a sentence.\nProbably /a/ be/ it/ tomorrow/ will/ nice day.",
+      "164. İşləmə qabiliyyətini itirmiş avtomobilin texniki vəziyyətinin bərpasına yönəlmiş texniki təsirlərin məcmusu necə adlanır?",
     answers: [
-      { answer: "It will probably be a nice day tomorrow.", type: "true" },
-      { answer: "Tomorrow probably it will be a nice day.", type: "false" },
-      {
-        answer: "Probably a nice day tomorrow it shall probably be.",
-        type: "false",
-      },
-      { answer: "The next day it will probably he a nice day.", type: "false" },
-      { answer: "It will be a nice day tomorrow probably.", type: "false" },
+      { answer: "təmir", type: "true" },
+      { answer: "nasazlıq", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "dəyanətlilik", type: "false" },
+      { answer: "resurs", type: "false" },
     ],
   },
   {
     id: 165,
     Question:
-      "165. Choose the correct variant.\nTom …… go to Greece for his holiday.",
+      "165. Nəqliyyatın istehsalı və təmiri zamanı yüksək əmək məhsuldarlığını təmin etmək üçün konstruktiv - texnoloji işlərin effektivliyinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisidir?",
     answers: [
-      { answer: "might", type: "true" },
-      { answer: "shall", type: "false" },
-      { answer: "cans", type: "false" },
-      { answer: "haven’t", type: "false" },
-      { answer: "have", type: "false" },
+      { answer: "texnolojilik", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "unifikasiya", type: "false" },
     ],
   },
   {
     id: 166,
     Question:
-      "166. Choose the correct variant.\nMeg …… go to Spain with her parents.",
+      "166. Aşağıdakılardan hansı avtomobilin istismar xüsusiyyətləri qrupuna aid deyil?",
     answers: [
-      { answer: "will probably", type: "true" },
-      { answer: "haven’t", type: "false" },
-      { answer: "cans", type: "false" },
-      { answer: "usually", type: "false" },
-      { answer: "shall", type: "false" },
+      { answer: "unifikasiya", type: "true" },
+      { answer: "idarəolunma", type: "false" },
+      { answer: "dəyanətlik", type: "false" },
+      { answer: "keçicilik", type: "false" },
+      { answer: "hərəkət səlisliyi", type: "false" },
     ],
   },
   {
     id: 167,
     Question:
-      "167. Choose the correct variant.\nSam ……. have time for a holiday.",
+      "167. Avtomobilin bir yerdən başqa yerə bütün növ texniki nəqliyyat vasitələri ilə nəqledilməsinin mümkünlüyünün və asanlığının xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "probably won’t", type: "true" },
-      { answer: "shall", type: "false" },
-      { answer: "some", type: "false" },
-      { answer: "haven’t", type: "false" },
-      { answer: "can", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "true" },
+      { answer: "patent - hüquq", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təyinat", type: "false" },
     ],
   },
   {
     id: 168,
-    Question: "168. Choose the correct variant.\nTom …… go to University.",
+    Question:
+      "168. Sərnişin avtobusunun imtinasız işləməsi, uzunömürlülüyü, təmirə yararlılığı və saxlanması xassələrinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisi adlanır?",
     answers: [
-      { answer: "might not", type: "true" },
-      { answer: "have", type: "false" },
-      { answer: "passed", type: "false" },
-      { answer: "to be", type: "false" },
-      { answer: "shall", type: "false" },
+      { answer: "etibarlılıq", type: "true" },
+      { answer: "təyinat", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "estetik", type: "false" },
     ],
   },
   {
     id: 169,
     Question:
-      "169. Choose the correct variant.\nMeg …… go to university next year.",
+      "169. Hansı göstəricidə nəqliyyat vasitəsində istifadə olunmuş texniki həllərin yenilik dərəcəsi, onların patent müdafiəsi, həmçinin onun ölkədə və xaricdə maneəsiz realizə olunmasının mümkünlüyü xarakterizə edilir?",
     answers: [
-      { answer: "will probably", type: "true" },
-      { answer: "shall", type: "false" },
-      { answer: "can", type: "false" },
-      { answer: "have", type: "false" },
-      { answer: "has", type: "false" },
+      { answer: "patent - hüquq", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "erqonomik", type: "false" },
     ],
   },
   {
     id: 170,
     Question:
-      "170. Choose the correct variant.\nSampath …… get a job abroad instead.",
+      "170. Hansı keyfiyyət göstəricisi nəqliyyatın təyinatına görə formasının, rənginin rasionallığının, kompazisiyasının bütövlülüyünün xarakterizə edilməsinə aiddir?",
     answers: [
-      { answer: "might", type: "true" },
-      { answer: "cans", type: "false" },
-      { answer: "any", type: "false" },
-      { answer: "some", type: "false" },
-      { answer: "to be", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 171,
-    Question: "171. Choose the correct sentence in present continuous.",
+    Question:
+      "171. Sərnişin vaqonlarının təyinatına uyğun olaraq əsas funksiyalarının yerinə yetirilməyə etibarlı olmasını təyin edən və onun tətbiq olunma sahəsini müəyyənləşdirilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "She is studying for her exams.", type: "true" },
-      { answer: "She studies for her exams.", type: "false" },
-      { answer: "She study for her exams.", type: "false" },
-      { answer: "She was studying for her exams.", type: "false" },
-      { answer: "She has studied for her exams.", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
     ],
   },
   {
     id: 172,
     Question:
-      "172. Choose the correct translation.\nI've lost my mobile phone.",
+      "172. Karbohidrogen yanacağı ilə işləyən hansı qurğu avtomobilin mexaniki enerji mənbəyidir?",
     answers: [
-      { answer: "Mən mobil telefonumu itirmişəm.", type: "true" },
-      { answer: "Mən mobil telefonu itirmədim.", type: "false" },
-      { answer: "Mən həmişə itirirəm telefonumu.", type: "false" },
-      { answer: "Mən mobil telefonumu itirəcəm.", type: "false" },
-      { answer: "Mən telefonlarimi itirirəm.", type: "false" },
+      { answer: "daxiliyanma mühərriki", type: "true" },
+      { answer: "sükan trapessiyası", type: "false" },
+      { answer: "sürətlər qutusu", type: "false" },
+      { answer: "baş ötürücü", type: "false" },
+      { answer: "mufta", type: "false" },
     ],
   },
   {
     id: 173,
     Question:
-      "173. Choose the correct synonym of the given word.\nShe has done lots of different JOBS.",
+      "173. Avtomobilin təyinatına görə markasına uyğun olaraq formasının rasionallığının və bədii ifadəliliyinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "work, tasks", type: "true" },
-      { answer: "worker, position", type: "false" },
-      { answer: "employment, places", type: "false" },
-      { answer: "opportunities, duty", type: "false" },
-      { answer: "career, paper", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "iqtisadi", type: "false" },
     ],
   },
   {
     id: 174,
     Question:
-      "174. Choose the correct form of the verb.\nThey ______ (play) football right now.",
+      "174. Hansı keyfiyyət göstəricisinin təyin olunması zamanı nəqliyyat vasitəsinin təyinatına uyğun olaraq verilmiş funksiyalarının yerinə yetirilməyə etibarlı olmasını təyin edir və onun tətbiqolunma sahəsini müəyyənləşdirir?",
     answers: [
-      { answer: "are playing", type: "true" },
-      { answer: "play", type: "false" },
-      { answer: "plays", type: "false" },
-      { answer: "played", type: "false" },
-      { answer: "is playing", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "estetik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 175,
     Question:
-      "175. Choose the correct modal verb.\nTom isn’t sure what he wants to do when he leaves school. He… go to university or he…. travel abroad for a year.",
+      "175. Beynəlxalq avtokirayə şirkətləri kirayə xidmətləri üçün neçə əsas tarif təklif edirlər?",
     answers: [
-      { answer: "might, might", type: "true" },
-      { answer: "shall, will", type: "false" },
-      { answer: "should, shouldn’t", type: "false" },
-      { answer: "cans, can’t", type: "false" },
-      { answer: "could, couldn’t", type: "false" },
+      { answer: "üç", type: "true" },
+      { answer: "altı", type: "false" },
+      { answer: "dörd", type: "false" },
+      { answer: "beş", type: "false" },
+      { answer: "iki", type: "false" },
     ],
   },
   {
     id: 176,
     Question:
-      "176. Choose the correct modal verb.\nSome teachers are worried that computers …. take their jobs one day.",
+      "176. Beynəlxalq avtokirayə şirkətlərinin kirayə xidmətləri üçün təklif etdikləri əsas tariflərdən biri hansı variantda göstərilmişdir?",
     answers: [
-      { answer: "might", type: "true" },
-      { answer: "cans", type: "false" },
-      { answer: "can’t", type: "false" },
-      { answer: "shall", type: "false" },
-      { answer: "won’t", type: "false" },
+      {
+        answer: "avtokirayə şirkətinin standart qəbul etdiyi tarifə görə",
+        type: "true",
+      },
+      {
+        answer: "avtomobilin markasına uyğun olaraq dəyərinə görə",
+        type: "false",
+      },
+      { answer: "avtomobilin maksimum sürətinə görə", type: "false" },
+      { answer: "avtomobilin istehsal olunduğu ilinə görə", type: "false" },
+      { answer: "avtomobilin sərnişin tutumuna görə", type: "false" },
     ],
   },
   {
     id: 177,
     Question:
-      "177. Choose the correct modal verb.\nIn ten years’ time I ….. have holiday and travel.",
+      "177. Nəqliyyat vasitəsinin növünə uyğun olaraq təyinatına görə formasının rasionallığının və kompazisiyasının bütövlülüyünün xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "might", type: "true" },
-      { answer: "was able to", type: "false" },
-      { answer: "can to", type: "false" },
-      { answer: "can’t to", type: "false" },
-      { answer: "wouldn’t to", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "texnoloji", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "unifikasiya", type: "false" },
     ],
   },
   {
     id: 178,
     Question:
-      "178. Choose the correct phrases.\n1. go\n2. take\n3. do\n4. earn\n5. apply\n\na. a computer course\nb. to secondary school\nc. for a job\nd. money\ne. an exam",
+      "178. Nəqliyyat vasitəsinin hansı keyfiyyət göstəricisi onun istehsalı və təmiri zamanı yüksək əmək məhsuldarlığını təmin etmək üçün konstruktiv - texnoloji işlərin effektivliyini xarakterizə edir?",
     answers: [
-      { answer: "1-b, 2-e , 3-a, 4-d, 5-c", type: "true" },
-      { answer: "1-a, 2-b, 3-c, 4-e, 5-c", type: "false" },
-      { answer: "1-c, 2-c, 3-e, 4-a, 5-b", type: "false" },
-      { answer: "1-d, 2-e, 3-a, 4-b, 5-c", type: "false" },
-      { answer: "1-e, 2-a, 3-b, 4-c, 5-d", type: "false" },
+      { answer: "texnolojilik", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 179,
-    Question: "179. Choose the word which is out of the logic list.",
+    Question:
+      "179. Hansı keyfiyyət göstəricisi sərnişin avtobuslarının bir yerdən başqa yerə bütün növ nəqliyyat vasitələri ilə nəqledilməsinin mümkünlüyünü və asanlığını xarakterizə edir?",
     answers: [
-      { answer: "uniform", type: "true" },
-      { answer: "geography", type: "false" },
-      { answer: "history", type: "false" },
-      { answer: "languages", type: "false" },
-      { answer: "mathematics", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "true" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "patent - hüquq", type: "false" },
+      { answer: "sertifikatlaşdırma", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 180,
-    Question: "180. Choose the word which is out of the logic list.",
+    Question:
+      "180. Nəqliyyat vasitəsində istifadə olunmuş texniki həllərin yenilik dərəcəsini və onların patent müdafiəsinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Speaking", type: "true" },
-      { answer: "Performing arts", type: "false" },
-      { answer: "Medicine", type: "false" },
-      { answer: "Business studies", type: "false" },
-      { answer: "Design and technology", type: "false" },
+      { answer: "patent - hüquq", type: "true" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
     ],
   },
   {
     id: 181,
-    Question: "181. Choose the word which is out of the logic list.",
+    Question:
+      "181. Hansı keyfiyyət göstəricisinə nəqliyyat vasitəsinin istehsalı və istismarı zamanı onun ətraf mühitə ziyanlı təsirinin səviyyəsinin xarakterizə edilməsi aiddir?",
     answers: [
-      { answer: "University", type: "true" },
-      { answer: "Economics", type: "false" },
-      { answer: "Media studies", type: "false" },
-      { answer: "Leisure and tourism", type: "false" },
-      { answer: "Literature", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "estetik", type: "false" },
+      { answer: "erqonomik", type: "false" },
     ],
   },
   {
     id: 182,
     Question:
-      "182. Continue the logic list.\nPerforming studies, law, history ______.",
+      "182. Turuzm nəqliyyat xidməti zamanı turistlərin qarşılamb-yola salınması prosesi necə adlanır?",
     answers: [
-      { answer: "Science", type: "true" },
-      { answer: "Meaning", type: "false" },
-      { answer: "Facts", type: "false" },
-      { answer: "School", type: "false" },
-      { answer: "College", type: "false" },
+      { answer: "transfer", type: "true" },
+      { answer: "nəqliyyat prosesi", type: "false" },
+      { answer: "nəqliyyat təminatı", type: "false" },
+      { answer: "nəqliyyat xidməti", type: "false" },
+      { answer: "turistlərin qəbul edilməsi", type: "false" },
     ],
   },
   {
     id: 183,
     Question:
-      "183. Choose the word for someone who often changes moods quickly:",
+      "183. Nəqliyyat xidməti zamanı turistlərin daimi yaşayış yerindən istirahət yerinə və əks istiqamətdə yerdəyişməsi necə adlanır?",
     answers: [
-      { answer: "Moody", type: "true" },
-      { answer: "Brave", type: "false" },
-      { answer: "Honest", type: "false" },
-      { answer: "Polite", type: "false" },
-      { answer: "Confident", type: "false" },
+      { answer: "turizm daşımaları", type: "true" },
+      { answer: "nəqliyyat marşurutu", type: "false" },
+      { answer: "turizm nəqliyyat yolu", type: "false" },
+      { answer: "turistlərin nəqliyyat təminatı", type: "false" },
+      { answer: "turistlərin müvəqqəti yerdəyişmələri", type: "false" },
     ],
   },
   {
     id: 184,
-    Question: "184. My father _____ driving.",
+    Question:
+      "184. Turizm sahəsində əvvəlcədən ehtimal olunmuş (nəzərdə tutulmuş) və ya müəyyən edilmiş hərəkət etmə yolu, istiqaməti və yol qaydaları necə adlanır?",
     answers: [
-      { answer: "doesn’t like", type: "true" },
-      { answer: "does likes", type: "false" },
-      { answer: "doesn’t likes", type: "false" },
-      { answer: "don’t likes", type: "false" },
-      { answer: "don’t like", type: "false" },
+      { answer: "turun marşrutu", type: "true" },
+      { answer: "nəqliyyat yolu", type: "false" },
+      { answer: "turizm nəqliyyatı", type: "false" },
+      { answer: "turizm yol qaydaları", type: "false" },
+      { answer: "normativ sənəd", type: "false" },
     ],
   },
   {
     id: 185,
     Question:
-      "185. A: Where _____ your parents _____ ?\nB: In the Ministry of Education.",
+      "185. Nəqliyyat vasitəsinin hansı keyfiyyət göstəricisinə ətraf mühitə atılan zərərli qazlarım miqdarının təyin olunması aiddir?",
     answers: [
-      { answer: "do / work", type: "true" },
-      { answer: "do / do", type: "false" },
-      { answer: "does / work", type: "false" },
-      { answer: "are / work", type: "false" },
-      { answer: "work / ---", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "estetik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "patent - hüquq", type: "false" },
+      { answer: "erqonomik", type: "false" },
     ],
   },
   {
     id: 186,
     Question:
-      "186. Choose the word for a person who tells jokes and makes people laugh:",
+      "186. Nəqliyyat vasitəsin hansı keyfiyyət göstəricisinə zərərli tüstü qarışığının və qazların miqdarının normadan artıq qatılıqda ətraf mühitə atılmasının müəyyənləşdirilməsi aiddir?",
     answers: [
-      { answer: "Funny", type: "true" },
-      { answer: "Serious", type: "false" },
-      { answer: "Sad", type: "false" },
-      { answer: "Kind", type: "false" },
-      { answer: "Nervous", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "estetik", type: "false" },
+      { answer: "təyinat", type: "false" },
     ],
   },
   {
     id: 187,
-    Question: "187. A: “_____ do you travel to school?”\nB: “By bus.”",
+    Question:
+      "187. Hansı keyfiyyət göstəricisi sərnişin nəqliyyatının istismarı zamanı insanların həyatının və fəaliyyətinin təhlükəsizliyini təmin edən xüsusiyyətlər qrupunu xarakterizə edir?",
     answers: [
-      { answer: "How", type: "true" },
-      { answer: "What", type: "false" },
-      { answer: "Why", type: "false" },
-      { answer: "Where", type: "false" },
-      { answer: "What", type: "false" },
+      { answer: "təhlükəsizlik", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "istismar", type: "false" },
     ],
   },
   {
     id: 188,
-    Question: "188. “____ ____ you live with?”\n“With my mother and sisters.”",
+    Question:
+      "188. Avtomobildə istifadə olunmuş texniki həllərin yenilik dərəcəsini, həmçinin onun ölkədə və xaricdə maneəsiz realizə olunmasının mümkünlüyü hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Who / do", type: "true" },
-      { answer: "What / do", type: "false" },
-      { answer: "Where / does", type: "false" },
-      { answer: "Who / does", type: "false" },
-      { answer: "Whom / do", type: "false" },
+      { answer: "patent - hüquq", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
     ],
   },
   {
     id: 189,
-    Question: "189. Choose the correct sentence in present continuous.",
+    Question:
+      "189. Sərnişin avtobuslarında yanacaq sistemindəki tənzimləmələrin pozulması neçə faizdən çox dəm qazını artıra bilər?",
     answers: [
-      { answer: "She is reading a book at the moment.", type: "true" },
-      { answer: "She reads a book at the moment.", type: "false" },
-      { answer: "She read a book at the moment.", type: "false" },
-      { answer: "She was reading a book at the moment.", type: "false" },
-      { answer: "She has read a book at the moment.", type: "false" },
+      { answer: "70% - dən", type: "true" },
+      { answer: "50% - dən", type: "false" },
+      { answer: "95% - dən", type: "false" },
+      { answer: "45% - dən", type: "false" },
+      { answer: "90% - dən", type: "false" },
     ],
   },
   {
     id: 190,
     Question:
-      "190. Choose the correct variant.\nWe ______ (study) for the test at the moment.",
+      "190. Nəqliyatın texniki vəziyyətinə dair ilkin məlumatların alınmasını təmin edən texnoloji proses necə adlanır?",
     answers: [
-      { answer: "are studying", type: "true" },
-      { answer: "studying", type: "false" },
-      { answer: "study", type: "false" },
-      { answer: "is studying", type: "false" },
-      { answer: "studies", type: "false" },
+      { answer: "diaqnostika", type: "true" },
+      { answer: "nəqliyyatın sınağı", type: "false" },
+      { answer: "nəqliyyatın təmiri", type: "false" },
+      { answer: "nəqliyyatın nasazlığı haqqında xəbərdarlıq", type: "false" },
+      { answer: "nəqliyyat prosesinə texniki hazırlıq", type: "false" },
     ],
   },
   {
     id: 191,
     Question:
-      "191. Choose the correct answer.\n1. studying\n2. learning\n3. using\n\na) French\nb) Grammar\nc) The internet",
+      "191. Turuzm nəqliyyat təminatına aid olan bəndləri müəyyən edin?\n1. turistlərin daimi yaşayış yerindən istirahət yerinə və əks istiqamətdə yerdəyişməsi\n2. turistlərin nəqliyyat vasitələrinin təmir edilməsi\n3. turistlərin qarşılamb-yola salınmasında nəqliyyat vasitələrindən istifadə olunması\n4. yerləşdirilmiş ərazi ətrafında gəzinti, ekskursiya və marşrut üzrə daşınmalar\n5. turistlərə yeni nəqliyyat vasitələri hədiyə edilməsi\n6. turistlərin avtomobilinin yuyulması və rənglənməsi",
     answers: [
-      { answer: "1-b, 2-a, 3-c", type: "true" },
-      { answer: "1-b, 2-c, 3-a", type: "false" },
-      { answer: "1-c, 2-a, 3-b", type: "false" },
-      { answer: "1-a, 2-b, 3-c", type: "false" },
-      { answer: "1-c, 2-b, 3-a", type: "false" },
+      { answer: "1; 3; 4", type: "true" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 5; 6", type: "false" },
+      { answer: "3; 4; 6", type: "false" },
+      { answer: "2; 4; 5", type: "false" },
     ],
   },
   {
     id: 192,
-    Question: "192. Choose the correct sentence in present continuous.",
+    Question:
+      "192. Kruiz gəmilərində dərəcələr hansı göstəricilərdən asılıdır?",
     answers: [
-      { answer: "I am not understanding the problem.", type: "true" },
-      { answer: "I don’t understand the problem.", type: "false" },
-      { answer: "I am not understand the problem.", type: "false" },
-      { answer: "I am not understanding the problem.", type: "false" },
-      { answer: "I not understand the problem.", type: "false" },
+      {
+        answer: "kuriz gəmisinin interyer sahəsindən və xidmət dəstindən",
+        type: "true",
+      },
+      { answer: "kuriz gəmisinin qabarit ölçüsündən", type: "false" },
+      { answer: "kuriz gəmisinin sərnişin tutumundan", type: "false" },
+      { answer: "kuriz gəmisinin hərəkət sürətindən", type: "false" },
+      { answer: "kuriz gəmisinin suya batma dərinliyindən", type: "false" },
     ],
   },
   {
     id: 193,
-    Question: "193. Choose the correct variant.",
+    Question:
+      "193. Hansı göstəriciyə görə avtomobil nəqliyyatının yol verilən sürtgü materiallarının sərfi müəyyən olunur?",
     answers: [
-      { answer: "She is not playing the piano at the moment.", type: "true" },
-      { answer: "is not playing the piano at the moment.", type: "false" },
-      { answer: "play the piano at the moment.", type: "false" },
-      { answer: "is not playing piano.", type: "false" },
-      { answer: "plays the piano at the moment.", type: "false" },
+      { answer: "işlətdiyi yanacağın miqdarına görə", type: "true" },
+      { answer: "avtomobilin maksimum sürətinə görə", type: "false" },
+      {
+        answer: "sürətlər qutusundakı dişli çarxların növünə görə",
+        type: "false",
+      },
+      { answer: "avtomobilin yük götürmə qabiliyyətinə görə", type: "false" },
+      { answer: "sürətlər qutusunun pillələrinin sayına görə", type: "false" },
     ],
   },
   {
     id: 194,
     Question:
-      "194. Choose the correct form of the verb.\nThey ______ (talk) to each other on the phone right now.",
+      "194. Benzinlə işləyən avtomobil mühərrikləri üçün 100 litr yanacağa görə neçə litr yağ sərf edə bilər?",
     answers: [
-      { answer: "are talking", type: "true" },
-      { answer: "talks", type: "false" },
-      { answer: "talk", type: "false" },
-      { answer: "talked", type: "false" },
-      { answer: "is talking", type: "false" },
+      { answer: "3,5 litr", type: "true" },
+      { answer: "1,8 litr", type: "false" },
+      { answer: "2,5 litr", type: "false" },
+      { answer: "4.8 litr", type: "false" },
+      { answer: "4,5 litr", type: "false" },
     ],
   },
   {
     id: 195,
-    Question: "195. Choose the word for someone who likes to talk a lot:",
+    Question:
+      "195. Sərnişin nəqliyyatının patent müdafiəsini, həmçinin onun ölkədə və xaricdə maneəsiz realizə olunmasının mümkünlüyünün xarakterizə edilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Talkative", type: "true" },
-      { answer: "Silent", type: "false" },
-      { answer: "Sad", type: "false" },
-      { answer: "Cold", type: "false" },
-      { answer: "Calm", type: "false" },
+      { answer: "patent - hüquq", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "sertifikatlaşdırma", type: "false" },
+      { answer: "erqonomik", type: "false" },
     ],
   },
   {
     id: 196,
-    Question: "196. What do people usually do at weddings?",
+    Question:
+      "196. Sərnişin nəqliyyatının istismarı zamanı zərərli qazların ətraf mühitə normadan artıq qatılıqda atılmasının müəyyənləşdirilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Celebrate a marriage", type: "true" },
-      { answer: "Carve pumpkins", type: "false" },
-      { answer: "Hunt for eggs", type: "false" },
-      { answer: "Watch scary movies", type: "false" },
-      { answer: "Set off fireworks", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "sertifikatlaşdırma", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "təyinat", type: "false" },
     ],
   },
   {
     id: 197,
     Question:
-      "197. Choose the correct answer.\n1. audition\n2. scholarship\n3. training\n\na) Money you receive for studies\nb) Where actors/performer try to get a role\nc) Exercise to make you fit",
+      "197. Nəqliyyat vasitəsinin istifadənin səmərəliyini xarakterizə edən ümumiləşmiş göstəricisini onun hansı keyfiyyət göstəricisinə aid etmək olar?",
     answers: [
-      { answer: "1-b, 2-a, 3-c", type: "true" },
-      { answer: "1-b, 2-c, 3-a", type: "false" },
-      { answer: "1-a, 2-b, 3-c", type: "false" },
-      { answer: "1-c, 2-a, 3-b", type: "false" },
-      { answer: "1-c, 2-b, 3-a", type: "false" },
+      { answer: "iqtisadi", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "istismar", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 198,
-    Question: "198. What do people often say on New Year's Eve?",
+    Question:
+      "198. Nəqliyyat vasitəsin verilmiş funksiyalarının yerinə yetirməyə etibarlı olmasının təyin edilməsi və onun tətbiqolunma sahəsinin müəyyənləşdirilməsi hansı keyfiyyət göstəricisinin təyin olunması zamanı yerinə yetirilir?",
     answers: [
-      { answer: "Happy New Year!", type: "true" },
-      { answer: "Trick or Treat!", type: "false" },
-      { answer: "Happy Easter!", type: "false" },
-      { answer: "Merry Halloween!", type: "false" },
-      { answer: "Happy Thanks!", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "estetik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "texnolojililik", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 199,
-    Question: "199. What is often seen in parades on Independence Day?",
+    Question:
+      "199. Avtomobilin təyinatına görə markasına uyğun olaraq formasının, rənginin rasionallığını və kompazisiyasının bütövlülüyünün xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Flags", type: "true" },
-      { answer: "Trees", type: "false" },
-      { answer: "Eggs", type: "false" },
-      { answer: "Balloons", type: "false" },
-      { answer: "Chocolate", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 200,
-    Question: "200. What is usually cut at a birthday party?",
+    Question:
+      "200. Avtomobildə istifadə olunmuş texniki həllərin yenilik dərəcəsini, onların patent müdafiəsini, həmçinin ölkədə və xaricdə maneəsiz realizə olunmasının mümkünlüyünün xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Cake", type: "true" },
-      { answer: "Sandwich", type: "false" },
-      { answer: "Pizza", type: "false" },
-      { answer: "Bread", type: "false" },
-      { answer: "Chocolate", type: "false" },
+      { answer: "patent - hüquq", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "estetik", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
     ],
   },
   {
     id: 201,
-    Question: "201. She applied … a job as a nurse  in the local hospital.",
+    Question:
+      "201. Dizellə işləyən avtomobil mühərrikləri üçün 100 litr yanacağa görə neçə litr yağ sərf edə bilər?",
     answers: [
-      { answer: "For", type: "true" },
-      { answer: "To", type: "false" },
-      { answer: "By", type: "false" },
-      { answer: "On", type: "false" },
-      { answer: "In", type: "false" },
+      { answer: "5 litr", type: "true" },
+      { answer: "3 litr", type: "false" },
+      { answer: "7 litr", type: "false" },
+      { answer: "2.5 litr", type: "false" },
+      { answer: "6,5 litr", type: "false" },
     ],
   },
   {
     id: 202,
-    Question: "202. Choose the word for someone who always helps others:",
+    Question:
+      "202. Dənizlə sərnişinlərin və baqajın daşınması zamanı bəzi qaydaların unffikasiyası haqqında Beynəlxalq konvensiya neçənci ildə qəbul edilib?",
     answers: [
-      { answer: "Kind", type: "true" },
-      { answer: "Angry", type: "false" },
-      { answer: "Boring", type: "false" },
-      { answer: "Selfish", type: "false" },
-      { answer: "Noisy", type: "false" },
+      { answer: "1967-ci ildə", type: "true" },
+      { answer: "1978-ci ildə", type: "false" },
+      { answer: "1965-ci ildə", type: "false" },
+      { answer: "1997-ci ildə", type: "false" },
+      { answer: "1962-ci ildə", type: "false" },
     ],
   },
   {
     id: 203,
     Question:
-      "203. Choose the word for a person who works a lot and doesn’t give up:",
+      "203. Kruiz gəmilərində dərəcələr hansı göstəricilərdən asılıdır?",
     answers: [
-      { answer: "Hard-working", type: "true" },
-      { answer: "Lazy", type: "false" },
-      { answer: "Funny", type: "false" },
-      { answer: "Talkative", type: "false" },
-      { answer: "Weak", type: "false" },
+      {
+        answer:
+          "yataq yerlərinin ölçüsündən, miqdarından və onların yerləşməsindən",
+        type: "true",
+      },
+      {
+        answer: "kuriz gəmisinin sürətindən və qabarit ölçüsündən",
+        type: "false",
+      },
+      {
+        answer: "gəminin ay ərzində daşıdığı sərnişinlərin sayından",
+        type: "false",
+      },
+      {
+        answer: "gəminin il ərzində daşıdığı sərnişinlərin sayından",
+        type: "false",
+      },
+      {
+        answer: "kuriz gəmisinin suya batma dərinliyindən və sürətindən",
+        type: "false",
+      },
     ],
   },
   {
     id: 204,
     Question:
-      "204. Choose the correct answer.\n1. book\n2. go\n3. board\na) the plane\nb) tickets on-line\nc) through security",
+      "204. Avtomobilin istehsalı və istismarı zamanı onun ətraf mühitə ziyanlı təsirinin səviyyəsinin xarakterizə edilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "1-b, 2-c, 3-a", type: "true" },
-      { answer: "1-b, 2-a, 3-c", type: "false" },
-      { answer: "1-a, 2-b, 3-c", type: "false" },
-      { answer: "1-a, 2-c, 3-b", type: "false" },
-      { answer: "1-c, 2-b, 3-a", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "estetik", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 205,
-    Question: "205. Choose the word for someone who smiles and laughs a lot:",
+    Question:
+      "205. Avtomobilin istismarı zamanı insanların həyatının və fəaliyyətinin təhlükəsizliyini təmin edən xüsusiyyətlər qrupunun xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "Cheerful", type: "true" },
-      { answer: "Serious", type: "false" },
-      { answer: "Mean", type: "false" },
-      { answer: "Quiet", type: "false" },
-      { answer: "Moody", type: "false" },
+      { answer: "təhlükəsizlik", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "false" },
+      { answer: "istismar", type: "false" },
     ],
   },
   {
     id: 206,
-    Question: "206. Choose the correct “ing” forms of the verbs",
+    Question:
+      "206. Nəqliyyat prosesinə texniki hazırlıq zamanı nəqliyatın texniki vəziyyətinə dair ilkin məlumatların alınmasını təmin edən texnoloji proses necə adlanır?",
     answers: [
-      {
-        answer: "running, playing, riding, driving, stopping, beginning",
-        type: "true",
-      },
-      {
-        answer: "runing, playing, riding, driving, stoping, beginning",
-        type: "false",
-      },
-      {
-        answer: "running, plaiing, rideing, driving, stopping, begining",
-        type: "false",
-      },
-      {
-        answer: "runing, playing, riding, driveing, stoping, beginning",
-        type: "false",
-      },
-      {
-        answer: "running, playing, riding, driving, stoping, beginning",
-        type: "false",
-      },
+      { answer: "diaqnostika", type: "true" },
+      { answer: "srandartlaşdırma", type: "false" },
+      { answer: "nəqliyyatın sınağı", type: "false" },
+      { answer: "təmirin strukturu", type: "false" },
+      { answer: "nəqliyyatın nasazlığı", type: "false" },
     ],
   },
   {
     id: 207,
     Question:
-      "207. Choose the correct answer\nWhat do you usually wear in winter?",
+      "207. Sürtgü materiallarının sərfi hansı göstəriciyə görə avtomobil nəqliyyatı üçün müəyyən olunur?",
     answers: [
-      { answer: "a fur coat, gloves, boots, a scarf", type: "true" },
-      { answer: "a light coat, boots, shorts, a scarf", type: "false" },
-      { answer: "sandals, a coat, gloves, jeans", type: "false" },
-      { answer: "a dress, a skirt, gloves, shorts", type: "false" },
+      { answer: "işlətdiyi yanacağın miqdarına görə", type: "true" },
+      { answer: "avtomobilin kütləsinə görə", type: "false" },
       {
-        answer: "a jumper, a baseball cap, a T-shirt, a fur coat",
+        answer: "sürətlər qutusunun çıxış valının dövürlər sayına görə",
         type: "false",
       },
+      { answer: "avtomobilin sürətinə görə", type: "false" },
+      { answer: "sürətlər qutusunun qabarit ölçüsünə görə", type: "false" },
     ],
   },
   {
     id: 208,
-    Question: "208. Choose the correct form:\nThey usually ______ lunch at 12.",
+    Question:
+      "208. Ətraf mühitə atılan zərərli tüstü qarışığının miqdarının təyin olunması sərnişin avtobuslarının hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "have", type: "true" },
-      { answer: "are having", type: "false" },
-      { answer: "has", type: "false" },
-      { answer: "are have", type: "false" },
-      { answer: "having", type: "false" },
+      { answer: "ekoloji", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "istismar", type: "false" },
     ],
   },
   {
     id: 209,
     Question:
-      "209. Choose the correct verb form:\nRight now, I ______ to music.",
+      "209. Avtomobilin imtinasız işləməsi, uzunömürlülüyü, təmirə yararlılığı və saxlanması xassələrinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisi adlanır?",
     answers: [
-      { answer: "am listening", type: "true" },
-      { answer: "listen", type: "false" },
-      { answer: "listens", type: "false" },
-      { answer: "listened", type: "false" },
-      { answer: "was listening", type: "false" },
+      { answer: "etibarlılıq", type: "true" },
+      { answer: "təyinat", type: "false" },
+      { answer: "təhlükəsizlilik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "estetik", type: "false" },
     ],
   },
   {
     id: 210,
-    Question: "210. Choose the correct sentence in present continuous.",
+    Question:
+      "210. Avtomobilin hərəkəti zamanı təkərə düşən normal yükün təsirindən şində hansı proses baş verir?",
     answers: [
-      {
-        answer: "The students are wearing uniform at the moment.",
-        type: "true",
-      },
-      {
-        answer: "The students were not wearing uniform at the moment.",
-        type: "false",
-      },
-      {
-        answer: "The students don’t wearing uniform at the moment.",
-        type: "false",
-      },
-      { answer: "The students are wear uniform at the moment.", type: "false" },
-      {
-        answer: "The students  wearing uniform if they like to.",
-        type: "false",
-      },
+      { answer: "deformasiya edir", type: "true" },
+      { answer: "şin qısalır", type: "false" },
+      { answer: "şində havanın təzyiqi aşağı düşür", type: "false" },
+      { answer: "şində havanın təzyiqi normallaşır", type: "false" },
+      { answer: "şin hərəkət edir", type: "false" },
     ],
   },
   {
     id: 211,
-    Question: "211. Choose the correct negative sentence.",
+    Question:
+      "211. Avtobusun hərəkətsiz vəziyyətində tərpənməz şininin yol səthi ilə təmas sahəsi təxmini olaraq hansı formada olur?",
     answers: [
-      {
-        answer: "People never wear uniforms if they go to a wedding party.",
-        type: "true",
-      },
-      {
-        answer: "People doesn’t wear uniforms if they go to a wedding party.",
-        type: "false",
-      },
-      {
-        answer: "People are not wear uniforms if they go to a wedding party.",
-        type: "false",
-      },
-      {
-        answer: "People do not wearing uniforms if they go to a wedding party.",
-        type: "false",
-      },
-      {
-        answer:
-          "People never wear uniforms if they didn’t go to a wedding party.",
-        type: "false",
-      },
+      { answer: "elleps", type: "true" },
+      { answer: "kvadrat", type: "false" },
+      { answer: "trapesiya", type: "false" },
+      { answer: "üçbucaq", type: "false" },
+      { answer: "düz xətt", type: "false" },
     ],
   },
   {
     id: 212,
-    Question: "212. Choose the correct sentence:",
+    Question:
+      "212. Yanacaq sərfiyyatına görə sürət xarakteristikası neçə yerə bölünür?",
     answers: [
-      { answer: "We are studying English at the moment.", type: "true" },
-      { answer: "We study English at the moment.", type: "false" },
-      { answer: "We studying English at the moment.", type: "false" },
-      { answer: "We studied English at the moment.", type: "false" },
-      { answer: "We studies English at the moment", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "8", type: "false" },
+      { answer: "6", type: "false" },
+      { answer: "4", type: "false" },
     ],
   },
   {
     id: 213,
-    Question: "213. Choose the correct answer.\nI am waiting … a bus",
+    Question: "213. Kruiz gəmilərində dərəcələr hansı göstəricidən asılıdır?",
     answers: [
-      { answer: "for", type: "true" },
-      { answer: "at", type: "false" },
-      { answer: "by", type: "false" },
-      { answer: "–", type: "false" },
-      { answer: "to", type: "false" },
+      { answer: "palubanın hündürlüyündən", type: "true" },
+      { answer: "gəminin sürətindən", type: "false" },
+      { answer: "gəminin qabarit ölçüsündən", type: "false" },
+      { answer: "gəmisinin suya batma dərinliyindən", type: "false" },
+      { answer: "limanda dayanma vaxtından", type: "false" },
     ],
   },
   {
     id: 214,
-    Question: "214. Choose the correct sentence:",
+    Question:
+      "214. Avtomobilin mühərrikinin tam yanacaq sərfində alınan sürət xarakteristikası necə adlanır?",
     answers: [
-      { answer: "My brother plays football on weekends.", type: "true" },
-      { answer: "My brother is play football on weekends.", type: "false" },
-      { answer: "My brother playing football on weekends.", type: "false" },
-      { answer: "My brother played football on weekends.", type: "false" },
-      { answer: "My brother play football on weekends", type: "false" },
+      { answer: "xarici sürət xarakteristikası", type: "true" },
+      { answer: "daxili sürət xarakteristikası", type: "false" },
+      { answer: "yük daşıma sürət xarakteristikası", type: "false" },
+      { answer: "sərnişin daşıma sürət xarakteristikası", type: "false" },
+      { answer: "natamam sürət xarakteristikası", type: "false" },
     ],
   },
   {
     id: 215,
     Question:
-      "215. Choose the correct definition of the given word:\nAttractive: nice to look at.",
+      "215. Avtomobilin mühərrikinin tam olmayan yanacaq sərfində alınan sürət xarakteristikası necə adlanır?",
     answers: [
-      { answer: "Good-looking", type: "true" },
-      { answer: "Dark", type: "false" },
-      { answer: "Tall", type: "false" },
-      { answer: "Slim", type: "false" },
-      { answer: "Clever", type: "false" },
+      { answer: "natamam sürət xarakteristikası", type: "true" },
+      { answer: "xarici sürət xarakteristikası", type: "false" },
+      { answer: "daxili sürət xarakteristikası", type: "false" },
+      { answer: "dəyişən sürət xarakteristikası", type: "false" },
+      { answer: "daimi sürət xarakteristikası", type: "false" },
     ],
   },
   {
     id: 216,
     Question:
-      "216. Choose the correct word of the given definition:\nYou wear these if you can’t see very well.",
+      "216. Avtobusların mühərrikinin sürət xarakteristikalarının sınağı harada aparılır?",
     answers: [
-      { answer: "Glasses", type: "true" },
-      { answer: "Tie", type: "false" },
-      { answer: "Jeans", type: "false" },
-      { answer: "Trainers", type: "false" },
-      { answer: "Earrings", type: "false" },
+      { answer: "xüsusi tormoz stendlərində", type: "true" },
+      { answer: "asfaltbeton yolda", type: "false" },
+      { answer: "torpaq yolda", type: "false" },
+      { answer: "çay daşı döşənmiş üfiqi yolda", type: "false" },
+      { answer: "enişli - yooxuşlu yolda", type: "false" },
     ],
   },
   {
     id: 217,
     Question:
-      "217. Choose the correct interrogative sentence in Present Continuous.",
+      "217. Avtobusların növündən asılı olaraq mühərrikin dirsəkli valının dövürlər sayı benzinlə işləyən mühərriklər üçün hansı intervalda olur?",
     answers: [
-      { answer: "Are you enjoying yourself?", type: "true" },
-      { answer: "You are enjoying yourself?", type: "false" },
-      { answer: "Are enjoying you yourself?", type: "false" },
-      { answer: "Yourself you enjoying are?", type: "false" },
-      { answer: "Is you enjoying yourself?", type: "false" },
+      { answer: "3200 dəq.-1 –dən 6000 dəq.-1", type: "true" },
+      { answer: "1200 dəq.-1 –dən 2400 dəq.-1", type: "false" },
+      { answer: "600 dəq.-1 –dən 1800 dəq.-1", type: "false" },
+      { answer: "6200 dəq.-1 –dən 6500 dəq.-1", type: "false" },
+      { answer: "6500 dəq.-1 –dən 7500 dəq.-1", type: "false" },
     ],
   },
   {
     id: 218,
     Question:
-      "218. Match the words to make correct phrases.\n1.stay a) a walk\n2.do b)at home\n3.have a c)the housework\n4.go for d)party",
+      "218. Avtobusların növündən asılı olaraq mühərrikin dirsəkli valının dövürlər sayı dizel mühərriklər üçün hansı intervalda olur?",
     answers: [
-      { answer: "1-b, 2-c, 3-d, 4-a", type: "true" },
-      { answer: "1-c, 2-b, 3-d, 4-a", type: "false" },
-      { answer: "1-b, 2-d, 3-a, 4-c", type: "false" },
-      { answer: "1-c, 2-d, 3-c, 4-a", type: "false" },
-      { answer: "1-a, 2-d, 3-c, 4-b", type: "false" },
+      { answer: "2000 dəq.-1 –dən 4400 dəq.-1", type: "true" },
+      { answer: "1200 dəq.-1 –dən 1800 dəq.-1", type: "false" },
+      { answer: "750 dəq.-1 –dən 1600 dəq.-1", type: "false" },
+      { answer: "5200 dəq.-1 –dən 5800 dəq.-1", type: "false" },
+      { answer: "5500 dəq.-1 –dən 7500 dəq.-1", type: "false" },
     ],
   },
   {
     id: 219,
-    Question: "219. Choose the correct variant with the summer clothes:",
+    Question:
+      "219. Benzinlə işləyən sərnişin avtobuslarının mühərrikləri üçün dövürlər sayına görə uyğunlaşma əmsalının qiyməti hansı intervalda qəbul edilir?",
     answers: [
-      { answer: "A dress, a T-shirt,  shorts", type: "true" },
-      { answer: "A jacket, jeans, a coat", type: "false" },
-      { answer: "Shorts, gloves, a suit", type: "false" },
-      { answer: "A hat, socks, a scarf", type: "false" },
-      { answer: "A jumper, a dress, gloves", type: "false" },
+      { answer: "1,5 ... 2,5", type: "true" },
+      { answer: "0,5 ...1,2", type: "false" },
+      { answer: "0,2 ... 1", type: "false" },
+      { answer: "2,6 ... 3,2", type: "false" },
+      { answer: "2,8 ... 4,5", type: "false" },
     ],
   },
   {
     id: 220,
-    Question: "220. Choose the correct synonym for the word GOOD-LOOKING",
+    Question:
+      "220. Dizel mühərrikli sərnişin avtobusları üçün dövürlər sayına görə uyğunlaşma əmsalının qiyməti hansı intervalda qəbul edilir?",
     answers: [
-      { answer: "Handsome", type: "true" },
-      { answer: "Ugly", type: "false" },
-      { answer: "Bad", type: "false" },
-      { answer: "Tall", type: "false" },
-      { answer: "Slim", type: "false" },
+      { answer: "1,45 ... 2", type: "true" },
+      { answer: "0,8 ...1,4", type: "false" },
+      { answer: "0,5 ... 1,2", type: "false" },
+      { answer: "2,5 ... 3", type: "false" },
+      { answer: "2,8 ... 3,5", type: "false" },
     ],
   },
   {
     id: 221,
-    Question: "221. Choose the correct variant with the winter clothes:",
+    Question:
+      "221. Nəqliyyat vasitəsinin istehsalı və təmiri zamanı yüksək əmək məhsuldarlığını təmin etmək üçün konstruktiv - texnoloji işlərin effektivliyinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisidir?",
     answers: [
-      { answer: "A coat, a jumper, gloves", type: "true" },
-      { answer: "A dress, a T-shirt, a coat", type: "false" },
-      { answer: "A hat, a skirt, gloves", type: "false" },
-      { answer: "A suit, shorts, a tie", type: "false" },
-      { answer: "Trousers, sandals, a scarf", type: "false" },
+      { answer: "texnolojilik", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "unifikasiya", type: "false" },
     ],
   },
   {
     id: 222,
     Question:
-      "222. Choose the correct verb form:\nRight now, they ______ in the park.",
+      "222. Nəqliyyat vasitəsinin bir yerdən başqa yerə bütün növ texniki nəqliyyat vasitələri ilə nəql edilməsinin münkünlüyünün və asanlığının xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "are walking", type: "true" },
-      { answer: "walk", type: "false" },
-      { answer: "walks", type: "false" },
-      { answer: "walked", type: "false" },
-      { answer: "walking", type: "false" },
+      { answer: "nəqletməyə yararlılıq", type: "true" },
+      { answer: "patent - hüquq", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təyinat", type: "false" },
     ],
   },
   {
     id: 223,
     Question:
-      "223. Choose the correct word for the definition:\nShoes that are made for running or playing sports but which many people wear as ordinary shoes.",
+      "223. Avtomobilin imtinasız işləməsi, uzunömürlülüyü, təmirə yararlılığı və saxlanması xassələrinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisi adlanır?",
     answers: [
-      { answer: "Trainers", type: "true" },
-      { answer: "Jeans", type: "false" },
-      { answer: "Boots", type: "false" },
-      { answer: "Sandals", type: "false" },
-      { answer: "Trousers", type: "false" },
+      { answer: "etibarlılıq", type: "true" },
+      { answer: "təyinat", type: "false" },
+      { answer: "təhlükəsizlilik", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "estetik", type: "false" },
     ],
   },
   {
     id: 224,
-    Question: "224. Choose the correct “ing” form of the verb",
+    Question:
+      "224. Hansı göstəricidə nəqliyyat vasitəsinin istifadə olunmuş texniki həllərin yenilik dərəcəsi, onların patent müdafiəsi, həmçinin onun ölkədə və xaricdə maneəsiz realizə olunmasının mümkünlüyü xarakterizə edilir?",
     answers: [
-      { answer: "Looking", type: "true" },
-      { answer: "Writeng", type: "false" },
-      { answer: "Comming", type: "false" },
-      { answer: "Stayying", type: "false" },
-      { answer: "Siting", type: "false" },
+      { answer: "patent - hüquq", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "erqonomik", type: "false" },
     ],
   },
   {
     id: 225,
-    Question: "225. Choose the correct “ing” form of the verb",
+    Question:
+      "225. Hansı keyfiyyət göstəricisi sərnişin avtobusunun təyinatına görə markasına uyğun olaraq formasının, rənginin rasionallığının, kompazisiyasının bütövlülüyünün xarakterizə edilməsinə aiddir?",
     answers: [
-      { answer: "Beginning", type: "true" },
-      { answer: "Stoping", type: "false" },
-      { answer: "Plaiing", type: "false" },
-      { answer: "Carreing", type: "false" },
-      { answer: "Wearring", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 226,
-    Question: "226. Choose the correct answer.\nWe are going ………  the ceiling.",
+    Question:
+      "226. Kruiz gəmilərində dərəcələr hansı göstəricilərdən asılıdır?",
     answers: [
-      { answer: "to paint", type: "true" },
-      { answer: "painting", type: "false" },
-      { answer: "paint", type: "false" },
-      { answer: "to painting", type: "false" },
-      { answer: "to painted", type: "false" },
+      {
+        answer: "gəminin uzunluğu boyunca yerlərin yerləşməsindən",
+        type: "true",
+      },
+      { answer: "gəminin sürətindən və qabarit ölçüsündən", type: "false" },
+      {
+        answer: "kuriz gəmisinin ay ərzində reyslərinin sayından",
+        type: "false",
+      },
+      {
+        answer: "kuriz gəmisinin il ərzində reyslərinin sayından",
+        type: "false",
+      },
+      { answer: "gəminin suya batma dərinliyindən", type: "false" },
     ],
   },
   {
     id: 227,
     Question:
-      "227. Choose the correct answer\nA. – ……. are they smiling?\nB. – I think, they are watching something ……….",
+      "227. Sərnişin avtobusunun təyinatına uyğun olaraq əsas funksiyalarının yerinə yetirilməyə etibarlı olmasını təyin edir və onun tətbiq olunma sahəsinin müəyyənləşdirilməsi hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "why/ funny", type: "true" },
-      { answer: "what / bad", type: "false" },
-      { answer: "why / sad", type: "false" },
-      { answer: "where / fun", type: "false" },
-      { answer: "what / funny", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
     ],
   },
   {
     id: 228,
     Question:
-      "228. Choose the correct answer\nVeronica  …… to somebody on her mobile phone",
+      "228. Karbohidrogen yanacağı ilə işləyən hansı qurğu avtomobilin mexaniki enerji mənbəyidir?",
     answers: [
-      { answer: "is talking", type: "true" },
-      { answer: "were speaking", type: "false" },
-      { answer: "is playing", type: "false" },
-      { answer: "are speaking", type: "false" },
-      { answer: "is telling", type: "false" },
+      { answer: "daxiliyanma mühərriki", type: "true" },
+      { answer: "sükan trapessiyası", type: "false" },
+      { answer: "sürətlər qutüsu", type: "false" },
+      { answer: "baş ötürücü", type: "false" },
+      { answer: "mufta", type: "false" },
     ],
   },
   {
     id: 229,
     Question:
-      "229. Choose the correct answer\nThe family is in the living room. The baby ……… on the floor and his grandpa …….……  on the sofa.",
+      "229. Nəqliyyat vasitəsinin təyinatına görə markasına uyğun olaraq formasının rasionallığının və bədii ifadəliliyinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
     answers: [
-      { answer: "is sitting / is lying", type: "true" },
-      { answer: "is sitting / was lying", type: "false" },
-      { answer: "was sitting / is lying", type: "false" },
-      { answer: "were sitting / are lying", type: "false" },
-      { answer: "are lying / are lying", type: "false" },
+      { answer: "estetik", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təyinat", type: "false" },
+      { answer: "iqtisadi", type: "false" },
     ],
   },
   {
     id: 230,
     Question:
-      "230. Make up a sentence using the correct word order.\nmeans, a sociable, orange you, are, person",
+      "230. Hansı keyfiyyət göstəricisinin təyin olunması zamanı təyinatına uyğun olaraq nəqliyyat vasitəsinin verilmiş funksiyalarının yerinə yetirilməyə etibarlı olmasını təyin edir və onun tətbiqolunma sahəsini müəyyənləşdirir?",
     answers: [
-      { answer: "Orange means you are a sociable person", type: "true" },
-      { answer: "You means are orange a sociable person.", type: "false" },
-      { answer: "You means a sociable person are orange", type: "false" },
-      { answer: "Orange means are you a sociable person", type: "false" },
-      { answer: "You are  orange means a sociable person.", type: "false" },
+      { answer: "təyinat", type: "true" },
+      { answer: "iqtisadi", type: "false" },
+      { answer: "estetik", type: "false" },
+      { answer: "unifikasiya", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
     ],
   },
   {
     id: 231,
     Question:
-      "231. Make up a sentence using the correct word order.\nWhat /you /this night going/ are/ to do/?",
+      "231. Nəqliyyat vasitələri üçün serviz xidmətlərini neçə yerə bölmək olar?",
     answers: [
-      { answer: "What are you going to do this night?", type: "true" },
-      { answer: "What you are going to do this night?", type: "false" },
-      { answer: "What this night are you going to do?", type: "false" },
-      { answer: "What you are to do going this night?", type: "false" },
-      { answer: "What are you to do going this night?", type: "false" },
+      { answer: "6", type: "true" },
+      { answer: "7", type: "false" },
+      { answer: "9", type: "false" },
+      { answer: "3", type: "false" },
+      { answer: "5", type: "false" },
     ],
   },
   {
     id: 232,
     Question:
-      "232. Choose the correct variant.\nGloria is good at making clothes.",
+      "232. Coğrafi zona üzrə İnter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələri neçə qrupa bölünür?",
     answers: [
-      { answer: "She is a designer.", type: "true" },
-      { answer: "She is going to be a doctor.", type: "false" },
-      { answer: "She is a dancer.", type: "false" },
-      { answer: "She is an economist", type: "false" },
-      { answer: "She is going to be a shopassistant", type: "false" },
+      { answer: "8", type: "true" },
+      { answer: "2", type: "false" },
+      { answer: "6", type: "false" },
+      { answer: "10", type: "false" },
+      { answer: "9", type: "false" },
     ],
   },
   {
     id: 233,
-    Question: "233. Choose the correct sentence.",
+    Question:
+      "233. Neçə əsas konvensiya Azərbaycan dəmir yolu nəqliyyatında mövcuddur?",
     answers: [
-      { answer: "She doesn’t like coffee.", type: "true" },
-      { answer: "She don’t like coffee.", type: "false" },
-      { answer: "She isn’t like coffee.", type: "false" },
-      { answer: "She liking coffee.", type: "false" },
-      { answer: "She not likes coffee", type: "false" },
+      { answer: "3", type: "true" },
+      { answer: "2", type: "false" },
+      { answer: "1", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "4", type: "false" },
     ],
   },
   {
     id: 234,
-    Question: "234. Choose the correct sentence in present continuous.",
+    Question:
+      "234. Aşağıdakı müqavilələrdən (konvensiyasından) hansı dəmiryolu nəqliyyatında hazırda qüvvədədir?",
     answers: [
-      { answer: "He is working on his project now.", type: "true" },
-      { answer: "He work on his project now.", type: "false" },
-      { answer: "He works on his project now.", type: "false" },
-      { answer: "He working on his project now.", type: "false" },
-      { answer: "He is works on his project now", type: "false" },
+      {
+        answer:
+          "beynəlxalaq dəmir yolu daşınmaları haqqında 1980-ci il müqaviləsi",
+        type: "true",
+      },
+      {
+        answer:
+          "beynəlxalaq dəmir yolu yükləmələri haqqında 1987-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "beynəlxalaq dəmir yolu daşınmaları haqqında 1985-ci il müqaviləai",
+        type: "false",
+      },
+      {
+        answer: "müstəqil dəmir yolu sahəsində 1975-ci il müqaviləsi",
+        type: "false",
+      },
+      {
+        answer:
+          "Azərbaycan Respublikası Dəmir yolu haqqında 1957-ci il müqaviləsi",
+        type: "false",
+      },
     ],
   },
   {
     id: 235,
-    Question: "235. Choose the correct interrogative sentence",
+    Question:
+      "235. Avtobuslarda tormozlanma intensivliyinә görә hansı tormozlama mövcuddur?",
     answers: [
-      { answer: "How much does the haircut cost?", type: "true" },
-      { answer: "What is he want to cut ?", type: "false" },
-      { answer: "How he want to cut his hair?", type: "false" },
-      { answer: "How he wants to cut his hair?", type: "false" },
-      { answer: "How much his haircut cost?", type: "false" },
+      { answer: "qәza və xidmәti", type: "true" },
+      { answer: "əsas və əlavə", type: "false" },
+      { answer: "dəqiq və kobud", type: "false" },
+      { answer: "nisbi və xətti", type: "false" },
+      { answer: "sadə və mürəkkəb", type: "false" },
     ],
   },
   {
     id: 236,
-    Question: "236. Choose the correct interrogative sentence",
+    Question: "236. Nəqliyyat vasitələri hansı xüsusiyyətlərə malikdir?",
     answers: [
-      { answer: "How many jackets does a man try on?", type: "true" },
-      { answer: "How many does jackets a man try on?", type: "false" },
-      { answer: "How does many jackets a man try on?", type: "false" },
-      { answer: "Do a man try on many jackets?", type: "false" },
-      { answer: "How many jackets do a man try on?", type: "false" },
+      { answer: "funksional və etibarlıq", type: "true" },
+      { answer: "etibarlıq, estetik, təhlükəsizlik", type: "false" },
+      { answer: "funksional, təhlükəsizlik, təyinat", type: "false" },
+      { answer: "etibarlıq, erqonomik", type: "false" },
+      { answer: "funksional, erqonomik", type: "false" },
     ],
   },
   {
     id: 237,
-    Question: "237. Choose synonym for the word CORRECT",
+    Question:
+      "237. Aşağıdakılardan hansı nəqliyyat vasitələrinin xüsusiyyətlər qrupuna aiddir?",
     answers: [
-      { answer: "right", type: "true" },
-      { answer: "good", type: "false" },
-      { answer: "difficult", type: "false" },
-      { answer: "easy", type: "false" },
-      { answer: "important", type: "false" },
+      { answer: "funksional", type: "true" },
+      { answer: "standartlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "erqonomik", type: "false" },
+      { answer: "təyinat", type: "false" },
     ],
   },
   {
     id: 238,
-    Question: "238. Choose synonym for the word FRIENDLY",
+    Question:
+      "238. Hazırda qəbul olunmuş standartlara görə işçi tormoz mexanizmlərinin effektivliyinin təyin olunma sınaqları neçə növə bölünür?",
     answers: [
-      { answer: "kind", type: "true" },
-      { answer: "cross", type: "false" },
-      { answer: "reliable", type: "false" },
-      { answer: "busy", type: "false" },
-      { answer: "shy", type: "false" },
+      { answer: "3", type: "true" },
+      { answer: "6", type: "false" },
+      { answer: "4", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "8", type: "false" },
     ],
   },
   {
     id: 239,
     Question:
-      "239. Choose the correct form:\nEvery Sunday, we ______ for walk in the park.",
+      "239. Aşağıdakılardan hansı nəqliyyat vasitələrinin xüsusiyyətlər qrupuna aiddir?",
     answers: [
-      { answer: "go", type: "true" },
-      { answer: "are going", type: "false" },
-      { answer: "goes", type: "false" },
-      { answer: "going", type: "false" },
-      { answer: "are go", type: "false" },
+      { answer: "etibarlıq", type: "true" },
+      { answer: "aqreqatlaşdırma", type: "false" },
+      { answer: "təhlükəsizlik", type: "false" },
+      { answer: "simplifikatlaşdırma", type: "false" },
+      { answer: "standartlaşdırma", type: "false" },
     ],
   },
   {
     id: 240,
-    Question: "240. Give the definition of the word SELF-ASSURED.",
+    Question:
+      "240. Avtobusların dartıcı-sürət xüsusiyyətlərinin qiymətləndirilməsi zamanı sınaq üçün seçilmiş yolun mailliyi neçə faizdən çox olmamalıdır?",
     answers: [
-      { answer: "confident", type: "true" },
-      { answer: "cheerful", type: "false" },
-      { answer: "moody", type: "false" },
-      { answer: "talented", type: "false" },
-      { answer: "organized", type: "false" },
+      { answer: "0,5%-dən", type: "true" },
+      { answer: "0,3%-dən", type: "false" },
+      { answer: "1,8%-dən", type: "false" },
+      { answer: "0,2%-dən", type: "false" },
+      { answer: "1,2%-dən", type: "false" },
     ],
   },
   {
     id: 241,
     Question:
-      "241. Give the definition of the person who is willing to talk and engage in activities with other people.",
+      "241. Avtobusların təyinatına görə müəyyən edilmiş funksiyaları yerinə yetirmək imkanı hansı xüsusiyyəti adlanır?",
     answers: [
-      { answer: "sociable", type: "true" },
-      { answer: "moody", type: "false" },
-      { answer: "confident", type: "false" },
-      { answer: "hardworking", type: "false" },
-      { answer: "organized", type: "false" },
+      { answer: "funksional xüsusiyyəti", type: "true" },
+      { answer: "etibarlıq xüsusiyyəti", type: "false" },
+      { answer: "aqreqatlaşdırma xüsusiyyəti", type: "false" },
+      { answer: "unifikasiya xüsusiyyəti", type: "false" },
+      { answer: "təhlükəsizlik xüsusiyyəti", type: "false" },
     ],
   },
   {
     id: 242,
     Question:
-      "242. Choose the correct verb:\nPeople normally ... jeans and maybe a shirt or jumper.",
+      "242. Avtobusların işləmə qabiliyyətini saxlamaq imkanını xarakterizə edən xüsusiyyəti necə adlanır?",
     answers: [
-      { answer: "wear", type: "true" },
-      { answer: "wearing", type: "false" },
-      { answer: "wore", type: "false" },
-      { answer: "worn", type: "false" },
-      { answer: "wears", type: "false" },
+      { answer: "etibarlıq xüsusiyyəti", type: "true" },
+      { answer: "funksional xüsusiyyəti", type: "false" },
+      { answer: "tormoz xüsusiyyəti", type: "false" },
+      { answer: "idarəolunma xüsusiyyəti", type: "false" },
+      { answer: "təhlükəsizlik xüsusiyyəti", type: "false" },
     ],
   },
   {
     id: 243,
     Question:
-      "243. Choose the correct form:\nMy dad ______ coffee every morning.",
+      "243. Aşağıdakılardan hansı avtobuslarının istismar xüsusiyyətləri qrupuna aid deyil?",
     answers: [
-      { answer: "drinks", type: "true" },
-      { answer: "is drinking", type: "false" },
-      { answer: "drink", type: "false" },
-      { answer: "drinking", type: "false" },
-      { answer: "drank", type: "false" },
+      { answer: "təhlükəsizlik", type: "true" },
+      { answer: "tormoz", type: "false" },
+      { answer: "yanacaq qənaətliliyi", type: "false" },
+      { answer: "idarəolunma", type: "false" },
+      { answer: "dəyanətlik", type: "false" },
     ],
   },
   {
     id: 244,
     Question:
-      "244. Choose the correct tense of the verb\nDon’t forget your umbrella. It …….. outside. It always … at this time of the year.",
+      "244. Müasir avtobuslarda əsasən daxiliyanma mühərriklərindən istifadə edilir. Bu avtobusların güc xüsusiyyətləri hansı xarakteristikaları ilə qiymətləndirilir?",
     answers: [
-      { answer: "is raining/ rains", type: "true" },
-      { answer: "rains /rains", type: "false" },
-      { answer: "rain /rains", type: "false" },
-      { answer: "raining /raining", type: "false" },
-      { answer: "raining /is raining", type: "false" },
+      { answer: "sürət", type: "true" },
+      { answer: "yanacaq qənaətliliyi", type: "false" },
+      { answer: "tormoz", type: "false" },
+      { answer: "yüklə daşıma", type: "false" },
+      { answer: "dönmə", type: "false" },
     ],
   },
   {
     id: 245,
     Question:
-      "245. Choose the correct tense of the verb\nHello, what ……  you…… here? I …… for a bus.",
+      "245. Avtobusların yanacaq sərfinin hesablaması zamanı dizel yanacağının sıxlığını hansı variantdakı ədəd qəbul etmək olar?",
     answers: [
-      { answer: "are/doing/ am waiting", type: "true" },
-      { answer: "do /do / am waiting", type: "false" },
-      { answer: "are /do/ am waiting", type: "false" },
-      { answer: "do / doing / am waiting", type: "false" },
-      { answer: "do / are /am waiting", type: "false" },
+      { answer: "0,83 kq/1itr", type: "true" },
+      { answer: "0,63 kq/1itr", type: "false" },
+      { answer: "0,56 kq/1itr", type: "false" },
+      { answer: "0,98 kq/1itr", type: "false" },
+      { answer: "0,92 kq/1itr", type: "false" },
     ],
   },
   {
     id: 246,
     Question:
-      "246. Complete the sentence:\nWe ______ going to travel to Italy next summer.",
+      "246. Avtobusların yanacaq qənaətliliyini qiymətləndirmək üçün istifadə olunan göstəricilərdən biri hansı variantda göstərilmişdir?",
     answers: [
-      { answer: "are", type: "true" },
-      { answer: "is", type: "false" },
-      { answer: "am", type: "false" },
-      { answer: "be", type: "false" },
-      { answer: "was", type: "false" },
+      {
+        answer: "qərarlaşmış hərəkətdə yanacaq xarakteristikası",
+        type: "true",
+      },
+      { answer: "quru torpaq yolda yanacaq xarakteristikası", type: "false" },
+      {
+        answer: "hamarlanmış qarlı yolda yanacaq xarakteristikası",
+        type: "false",
+      },
+      { answer: "əyrixətli yolda yanacaq xarakteristikası", type: "false" },
+      {
+        answer: "yüksək temperatur və sürət rejimində yanacaq xarakteristikası",
+        type: "false",
+      },
     ],
   },
   {
     id: 247,
-    Question: "247. Choose the correct negative sentence:",
+    Question:
+      "247. Sərnişin avtobusları üçün minimal yanacaq sərfi xüsusi gücün hansı qiymətində alınır?",
     answers: [
-      { answer: "He is not going to eat lunch.", type: "true" },
-      { answer: "He are not going to eat lunch.", type: "false" },
-      { answer: "He not going to eat lunch.", type: "false" },
-      { answer: "He is no going to eat lunch.", type: "false" },
-      { answer: "He doesn’t going to eat lunch.", type: "false" },
+      { answer: "8,5 kVt", type: "true" },
+      { answer: "6,5 kVt", type: "false" },
+      { answer: "9,8 kVt", type: "false" },
+      { answer: "5,9 kVt", type: "false" },
+      { answer: "9,5 kVt", type: "false" },
     ],
   },
   {
     id: 248,
-    Question: "248. Choose the correct sentence in present continuous:",
+    Question:
+      "248. Avtobusların mühərrikinin yanacaq xarakteristikasının yaxşılaşdırılması və transmissiyanın faydalı iş əmsalının artırılması hansı göstəriciyə təsir edir?",
     answers: [
-      { answer: "She is going to study medicine.", type: "true" },
-      { answer: "She going study medicine.", type: "false" },
-      { answer: "She is going study medicine.", type: "false" },
-      { answer: "She is go to study medicine.", type: "false" },
-      { answer: "She studying going medicine.", type: "false" },
+      { answer: "xətti yanacaq sərfinin azaldılmasına", type: "true" },
+      { answer: "xətti yanacaq sərfinin artırılmasına", type: "false" },
+      { answer: "mühərrikin sürətinin artırılmasına", type: "false" },
+      { answer: "hərəkət səlistliliyinin təmin olunmasına", type: "false" },
+      { answer: "mühərrikin tormozlanma xüsusiyyətinə", type: "false" },
     ],
   },
   {
     id: 249,
-    Question: "249. Choose the correct sentence:",
+    Question:
+      "249. Yüksək sürətlə hərəkət edən avtobusların dönmə qabiliyyəti hansı göstəriciyə görə qiymətləndirilir?",
     answers: [
-      { answer: "We are going to clean the house today.", type: "true" },
-      { answer: "We going clean the house today.", type: "false" },
-      { answer: "We are going clean the house today.", type: "false" },
-      { answer: "We is going to clean the house today.", type: "false" },
-      { answer: "We will going to clean the house today.", type: "false" },
+      { answer: "statik trayektoriya dəyanətliliyinə görə", type: "true" },
+      { answer: "avtomobilin sürətinə görə", type: "false" },
+      { answer: "avtomobilin tormozlanma xüsusiyyətinə görə", type: "false" },
+      { answer: "yolun dönmə bucağına görə", type: "false" },
+      { answer: "təkərin yolla ilişmə əmsalına görə", type: "false" },
     ],
   },
   {
     id: 250,
-    Question: "250. Choose the correct sentence:",
+    Question:
+      "250. Avtobusların dayandırılması intensivliyinə görə neçə cür dayandırma mövcuddur?",
     answers: [
-      { answer: "It is going to snow tomorrow.", type: "true" },
-      { answer: "It are going to snow tomorrow.", type: "false" },
-      { answer: "It going snow tomorrow.", type: "false" },
-      { answer: "It be going to snow tomorrow.", type: "false" },
-      { answer: "It is going snow tomorrow.", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "4", type: "false" },
+      { answer: "8", type: "false" },
+      { answer: "6", type: "false" },
     ],
   },
   {
     id: 251,
     Question:
-      "251. Choose the correct answer\nGloria made her trousers and dresses herself because …",
+      "251. Avtobusların yanacaq qənaətliliyini qiymətləndirmək üçün istifadə edilən göstəricilər hansı variantda düzgün göstərilib?",
     answers: [
-      { answer: "she is a designer", type: "true" },
-      { answer: "she can’t sew at all", type: "false" },
-      { answer: "she likes do shopping", type: "false" },
-      { answer: "she often goes for walks", type: "false" },
-      { answer: "she has got a boyfriend", type: "false" },
+      { answer: "1; 3; 5; 7", type: "true" },
+      { answer: "2; 4; 5; 6", type: "false" },
+      { answer: "1; 4; 6; 7", type: "false" },
+      { answer: "2; 3; 4; 7", type: "false" },
+      { answer: "1; 4; 5; 6", type: "false" },
     ],
   },
   {
     id: 252,
     Question:
-      "252. Choose the correct answer\nExcuse me please, have you got the time?",
+      "252. Turuzm nəqliyyat təminatına aid olanları seçib, düzgün variantı müəyyən edin?",
     answers: [
-      { answer: "It is half past five", type: "true" },
-      { answer: "At one o’clock", type: "false" },
-      { answer: "At five as usually", type: "false" },
-      { answer: "It is over there.", type: "false" },
-      { answer: "I am sorry, I can’t come.", type: "false" },
+      { answer: "1; 2; 3; 5", type: "true" },
+      { answer: "1; 2; 3; 6", type: "false" },
+      { answer: "2; 3; 4; 5", type: "false" },
+      { answer: "2; 4; 5; 6", type: "false" },
+      { answer: "1; 4; 5; 6", type: "false" },
     ],
   },
   {
     id: 253,
     Question:
-      "253. Choose the correct answer\nIs this bus going to a city center?",
+      "253. Sərnişinlərə təqdim olunan nəqliyyat xidmətlərinə aid olanları seçib düzgün variantı müəyyən edin?",
     answers: [
-      { answer: "No, you need number 23 over there.", type: "true" },
-      { answer: "No, you can get there by those bus.", type: "false" },
-      { answer: "Yes, you must take another bus.", type: "false" },
-      {
-        answer: "Yes, this bus is going in opposite direction.",
-        type: "false",
-      },
-      { answer: "Yes, you can’t go there.", type: "false" },
+      { answer: "1; 3; 6", type: "true" },
+      { answer: "1; 2; 6", type: "false" },
+      { answer: "2; 3; 4", type: "false" },
+      { answer: "2; 5; 6", type: "false" },
+      { answer: "3; 4; 5", type: "false" },
     ],
   },
   {
     id: 254,
     Question:
-      "254. Write ‘s in a correct place of the sentence.\nAnn … the black girl with medium –length hair.",
+      "254. Turizm sahəsində istifadə olunan təkərli nəqliyyat vasitələrinin dönmə üsullarından biri hansı variantda göstərilmişdir?",
     answers: [
       {
-        answer: "Ann’s the black girl with medium –length hair.",
+        answer: "bir bortun idarə olunmayan təkərlərinin tormozlanması",
         type: "true",
       },
+      { answer: "idarə olunmayan təkərlərin döndərilməsi", type: "false" },
       {
-        answer: "Ann the black girl’s with medium –length hair.",
+        answer: "idarə olunan və idarə olunmayan təkərlərin birgə döndərilməsi",
         type: "false",
       },
+      { answer: "avtomobilin çərçivəsinin döndərilməsi", type: "false" },
       {
-        answer: "Ann the black girl with medium –length’s hair.",
-        type: "false",
-      },
-      {
-        answer: "Ann the black’s girl with medium –length hair.",
-        type: "false",
-      },
-      {
-        answer: "Ann the black girl with medium –length hair’s.",
+        answer: "dönmə istiqamətindəki təkərlərin döndərilməsi",
         type: "false",
       },
     ],
@@ -3105,2793 +3325,2767 @@ const Questions = [
   {
     id: 255,
     Question:
-      "255. Write `s in a correct place of the sentence.\nEverybody says that she … very good-looking.",
+      "255. Avtobusun sürətinin səlist azaldılması və ya verilmiş yerdə saxlanılması üçün istifadə edilən dayandırma necə adlanır?",
     answers: [
-      { answer: "Everybody says that she‘s very good-looking.", type: "true" },
-      { answer: "Everybody says that she very‘s good-looking.", type: "false" },
-      { answer: "Everybody’s says that she very good-looking.", type: "false" },
-      { answer: "Everybody says that’s she very good-looking.", type: "false" },
-      { answer: "Everybody says that she very good-looking’s.", type: "false" },
+      { answer: "xidmət dayandırma", type: "true" },
+      { answer: "sadə dayandırma", type: "false" },
+      { answer: "mürəkkəb dayandırma", type: "false" },
+      { answer: "dəqiq dayandırma", type: "false" },
+      { answer: "nisbi dayandırma", type: "false" },
     ],
   },
   {
     id: 256,
-    Question: "256. Choose the correct variant\nShe hasn’t got many … .",
+    Question:
+      "256. Avtobusun məhdud sahədə, istiqaməti kəskin dəyişən böyük əyrilikli trayektoriya üzrə hərəkəti ilə vəziyyətinin tələb olunan qaydada dəyişilmə imkanını xarakterizə edən xüsusiyyətlər qrupu necə adlanır?",
     answers: [
-      { answer: "coins", type: "true" },
-      { answer: "butter", type: "false" },
-      { answer: "milk", type: "false" },
-      { answer: "water", type: "false" },
-      { answer: "language", type: "false" },
+      { answer: "manevrlilik", type: "true" },
+      { answer: "dəyanətlilik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "əyrixəttli hərəkət", type: "false" },
+      { answer: "dairəvi hərəkət", type: "false" },
     ],
   },
   {
     id: 257,
-    Question: "257. Choose the correct variant\nHe has got a little … .",
+    Question:
+      "257. Avtobuslarının istismarı zamanı verilmiş şərait üçün maksimal intensivliklə həyata keçirilən dayandırılması necə adlanır?",
     answers: [
-      { answer: "food", type: "true" },
-      { answer: "grapes", type: "false" },
-      { answer: "language", type: "false" },
-      { answer: "books", type: "false" },
-      { answer: "animals", type: "false" },
+      { answer: "qəza dayandırılması", type: "true" },
+      { answer: "xidmət dayandırma", type: "false" },
+      { answer: "mürəkkəb dayandırma", type: "false" },
+      { answer: "nisbi dayandırma", type: "false" },
+      { answer: "sadə dayandırma", type: "false" },
     ],
   },
   {
     id: 258,
     Question:
-      "258. Choose the correct variant\nThere is …. water left in that bottle.",
+      "258. Şinin növündən asılı olan şaquli deformasiya əmsalı - (λ), sərnişin avtobuslarının normal profilli şinləri üçün hansı intervalda qəbul edilir?",
     answers: [
-      { answer: "a little", type: "true" },
-      { answer: "not many", type: "false" },
-      { answer: "few", type: "false" },
-      { answer: "many", type: "false" },
-      { answer: "a few", type: "false" },
+      { answer: "0.85...0.87", type: "true" },
+      { answer: "0,65...0,78", type: "false" },
+      { answer: "0,76....0,84", type: "false" },
+      { answer: "0,92...0,98", type: "false" },
+      { answer: "0,9...0,96", type: "false" },
     ],
   },
   {
     id: 259,
     Question:
-      "259. Choose the correct variant\nShe hasn’t got … money at the moment.",
+      "Avtobusların dartıcı-sürət xüsusiyyətlərinin qiymətləndirilməsi zamanı havanın temperaturu neçə dərəcə olmalıdır?",
     answers: [
-      { answer: "much", type: "true" },
-      { answer: "many", type: "false" },
-      { answer: "not much", type: "false" },
-      { answer: "few", type: "false" },
-      { answer: "a few", type: "false" },
+      {
+        answer: "$-5^{\\circ} C$ —dən $+25^{\\circ} C$ aralığında",
+        type: "true",
+      },
+      {
+        answer: "$-8^{\\circ} C$ —dən $+10^{\\circ} C$ aralığında",
+        type: "false",
+      },
+      {
+        answer: "$-6^{\\circ} C$ —dən $+15^{\\circ} C$ aralığında",
+        type: "false",
+      },
+      {
+        answer: "$-3^{\\circ} C$ —dən $+30^{\\circ} C$ aralığında",
+        type: "false",
+      },
+      {
+        answer: "$-2^{\\circ} C$ —dən $+35^{\\circ} C$ aralığında",
+        type: "false",
+      },
     ],
   },
   {
     id: 260,
     Question:
-      "260. Choose the correct variant\nHis father _____ , but Bill’s father _____ smoke.",
+      "260. Şinin növündən asılı olan şaquli deformasiya əmsalı - (λ), sərnişin avtobuslarının təzyiqi nizamlanan şinləri üçün hansı intervalda qəbul edilir?",
     answers: [
-      { answer: "smokes / doesn’t", type: "true" },
-      { answer: "smokes / don’t", type: "false" },
-      { answer: "smoke / don’t", type: "false" },
-      { answer: "smokes / isn’t", type: "false" },
-      { answer: "smoke / aren’t", type: "false" },
+      { answer: "0,8...0,85", type: "true" },
+      { answer: "0,58...0,72", type: "false" },
+      { answer: "0,52....0,68", type: "false" },
+      { answer: "0,86...0,92", type: "false" },
+      { answer: "0,87...0,96", type: "false" },
     ],
   },
   {
     id: 261,
     Question:
-      "261. Choose the correct variant\nThis … is very hot in Africa and has over nine million km2 of sand.",
+      "Avtomobil nəqliyyat vasitələrinin yalnız itələyici qüvvənin təsiri ilə diyirlənən təkəri necə adlanır?",
     answers: [
-      { answer: "desert", type: "true" },
-      { answer: "lake", type: "false" },
-      { answer: "sea", type: "false" },
-      { answer: "ocean", type: "false" },
-      { answer: "river", type: "false" },
+      { answer: "aparılan təkər", type: "true" },
+      { answer: "aparan təkər", type: "false" },
+      { answer: "diyirlənən təkər", type: "false" },
+      { answer: "elastiki təkər", type: "false" },
+      { answer: "ehtiyat təkəri", type: "false" },
     ],
   },
   {
     id: 262,
     Question:
-      "262. Choose the correct variant\nThe longest … in the world goes through Brazil and Peru.",
+      "Avtomobillərin tərpənməz şininin kontakt sahəsi hansı formaya uyğundur?",
     answers: [
-      { answer: "river", type: "true" },
-      { answer: "ocean", type: "false" },
-      { answer: "desert", type: "false" },
-      { answer: "beach", type: "false" },
-      { answer: "sea", type: "false" },
+      { answer: "ellips formasına", type: "true" },
+      { answer: "üçbucaq formasına", type: "false" },
+      { answer: "düzbucaqlı formasına", type: "false" },
+      { answer: "əyri xətt formasına", type: "false" },
+      { answer: "kvadrat formasına", type: "false" },
     ],
   },
   {
     id: 263,
-    Question:
-      "263. Choose the correct variant\nThis … is less than one percent of the size of the Pacific Ocean and is between Europe and Africa",
+    Question: "Nəqliyyat vasitəsi hansı oxa nəzərən simmetrikdir?",
     answers: [
-      { answer: "sea", type: "true" },
-      { answer: "lake", type: "false" },
-      { answer: "desert", type: "false" },
-      { answer: "beach", type: "false" },
-      { answer: "coast", type: "false" },
+      { answer: "uzununa", type: "true" },
+      { answer: "eninə", type: "false" },
+      { answer: "üfüqi", type: "false" },
+      { answer: "şaquli", type: "false" },
+      { answer: "kordinat", type: "false" },
     ],
   },
   {
     id: 264,
     Question:
-      "264. Choose the correct variant\nGorillas live among the trees in this … in Uganda.",
+      "Avtomobil nəqliyyat vasitələrinin asqısı ilə ötürülən maksimal yükün statik yükə nisbəti necə adlanır?",
     answers: [
-      { answer: "forest", type: "true" },
-      { answer: "lake", type: "false" },
-      { answer: "desert", type: "false" },
-      { answer: "beach", type: "false" },
-      { answer: "sea", type: "false" },
+      { answer: "asqının dinamiklik əmsalı", type: "true" },
+      { answer: "parsial rəqs sistemi", type: "false" },
+      { answer: "asqının statik əyilməsi", type: "false" },
+      { answer: "asqının deformasiyası", type: "false" },
+      { answer: "asqının etibarlığı", type: "false" },
     ],
   },
   {
     id: 265,
     Question:
-      "265. Choose the correct variant\nCamels only need to drink water every … or … days",
+      "Ağırlıq qüvvəsinin təsiri ilə avtobusların asqısının elastiki elementinin deformasiyası nəticəsində təkərlərin yük kuzasına nəzərən yerdəyişməsi necə adlanır?",
     answers: [
-      { answer: "six ,eight", type: "true" },
-      { answer: "one month", type: "false" },
-      { answer: "one year", type: "false" },
-      { answer: "one day", type: "false" },
-      { answer: "a days", type: "false" },
+      { answer: "statik əyilmə", type: "true" },
+      { answer: "deformasiya", type: "false" },
+      { answer: "etibarlıq", type: "false" },
+      { answer: "sürüşmə", type: "false" },
+      { answer: "diyirlənmə", type: "false" },
     ],
   },
   {
     id: 266,
-    Question:
-      "266. Complete the sentence\nSiberian tigers are … endangered species",
+    Question: "Hansı aralıqda avtobuslarda alçaq rəqs tezliyi dəyişir?",
     answers: [
-      { answer: "an", type: "true" },
-      { answer: "the", type: "false" },
-      { answer: "a", type: "false" },
-      { answer: "many", type: "false" },
-      { answer: "much", type: "false" },
+      { answer: "1,5...2,5 Hs", type: "true" },
+      { answer: "0,15...0,25 Hs", type: "false" },
+      { answer: "0,5...0,8 Hs", type: "false" },
+      { answer: "2,6...3 Hs", type: "false" },
+      { answer: "2,8...3,2 Hs", type: "false" },
     ],
   },
   {
     id: 267,
     Question:
-      "267. Complete the sentence\nDogs can … people with different disabilities",
+      "Sərnişin avtobuslarının istismarı zamanı onun tam yanacaq sərfində alınan sürət xarakteristikası necə adlanır?",
     answers: [
-      { answer: "help", type: "true" },
-      { answer: "must", type: "false" },
-      { answer: "sleep", type: "false" },
-      { answer: "snow", type: "false" },
-      { answer: "drugs", type: "false" },
+      { answer: "xarici sürət xarakteristikası", type: "true" },
+      { answer: "daxili sürət xarakteristikası", type: "false" },
+      { answer: "tormoz xarakteristikası", type: "false" },
+      { answer: "natamam sürət xarakteristikası", type: "false" },
+      { answer: "yanacaq qənaətliliyi xarakteristikası", type: "false" },
     ],
   },
   {
     id: 268,
     Question:
-      "268. Complete the sentence\nDogs … useful for rescue situations, too.",
+      "Avtobusların asqısının statik əyilməsi artarsa məxsusi rəqs tezliyi necə dəyişər?",
     answers: [
-      { answer: "are", type: "true" },
-      { answer: "is", type: "false" },
-      { answer: "has", type: "false" },
-      { answer: "haven’t", type: "false" },
-      { answer: "job", type: "false" },
+      { answer: "məxsusi rəqs tezliyi azalacaq", type: "true" },
+      { answer: "məxsusi rəqs tezliyi artacaq", type: "false" },
+      { answer: "məxsusi rəqs tezliyi maksimum qiymət alar", type: "false" },
+      { answer: "məxsusi rəqs tezliyi minimum qiymət alar", type: "false" },
+      { answer: "məxsusi rəqs tezliyi sönər", type: "false" },
     ],
   },
   {
     id: 269,
-    Question: "269. Complete the sentence\nDogs can … people lost under snow.",
+    Question:
+      "Avtobusların sərnişin salonu və onun oxu neçə sərbəstlik dərəcəsinə malikdir?",
     answers: [
-      { answer: "look for", type: "true" },
-      { answer: "forest", type: "false" },
-      { answer: "different", type: "false" },
-      { answer: "life", type: "false" },
-      { answer: "police", type: "false" },
+      { answer: "6", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "2", type: "false" },
+      { answer: "8", type: "false" },
+      { answer: "10", type: "false" },
     ],
   },
   {
     id: 270,
     Question:
-      "270. Complete the sentence\nSniffer dogs do important job - using their sense … smell … help find drugs … airports",
+      "Avtobusun sürətini tam dayanma halına qədər tez azaltmaq və dayandırmaq, enişdə hərəkət etdikdə verilmiş hərəkət sürətini saxlamaq, təsadüfi qüvvələrin təsir etdikdə isə avtobusu yerində tərpənməz saxlamaq onun hansı xüsusiyyətinə aiddir?",
     answers: [
-      { answer: "of… to…at", type: "true" },
-      { answer: "at…at…to", type: "false" },
-      { answer: "to…of…at", type: "false" },
-      { answer: "to…to…into", type: "false" },
-      { answer: "to…of…out", type: "false" },
-      { answer: "in…to…off", type: "false" },
+      { answer: "əylənc xüsusiyyətinə", type: "true" },
+      { answer: "etibarlıq xüsusiyyəti", type: "false" },
+      { answer: "funksional xüsusiyyəti", type: "false" },
+      { answer: "idarəolunma xüsusiyyətinə", type: "false" },
+      { answer: "keçicilik xüsusiyyətinə", type: "false" },
     ],
   },
   {
     id: 271,
     Question:
-      "271. Choose the correct variant\nYour flat’s very small – you haven’t got … space for 25 people.",
+      "Avtobusun qeyri-ressoraltı kütlələri ressoraltı kütlələrinin neçə faizini təşkil edir?",
     answers: [
-      { answer: "any", type: "true" },
-      { answer: "few", type: "false" },
-      { answer: "many", type: "false" },
-      { answer: "a few", type: "false" },
-      { answer: "not many", type: "false" },
+      { answer: "15...20%-ə qədərini", type: "true" },
+      { answer: "10...12%-ə qədərini", type: "false" },
+      { answer: "5...10%-ə qədərini", type: "false" },
+      { answer: "20...25%-ə qədərini", type: "false" },
+      { answer: "28...32%-ə qədərini", type: "false" },
     ],
   },
   {
     id: 272,
-    Question: "272. Choose the correct variant\nSo … people didn’t come.",
+    Question:
+      "Avtobusun salonunun rəqsləri neçə mürəkkəb harmonik rəqsdən ibarətdir?",
     answers: [
-      { answer: "many", type: "true" },
-      { answer: "a few", type: "false" },
-      { answer: "much", type: "false" },
-      { answer: "any", type: "false" },
-      { answer: "lot of", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "4", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "7", type: "false" },
     ],
   },
   {
     id: 273,
     Question:
-      "273. Choose the correct variant\nBut some people brought … friends, too",
+      "Avtomobilin təkəri uzununa qüvvənin təsiri ilə diyirlənir, təkərin çevrəvi qüvvəsi hərəkət istiqamətinin əksinə yönəlir. Belə diyirlənmə rejimi necə adlanır?",
     answers: [
-      { answer: "a few", type: "true" },
-      { answer: "a little", type: "false" },
-      { answer: "not many", type: "false" },
-      { answer: "much", type: "false" },
-      { answer: "any", type: "false" },
+      { answer: "əylənc rejimi", type: "true" },
+      { answer: "aparılan rejim", type: "false" },
+      { answer: "neytral hərəkət rejimi", type: "false" },
+      { answer: "sərbəst rejim", type: "false" },
+      { answer: "sürətlənmə rejimi", type: "false" },
     ],
   },
   {
     id: 274,
-    Question: "274. Choose the correct variant\nDid the party cost … money?",
+    Question:
+      "Avtomobilin mühərrikindən aparan təkərlərə ötürülən güc hərəkətə müqaviməti dəf etməyə kifayət edərsə bu hansı rejim adlanar?",
     answers: [
-      { answer: "much", type: "true" },
-      { answer: "few", type: "false" },
-      { answer: "a few", type: "false" },
-      { answer: "not many", type: "false" },
-      { answer: "many", type: "false" },
+      { answer: "aparan rejim", type: "true" },
+      { answer: "dəyanətlik rejimi", type: "false" },
+      { answer: "əylənc rejimi", type: "false" },
+      { answer: "aparılan rejim", type: "false" },
+      { answer: "idarəolunan rejim", type: "false" },
     ],
   },
   {
     id: 275,
-    Question: "275. Choose the correct variant\nI don’t have ….. brothers.",
+    Question:
+      "Avtobusun yolun üfüqi hamar sahəsində 1000 m uzunluqlu ölçü sahəsini keçmə vaxtını ölçməklə əldə edilən sürəti necə adlanır?",
     answers: [
-      { answer: "any", type: "true" },
-      { answer: "not many", type: "false" },
-      { answer: "much", type: "false" },
-      { answer: "a little", type: "false" },
-      { answer: "some", type: "false" },
+      { answer: "maksimal sürət", type: "true" },
+      { answer: "şərti maksimal sürət", type: "false" },
+      { answer: "minimal sürət", type: "false" },
+      { answer: "normal sürət", type: "false" },
+      { answer: "sınaq sürəti", type: "false" },
     ],
   },
   {
     id: 276,
-    Question: "276. Choose the correct variant\nBut 40 people eat … food.",
+    Question:
+      "Avtobusun malik olduğu məxsusi rəqs tezliyindən neçəsi salonun yaylar (ressorlar) üzərində rəqs tezliyinə aiddir?",
     answers: [
-      { answer: "a lot of", type: "true" },
-      { answer: "not many", type: "false" },
-      { answer: "many", type: "false" },
-      { answer: "a few", type: "false" },
-      { answer: "few", type: "false" },
+      { answer: "2", type: "true" },
+      { answer: "3", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "8", type: "false" },
+      { answer: "6", type: "false" },
     ],
   },
   {
     id: 277,
-    Question: "277. Choose the correct variant\nThey ate … bread and cheese.",
+    Question:
+      "Avtobusların dartıcı-sürət xüsusiyyətlərinin qiymətləndirilməsi zamanı sınaq üçün seçilmiş yolun maili sahəsinin uzunluğu neçə metrədən çox olmamalıdır?",
     answers: [
-      { answer: "a little", type: "true" },
-      { answer: "a few", type: "false" },
-      { answer: "many", type: "false" },
-      { answer: "a lot", type: "false" },
-      { answer: "any", type: "false" },
+      { answer: "50 m-dən", type: "true" },
+      { answer: "30 m-dən", type: "false" },
+      { answer: "40 m-dən", type: "false" },
+      { answer: "60 m-dən", type: "false" },
+      { answer: "80 m-dən", type: "false" },
     ],
   },
   {
     id: 278,
     Question:
-      "278. Choose the correct variant\nI didn’t have … food in the fridge. So, they didn’t eat much.",
+      "Müxtəlif istismar şəraitlərində işləyən avtobusun nəqliyyat işinə sərf etdiyi yanacaq sərfini müəyyən edən xüsusiyyətlər qrupu necə adlanır?",
     answers: [
-      { answer: "much", type: "true" },
-      { answer: "many", type: "false" },
-      { answer: "a lot", type: "false" },
-      { answer: "a few", type: "false" },
-      { answer: "few", type: "false" },
+      { answer: "yanacaq qənaətliliyi", type: "true" },
+      { answer: "yanacağın növü", type: "false" },
+      { answer: "iqtisadi səmərə", type: "false" },
+      { answer: "mənfət", type: "false" },
+      { answer: "sərfiyyat", type: "false" },
     ],
   },
   {
     id: 279,
     Question:
-      "279. Choose the correct variant\nWe listened to … really good music.",
+      "Hərəkət istiqamətini dəyişməyə çalışan xarici qüvvələrin təsiri altında olan avtobusun sürücünün iştirakı olmadan hərəkət istiqamətini saxlaya bilmək xüsusiyyəti necə adlanır?",
     answers: [
-      { answer: "a lot of", type: "true" },
-      { answer: "few", type: "false" },
-      { answer: "a few", type: "false" },
-      { answer: "many", type: "false" },
-      { answer: "not many", type: "false" },
+      { answer: "dəyanətlik", type: "true" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "sərbəst hərəkət", type: "false" },
+      { answer: "maksimum düzxətli hərəkət", type: "false" },
+      { answer: "minimum düzxətli hərəkət", type: "false" },
     ],
   },
   {
     id: 280,
-    Question: "280. Choose the correct variant\nWhere … my glasses?",
+    Question:
+      "Nəqliyyat vasitəsinin ən aşağı nöqtəsi ilə dayaq müstəvisi arasındakı məsafə necə adlanır?",
     answers: [
-      { answer: "are", type: "true" },
-      { answer: "can", type: "false" },
-      { answer: "did", type: "false" },
-      { answer: "a few", type: "false" },
-      { answer: "is", type: "false" },
+      { answer: "işıqlıq məsafəsi", type: "true" },
+      { answer: "minimum məsafə", type: "false" },
+      { answer: "maksimum məsafə", type: "false" },
+      { answer: "hündürlük", type: "false" },
+      { answer: "üfiqi müstəvi", type: "false" },
     ],
   },
   {
     id: 281,
     Question:
-      "281. Choose the correct variant\nHow … you get to school this morning?",
+      "Avtobusun yerindən intensiv sürətləmlə 2000 m uzunluqlu sahənin sonuncu 400 m-ni orta keçmə sürəti necə adlanır?",
     answers: [
-      { answer: "did", type: "true" },
-      { answer: "does", type: "false" },
-      { answer: "was", type: "false" },
-      { answer: "are", type: "false" },
-      { answer: "is", type: "false" },
+      { answer: "şərti maksimal sürət", type: "true" },
+      { answer: "şərti minimal sürət", type: "false" },
+      { answer: "bərabər sürətli hərəkət", type: "false" },
+      { answer: "təcilli hərəkət", type: "false" },
+      { answer: "sürətlənmə", type: "false" },
     ],
   },
   {
     id: 282,
     Question:
-      "282. Choose the correct variant\nHow often … you go to the cinema?",
+      "Avtobusların istismarı zamanı xətti yanacaq sərfinin sərnişin və onun yükünün daşınmasında görülən səmərəli işə nisbəti necə adlanır?",
     answers: [
-      { answer: "do", type: "true" },
-      { answer: "does", type: "false" },
-      { answer: "were", type: "false" },
-      { answer: "are", type: "false" },
-      { answer: "is", type: "false" },
+      { answer: "xüsusi yanacaq sərfi", type: "true" },
+      { answer: "nəzarət yanacaq sərfi", type: "false" },
+      { answer: "dövri hərəkətdə yanacaq xarakteristikası", type: "false" },
+      { answer: "maksimum yanacaq sərfi", type: "false" },
+      { answer: "minimum yanacaq sərfi", type: "false" },
     ],
   },
   {
     id: 283,
-    Question: "283. Choose the correct variant\nHow fast … the motorbike?",
+    Question:
+      "Avtobusun mühərrikinin xarici sürət xarakteristikasının xarakterik parametrlərinə aid olmayanı hansı variantda göstərilmişdir?",
     answers: [
-      { answer: "is", type: "true" },
-      { answer: "are", type: "false" },
-      { answer: "did", type: "false" },
-      { answer: "do", type: "false" },
-      { answer: "have got", type: "false" },
+      { answer: "maksimal dönmə radiusu", type: "true" },
+      {
+        answer: "mühərrikin dirsəkli valının maksimal fırlanma tezliyi",
+        type: "false",
+      },
+      { answer: "maksimal burucu momenti", type: "false" },
+      { answer: "maksimal effektiv gücü", type: "false" },
+      { answer: "maksimal gücə uyğun momenti", type: "false" },
     ],
   },
   {
     id: 284,
     Question:
-      "284. Choose the correct variant\nHow many people … there at the party last night?",
+      "Kirayə xidmətləri üçün beynəlxalq avtokirayə şirkətləri neçə əsas tarif təklif edirlər?",
     answers: [
-      { answer: "were", type: "true" },
-      { answer: "was", type: "false" },
-      { answer: "is", type: "false" },
-      { answer: "do", type: "false" },
-      { answer: "are", type: "false" },
+      { answer: "üç", type: "true" },
+      { answer: "yeddi", type: "false" },
+      { answer: "dörd", type: "false" },
+      { answer: "bir", type: "false" },
+      { answer: "iki", type: "false" },
     ],
   },
   {
     id: 285,
     Question:
-      "285. Choose the correct variant\nHow many languages … you speak?",
+      "Kirayə xidmətləri üçün beynəlxalq avtokirayə şirkətləri təklif etdikləri əsas tariflərdən biri hansı variantda göstərilmişdir?",
     answers: [
-      { answer: "can", type: "true" },
-      { answer: "were", type: "false" },
-      { answer: "does", type: "false" },
-      { answer: "are", type: "false" },
-      { answer: "has", type: "false" },
+      {
+        answer: "avtokirayə şirkətinin standart qəbul etdiyi tarifə görə",
+        type: "true",
+      },
+      { answer: "avtomobilin ilinə uyğun olaraq dəyərinə görə", type: "false" },
+      { answer: "avtomobilin maksimum sürətinə görə", type: "false" },
+      {
+        answer: "avtomobilin istehsal olunduğu ilinə və markasına görə",
+        type: "false",
+      },
+      { answer: "avtomobilin sərnişin tutumuna görə", type: "false" },
     ],
   },
   {
     id: 286,
     Question:
-      "286. Choose the correct variant\nWhen … you start learning English?",
+      "Tormozlama zamanı avtobusun fırlanan kütlələrinin təsirini nəzərə alan əmsal hansı qiymətlər həddində qəbul edilir?",
     answers: [
-      { answer: "did", type: "true" },
-      { answer: "were", type: "false" },
-      { answer: "does", type: "false" },
-      { answer: "is", type: "false" },
-      { answer: "has got", type: "false" },
+      { answer: "1,03...1,05", type: "true" },
+      { answer: "1,0...1,02", type: "false" },
+      { answer: "0,8...1,0", type: "false" },
+      { answer: "1,2...1,5", type: "false" },
+      { answer: "1,6...2,1", type: "false" },
     ],
   },
   {
     id: 287,
-    Question: "287. Choose the correct variant\nWho … president in 1978?",
+    Question:
+      "Nəqliyyatın tormozlanması zamanı son sürəti sıfıra bərabər olarsa o hansı tormozlama adlanır?",
     answers: [
-      { answer: "was", type: "true" },
-      { answer: "were", type: "false" },
-      { answer: "do", type: "false" },
-      { answer: "is", type: "false" },
-      { answer: "has got", type: "false" },
+      { answer: "tam tormozlama", type: "true" },
+      { answer: "natamam tormozlama", type: "false" },
+      { answer: "nümunəvi tormozlama", type: "false" },
+      { answer: "mexaniki tormozlama", type: "false" },
+      { answer: "dəqiq tormozlama", type: "false" },
     ],
   },
   {
     id: 288,
     Question:
-      "288. Choose the correct variant\n… are you studying at university?",
+      "Avtobus alçaq pilləyə keçmədən yolun müqavimətini dəf etmək qabiliyyəti onun hansı keyfiyyətini xarakterizə edir?",
     answers: [
-      { answer: "where", type: "true" },
-      { answer: "what", type: "false" },
-      { answer: "which", type: "false" },
-      { answer: "how many", type: "false" },
-      { answer: "how much", type: "false" },
+      { answer: "dinamik", type: "true" },
+      { answer: "dayandırma", type: "false" },
+      { answer: "manevrlilik", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "yanacaq qənaətliliyi", type: "false" },
     ],
   },
   {
     id: 289,
     Question:
-      "289. Choose the correct variant\n… aunts and uncles have you got?",
+      "Nəqliyyatın istismarı zamanı mühərrikin bir saatlıq işə sərf etdiyi yanacağın kütləsinin onun effektiv gücünə nisbəti ilə müəyyən olunan göstərici necə adlanır?",
     answers: [
-      { answer: "how many", type: "true" },
-      { answer: "how much", type: "false" },
-      { answer: "why", type: "false" },
-      { answer: "what", type: "false" },
-      { answer: "many", type: "false" },
+      { answer: "mühərrikin xüsusi yanacaq sərfi", type: "true" },
+      { answer: "nəzarət yanacaq sərfi", type: "false" },
+      { answer: "dövri hərəkətdə yanacaq sərfi", type: "false" },
+      { answer: "qərarlaşmış hərəkətdə yanacaq sərfi", type: "false" },
+      { answer: "minimum sürətdə yanacaq sərfi", type: "false" },
     ],
   },
   {
     id: 290,
-    Question: "290. Choose the correct variant\n… is the capital of Vietnam?",
+    Question:
+      "Avtobusa təsir edən bütün qüvvə faktorlarını neçə qrupa bölmək olar?",
     answers: [
-      { answer: "What", type: "true" },
-      { answer: "When", type: "false" },
-      { answer: "How many", type: "false" },
-      { answer: "Who", type: "false" },
-      { answer: "Why", type: "false" },
+      { answer: "3", type: "true" },
+      { answer: "8", type: "false" },
+      { answer: "6", type: "false" },
+      { answer: "5", type: "false" },
+      { answer: "4", type: "false" },
     ],
   },
   {
     id: 291,
     Question:
-      "291. Match the halves.\n1. decorate a. a cake\n2. make b. a band\n3. hire c. the table",
+      "Avtobusun dayanma yolunun əsəs hissəsində yavaşıma təcili təxminən bərabər olur. Bu təcil necə adlanır?",
     answers: [
-      { answer: "1-c,2-a,3-b", type: "true" },
-      { answer: "1-a,2-c,3-b", type: "false" },
-      { answer: "1-a,2-b,3-c", type: "false" },
-      { answer: "1-b,2-c,3-a", type: "false" },
-      { answer: "1-c,2-b,3-a", type: "false" },
+      { answer: "qərarlaşmış yavaşıma təcili", type: "true" },
+      { answer: "maksimal yavaşıma təcil", type: "false" },
+      { answer: "minimal yavaşıma təcil", type: "false" },
+      { answer: "mərkəzdənqaçma təcili", type: "false" },
+      { answer: "nisbi yavaşıma təcili", type: "false" },
     ],
   },
   {
     id: 292,
     Question:
-      "292. Match the halves.\n1. dress up a. the house\n2. take part in b. party clothes\n3. hire c. a parade",
+      "Dartıcı-sürət və tormoz xüsusiyyətləri avtomobilin hansı xüsusiyyətləri adlanır?",
     answers: [
-      { answer: "1-b, 2-c,3-a", type: "true" },
-      { answer: "1-c,2-a,3-b", type: "false" },
-      { answer: "1-a,2-c,3-b", type: "false" },
-      { answer: "1-b,2-a,3-c", type: "false" },
-      { answer: "1-c,2-b,3-a", type: "false" },
+      { answer: "dinamik xüsusiyyətləri", type: "true" },
+      { answer: "yanacaq qənaətliliyi xüsusiyyətləri", type: "false" },
+      { answer: "idarəolunma xüsusiyyətləri", type: "false" },
+      { answer: "dəyanəlik xüsusiyyətləri", type: "false" },
+      { answer: "hərəkət səlisliyi xüsusiyyətləri", type: "false" },
     ],
   },
   {
     id: 293,
     Question:
-      "293. Match the halves.\n1. dress up a. the house\n2. decorate b. traditional food\n3. make c. traditional costumes",
+      "Avtobusun yanacaq qənaətliliyi xarakteristikası bir çox faktorlardan asılıdır. Bu faktorlar hansı variantda düzgün göstərilmişdir?",
     answers: [
-      { answer: "1-c,2-a,3-b", type: "true" },
-      { answer: "1-a,2-c,3-b", type: "false" },
-      { answer: "1-a, 2-c, 3-b", type: "false" },
-      { answer: "1-c,2-b,3-a", type: "false" },
-      { answer: "1-b,2-c,3-a", type: "false" },
+      { answer: "1; 3; 5; 7", type: "true" },
+      { answer: "2; 3; 5; 6", type: "false" },
+      { answer: "2; 4; 6; 7", type: "false" },
+      { answer: "1; 4; 5; 6", type: "false" },
+      { answer: "1; 2; 4; 7", type: "false" },
     ],
   },
   {
     id: 294,
-    Question: "294. Complete the phrase.\n… party",
+    Question:
+      "Avtobusların hər təkərinə düşən yükü dəqiq hesablamaq mümkün olmadığı üçün hansı qiymətindən istifadə edilir?",
     answers: [
-      { answer: "birthday, graduation, wedding, leaving", type: "true" },
-      { answer: "crying, paternal, maternal, suicide", type: "false" },
+      { answer: "orta qiymətindən", type: "true" },
+      { answer: "maksimum qiymətindən", type: "false" },
+      { answer: "minimum qiymətindən", type: "false" },
       {
-        answer: "economic, science-fiction, action, historical",
+        answer: "sürətlənmədə müqavimət qüvvələrinin qiymətindən",
         type: "false",
       },
-      { answer: "food, baby shower, death, gossip", type: "false" },
-      { answer: "food, graduation , lying, divorce", type: "false" },
+      { answer: "radial və ətalət qüvvələrinin qiymətindən", type: "false" },
     ],
   },
   {
     id: 295,
     Question:
-      "295. Complete the sentence with one word.\nMy brother is going to _________ a family meal tonight.",
+      "Sərnişin avtobusunun çərçivəsinə təkərdən ötürülən qüvvə necə adlanır?",
     answers: [
-      { answer: "cook", type: "true" },
-      { answer: "drink", type: "false" },
-      { answer: "see", type: "false" },
-      { answer: "pray", type: "false" },
-      { answer: "swear", type: "false" },
+      { answer: "dartıcı qüvvə", type: "true" },
+      { answer: "mərkəzdən qaçma qüvvəsi", type: "false" },
+      { answer: "çevrəvi qüvvə", type: "false" },
+      { answer: "elastiki qüvvə", type: "false" },
+      { answer: "radial qüvvə", type: "false" },
     ],
   },
   {
     id: 296,
-    Question: "296. I am going to_________ a party this weekend.",
+    Question:
+      "Hans variantda avtobusun yanacaq qənaətliliyini qiymətləndirmək üçün istifadə olunan göstəricilərdən biri göstərilmişdir?",
     answers: [
-      { answer: "have", type: "true" },
-      { answer: "do", type: "false" },
-      { answer: "did", type: "false" },
-      { answer: "does", type: "false" },
-      { answer: "has done", type: "false" },
+      { answer: "dövri hərəkətdə yanacaq xarakteristikası", type: "true" },
+      {
+        answer: "enişli-yoxuşlu yolda yanacaq xarakteristikası",
+        type: "false",
+      },
+      { answer: "minimum sürətdə yanacaq xarakteristikası", type: "false" },
+      { answer: "maksimum sürətdə yanacaq xarakteristikası", type: "false" },
+      {
+        answer: "əyri xətli trayektoriya üzrə yanacaq qənaətliliyi",
+        type: "false",
+      },
     ],
   },
   {
     id: 297,
-    Question: "297. I am going to have _______ abroad this summer.",
+    Question:
+      "Avtomobilin dayandırılmasının başlanğıcından tam dayanana qədər onun keçdiyi yol necə adlanır?",
     answers: [
-      { answer: "a holiday", type: "true" },
-      { answer: "death penalty", type: "false" },
-      { answer: "exam", type: "false" },
-      { answer: "fail", type: "false" },
-      { answer: "happiness", type: "false" },
+      { answer: "dayanma yolu", type: "true" },
+      { answer: "sürüşmə yolu", type: "false" },
+      { answer: "xidməti yol", type: "false" },
+      { answer: "elementar yol", type: "false" },
+      { answer: "təhlükəli yol", type: "false" },
     ],
   },
   {
     id: 298,
-    Question: "298. My best friend is going to________ his job next month.",
+    Question:
+      "Avtobusun sürətlənmə sınağı neçə metrlik yol sahəsində aparılır?",
     answers: [
-      { answer: "leave", type: "true" },
-      { answer: "cry", type: "false" },
-      { answer: "die", type: "false" },
-      { answer: "fail", type: "false" },
-      { answer: "divorce", type: "false" },
+      { answer: "2000 m-lik", type: "true" },
+      { answer: "2500 m-lik", type: "false" },
+      { answer: "3200 m-lik", type: "false" },
+      { answer: "1500 m-lik", type: "false" },
+      { answer: "300 m-lik", type: "false" },
     ],
   },
   {
     id: 299,
-    Question: "299. I am going to buy some new________ this weekend.",
+    Question:
+      "Hans variantdakı ədədi avtobusun yanacaq sərfinin hesablaması zamanı benzinin sıxlığı qəbul etmək olar?",
     answers: [
-      { answer: "clothes", type: "true" },
-      { answer: "wives", type: "false" },
-      { answer: "men", type: "false" },
-      { answer: "children", type: "false" },
-      { answer: "heart", type: "false" },
+      { answer: "0,73 kq/litr", type: "true" },
+      { answer: "0,56 kq/litr", type: "false" },
+      { answer: "0,65 kq/litr", type: "false" },
+      { answer: "0,82 kq/litr", type: "false" },
+      { answer: "0,96 kq/litr", type: "false" },
     ],
   },
   {
     id: 300,
     Question:
-      "300. Complete the prediction.\nI can't see anything. The weather is__________",
+      "Hans variantda avtobusun yanacaq qənaətliliyini qiymətləndirmək üçün istifadə olunan göstəricilərdən biri göstərilmişdir?",
     answers: [
-      { answer: "foggy", type: "true" },
-      { answer: "sunny", type: "false" },
-      { answer: "hot", type: "false" },
-      { answer: "wet", type: "false" },
-      { answer: "warm", type: "false" },
+      { answer: "nəzarət yanacaq sərfi", type: "true" },
+      { answer: "quru torpaq yolda yanacaq sərfi", type: "false" },
+      { answer: "əyrixətli yolda yanacaq sərfi", type: "false" },
+      { answer: "yüksək temperatur şəraitində yanacaq sərfi", type: "false" },
+      { answer: "yüksək sürət rejimində yanacaq sərfi", type: "false" },
     ],
   },
   {
     id: 301,
-    Question: "301. Take your umbrella! It is_________",
+    Question:
+      "Nəqliyyat vasitəsinin texniki vəziyyətinin bərpasına yönəlmiş texniki təsirlərin məcmusu necə adlanır?",
     answers: [
-      { answer: "raining", type: "true" },
-      { answer: "warm", type: "false" },
-      { answer: "foggy", type: "false" },
-      { answer: "hot", type: "false" },
-      { answer: "cold", type: "false" },
+      { answer: "təmir", type: "true" },
+      { answer: "nasazlıq", type: "false" },
+      { answer: "etibarlılıq", type: "false" },
+      { answer: "dəyanətlilik", type: "false" },
+      { answer: "resurs", type: "false" },
     ],
   },
   {
     id: 302,
-    Question: "302. There was heavy snow in Moscow. It's _______ outside.",
+    Question:
+      "İstismarı prosesində sərnişin avtobusunda baş verən imtina və nasazlıqların aradan qaldırılması necə adlanır?",
     answers: [
-      { answer: "cold", type: "true" },
-      { answer: "hot", type: "false" },
-      { answer: "wet", type: "false" },
-      { answer: "foggy", type: "false" },
-      { answer: "warm", type: "false" },
+      { answer: "cari təmir", type: "true" },
+      { answer: "dövrü təmir", type: "false" },
+      { answer: "nasazlıq", type: "false" },
+      { answer: "daimi təmir", type: "false" },
+      { answer: "nəzarət", type: "false" },
     ],
   },
   {
     id: 303,
     Question:
-      "303. It was snowing yesterday. The weather was cold. Everywhere was_______",
+      "Nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi aşağıdakı variantların hansında göstərilmişdir?",
     answers: [
-      { answer: "icy", type: "true" },
-      { answer: "hot", type: "false" },
-      { answer: "warm", type: "false" },
-      { answer: "cloudy", type: "false" },
-      { answer: "wet", type: "false" },
+      {
+        answer: "nəqliyyat vasitəsinin imtinasızlığı və rahatlığı",
+        type: "true",
+      },
+      { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+      { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+      { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
+      { answer: "nəqliyyat vasitələrinin eni", type: "false" },
     ],
   },
   {
     id: 304,
-    Question: "304. Summer is a … season.",
+    Question:
+      "Avtobusun yanacaq qənaətliliyi xarakteristikası bir çox faktorlardan asılıdır. Hansı variantda bu faktorlar düzgün göstərilmişdir?",
     answers: [
-      { answer: "dry", type: "true" },
-      { answer: "wet", type: "false" },
-      { answer: "icy", type: "false" },
-      { answer: "cool", type: "false" },
-      { answer: "stormy", type: "false" },
+      { answer: "1; 3; 5; 7", type: "true" },
+      { answer: "2; 3; 6; 7", type: "false" },
+      { answer: "2; 4; 6; 7", type: "false" },
+      { answer: "1; 3; 4; 5", type: "false" },
+      { answer: "1; 2; 4; 6", type: "false" },
     ],
   },
   {
     id: 305,
-    Question: "305. Autumn is a … season.",
+    Question:
+      "Neçə metrlik yol sahəsində sərnişin avtobuslarının sürətlənməsinin təyini sınağı aparılır?",
     answers: [
-      { answer: "wet", type: "true" },
-      { answer: "dry", type: "false" },
-      { answer: "hot", type: "false" },
-      { answer: "icy", type: "false" },
-      { answer: "unlucky", type: "false" },
+      { answer: "2000 m-lik", type: "true" },
+      { answer: "3000 m-lik", type: "false" },
+      { answer: "2500 m-lik", type: "false" },
+      { answer: "1200 m-lik", type: "false" },
+      { answer: "500 m-lik", type: "false" },
     ],
   },
   {
     id: 306,
     Question:
-      "306. Translate the sentence.\nThe Sapporo Snow Festival is one of Japan’s most exciting winter events-held for seven days in February.",
+      "İstismarı prosesində sərnişin nəqliyyat vasitəsinin dəyişən, baxılan zaman anında ölçülmüş və kəmiyyətcə qiymətləndirilmiş istismar xüsusiyyətlərinin toplusu ilə təyin olunması onun hansı xüsusiyyətini xarakterizə edir?",
     answers: [
-      {
-        answer:
-          "Sapporo qış festivalı Yaponiyanın ən heyrətamiz qış hadisələrindən  biri olub, fevral ayında 7 gün müddətində keçirilir.",
-        type: "true",
-      },
-      {
-        answer:
-          "Sapporo qış festivalı Yaponiyada 7 gün müddətində keçirilən qış festivalıdır.",
-        type: "false",
-      },
-      {
-        answer: "Sapporo Yaponiyanın ən maraqlı qış festivalı hesab edilirş",
-        type: "false",
-      },
-      {
-        answer:
-          "Sapporo  Yaponiyanın 7 gün müddətində qeyd edilən yeganə bayramlarından biridir.",
-        type: "false",
-      },
-      { answer: "Sapporo bir qış əhvalatıdır.", type: "false" },
+      { answer: "texniki vəziyyətini", type: "true" },
+      { answer: "təmir olmasını", type: "false" },
+      { answer: "işçi vəziyyətini", type: "false" },
+      { answer: "nasaz olmasını", type: "false" },
+      { answer: "dayanıqlılığını", type: "false" },
     ],
   },
   {
     id: 307,
     Question:
-      "307. Now, over two million people come to Sapporo to see around 400 huge sculptures.",
+      "Hans variantda sərnişin avtobusunun yanacaq qənaətliliyini qiymətləndirmək üçün istifadə edilən göstəricilər düzgün göstərilib?",
     answers: [
-      {
-        answer:
-          "İndi isə 2 milyondan çox insan Sapporoya 400-ə yaxın nəhəng heykələ baxmaq üçün gəlir.",
-        type: "true",
-      },
-      {
-        answer: "Sapporo bu il 2 milyondan çox insanı qarşılayır.",
-        type: "false",
-      },
-      {
-        answer:
-          "Sapporo hal-hazırda 2 milyondan çox insan şəhərə baş çəkməsi üçün hazırlanır.",
-        type: "false",
-      },
-      {
-        answer:
-          "400-ə yaxın nəhəng heykəl Sapporoda ziyarətçilərinin baxması üçün hal-hazırda hazırlanır.",
-        type: "false",
-      },
-      {
-        answer:
-          "Sapporoda 400-ə yaxın nəhəng heykəl 2 milyona yaxın insanın baxması üçün nümayiş etdirlir.",
-        type: "false",
-      },
+      { answer: "1; 3; 5; 7", type: "true" },
+      { answer: "2; 4; 6", type: "false" },
+      { answer: "1; 4; 6; 7", type: "false" },
+      { answer: "2; 3; 4; 6", type: "false" },
+      { answer: "4; 5; 6", type: "false" },
     ],
   },
   {
     id: 308,
-    Question:
-      "308. Harvest festivals in the autumn are very popular in the USA.",
+    Question: "Təyyarələr hansı oxa nəzərən simmetrikdir?",
     answers: [
-      {
-        answer: "Payızda məhsul festivalları ABŞ - da çox məşhurdur.",
-        type: "true",
-      },
-      {
-        answer: "Biçin festivalı ABŞ-ın ən məşhur festivallarından biridir.",
-        type: "false",
-      },
-      { answer: "Əkin-biçin ABŞ-da çox məşhurdur.", type: "false" },
-      {
-        answer: "ABŞ-da ən məşhur bayram kənd təsərüffatı bayramıdır.",
-        type: "false",
-      },
-      {
-        answer:
-          "Məhsul toplama festivalı ABŞ-ın oktyabr ayında keçirilən ən məşhur festivalıdır.",
-        type: "false",
-      },
+      { answer: "uzununa", type: "true" },
+      { answer: "eninə", type: "false" },
+      { answer: "üfüqi", type: "false" },
+      { answer: "şaquli", type: "false" },
+      { answer: "kordinat", type: "false" },
     ],
   },
   {
     id: 309,
     Question:
-      "309. Complete the question.\n... you want to watch TV this evening?",
+      "Benzinin sıxlığını avtobusların yanacaq sərfinin hesablaması zamanı hansı variantdakı ədədi qəbul etmək olar?",
     answers: [
-      { answer: "Do", type: "true" },
-      { answer: "are", type: "false" },
-      { answer: "does", type: "false" },
-      { answer: "have", type: "false" },
-      { answer: "has", type: "false" },
+      { answer: "0,73 kq/litr", type: "true" },
+      { answer: "0,86 kq/litr", type: "false" },
+      { answer: "0,72 kq/litr", type: "false" },
+      { answer: "0,68 kq/litr", type: "false" },
+      { answer: "0,92 kq/litr", type: "false" },
     ],
   },
   {
     id: 310,
-    Question: "310. Are there any films you ________like to see at the moment?",
+    Question:
+      "Avtobusun dayandırılması zamanı son sürəti sıfıradan fərqli olarsa belə dayandırma necə adlanar?",
     answers: [
-      { answer: "would", type: "true" },
-      { answer: "do", type: "false" },
-      { answer: "going to", type: "false" },
-      { answer: "are", type: "false" },
-      { answer: "does", type: "false" },
+      { answer: "natamam dayandırma", type: "true" },
+      { answer: "tam dayandırma", type: "false" },
+      { answer: "mexaniki dayandırma", type: "false" },
+      { answer: "ilkin dayandırma", type: "false" },
+      { answer: "nümunəvi dayandırma", type: "false" },
     ],
   },
   {
-  "id": 311,
-  "Question": "311. _______you going to celebrate festival this year?",
-  "answers": [
-    { "answer": "are", "type": "true" },
-    { "answer": "do", "type": "false" },
-    { "answer": "have", "type": "false" },
-    { "answer": "does", "type": "false" },
-    { "answer": "would", "type": "false" }
-  ]
-},
-{
-  "id": 312,
-  "Question": "312. Translate the sentence.\nTo celebrate this, the town divides into two teams and everyone dresses up in fantastic costumes.",
-  "answers": [
-    { "answer": "Bunu qeyd etmək üçün qəsəbə iki komandaya bölünür və hamı möhtəşəm kostyumlar geyinir.", "type": "true" },
-    { "answer": "Bu bayramı qeyd etmək üçün qəsəbə iki komandaya bölünməlidir.", "type": "false" },
-    { "answer": "Qəsəbədə hamı möhtəşəm paltarlar geyinir.", "type": "false" },
-    { "answer": "Bu bayram üçün qəsəbə iki komandaya bölünərək,möhtəşəm libaslar geyinir.", "type": "false" },
-    { "answer": "komandalar bayram boyunca yarışır.", "type": "false" }
-  ]
-},
-{
-  "id": 313,
-  "Question": "313. You don’t need to buy tickets for the Boi Bumba festival, but you need to book early to find somewhere to stay for the three nights.",
-  "answers": [
-    { "answer": "Boi Bumba festivalı üçün bilet almağa ehtiyacınız yoxdur, ancaq üç gecə qalacaq bir yer tapmaq üçün erkən sifariş etməlisiniz.", "type": "true" },
-    { "answer": "Boi Bumba festivalı üçün bilet almağa ehtiyac yoxdur.", "type": "false" },
-    { "answer": "Festivalda üç gecə qalacaq bir yer tapmaq üçün erkən sifariş etməlisən.", "type": "false" },
-    { "answer": "Boi Bumba festivalı 3 gecə davam edir və insanlar qalmaq üçün yer sifariş verməlidirlər.", "type": "false" },
-    { "answer": "Festival Boi Bumba 3 gün, 3 gecə davam edir.", "type": "false" }
-  ]
-},
-{
-  "id": 314,
-  "Question": "314. Choose the correct answer.\n1. How far\n2. How many\n3. How talla.	\na.3.900 km \nb.1m 65cm \nc.five",
-  "answers": [
-    { "answer": "1-a,2-c,3-b", "type": "true" },
-    { "answer": "1-a,2-b,3-c", "type": "false" },
-    { "answer": "1-b,2-c,3-a", "type": "false" },
-    { "answer": "1-c,2-a,3-b", "type": "false" },
-    { "answer": "1-c,2-b,3-a", "type": "false" }
-  ]
-},
-{
-  "id": 315,
-  "Question": "315. They also wear the crowns made of wild flowers.",
-  "answers": [
-    { "answer": "Onlar həmçinin yabanı çiçəklərdən hazırlanmış çələnglər (tac) taxırlar.", "type": "true" },
-    { "answer": "Onlar vəhşi güllərdən çələng düzəldirlər.", "type": "false" },
-    { "answer": "Onlar vəhşi çiçəkləri toplayıb,tac düzəldirlər.", "type": "false" },
-    { "answer": "Onlar vəhşi çiçəklərdən tac hazırlayırlar.", "type": "false" },
-    { "answer": "Onlar vəhşi bitkilərdən paltar düzəldirlər.", "type": "false" }
-  ]
-},
-{
-  "id": 316,
-  "Question": "316. Put the words in the correct order to make the sentence.\nGoing/to/She’s/new/bicycle/a/buy.",
-  "answers": [
-    { "answer": "She’s going to buy a new bicycle.", "type": "true" },
-    { "answer": "She’s to going bicycle new a.", "type": "false" },
-    { "answer": "She’s to buy going a new bicycle.", "type": "false" },
-    { "answer": "To buy going a new bicycle she’s.", "type": "false" },
-    { "answer": "Going to she’s new bicycle a.", "type": "false" }
-  ]
-},
-{
-  "id": 317,
-  "Question": "317. Put the words in the correct order to make the sentence.\nWhat/to/tomorrow/are/you/going/do?",
-  "answers": [
-    { "answer": "What are you going to do tomorrow?", "type": "true" },
-    { "answer": "Tomorrow what are you going to do?", "type": "false" },
-    { "answer": "You are what going do tomorrow?", "type": "false" },
-    { "answer": "Are you going to do what tomorrow?", "type": "false" },
-    { "answer": "Going to do are you tomorrow?", "type": "false" }
-  ]
-},
-{
-  "id": 318,
-  "Question": "318. Put the words in the correct order to make the sentence.\nIsn’t/have/to/a/going/she/party/leaving.",
-  "answers": [
-    { "answer": "She isn’t going to have a leaving party.", "type": "true" },
-    { "answer": "She isn’t to have a leaving party going.", "type": "false" },
-    { "answer": "To have she is going to a leaving party.", "type": "false" },
-    { "answer": "She is going to a leaving have party.", "type": "false" },
-    { "answer": "Have she a leaving party going to.", "type": "false" }
-  ]
-},
-{
-  "id": 319,
-  "Question": "319. Put the words in the correct order to make the sentence.\nyou / Are /going/ have / a / to / shower?",
-  "answers": [
-    { "answer": "Are you going to have a shower?", "type": "true" },
-    { "answer": "You are going to have a shower?", "type": "false" },
-    { "answer": "You have a shower going to you?", "type": "false" },
-    { "answer": "Going to have you are a shower?", "type": "false" },
-    { "answer": "To have a shower going to you?", "type": "false" }
-  ]
-},
-{
-  "id": 320,
-  "Question": "320. Put the words in the correct order to make the sentence.\nWe/are/to/go/not/going/for/a/walk.",
-  "answers": [
-    { "answer": "We are not going to go for a walk.", "type": "true" },
-    { "answer": "Are we not going to for a walk?", "type": "false" },
-    { "answer": "We are not go to going for a walk.", "type": "false" },
-    { "answer": "We are not going to for a walk go.", "type": "false" },
-    { "answer": "Are not we going to for a walk go.", "type": "false" }
-  ]
-},
-{
-  "id": 321,
-  "Question": "321. Put the words in the correct order to make the sentence.\nBob/are/going/I/and/business/ to/ start/ a.",
-  "answers": [
-    { "answer": "Bob and I are going to start a business.", "type": "true" },
-    { "answer": "I and business start going to Bob a.", "type": "false" },
-    { "answer": "Are Bob and I going to start a business.", "type": "false" },
-    { "answer": "Bob are I going to start a business.", "type": "false" },
-    { "answer": "Bob and I am start going to a business.", "type": "false" }
-  ]
-},
-{
-  "id": 322,
-  "Question": "322. Put the words in the correct order to make the sentence.\nto/come/going/to/aren’t/they/the/party.",
-  "answers": [
-    { "answer": "They aren`t going to come to the party.", "type": "true" },
-    { "answer": "Are they going to come the party.", "type": "false" },
-    { "answer": "Not they are going to the party.", "type": "false" },
-    { "answer": "The party they are going to come not.", "type": "false" },
-    { "answer": "They are not the party going to come.", "type": "false" }
-  ]
-},
-{
-  "id": 323,
-  "Question": "323. Put the words in the correct order to make the sentence.\nyou/why/going/aren’t/house/to/move?",
-  "answers": [
-    { "answer": "Why  aren’t you going to move house ?", "type": "true" },
-    { "answer": "You why aren’t going to move house?", "type": "false" },
-    { "answer": "Going why to move house are you?", "type": "false" },
-    { "answer": "Why move house are you going to?", "type": "false" },
-    { "answer": "Why are you  going to house move?", "type": "false" }
-  ]
-},
-{
-  "id": 324,
-  "Question": "324. Complete the sentences with going to and the word in brackets.\nMathilda is 14 next month. She _________(have) a birthday party.",
-  "answers": [
-    { "answer": "is going to have", "type": "true" },
-    { "answer": "does going to have", "type": "false" },
-    { "answer": "are going to have", "type": "false" },
-    { "answer": "am going to have", "type": "false" },
-    { "answer": "not going to have", "type": "false" }
-  ]
-},
-{
-  "id": 325,
-  "Question": "325. Complete the sentences with going to and the word in brackets.\nI have got a plane ticket. I______(fly) Hawaii.",
-  "answers": [
-    { "answer": "am going to fly", "type": "true" },
-    { "answer": "am flying", "type": "false" },
-    { "answer": "is going to fly", "type": "false" },
-    { "answer": "going to fly", "type": "false" },
-    { "answer": "are going to fly", "type": "false" }
-  ]
-},
-{
-  "id": 326,
-  "Question": "326. Complete the sentences with going to and the word in brackets.\nChris and Jane are engaged. They_____(marry).",
-  "answers": [
-    { "answer": "are going to marry", "type": "true" },
-    { "answer": "are not going to divorce", "type": "false" },
-    { "answer": "do marry", "type": "false" },
-    { "answer": "is married", "type": "false" },
-    { "answer": "married", "type": "false" }
-  ]
-},
-{
-  "id": 327,
-  "Question": "327. Complete the sentences with going to and the word in brackets.\nMy dad is a teacher. But I_____( not to be) a teacher.",
-  "answers": [
-    { "answer": "am not going to be", "type": "true" },
-    { "answer": "are not", "type": "false" },
-    { "answer": "is not going to be", "type": "false" },
-    { "answer": "am not", "type": "false" },
-    { "answer": "am be", "type": "false" }
-  ]
-},
-{
-  "id": 328,
-  "Question": "328. Complete the sentences with going to and the word in brackets.\nThe food was expensive, and not so good, so they_______( not to eat).",
-  "answers": [
-    { "answer": "are not going to eat", "type": "true" },
-    { "answer": "is not going to eat", "type": "false" },
-    { "answer": "are going to eat", "type": "false" },
-    { "answer": "am eat", "type": "false" },
-    { "answer": "don't eat", "type": "false" }
-  ]
-},
-{
-  "id": 329,
-  "Question": "329. Complete the sentences with going to and the word in brackets.\nWe have got opera tickets for tonight.We_______(see) Rigoletto by Verdi.",
-  "answers": [
-    { "answer": "are going to see", "type": "true" },
-    { "answer": "going to see", "type": "false" },
-    { "answer": "is going to see", "type": "false" },
-    { "answer": "see", "type": "false" },
-    { "answer": "don't see", "type": "false" }
-  ]
-},
-{
-  "id": 330,
-  "Question": "330. Complete the sentences with going to and the word in brackets.\nI_____(stay) at home tonight.",
-  "answers": [
-    { "answer": "am going to stay", "type": "true" },
-    { "answer": "have stayed", "type": "false" },
-    { "answer": "is going to stay", "type": "false" },
-    { "answer": "was going", "type": "false" },
-    { "answer": "has been going to stay", "type": "false" }
-  ]
-},
-{
-  "id": 331,
-  "Question": "331. Complete the sentences with going to and the word in brackets.\nIt is a long journey and the party starts very late. I_____(not go) to Jake's birthday party.",
-  "answers": [
-    { "answer": "am not going to go", "type": "true" },
-    { "answer": "not go", "type": "false" },
-    { "answer": "not going to go", "type": "false" },
-    { "answer": "did not go", "type": "false" },
-    { "answer": "will not go", "type": "false" }
-  ]
-},
-{
-  "id": 332,
-  "Question": "332. Complete the sentences with going to and the word in brackets.\nHave you got any plans for tomorrow?\n- Yes, I ________ ( visit) my grandparents.",
-  "answers": [
-    { "answer": "am going to visit", "type": "true" },
-    { "answer": "do not go", "type": "false" },
-    { "answer": "is going to visit", "type": "false" },
-    { "answer": "am not go", "type": "false" },
-    { "answer": "wil going to visit", "type": "false" }
-  ]
-},
-{
-  "id": 333,
-  "Question": "333. Complete the sentences with going to and the word in brackets.\nWhy is she learning Spanish?\n- She  _______ (travel) to Spain.",
-  "answers": [
-    { "answer": "is going to travel", "type": "true" },
-    { "answer": "is travelled", "type": "false" },
-    { "answer": "does not travel", "type": "false" },
-    { "answer": "travelling", "type": "false" },
-    { "answer": "she does", "type": "false" }
-  ]
-},
-{
-  "id": 334,
-  "Question": "334. Complete the sentences with going to and the word in brackets.\nWe are thirsty.\n- Wait here. I ______ (get) some water.",
-  "answers": [
-    { "answer": "am going to get", "type": "true" },
-    { "answer": "is going to get", "type": "false" },
-    { "answer": "do not get", "type": "false" },
-    { "answer": "will going to get", "type": "false" },
-    { "answer": "to be not going to get", "type": "false" }
-  ]
-},
-{
-  "id": 335,
-  "Question": "335. Complete the sentences with going to and the word in brackets.\nMeat or fish?\n- I   ______ (have) some fish, please.",
-  "answers": [
-    { "answer": "am going to have", "type": "true" },
-    { "answer": "I do not have", "type": "false" },
-    { "answer": "will be going to have", "type": "false" },
-    { "answer": "to be going to have", "type": "false" },
-    { "answer": "is going to have", "type": "false" }
-  ]
-},
-{
-  "id": 336,
-  "Question": "336. Complete the sentences with going to and the word in brackets.\nWhat do you want the keys for?\n- I  ______(close) the door.",
-  "answers": [
-    { "answer": "am going to close", "type": "true" },
-    { "answer": "am closed", "type": "false" },
-    { "answer": "am to going to close", "type": "false" },
-    { "answer": "closed", "type": "false" },
-    { "answer": "do not be going to close", "type": "false" }
-  ]
-},
-{
-  "id": 337,
-  "Question": "337. Complete the sentences with going to and the word in brackets.\nIf you don't take a taxi,\nyou ________  (arrive) on time.",
-  "answers": [
-    { "answer": "are going to arrive", "type": "true" },
-    { "answer": "am going to arrive", "type": "false" },
-    { "answer": "do not arrive", "type": "false" },
-    { "answer": "will be going arrive", "type": "false" },
-    { "answer": "are arrived", "type": "false" }
-  ]
-},
-{
-  "id": 338,
-  "Question": "338. Complete the sentences with going to and the word in brackets.\nWhy do you want so many oranges?\n- I   ______(make) an orange juice.",
-  "answers": [
-    { "answer": "am going to make", "type": "true" },
-    { "answer": "am going make", "type": "false" },
-    { "answer": "will  going to make", "type": "false" },
-    { "answer": "was going make", "type": "false" },
-    { "answer": "do make", "type": "false" }
-  ]
-},
-{
-  "id": 339,
-  "Question": "339. Complete the sentences with going to and the word in brackets.\nOh! I haven't got enough money to pay!\n- Don't worry. I _____( lend) you some.",
-  "answers": [
-    { "answer": "am going to lend", "type": "true" },
-    { "answer": "going to", "type": "false" },
-    { "answer": "lent", "type": "false" },
-    { "answer": "was going to", "type": "false" },
-    { "answer": "I lend", "type": "false" }
-  ]
-},
-{
-  "id": 340,
-  "Question": "340. Complete the sentences with going to and the word in brackets.\nWe need one more player.\n-   ___ you _____(play) with us tomorrow?",
-  "answers": [
-    { "answer": "are/going to play", "type": "true" },
-    { "answer": "is/going to play", "type": "false" },
-    { "answer": "does/going to played", "type": "false" },
-    { "answer": "did/going to play", "type": "false" },
-    { "answer": "has/going to play", "type": "false" }
-  ]
-},
-{
-  "id": 341,
-  "Question": "341. Choose the correct variant.\nI am not really hungry, so ………",
-  "answers": [
-    { "answer": "I don’t want to eat anything, thank you.", "type": "true" },
-    { "answer": "I don’t want eat anything, thank you", "type": "false" },
-    { "answer": "I want to eat anything, thank you.", "type": "false" },
-    { "answer": "I want eat anything, thank you.", "type": "false" },
-    { "answer": "I don’t want eating something, thank you.", "type": "false" }
-  ]
-},
-{
-  "id": 342,
-  "Question": "342. Choose the correct variant.\nAnn isn’t going to look for a job when she leaves school, because ………",
-  "answers": [
-    { "answer": "she is going to university.", "type": "true" },
-    { "answer": "she isn’t going to university", "type": "false" },
-    { "answer": "she will going work at school", "type": "false" },
-    { "answer": "she will going to work at university", "type": "false" },
-    { "answer": "she is go to university", "type": "false" }
-  ]
-},
-{
-  "id": 343,
-  "Question": "343. Choose the correct variant.\nWould like/ a footballer/ to be/ older/ he is/ Ben/ when.",
-  "answers": [
-    { "answer": "Ben would like to be a footballer when he is older.", "type": "true" },
-    { "answer": "A footballer would like to be Ben when he is older.", "type": "false" },
-    { "answer": "A footballer when he is older would like to be Ben .", "type": "false" },
-    { "answer": "Ben to be a footballer would like when he is older.", "type": "false" },
-    { "answer": "Ben would like to older when he is a footballer.", "type": "false" }
-  ]
-},
-{
-  "id": 344,
-  "Question": "344. Choose the correct variant.\nYou / something/ like/to drink/ would?",
-  "answers": [
-    { "answer": "Would you like to drink something?", "type": "true" },
-    { "answer": "Would like you to drink something?", "type": "false" },
-    { "answer": "Would something like you to drink?", "type": "false" },
-    { "answer": "Would you something like to drink?", "type": "false" },
-    { "answer": "Would you to drink like something?", "type": "false" }
-  ]
-},
-{
-  "id": 345,
-  "Question": "345. Choose the correct variant.\nWant/ doesn’t / stay/ at /Nick / to / home?",
-  "answers": [
-    { "answer": "Doesn’t Nick want to stay at home?", "type": "true" },
-    { "answer": "Doesn’t Nick want at stay to home?", "type": "false" },
-    { "answer": "Doesn’t Nick to want stay at home?", "type": "false" },
-    { "answer": "Nick doesn’t to want stay at home?", "type": "false" },
-    { "answer": "Nick doesn’t want  stay to at home?", "type": "false" }
-  ]
-},
-{
-  "id": 346,
-  "Question": "346. Choose the correct variant.\nA taxi /order/I’d / to/ please/ like/.",
-  "answers": [
-    { "answer": "I’d like to order a taxi, please.", "type": "true" },
-    { "answer": "A taxi like I’d to order, please.", "type": "false" },
-    { "answer": "I’d like please to order a taxi.", "type": "false" },
-    { "answer": "A taxi I’d like to order, please.", "type": "false" }
-  ]
-},
-{
-  "id": 347,
-  "Question": "347. Choose the correct variant.\n... country has got the largest number of active volcanoes?",
-  "answers": [
-    { "answer": "Which", "type": "true" },
-    { "answer": "Where", "type": "false" },
-    { "answer": "Why", "type": "false" },
-    { "answer": "Whose", "type": "false" },
-    { "answer": "How many", "type": "false" }
-  ]
-},
-{
-  "id": 348,
-  "Question": "348. Choose the correct variant.\n... you going to have a busy weekend? What ... you like to do?",
-  "answers": [
-    { "answer": "Are/would", "type": "true" },
-    { "answer": "would/are", "type": "false" },
-    { "answer": "do/do", "type": "false" },
-    { "answer": "are /does", "type": "false" },
-    { "answer": "do/would", "type": "false" }
-  ]
-},
-{
-  "id": 349,
-  "Question": "349. Choose the correct variant.\nAre there any films you ...like to see at the moment?",
-  "answers": [
-    { "answer": "Would", "type": "true" },
-    { "answer": "Do", "type": "false" },
-    { "answer": "Are", "type": "false" },
-    { "answer": "Is", "type": "false" },
-    { "answer": "Doesn’t", "type": "false" }
-  ]
-},
-{
-  "id": 350,
-  "Question": "350. Choose the correct variant.\n5,000,000,000/5,5, /50,000",
-  "answers": [
-    { "answer": "five billion/five point five/fifty thousand", "type": "true" },
-    { "answer": "five million/five point five/fifty thousands", "type": "false" },
-    { "answer": "five billion/five and five/fifty hundred", "type": "false" },
-    { "answer": "five million/five dot five/fifty thousand", "type": "false" },
-    { "answer": "five billion/five dot five/fifteen thousand", "type": "false" }
-  ]
-},
-{
-  "id": 351,
-  "Question": "351. I live _____ an apartment _____ two American boys.",
-  "answers": [
-    { "answer": "in / with", "type": "true" },
-    { "answer": "in / of", "type": "false" },
-    { "answer": "at / with", "type": "false" },
-    { "answer": "of/with", "type": "false" },
-    { "answer": "at/by", "type": "false" }
-  ]
-},
-{
-  "id": 352,
-  "Question": "352. Find the opposite word.\neasy - ______",
-  "answers": [
-    { "answer": "difficult", "type": "true" },
-    { "answer": "cheap", "type": "false" },
-    { "answer": "different", "type": "false" },
-    { "answer": "expensive", "type": "false" },
-    { "answer": "cold", "type": "false" }
-  ]
-},
-{
-  "id": 353,
-  "Question": "353. Find the opposite word.\nlovely - ______",
-  "answers": [
-    { "answer": "horrible", "type": "true" },
-    { "answer": "expensive", "type": "false" },
-    { "answer": "old", "type": "false" },
-    { "answer": "quick", "type": "false" },
-    { "answer": "friendly", "type": "false" }
-  ]
-},
-{
-  "id": 354,
-  "Question": "354. Find the opposite word.\nfast - ______",
-  "answers": [
-    { "answer": "slow", "type": "true" },
-    { "answer": "small", "type": "false" },
-    { "answer": "quick", "type": "false" },
-    { "answer": "warm", "type": "false" },
-    { "answer": "silent", "type": "false" }
-  ]
-},
-{
-  "id": 355,
-  "Question": "355. Find the opposite word.\nexpensive - ______",
-  "answers": [
-    { "answer": "cheap", "type": "true" },
-    { "answer": "big", "type": "false" },
-    { "answer": "cold", "type": "false" },
-    { "answer": "high-priced", "type": "false" },
-    { "answer": "costly", "type": "false" }
-  ]
-},
-{
-  "id": 356,
-  "Question": "356. Find the opposite word.\nhot - ______",
-  "answers": [
-    { "answer": "cold", "type": "true" },
-    { "answer": "balmy", "type": "false" },
-    { "answer": "tropical", "type": "false" },
-    { "answer": "warm", "type": "false" },
-    { "answer": "summery", "type": "false" }
-  ]
-},
-{
-  "id": 357,
-  "Question": "357. Find the opposite word.\nbig - ______",
-  "answers": [
-    { "answer": "small", "type": "true" },
-    { "answer": "huge", "type": "false" },
-    { "answer": "tall", "type": "false" },
-    { "answer": "large", "type": "false" },
-    { "answer": "immense", "type": "false" }
-  ]
-},
-{
-  "id": 358,
-  "Question": "358. Find the opposite word.\nyoung - ______",
-  "answers": [
-    { "answer": "old", "type": "true" },
-    { "answer": "big", "type": "false" },
-    { "answer": "small", "type": "false" },
-    { "answer": "junior", "type": "false" },
-    { "answer": "immature", "type": "false" }
-  ]
-},
-{
-  "id": 359,
-  "Question": "359. Choose the correct answer.\n“_____ you married?”\n“No, I _____.”",
-  "answers": [
-    { "answer": "Are / ’m not", "type": "true" },
-    { "answer": "Aren’t / am", "type": "false" },
-    { "answer": "Are / am", "type": "false" },
-    { "answer": "Is / am not", "type": "false" },
-    { "answer": "Is/am", "type": "false" }
-  ]
-},
-{
-  "id": 360,
-  "Question": "360. Choose the correct answer.\n“_____ is Brenda?”\n“She’s Patrick’s wife.”",
-  "answers": [
-    { "answer": "Who", "type": "true" },
-    { "answer": "What", "type": "false" },
-    { "answer": "Which", "type": "false" },
-    { "answer": "Where", "type": "false" },
-    { "answer": "Whom", "type": "false" }
-  ]
-},
-{
-  "id": 361,
-  "Question": "361. A: _____ does Tony Blair live?\nB: In Great Britain.",
-  "answers": [
-    { "answer": "Where", "type": "true" },
-    { "answer": "When", "type": "false" },
-    { "answer": "What time", "type": "false" },
-    { "answer": "How", "type": "false" },
-    { "answer": "Whom", "type": "false" }
-  ]
-},
-{
-  "id": 362,
-  "Question": "362. _____ does your father do in his free time?",
-  "answers": [
-    { "answer": "What", "type": "true" },
-    { "answer": "Why", "type": "false" },
-    { "answer": "What kind", "type": "false" },
-    { "answer": "How many", "type": "false" },
-    { "answer": "Where", "type": "false" }
-  ]
-},
-{
-  "id": 363,
-  "Question": "363. _____ does Andy’s little brother play with?",
-  "answers": [
-    { "answer": "Who", "type": "true" },
-    { "answer": "Why", "type": "false" },
-    { "answer": "How old", "type": "false" },
-    { "answer": "How", "type": "false" },
-    { "answer": "Where", "type": "false" }
-  ]
-},
-{
-  "id": 364,
-  "Question": "364. A: _____ does Natalie’s nephew do?\nB: He’s an architect.",
-  "answers": [
-    { "answer": "What", "type": "true" },
-    { "answer": "How", "type": "false" },
-    { "answer": "Whom", "type": "false" },
-    { "answer": "When", "type": "false" },
-    { "answer": "Why", "type": "false" }
-  ]
-},
-{
-  "id": 365,
-  "Question": "365. A: _____ does it rain here?\nB: Mostly in summer and winter.\nA: _____ snow?\nB: In winter.",
-  "answers": [
-    { "answer": "When / What about", "type": "true" },
-    { "answer": "When / Why", "type": "false" },
-    { "answer": "Why / How", "type": "false" },
-    { "answer": "What time / Whom", "type": "false" },
-    { "answer": "Why / What about", "type": "false" }
-  ]
-},
-{
-  "id": 366,
-  "Question": "366. A: _____ does Anthony go to work?\nB: _____ bus.",
-  "answers": [
-    { "answer": "How / By", "type": "true" },
-    { "answer": "How well / On", "type": "false" },
-    { "answer": "What kind / In", "type": "false" },
-    { "answer": "How / At", "type": "false" },
-    { "answer": "How often / By", "type": "false" }
-  ]
-},
-{
-  "id": 367,
-  "Question": "367. _____ _____ languages does she speak?",
-  "answers": [
-    { "answer": "How many", "type": "true" },
-    { "answer": "How much", "type": "false" },
-    { "answer": "Why", "type": "false" },
-    { "answer": "Where", "type": "false" },
-    { "answer": "What time", "type": "false" }
-  ]
-},
-{
-  "id": 368,
-  "Question": "368. _____ sells things.",
-  "answers": [
-    { "answer": "A shopkeeper", "type": "true" },
-    { "answer": "A postman", "type": "false" },
-    { "answer": "A nurse", "type": "false" },
-    { "answer": "A doctor", "type": "false" },
-    { "answer": "A teacher", "type": "false" }
-  ]
-},
-{
-  "id": 369,
-  "Question": "369. A barman _____.",
-  "answers": [
-    { "answer": "serves drinks", "type": "true" },
-    { "answer": "sells things", "type": "false" },
-    { "answer": "delivers letters", "type": "false" },
-    { "answer": "drinks a lot", "type": "false" },
-    { "answer": "looks after money", "type": "false" }
-  ]
-},
-{
-  "id": 370,
-  "Question": "370. __________ looks after money.",
-  "answers": [
-    { "answer": "An accountant", "type": "true" },
-    { "answer": "A nurse", "type": "false" },
-    { "answer": "A postman", "type": "false" },
-    { "answer": "A barman", "type": "false" },
-    { "answer": "A dentist", "type": "false" }
-  ]
-},
-{
-  "id": 371,
-  "Question": "371. __________ designs buildings.",
-  "answers": [
-    { "answer": "An architect", "type": "true" },
-    { "answer": "A pilot", "type": "false" },
-    { "answer": "A teacher", "type": "false" },
-    { "answer": "An interpreter", "type": "false" },
-    { "answer": "A doctor", "type": "false" }
-  ]
-},
-{
-  "id": 372,
-  "Question": "372. He lives ____ an island _____ the west of Scotland.",
-  "answers": [
-    { "answer": "on / in", "type": "true" },
-    { "answer": "in / in", "type": "false" },
-    { "answer": "on / on", "type": "false" },
-    { "answer": "in / at", "type": "false" },
-    { "answer": "on / at", "type": "false" }
-  ]
-},
-{
-  "id": 373,
-  "Question": "373. She’s married _____ an American man.",
-  "answers": [
-    { "answer": "to", "type": "true" },
-    { "answer": "with", "type": "false" },
-    { "answer": "for", "type": "false" },
-    { "answer": "from", "type": "false" },
-    { "answer": "on", "type": "false" }
-  ]
-},
-{
-  "id": 374,
-  "Question": "374. He _____ listening _____ music.",
-  "answers": [
-    { "answer": "likes / to", "type": "true" },
-    { "answer": "like / to", "type": "false" },
-    { "answer": "likes / of", "type": "false" },
-    { "answer": "likes / with", "type": "false" },
-    { "answer": "likes / on", "type": "false" }
-  ]
-},
-{
-  "id": 375,
-  "Question": "375. Someone without socks or shoes on is …",
-  "answers": [
-    { "answer": "Barefoot", "type": "true" },
-    { "answer": "Bald", "type": "false" },
-    { "answer": "Bold", "type": "false" },
-    { "answer": "Beer", "type": "false" },
-    { "answer": "Bear", "type": "false" }
-  ]
-},
-{
-  "id": 376,
-  "Question": "376. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Brother", "type": "true" },
-    { "answer": "Niece", "type": "false" },
-    { "answer": "Sister", "type": "false" },
-    { "answer": "Sister-in-law", "type": "false" },
-    { "answer": "Aunt", "type": "false" }
-  ]
-},
-{
-  "id": 377,
-  "Question": "377. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Tiger", "type": "true" },
-    { "answer": "Chicken", "type": "false" },
-    { "answer": "Duck", "type": "false" },
-    { "answer": "Goose", "type": "false" },
-    { "answer": "Hen", "type": "false" }
-  ]
-},
-{
-  "id": 378,
-  "Question": "378. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Chicken", "type": "true" },
-    { "answer": "Tiger", "type": "false" },
-    { "answer": "Lion", "type": "false" },
-    { "answer": "Monkey", "type": "false" },
-    { "answer": "Bear", "type": "false" }
-  ]
-},
-{
-  "id": 379,
-  "Question": "379. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Dawn", "type": "true" },
-    { "answer": "Day", "type": "false" },
-    { "answer": "Month", "type": "false" },
-    { "answer": "Week", "type": "false" },
-    { "answer": "Year", "type": "false" }
-  ]
-},
-{
-  "id": 380,
-  "Question": "380. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Earth", "type": "true" },
-    { "answer": "North", "type": "false" },
-    { "answer": "East", "type": "false" },
-    { "answer": "West", "type": "false" },
-    { "answer": "South", "type": "false" }
-  ]
-},
-{
-  "id": 381,
-  "Question": "381. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Break", "type": "true" },
-    { "answer": "Know", "type": "false" },
-    { "answer": "Understand", "type": "false" },
-    { "answer": "Remember", "type": "false" },
-    { "answer": "Think", "type": "false" }
-  ]
-},
-{
-  "id": 382,
-  "Question": "382. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Umbrella", "type": "true" },
-    { "answer": "Rain", "type": "false" },
-    { "answer": "Storm", "type": "false" },
-    { "answer": "Wind", "type": "false" },
-    { "answer": "Snow", "type": "false" }
-  ]
-},
-{
-  "id": 383,
-  "Question": "383. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Bridge", "type": "true" },
-    { "answer": "Chair", "type": "false" },
-    { "answer": "Table", "type": "false" },
-    { "answer": "Desk", "type": "false" },
-    { "answer": "Bench", "type": "false" }
-  ]
-},
-{
-  "id": 384,
-  "Question": "384. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "Sensitive", "type": "true" },
-    { "answer": "Attractive", "type": "false" },
-    { "answer": "Beautiful", "type": "false" },
-    { "answer": "Handsome", "type": "false" },
-    { "answer": "Pretty", "type": "false" }
-  ]
-},
-{
-  "id": 385,
-  "Question": "385. Find the word which is out of the logic list:",
-  "answers": [
-    { "answer": "To deliver", "type": "true" },
-    { "answer": "To grow", "type": "false" },
-    { "answer": "To plant", "type": "false" },
-    { "answer": "To dig", "type": "false" },
-    { "answer": "To water", "type": "false" }
-  ]
-},
-{
-  "id": 386,
-  "Question": "386. When everything is finished it is the ______",
-  "answers": [
-    { "answer": "End", "type": "true" },
-    { "answer": "Beginning", "type": "false" },
-    { "answer": "Start", "type": "false" },
-    { "answer": "Top", "type": "false" },
-    { "answer": "Over", "type": "false" }
-  ]
-},
-{
-  "id": 387,
-  "Question": "387. If you have toothache you must visit a ______",
-  "answers": [
-    { "answer": "Dentist", "type": "true" },
-    { "answer": "Urologist", "type": "false" },
-    { "answer": "Cardiologist", "type": "false" },
-    { "answer": "Anesthesiologist", "type": "false" },
-    { "answer": "Pediatrician", "type": "false" }
-  ]
-},
-{
-  "id": 388,
-  "Question": "388. A piece of land which is completely surrounded by water is an ______",
-  "answers": [
-    { "answer": "Island", "type": "true" },
-    { "answer": "Mountain", "type": "false" },
-    { "answer": "Continent", "type": "false" },
-    { "answer": "Natural ground", "type": "false" },
-    { "answer": "Hill", "type": "false" }
-  ]
-},
-{
-  "id": 389,
-  "Question": "389. A looking glass where you can see your own reflection is more commonly called a ______",
-  "answers": [
-    { "answer": "Mirror", "type": "true" },
-    { "answer": "Sunglasses", "type": "false" },
-    { "answer": "Window", "type": "false" },
-    { "answer": "Vase", "type": "false" },
-    { "answer": "Case", "type": "false" }
-  ]
-},
-{
-  "id": 390,
-  "Question": "390. What vegetable often makes your eyes water or cry when you cut it?",
-  "answers": [
-    { "answer": "Onion", "type": "true" },
-    { "answer": "Cabbage", "type": "false" },
-    { "answer": "Lettuce", "type": "false" },
-    { "answer": "Carrot", "type": "false" },
-    { "answer": "Tomato", "type": "false" }
-  ]
-},
-{
-  "id": 391,
-  "Question": "391. What pair do we wear inside our shoes?",
-  "answers": [
-    { "answer": "Socks", "type": "true" },
-    { "answer": "Boots", "type": "false" },
-    { "answer": "Nights", "type": "false" },
-    { "answer": "Gloves", "type": "false" },
-    { "answer": "Sunglasses", "type": "false" }
-  ]
-},
-{
-  "id": 392,
-  "Question": "392. Choose the correct answer.\na. You see with your ___\nb. You hear with your ___\nc. You bite with your ___\n1. tooth\n2. ears\n3. eyes",
-  "answers": [
-    { "answer": "1-c,2-b,3-a", "type": "true" },
-    { "answer": "1-c,2-a,3-b", "type": "false" },
-    { "answer": "1-a,2-b,3-c", "type": "false" },
-    { "answer": "1-b,2-c,3-a", "type": "false" },
-    { "answer": "1-b,2-a,3-c", "type": "false" }
-  ]
-},
-{
-  "id": 393,
-  "Question": "393. Choose the correct answer.\nThe subject which includes equations, fractions, addition and subtraction is …",
-  "answers": [
-    { "answer": "Mathematics", "type": "true" },
-    { "answer": "English", "type": "false" },
-    { "answer": "Art", "type": "false" },
-    { "answer": "Geography", "type": "false" },
-    { "answer": "History", "type": "false" }
-  ]
-},
-{
-  "id": 394,
-  "Question": "394. Choose the correct answer.\nThe study of land forms and population growths are included in …",
-  "answers": [
-    { "answer": "Geography", "type": "true" },
-    { "answer": "History", "type": "false" },
-    { "answer": "Mathematics", "type": "false" },
-    { "answer": "Physics", "type": "false" },
-    { "answer": "Chemistry", "type": "false" }
-  ]
-},
-{
-  "id": 395,
-  "Question": "395. Choose the correct answer.\nCarrots, potatoes, and cabbage are all types of ___",
-  "answers": [
-    { "answer": "Vegetable", "type": "true" },
-    { "answer": "Fruit", "type": "false" },
-    { "answer": "Plant", "type": "false" },
-    { "answer": "Animal", "type": "false" },
-    { "answer": "Furniture", "type": "false" }
-  ]
-},
-{
-  "id": 396,
-  "Question": "396. Jan and Helen fell ___ love ___each other?",
-  "answers": [
-    { "answer": "In / with", "type": "true" },
-    { "answer": "On / with", "type": "false" },
-    { "answer": "Into / on", "type": "false" },
-    { "answer": "For / from", "type": "false" },
-    { "answer": "With / for", "type": "false" }
-  ]
-},
-{
-  "id": 397,
-  "Question": "397. Choose the correct answer.\nWhat group do the words belong to?\n1. Africa, Europe, Asia, America\n2. doctor, dentist, teacher, actor\n3. rainy, sunny, cloudy, snowy",
-  "answers": [
-    { "answer": "1-c, 2-b, 3-a", "type": "true" },
-    { "answer": "1-b, 2-c, 3-a", "type": "false" },
-    { "answer": "1-a, 2-b, 3-c", "type": "false" },
-    { "answer": "1-a, 2-c, 3-b", "type": "false" },
-    { "answer": "1-c, 2-a, 3-b", "type": "false" }
-  ]
-},
-{
-  "id": 398,
-  "Question": "398. Find the synonym of the word written in capitals.\nAll the local residents spent that AWFUL night in a school.",
-  "answers": [
-    { "answer": "terrible", "type": "true" },
-    { "answer": "awkward", "type": "false" },
-    { "answer": "average", "type": "false" },
-    { "answer": "insignificant", "type": "false" },
-    { "answer": "authentic", "type": "false" }
-  ]
-},
-{
-  "id": 399,
-  "Question": "399. Find the synonym of the word written in capitals.\nAt last things began to IMPROVE.",
-  "answers": [
-    { "answer": "get better", "type": "true" },
-    { "answer": "injure", "type": "false" },
-    { "answer": "become worse", "type": "false" },
-    { "answer": "collect", "type": "false" },
-    { "answer": "change", "type": "false" }
-  ]
-},
-{
-  "id": 400,
-  "Question": "400. Find the synonym of the word written in capitals.\n-Who’s that man you spoke to just now?\n-I don’t know; he is completely UNFAMILIAR to me.",
-  "answers": [
-    { "answer": "strange", "type": "true" },
-    { "answer": "foreign", "type": "false" },
-    { "answer": "unknown", "type": "false" },
-    { "answer": "new", "type": "false" },
-    { "answer": "familiar", "type": "false" }
-  ]
-},
-{
-  "id": 401,
-  "Question": "401. Choose the correct variant.",
-  "answers": [
-    { "answer": "It’s a fantastic film.", "type": "true" },
-    { "answer": "He has a car new.", "type": "false" },
-    { "answer": "That’s a mobile expensive.", "type": "false" },
-    { "answer": "Do you like food French?", "type": "false" },
-    { "answer": "This is a film interesting.", "type": "false" }
-  ]
-},
-{
-  "id": 402,
-  "Question": "402. Choose the correct variant.\n1) I often play football … the weekend.\n2) The shop closes … the evening.\n3) My new job starts … Monday morning.\na) at\nb) on\nc) in",
-  "answers": [
-    { "answer": "1-a; 2-c; 3-b;", "type": "true" },
-    { "answer": "1-c; 2-a; 3-b;", "type": "false" },
-    { "answer": "1-b; 2-c; 3-a;", "type": "false" },
-    { "answer": "1-a; 2-b; 3-c;", "type": "false" },
-    { "answer": "1-b 2-a; 3-c;", "type": "false" }
-  ]
-},
-{
-  "id": 403,
-  "Question": "403. Choose the correct opposites.",
-  "answers": [
-    { "answer": "dangerous-safe", "type": "true" },
-    { "answer": "easy-full", "type": "false" },
-    { "answer": "empty-low", "type": "false" },
-    { "answer": "young-fair", "type": "false" },
-    { "answer": "short-dark", "type": "false" }
-  ]
-},
-{
-  "id": 404,
-  "Question": "404. Choose the correct opposites.",
-  "answers": [
-    { "answer": "young-old", "type": "true" },
-    { "answer": "fair-tall", "type": "false" },
-    { "answer": "high-safe", "type": "false" },
-    { "answer": "wet-easy", "type": "false" },
-    { "answer": "dark-full", "type": "false" }
-  ]
-},
-{
-  "id": 405,
-  "Question": "405. Choose the correct opposites.",
-  "answers": [
-    { "answer": "wet-dry", "type": "true" },
-    { "answer": "fair-tall", "type": "false" },
-    { "answer": "high-safe", "type": "false" },
-    { "answer": "wet-easy", "type": "false" },
-    { "answer": "dark-full", "type": "false" }
-  ]
-},
-{
-  "id": 406,
-  "Question": "406. Choose the wrong opposites.",
-  "answers": [
-    { "answer": "fair-old", "type": "true" },
-    { "answer": "easy-difficult", "type": "false" },
-    { "answer": "wet-dry", "type": "false" },
-    { "answer": "empty-full", "type": "false" },
-    { "answer": "tall-short", "type": "false" }
-  ]
-},
-{
-  "id": 407,
-  "Question": "407. Choose the wrong opposites.",
-  "answers": [
-    { "answer": "short-dark", "type": "true" },
-    { "answer": "easy-difficult", "type": "false" },
-    { "answer": "empty-full", "type": "false" },
-    { "answer": "young-old", "type": "false" },
-    { "answer": "wet-dry", "type": "false" }
-  ]
-},
-{
-  "id": 408,
-  "Question": "408. Choose the wrong opposites.",
-  "answers": [
-    { "answer": "dark-full", "type": "true" },
-    { "answer": "easy-difficult", "type": "false" },
-    { "answer": "empty-full", "type": "false" },
-    { "answer": "young-old", "type": "false" },
-    { "answer": "wet-dry", "type": "false" }
-  ]
-},
-{
-  "id": 409,
-  "Question": "409. Complete the sentences with the correct word.\nWe … the dog for a walk twice a day.",
-  "answers": [
-    { "answer": "take", "type": "true" },
-    { "answer": "make", "type": "false" },
-    { "answer": "have", "type": "false" },
-    { "answer": "go", "type": "false" },
-    { "answer": "do", "type": "false" }
-  ]
-},
-{
-  "id": 410,
-  "Question": "410. Complete the sentences with the correct word.\nI can’t … my keys.",
-  "answers": [
-    { "answer": "find", "type": "true" },
-    { "answer": "watch", "type": "false" },
-    { "answer": "look", "type": "false" },
-    { "answer": "call", "type": "false" },
-    { "answer": "help", "type": "false" }
-  ]
-},
-{
-  "id": 411,
-  "Question": "411. Complete the sentences with the correct word.\nI … by bus every day.",
-  "answers": [
-    { "answer": "travel", "type": "true" },
-    { "answer": "play", "type": "false" },
-    { "answer": "watch", "type": "false" },
-    { "answer": "look", "type": "false" },
-    { "answer": "call", "type": "false" }
-  ]
-},
-{
-  "id": 412,
-  "Question": "412. Complete the sentences with the correct word.\nMark can … chess.",
-  "answers": [
-    { "answer": "play", "type": "true" },
-    { "answer": "run", "type": "false" },
-    { "answer": "sing", "type": "false" },
-    { "answer": "dance", "type": "false" },
-    { "answer": "hear", "type": "false" }
-  ]
-},
-{
-  "id": 413,
-  "Question": "413. Choose the correct variant.\n1) My parents … in France.\n2) We … hard yesterday morning.\n3) The restaurant … until 11.00 p.m.\na) closed\nb) lived\nc) worked",
-  "answers": [
-    { "answer": "1-b; 2-c; 3-a;", "type": "true" },
-    { "answer": "1-c; 2-a; 3-b;", "type": "false" },
-    { "answer": "1-b; 2-a; 3-c;", "type": "false" },
-    { "answer": "1-a; 2-b; 3-c;", "type": "false" },
-    { "answer": "1-c 2-b; 3-a;", "type": "false" }
-  ]
-},
-{
-  "id": 414,
-  "Question": "414. Choose the wrong variant.",
-  "answers": [
-    { "answer": "Yesterday were Tuesday.", "type": "true" },
-    { "answer": "The banks weren’t open today.", "type": "false" },
-    { "answer": "Were John and Sue at work yesterday?", "type": "false" },
-    { "answer": "I wasn’t at school today.", "type": "false" },
-    { "answer": "We were in London yesterday.", "type": "false" }
-  ]
-},
-{
-  "id": 415,
-  "Question": "415. Complete the phrase with the correct verb.\n… a taxi",
-  "answers": [
-    { "answer": "call", "type": "true" },
-    { "answer": "help", "type": "false" },
-    { "answer": "dance", "type": "false" },
-    { "answer": "play", "type": "false" },
-    { "answer": "do", "type": "false" }
-  ]
-},
-{
-  "id": 416,
-  "Question": "416. Complete the phrase with the correct verb.\n… to a friend",
-  "answers": [
-    { "answer": "talk", "type": "true" },
-    { "answer": "play", "type": "false" },
-    { "answer": "use", "type": "false" },
-    { "answer": "watch", "type": "false" },
-    { "answer": "organize", "type": "false" }
-  ]
-},
-{
-  "id": 417,
-  "Question": "417. Complete the phrase with the correct verb.\n… by plane",
-  "answers": [
-    { "answer": "travel", "type": "true" },
-    { "answer": "hear", "type": "false" },
-    { "answer": "find", "type": "false" },
-    { "answer": "listen", "type": "false" },
-    { "answer": "use", "type": "false" }
-  ]
-},
-{
-  "id": 418,
-  "Question": "418. Choose the correct variant.\n1. … for a bus\n2. … someone present\n3. … a picture\na) wait\nb) give\nc) draw",
-  "answers": [
-    { "answer": "1-a; 2-b ;3-c;", "type": "true" },
-    { "answer": "1-b; 2-a; 3-c;", "type": "false" },
-    { "answer": "1-b; 2-c; 3-a;", "type": "false" },
-    { "answer": "1-c; 2-b; 3-a;", "type": "false" },
-    { "answer": "1-c 2-a; 3-b;", "type": "false" }
-  ]
-},
-{
-  "id": 419,
-  "Question": "419. Choose the correct variant according to the text.\nHannah Brown is a writer. She’s from Manchester, but she lives in Italy. Hannah is 25 and likes writing romantic novels. Her ambition, of course, is to be a published writer, so she writes every day for at least four hours. Her favourite time to write is early in the morning, but she sometimes works late at night too. In the afternoons, Hannah works as a waitress in a café. She doesn’t really enjoy this part of her life, but she needs the money to stay in Italy.",
-  "answers": [
-    { "answer": "She likes writing in the morning.", "type": "true" },
-    { "answer": "She never works late at night.", "type": "false" },
-    { "answer": "Hannah speaks Spanish perfectly.", "type": "false" },
-    { "answer": "She likes writing detective novels.", "type": "false" },
-    { "answer": "She likes being a waitress.", "type": "false" }
-  ]
-},
-{
-  "id": 420,
-  "Question": "420. Choose the correct variant according to the text.\nSally Campbell is a 32-year-old actress from London, but right now, she’s living in Paris in a flat that overlooks the Seine. Sally’s mother is French, which means Sally can speak the language perfectly. Sally is very talented. She likes acting in films, but she can also sing and dance brilliantly and she currently has a leading part in a French musical. She can also play the piano very well. In her spare time, Sally likes to relax at home by watching romantic films. She has no plans to return to Britain.",
-  "answers": [
-    { "answer": "Sally speaks French perfectly.", "type": "true" },
-    { "answer": "She lives in London.", "type": "false" },
-    { "answer": "She can’t sing very well.", "type": "false" },
-    { "answer": "She can play the guitar.", "type": "false" },
-    { "answer": "She is going to return to Britain.", "type": "false" }
-  ]
-},
-{
-  "id": 421,
-  "Question": "421. Choose the correct variant according to the text.\nTom Hammond is from Glasgow, but he lives in New York. He’s 18 and he’s a music student. Tom can play the piano and the guitar very well. He also writes songs with his friend John. Tom writes the music and John writes the lyrics. When they’re happy with a new song, they usually perform it to students at the college. They love to have an audience and would really like to be in a band. When he isn’t composing, Tom downloads his favourite music from the Internet.",
-  "answers": [
-    { "answer": "Tom is a student at music school.", "type": "true" },
-    { "answer": "Tom and John hate being in a band.", "type": "false" },
-    { "answer": "Tom writes the lyrics and John writes the music.", "type": "false" },
-    { "answer": "John is from Glasgow.", "type": "false" },
-    { "answer": "Tom can play one musical instrument.", "type": "false" }
-  ]
-},
-{
-  "id": 422,
-  "Question": "422. Choose the correct variant.",
-  "answers": [
-    { "answer": "We can’t have an omelette. There aren’t any eggs", "type": "true" },
-    { "answer": "‘Can I have a sandwich, please?’ ‘Sorry. There isn’t some bread.’", "type": "false" },
-    { "answer": "‘Are there some bananas?’ ‘No. I had the last one.‘", "type": "false" },
-    { "answer": "I’m a vegetarian. I don’t want some meat.’", "type": "false" },
-    { "answer": "She doesn’t eats some biscuits.", "type": "false" }
-  ]
-},
-{
-  "id": 423,
-  "Question": "423. Choose the correct variant.",
-  "answers": [
-    { "answer": "How much coffee do you drink?", "type": "true" },
-    { "answer": "We don’t eat much bananas in our house.", "type": "false" },
-    { "answer": "She eats much biscuits. She loves them.", "type": "false" },
-    { "answer": "Mark buys many fruit. He’s very healthy.", "type": "false" },
-    { "answer": "I don’t have many free time. I work very hard.", "type": "false" }
-  ]
-},
-{
-  "id": 424,
-  "Question": "424. Choose the correct variant.\nI’m … person in the world!",
-  "answers": [
-    { "answer": "the happiest", "type": "true" },
-    { "answer": "happy", "type": "false" },
-    { "answer": "the most happy", "type": "false" },
-    { "answer": "happiest", "type": "false" },
-    { "answer": "happier", "type": "false" }
-  ]
-},
-{
-  "id": 425,
-  "Question": "425. Choose the correct variant.\nShe’s … swimmer in the class.",
-  "answers": [
-    { "answer": "the best", "type": "true" },
-    { "answer": "good", "type": "false" },
-    { "answer": "best", "type": "false" },
-    { "answer": "most good", "type": "false" },
-    { "answer": "better", "type": "false" }
-  ]
-},
-{
-  "id": 426,
-  "Question": "426. Choose the correct variant.\nIt’s … in Italy than in Norway.",
-  "answers": [
-    { "answer": "hotter", "type": "true" },
-    { "answer": "the hottest", "type": "false" },
-    { "answer": "more hotter", "type": "false" },
-    { "answer": "most hottest", "type": "false" },
-    { "answer": "hot", "type": "false" }
-  ]
-},
-{
-  "id": 427,
-  "Question": "427. Choose the correct variant.\nWinter is … time of the year for some animals.",
-  "answers": [
-    { "answer": "the most dangerous", "type": "true" },
-    { "answer": "more dangerous", "type": "false" },
-    { "answer": "dangerous", "type": "false" },
-    { "answer": "much dangerous", "type": "false" },
-    { "answer": "most dangerous", "type": "false" }
-  ]
-},
-{
-  "id": 428,
-  "Question": "428. Choose the correct variant.\nThis year’s work is … than last year’s work.",
-  "answers": [
-    { "answer": "harder", "type": "true" },
-    { "answer": "hard", "type": "false" },
-    { "answer": "hardest", "type": "false" },
-    { "answer": "the hardest", "type": "false" },
-    { "answer": "more hard", "type": "false" }
-  ]
-},
-{
-  "id": 429,
-  "Question": "429. Choose the correct variant.\nI’m … than my sister.",
-  "answers": [
-    { "answer": "younger", "type": "true" },
-    { "answer": "more young", "type": "false" },
-    { "answer": "young", "type": "false" },
-    { "answer": "the youngest", "type": "false" },
-    { "answer": "much young", "type": "false" }
-  ]
-},
-{
-  "id": 430,
-  "Question": "430. Choose the correct variant.\nTim’s … football player I know.",
-  "answers": [
-    { "answer": "the worst", "type": "true" },
-    { "answer": "bad", "type": "false" },
-    { "answer": "worse", "type": "false" },
-    { "answer": "worst", "type": "false" },
-    { "answer": "much worse", "type": "false" }
-  ]
-},
-{
-  "id": 431,
-  "Question": "431. Choose the correct variant.\nI think the mountains are … than the beach.",
-  "answers": [
-    { "answer": "more beautiful", "type": "true" },
-    { "answer": "beautiful", "type": "false" },
-    { "answer": "most beautiful", "type": "false" },
-    { "answer": "much beautiful", "type": "false" },
-    { "answer": "a beautiful", "type": "false" }
-  ]
-},
-{
-  "id": 432,
-  "Question": "432. Choose the correct variant.\nI don’t understand you. Please speak ….",
-  "answers": [
-    { "answer": "slowly", "type": "true" },
-    { "answer": "healthy", "type": "false" },
-    { "answer": "hard", "type": "false" },
-    { "answer": "beautiful", "type": "false" },
-    { "answer": "safe", "type": "false" }
-  ]
-},
-{
-  "id": 433,
-  "Question": "433. Choose the correct variant.\nHe worked … and passed the exam.",
-  "answers": [
-    { "answer": "hard", "type": "true" },
-    { "answer": "healthy", "type": "false" },
-    { "answer": "slowly", "type": "false" },
-    { "answer": "beautiful", "type": "false" },
-    { "answer": "safe", "type": "false" }
-  ]
-},
-{
-  "id": 434,
-  "Question": "434. Choose the correct variant.\nShe doesn’t eat …. She has too much fast food.",
-  "answers": [
-    { "answer": "healthy", "type": "true" },
-    { "answer": "hard", "type": "false" },
-    { "answer": "slowly", "type": "false" },
-    { "answer": "beautiful", "type": "false" },
-    { "answer": "safe", "type": "false" }
-  ]
-},
-{
-  "id": 435,
-  "Question": "435. Choose the correct variant.\nDon’t walk home. It isn’t … here at night.",
-  "answers": [
-    { "answer": "safe", "type": "true" },
-    { "answer": "hard", "type": "false" },
-    { "answer": "slowly", "type": "false" },
-    { "answer": "beautiful", "type": "false" },
-    { "answer": "healthy", "type": "false" }
-  ]
-},
-{
-  "id": 436,
-  "Question": "436. Choose the correct variant.\nIt’s raining. Please drive … .",
-  "answers": [
-    { "answer": "carefully", "type": "true" },
-    { "answer": "boring", "type": "false" },
-    { "answer": "expensive", "type": "false" },
-    { "answer": "beautiful", "type": "false" },
-    { "answer": "healthy", "type": "false" }
-  ]
-},
-{
-  "id": 437,
-  "Question": "437. Choose the correct variant.\nThat’s a … dress. Where did you buy it?",
-  "answers": [
-    { "answer": "beautiful", "type": "true" },
-    { "answer": "boring", "type": "false" },
-    { "answer": "happy", "type": "false" },
-    { "answer": "difficult", "type": "false" },
-    { "answer": "quiet", "type": "false" }
-  ]
-},
-{
-  "id": 438,
-  "Question": "438. Choose the correct variant.\nThey speak English …. Their mother is from Cambridge.",
-  "answers": [
-    { "answer": "fluently", "type": "true" },
-    { "answer": "noisy", "type": "false" },
-    { "answer": "happy", "type": "false" },
-    { "answer": "rich", "type": "false" },
-    { "answer": "expensive", "type": "false" }
-  ]
-},
-{
-  "id": 439,
-  "Question": "439. Choose the correct variant.\nHe’s very …. He has a lot of money.",
-  "answers": [
-    { "answer": "rich", "type": "true" },
-    { "answer": "healthy", "type": "false" },
-    { "answer": "boring", "type": "false" },
-    { "answer": "serious", "type": "false" },
-    { "answer": "expensive", "type": "false" }
-  ]
-},
-{
-  "id": 440,
-  "Question": "440. Choose the correct variant.\nDon’t be …! I don’t like arguing.",
-  "answers": [
-    { "answer": "aggressive", "type": "true" },
-    { "answer": "serious", "type": "false" },
-    { "answer": "boring", "type": "false" },
-    { "answer": "happy", "type": "false" },
-    { "answer": "expensive", "type": "false" }
-  ]
-},
-{
-  "id": 441,
-  "Question": "441. Choose the correct variant.\n1. Paul’s very …. He never speaks!\n2. Thank you for the money. You’re really … .\n3. Sam’s very …. He doesn’t make many mistakes.\na) quiet\nb) generous\nc) careful",
-  "answers": [
-    { "answer": "1-a; 2-b; 3-c;", "type": "true" },
-    { "answer": "1-c; 2-a; 3-b;", "type": "false" },
-    { "answer": "1-b; 2-a; 3-c;", "type": "false" },
-    { "answer": "1-a; 2-c; 3-b;", "type": "false" },
-    { "answer": "1-c 2-b; 3-a;", "type": "false" }
-  ]
-},
-{
-  "id": 442,
-  "Question": "442. Choose the correct variant.\n1. Simon’s quite …. He doesn’t often laugh or make jokes.\n2. Hannah likes meeting new people. She’s very … .\n3. She’s really __________. She dresses well every day\na) friendly\nb) stylish\nc) serious",
-  "answers": [
-    { "answer": "1-c; 2-a; 3-b;", "type": "true" },
-    { "answer": "1-a; 2-b; 3-c;", "type": "false" },
-    { "answer": "1-b; 2-a; 3-c;", "type": "false" },
-    { "answer": "1-a; 2-c; 3-b;", "type": "false" },
-    { "answer": "1-c 2-b; 3-a;", "type": "false" }
-  ]
-},
-{
-  "id": 443,
-  "Question": "443. Choose the correct variant according to the definition.\n“part of your face”",
-  "answers": [
-    { "answer": "nose", "type": "true" },
-    { "answer": "beach", "type": "false" },
-    { "answer": "fish", "type": "false" },
-    { "answer": "lunch", "type": "false" },
-    { "answer": "clothes", "type": "false" }
-  ]
-},
-{
-  "id": 444,
-  "Question": "444. Choose the correct variant according to the definition.\n“it’s colder than a fridge”",
-  "answers": [
-    { "answer": "freezer", "type": "true" },
-    { "answer": "fire", "type": "false" },
-    { "answer": "fireplace", "type": "false" },
-    { "answer": "cooker", "type": "false" },
-    { "answer": "microwave", "type": "false" }
-  ]
-},
-{
-  "id": 445,
-  "Question": "445. Choose the correct variant according to the definition.\n“your clothes are often this”",
-  "answers": [
-    { "answer": "cotton", "type": "true" },
-    { "answer": "altitude", "type": "false" },
-    { "answer": "wood", "type": "false" },
-    { "answer": "house", "type": "false" },
-    { "answer": "car", "type": "false" }
-  ]
-},
-{
-  "id": 446,
-  "Question": "446. Choose the correct variant.\nI work for a newspaper. I’m a … .",
-  "answers": [
-    { "answer": "journalist", "type": "true" },
-    { "answer": "musician", "type": "false" },
-    { "answer": "builder", "type": "false" },
-    { "answer": "driver", "type": "false" },
-    { "answer": "receptionist", "type": "false" }
-  ]
-},
-{
-  "id": 447,
-  "Question": "447. Choose the correct variant.\nMy mother’s brother is my …. ",
-  "answers": [
-    { "answer": "uncle", "type": "true" },
-    { "answer": "grandfather", "type": "false" },
-    { "answer": "nephew", "type": "false" },
-    { "answer": "son", "type": "false" },
-    { "answer": "father", "type": "false" }
-  ]
-},
-{
-  "id": 448,
-  "Question": "448. Choose the correct variant.\nI need some … for this letter.",
-  "answers": [
-    { "answer": "stamps", "type": "true" },
-    { "answer": "keys", "type": "false" },
-    { "answer": "coins", "type": "false" },
-    { "answer": "credit cards", "type": "false" },
-    { "answer": "wallets", "type": "false" }
-  ]
-},
-{
-  "id": 449,
-  "Question": "449. Choose the correct variant.\nMy father’s a …. He flies all over the world.",
-  "answers": [
-    { "answer": "pilot", "type": "true" },
-    { "answer": "nurse", "type": "false" },
-    { "answer": "builder", "type": "false" },
-    { "answer": "taxi driver", "type": "false" },
-    { "answer": "engineer", "type": "false" }
-  ]
-},
-{
-  "id": 450,
-  "Question": "450. Choose the correct variant.\nthe opposite of safe is ….",
-  "answers": [
-    { "answer": "dangerous", "type": "true" },
-    { "answer": "different", "type": "false" },
-    { "answer": "difficult", "type": "false" },
-    { "answer": "diverse", "type": "false" },
-    { "answer": "derivative", "type": "false" }
-  ]
-},
-{
-  "id": 451,
-  "Question": "451. Complete the following paragraphs\nSometimes it's good to get away after a long busy week and relax. As often as I can, I spend a quiet weekend with my aunt who lives on the coast. _____ I always come back rested and ready to work again.",
-  "answers": [
-    { "answer": "There, the air is clean and it is always quiet and peaceful.", "type": "true" },
-    { "answer": "Unfortunately she expects me to help her run the hotel.", "type": "false" },
-    { "answer": "So next weekend I shan't be able to go.", "type": "false" },
-    { "answer": "The house is always crowded and noisy.", "type": "false" },
-    { "answer": "She is old and cannot live by herself.", "type": "false" }
-  ]
-},
-{
-  "id": 453,
-  "Question": "453. Find the appropriate questions for the following answers\nThere was not enough money.",
-  "answers": [
-    { "answer": "How much money was there?", "type": "true" },
-    { "answer": "How much money had she?", "type": "false" },
-    { "answer": "What are there?", "type": "false" },
-    { "answer": "Who is enough?", "type": "false" },
-    { "answer": "Had the girl enough money?", "type": "false" }
-  ]
-},
-{
-  "id": 454,
-  "Question": "454. Find the appropriate questions for the following answers\nHe has a great knowledge of the English history.",
-  "answers": [
-    { "answer": "What kind of knowledge does he have?", "type": "true" },
-    { "answer": "Does he like English history?", "type": "false" },
-    { "answer": "Do you know English history?", "type": "false" },
-    { "answer": "Is he fond of English?", "type": "false" },
-    { "answer": "Where could he get much knowledge of the", "type": "false" }
-  ]
-},
-{
-  "id": 455,
-  "Question": "455. Find the appropriate questions for the following answers\n«I'd like coffee with milk.»",
-  "answers": [
-    { "answer": "How would you like coffee?", "type": "true" },
-    { "answer": "Will you give me coffee?", "type": "false" },
-    { "answer": "Will you give me tea with milk?", "type": "false" },
-    { "answer": "Would you like some sugar?", "type": "false" },
-    { "answer": "Would you like another cup of coffee?", "type": "false" }
-  ]
-},
-{
-  "id": 456,
-  "Question": "456. Find the appropriate questions for the following answers\nIt will take us 2 hours to get home.",
-  "answers": [
-    { "answer": "How long will it take you to get home?", "type": "true" },
-    { "answer": "How long will it take them to get home?", "type": "false" },
-    { "answer": "Will it take you 2 hours to get home?", "type": "false" },
-    { "answer": "It will take you 2 hours to get home, won't it?", "type": "false" },
-    { "answer": "Will it take him two or more hours to get home?", "type": "false" }
-  ]
-},
-{
-  "id": 457,
-  "Question": "457. Find the appropriate questions for the following answers\nToday Susan's boss asked her to work until 7.",
-  "answers": [
-    { "answer": "What did Susan's boss ask her to do?", "type": "true" },
-    { "answer": "Why did Susan ask her boss to work until 7?", "type": "false" },
-    { "answer": "What did Susan ask her boss to do?", "type": "false" },
-    { "answer": "Where did Susan go?", "type": "false" },
-    { "answer": "How long did Susan work?", "type": "false" }
-  ]
-},
-{
-  "id": 458,
-  "Question": "458. Find the appropriate questions for the following answers\nThe British Museum opened in 1753.",
-  "answers": [
-    { "answer": "When did the British Museum open?", "type": "true" },
-    { "answer": "Why did it open?", "type": "false" },
-    { "answer": "It opened in 1753, didn't it?", "type": "false" },
-    { "answer": "Did it open in 1753?", "type": "false" },
-    { "answer": "Where did the British Museum open?", "type": "false" }
-  ]
-},
-{
-  "id": 459,
-  "Question": "459. Choose the appropriate answers for the following questions\nHow long does it take you to do your homework?",
-  "answers": [
-    { "answer": "It takes me an hour.", "type": "true" },
-    { "answer": "Yes, it does.", "type": "false" },
-    { "answer": "No, it doesn't.", "type": "false" },
-    { "answer": "It took me an hour.", "type": "false" },
-    { "answer": "It will take me two days.", "type": "false" }
-  ]
-},
-{
-  "id": 460,
-  "Question": "460. Choose the appropriate answers for the following questions\nWhat places of interest did you visit when you were in England?",
-  "answers": [
-    { "answer": "I visited museums, theatres, libraries.", "type": "true" },
-    { "answer": "She visited London.", "type": "false" },
-    { "answer": "I visited England.", "type": "false" },
-    { "answer": "I went skating.", "type": "false" },
-    { "answer": "He visited New York.", "type": "false" }
-  ]
-},
-{
-  "id": 461,
-  "Question": "461. Choose the appropriate answers for the following questions\nWho sent the dog to save Pinocchio?",
-  "answers": [
-    { "answer": "The beautiful child did.", "type": "true" },
-    { "answer": "The beautiful child do.", "type": "false" },
-    { "answer": "The beautiful child does.", "type": "false" },
-    { "answer": "The beautiful child is.", "type": "false" },
-    { "answer": "The beautiful child was.", "type": "false" }
-  ]
-},
-{
-  "id": 462,
-  "Question": "462. Choose the appropriate answers for the following questions\n– Who is the best reader in your class?",
-  "answers": [
-    { "answer": "Pete is, but I read better than he does.", "type": "true" },
-    { "answer": "We take books from the school library.", "type": "false" },
-    { "answer": "Oh, it is very difficult to get a good book these", "type": "false" },
-    { "answer": "We never read books at math lessons.", "type": "false" },
-    { "answer": "My mother doesn't allow me to read books at library.", "type": "false" }
-  ]
-},
-{
-  "id": 463,
-  "Question": "463. Choose the appropriate answers for the following questions\n– How many times have you been in South Africa?",
-  "answers": [
-    { "answer": "Once.", "type": "true" },
-    { "answer": "I went last year.", "type": "false" },
-    { "answer": "2 years ago.", "type": "false" },
-    { "answer": "Yes, I've.", "type": "false" },
-    { "answer": "Next summer.", "type": "false" }
-  ]
-},
-{
-  "id": 464,
-  "Question": "464. Choose the appropriate answers for the following questions\n– Why did the team not win the game?",
-  "answers": [
-    { "answer": "I think Nick didn't take part in it.", "type": "true" },
-    { "answer": "He was very late.", "type": "false" },
-    { "answer": "At that time they were very far from the city.", "type": "false" },
-    { "answer": "I suppose it began late.", "type": "false" },
-    { "answer": "Because we were at a party.", "type": "false" }
-  ]
-},
-{
-  "id": 465,
-  "Question": "465. Complete the following dialogues\nA: The new film is splendid.\nB: _____",
-  "answers": [
-    { "answer": "Not exactly so", "type": "true" },
-    { "answer": "He is wonderful, of course", "type": "false" },
-    { "answer": "He is well", "type": "false" },
-    { "answer": "Of course she is", "type": "false" },
-    { "answer": "It's cold", "type": "false" }
-  ]
-},
-{
-  "id": 466,
-  "Question": "466. Complete the following dialogues\n– I say, Nick, let’s go to the park?\n- _____. Only I must finish my work first. Can you wait a little?\n- _____",
-  "answers": [
-    { "answer": "All right / Certainly", "type": "true" },
-    { "answer": "Let's / Yes, you can", "type": "false" },
-    { "answer": "Of course / Yes, please", "type": "false" },
-    { "answer": "O.K. / I've got a lot to do", "type": "false" },
-    { "answer": "Certainly / Yes, he can", "type": "false" }
-  ]
-},
-{
-  "id": 467,
-  "Question": "467. Complete the following dialogues\nKate: Have you just shot a new film?\nJane: _____.\nKate: Are you going to shoot another?\nJane: _____",
-  "answers": [
-    { "answer": "Yes, we have / Yes, next year", "type": "true" },
-    { "answer": "It's a pity / I'm sorry", "type": "false" },
-    { "answer": "No, we haven't / I think so", "type": "false" },
-    { "answer": "Yes, of course / I'm sorry", "type": "false" },
-    { "answer": "The same to you / Sorry, I'm late", "type": "false" }
-  ]
-},
-{
-  "id": 468,
-  "Question": "468. Complete the following dialogues\nA: Can I have tickets for the early morning train to Michigan Tomorrow?\nB: _____.\nA: Two, please.\nB: Just a minute. Let me see. Well, I can let you have two seats,\nBut in different carriages. Will that do?\nA: _____",
-  "answers": [
-    { "answer": "How many? / OK.", "type": "true" },
-    { "answer": "How much is it? / Yes, of course.", "type": "false" },
-    { "answer": "I'm afraid not. / I'm Sorry.", "type": "false" },
-    { "answer": "What about the other one? / I can't go", "type": "false" },
-    { "answer": "Where is it? / I don't know.", "type": "false" }
-  ]
-},
-{
-  "id": 469,
-  "Question": "469. Complete the following dialogues\nA: Excuse me. Can you speak English?\nB: _____.\nA: Could you tell me how to get to Independence square?\nB: _____",
-  "answers": [
-    { "answer": "Yes, I can / Yes, certainly, take trolley-bus 11.", "type": "true" },
-    { "answer": "No, I won't / Fine, thanks.", "type": "false" },
-    { "answer": "Sorry, I'm late / That's all right.", "type": "false" },
-    { "answer": "Good-bye / The same to you.", "type": "false" },
-    { "answer": "Yes, of course / Yes, I did.", "type": "false" }
-  ]
-},
-{
-  "id": 470,
-  "Question": "470. Complete the following dialogues\n- What's the weather like today?\n- ___________\nHave you listened to the forecast?\n- No, I haven`t but I think _________",
-  "answers": [
-    { "answer": "It's cold / it's going to snow", "type": "true" },
-    { "answer": "It's fine / it rains", "type": "false" },
-    { "answer": "It's warm / it is raining", "type": "false" },
-    { "answer": "It is nice / it rained", "type": "false" },
-    { "answer": "It is bad / it is hot", "type": "false" }
-  ]
-},
-{
-  "id": 470,
-  "Question": "470. Complete the following dialogues\n- What's the weather like today?\n- ___________\nHave you listened to the forecast?\n-No, I haven`t but I think _________",
-  "answers": [
-    { "answer": "It's cold / it's going to snow", "type": "true" },
-    { "answer": "It's fine / it rains", "type": "false" },
-    { "answer": "It's warm / it is raining", "type": "false" },
-    { "answer": "It is nice / it rained", "type": "false" },
-    { "answer": "It is bad / it is hot", "type": "false" }
-  ]
-},
-{
-  "id": 471,
-  "Question": "471. Complete the sentence\nAn Englishman's home is his _____.",
-  "answers": [
-    { "answer": "castle", "type": "true" },
-    { "answer": "bench", "type": "false" },
-    { "answer": "out doors", "type": "false" },
-    { "answer": "church", "type": "false" },
-    { "answer": "bank", "type": "false" }
-  ]
-},
-{
-  "id": 472,
-  "Question": "472. Complete the sentence\nA good name is better _____.",
-  "answers": [
-    { "answer": "than richness", "type": "true" },
-    { "answer": "than never", "type": "false" },
-    { "answer": "than in bad company", "type": "false" },
-    { "answer": "than promise long", "type": "false" },
-    { "answer": "than a friend", "type": "false" }
-  ]
-},
-{
-  "id": 473,
-  "Question": "473. Complete the sentence\n«Better face a danger than be always in _____.",
-  "answers": [
-    { "answer": "fear", "type": "true" },
-    { "answer": "moon", "type": "false" },
-    { "answer": "favor", "type": "false" },
-    { "answer": "fire", "type": "false" },
-    { "answer": "flight", "type": "false" }
-  ]
-},
-{
-  "id": 474,
-  "Question": "474. Choose the correct variant\nI have a young sister. From her childhood she dreamt of becoming a pianist. When she was seven our mother sent her to the music school. At first it was difficult for a little girl to spend hours playing the piano and she could not achieve much progress; but my sister didn't give up. Time passed. From year to year she became more skillful and succeeded in her dream.",
-  "answers": [
-    { "answer": "Practice makes perfect.", "type": "true" },
-    { "answer": "As clear as a day.", "type": "false" },
-    { "answer": "Everything is good in its season.", "type": "false" },
-    { "answer": "East of west – home the best.", "type": "false" },
-    { "answer": "There is no place like home.", "type": "false" }
-  ]
-},
-{
-  "id": 475,
-  "Question": "475. Choose the correct variant\nMr. Brown was very afraid of dentist. Once he had a terrible toothache, and couldn't sleep. The next day, he decided to go to the dentists and have his tooth extracted.",
-  "answers": [
-    { "answer": "Better face a danger than be always in fear.", "type": "true" },
-    { "answer": "Where there is smoke, there is fire.", "type": "false" },
-    { "answer": "Where there is a will, there's a way.", "type": "false" },
-    { "answer": "An able sailor hails in stormy weather.", "type": "false" },
-    { "answer": "While there is life there is hope.", "type": "false" }
-  ]
-},
-{
-  "id": 476,
-  "Question": "476. Choose the correct variant\n_____ makes the world go round.",
-  "answers": [
-    { "answer": "money", "type": "true" },
-    { "answer": "hatred", "type": "false" },
-    { "answer": "gravity", "type": "false" },
-    { "answer": "love", "type": "false" },
-    { "answer": "poor mouse.", "type": "false" }
-  ]
-},
-{
-  "id": 477,
-  "Question": "477. Choose the correct variant\n_____ repeats itself.",
-  "answers": [
-    { "answer": "history", "type": "true" },
-    { "answer": "language", "type": "false" },
-    { "answer": "everybody", "type": "false" },
-    { "answer": "stories", "type": "false" },
-    { "answer": "children", "type": "false" }
-  ]
-},
-{
-  "id": 478,
-  "Question": "478. Choose the correct variant\nOne of our classmates fell ill, and was taken to hospital. In three months he was out and about, but lagged behind the pupils with his studying. He asked many pupils to help him, nobody came to his rescue, but me. After that we became friends.",
-  "answers": [
-    { "answer": "A friend in need is a friend indeed", "type": "true" },
-    { "answer": "Experience is the mother of wisdom", "type": "false" },
-    { "answer": "Live and learn", "type": "false" },
-    { "answer": "Everything is good in its season", "type": "false" },
-    { "answer": "Facts are stubborn things", "type": "false" }
-  ]
-},
-{
-  "id": 479,
-  "Question": "479. Choose the correct variant\nA man's best friend is his _____.",
-  "answers": [
-    { "answer": "dog", "type": "true" },
-    { "answer": "bag", "type": "false" },
-    { "answer": "shirt", "type": "false" },
-    { "answer": "house", "type": "false" },
-    { "answer": "money", "type": "false" }
-  ]
-},
-{
-  "id": 480,
-  "Question": "480. Choose the correct variant\nLost time is _____.",
-  "answers": [
-    { "answer": "never found again.", "type": "true" },
-    { "answer": "known by its tree.", "type": "false" },
-    { "answer": "not so black as he painted.", "type": "false" },
-    { "answer": "never too late to learn.", "type": "false" },
-    { "answer": "makes the cup run.", "type": "false" }
-  ]
-},
-{
-  "id": 481,
-  "Question": "481. Choose the correct variant\n«Out of sight-out of _____.",
-  "answers": [
-    { "answer": "mind", "type": "true" },
-    { "answer": "fight", "type": "false" },
-    { "answer": "guide", "type": "false" },
-    { "answer": "might", "type": "false" },
-    { "answer": "light", "type": "false" }
-  ]
-},
-{
-  "id": 482,
-  "Question": "482. Choose the correct variant\nEverything is _____.",
-  "answers": [
-    { "answer": "good in its season", "type": "true" },
-    { "answer": "better than saying", "type": "false" },
-    { "answer": "shooting without aim", "type": "false" },
-    { "answer": "better to do well than to say well", "type": "false" },
-    { "answer": "worth two tomorrow", "type": "false" }
-  ]
-},
-{
-  "id": 483,
-  "Question": "483. Choose the correct variant\nWhat will the travelers say when they come safe to the end of their journey, having gone through many dangerous adventures?",
-  "answers": [
-    { "answer": "All is well that ends well.", "type": "true" },
-    { "answer": "To kill two birds with one stone.", "type": "false" },
-    { "answer": "Two heads are better than one.", "type": "false" },
-    { "answer": "There is no smoke without fire.", "type": "false" },
-    { "answer": "To take the bull by the horn.", "type": "false" }
-  ]
-},
-{
-  "id": 484,
-  "Question": "484. Choose the correct variant\nWhat would you say to a grumbling group mate who is finding fault with everything around?",
-  "answers": [
-    { "answer": "To get out of bed on the wrong side.", "type": "true" },
-    { "answer": "East or West, home is best.", "type": "false" },
-    { "answer": "Better late than never.", "type": "false" },
-    { "answer": "Promise little, but do much.", "type": "false" },
-    { "answer": "Make hay while the sun shines.", "type": "false" }
-  ]
-},
-{
-  "id": 485,
-  "Question": "485. Choose the correct variant\nFirst catch your _____ then cook it.",
-  "answers": [
-    { "answer": "hare", "type": "true" },
-    { "answer": "hair", "type": "false" },
-    { "answer": "heir", "type": "false" },
-    { "answer": "car", "type": "false" },
-    { "answer": "beer", "type": "false" }
-  ]
-},
-{
-  "id": 486,
-  "Question": "486. Complete the sentence\nA stitch in time _____.",
-  "answers": [
-    { "answer": "saves nine", "type": "true" },
-    { "answer": "before they hatch", "type": "false" },
-    { "answer": "makes a good ending", "type": "false" },
-    { "answer": "before they are easy", "type": "false" },
-    { "answer": "makes perfect", "type": "false" }
-  ]
-},
-{
-  "id": 487,
-  "Question": "487. Choose the correct variant\nMr. Smith was rather lazy. He didn't like to work hard and always spared himself. He was sure that his father would support him all his life. But his father died and Mr. Smith had a miserable life.",
-  "answers": [
-    { "answer": "No sweet without sweat.", "type": "true" },
-    { "answer": "Speech is silver but silence is gold.", "type": "false" },
-    { "answer": "Don't trouble trouble until trouble troubles you.", "type": "false" },
-    { "answer": "As the tree so the fruit.", "type": "false" },
-    { "answer": "First think then speak.", "type": "false" }
-  ]
-},
-{
-  "id": 488,
-  "Question": "488. Complete the sentence\n«Across the board» means _____.",
-  "answers": [
-    { "answer": "everyone or everything is included", "type": "true" },
-    { "answer": "to travel between countries", "type": "false" },
-    { "answer": "uninteresting", "type": "false" },
-    { "answer": "between", "type": "false" },
-    { "answer": "Until", "type": "false" }
-  ]
-},
-{
-  "id": 489,
-  "Question": "489. Complete the sentence\nTo «act up» means _____.",
-  "answers": [
-    { "answer": "to behave badly", "type": "true" },
-    { "answer": "to share an idea", "type": "false" },
-    { "answer": "to pretend to be rich", "type": "false" },
-    { "answer": "share", "type": "false" },
-    { "answer": "before", "type": "false" }
-  ]
-},
-{
-  "id": 490,
-  "Question": "490. Complete the sentence\nA man «after my own heart» means _____.",
-  "answers": [
-    { "answer": "liking the same things as me", "type": "true" },
-    { "answer": "looking me", "type": "false" },
-    { "answer": "follows me", "type": "false" },
-    { "answer": "share an idea", "type": "false" },
-    { "answer": "including", "type": "false" }
-  ]
-},
-{
-  "id": 491,
-  "Question": "491. Complete the sentence\n«Against the clock» means _____.",
-  "answers": [
-    { "answer": "a test of speed or time", "type": "true" },
-    { "answer": "a new record", "type": "false" },
-    { "answer": "an impossible task", "type": "false" },
-    { "answer": "many time", "type": "false" },
-    { "answer": "everything", "type": "false" }
-  ]
-},
-{
-  "id": 492,
-  "Question": "492. Complete the sentence\n«All along» means _____.",
-  "answers": [
-    { "answer": "all the time", "type": "true" },
-    { "answer": "to agree", "type": "false" },
-    { "answer": "altogether", "type": "false" },
-    { "answer": "today", "type": "false" },
-    { "answer": "many", "type": "false" }
-  ]
-},
-{
-  "id": 493,
-  "Question": "493. Complete the sentence\nTo «make believe» means to _____.",
-  "answers": [
-    { "answer": "pretend", "type": "true" },
-    { "answer": "forget", "type": "false" },
-    { "answer": "hope", "type": "false" },
-    { "answer": "behave", "type": "false" },
-    { "answer": "forgive", "type": "false" }
-  ]
-},
-{
-  "id": 494,
-  "Question": "494. Choose the correct variant\nExcuse me, sir.",
-  "answers": [
-    { "answer": "Yes, what can I do for you?", "type": "true" },
-    { "answer": "Are you from Berlin?", "type": "false" },
-    { "answer": "Where are you from?", "type": "false" },
-    { "answer": "Are you crazy?", "type": "false" },
-    { "answer": "Nice to meet you.", "type": "false" }
-  ]
-},
-{
-  "id": 495,
-  "Question": "495. Choose the correct variant\nCoffee, sir?",
-  "answers": [
-    { "answer": "Yes, please.", "type": "true" },
-    { "answer": "Don't mention it.", "type": "false" },
-    { "answer": "That's OK.", "type": "false" },
-    { "answer": "Oh, I am sorry.", "type": "false" },
-    { "answer": "You are welcome.", "type": "false" }
-  ]
-},
-{
-  "id": 496,
-  "Question": "496. Choose the correct variant\nYou go in for sports, don't you?",
-  "answers": [
-    { "answer": "Yes, I do.", "type": "true" },
-    { "answer": "I like football.", "type": "false" },
-    { "answer": "No, I don't.", "type": "false" },
-    { "answer": "Yes, I am.", "type": "false" },
-    { "answer": "I don't like tennis.", "type": "false" }
-  ]
-},
-{
-  "id": 497,
-  "Question": "497. Choose the correct variant\nI. The lesson was over before the due time.\nII. Suddenly a bird flew in through the open window.\nIII. It was a math lesson.\nIV. The pupils jumped up on their feet and started to catch the bird.\nV. All the class was doing sums.",
-  "answers": [
-    { "answer": "III, V, II, IV, I", "type": "true" },
-    { "answer": "V, I, III, IV, II", "type": "false" },
-    { "answer": "IV, II, V, I, III", "type": "false" },
-    { "answer": "III, VI, II, V, I", "type": "false" },
-    { "answer": "I, III, V, II, IV", "type": "false" }
-  ]
-},
-{
-  "id": 498,
-  "Question": "498. Choose the correct variant\n1. London is on the river Thames.\n2. It has more than 9 million people.\n3. London is the capital of England.\n4. It is one of the largest cities in the world.\n5. Great Britain is a densely populated country.",
-  "answers": [
-    { "answer": "5,3,4,1,2", "type": "true" },
-    { "answer": "3,4,2,5,1", "type": "false" },
-    { "answer": "2,1,3,4,5", "type": "false" },
-    { "answer": "1,3,4,5,2", "type": "false" },
-    { "answer": "4,5,3,1,2", "type": "false" }
-  ]
-},
-{
-  "id": 499,
-  "Question": "499. Choose the correct variant\n1. On New Year's Eve people usually have a lot of fun.\n2. Today it is observed in the same way as it was observed many centuries ago.\n3. In Great Britain and the USA people celebrate many holidays.\n4. On this day people show their love by giving presents and sending cards to people they love.\n5. New Year is one of the oldest holidays in the world.",
-  "answers": [
-    { "answer": "3,5,2,1,4", "type": "true" },
-    { "answer": "1,2,4,5,3", "type": "false" },
-    { "answer": "5,4,2,1,3", "type": "false" },
-    { "answer": "3,1,2,4,5", "type": "false" },
-    { "answer": "4,2,1,5,3", "type": "false" }
-  ]
-},
-{
-  "id": 500,
-  "Question": "500. A: “ Excuse me, …….. English?”\nB: “No, sorry.”",
-  "answers": [
-    { "answer": "do you speak", "type": "true" },
-    { "answer": "are you speaking", "type": "false" },
-    { "answer": "you speak", "type": "false" },
-    { "answer": "do you spoke", "type": "false" },
-    { "answer": "had you speaking", "type": "false" }
-  ]
-}
+    id: 311,
+    Question:
+      "Avtomobilin tormoz yolunun əsas hissəsində yavaşıma təcili təxmini olaraq bərabər olur. Bu təcil necə adlanır?",
+    answers: [
+      { answer: "qərarlaşmış yavaşıma təcili", type: "true" },
+      { answer: "maksimal yavaşıma təcil", type: "false" },
+      { answer: "minimal yavaşıma təcil", type: "false" },
+      { answer: "mərkəzdənqaçma təcili", type: "false" },
+      { answer: "nisbi yavaşıma təcili", type: "false" },
+    ],
+  },
+  {
+    id: 312,
+    Question:
+      "Avtobusun sınağı zamanı yerindən intensiv sürətlə 2000 m uzunluqlu sahənin sonuncu neçə metrini orta keçmə sürəti, şərti maksimal sürət adlanır?",
+    answers: [
+      { answer: "400 m-ni", type: "true" },
+      { answer: "300 m-ni", type: "false" },
+      { answer: "200 m-ni", type: "false" },
+      { answer: "800 m-ni", type: "false" },
+      { answer: "1200 m-ni", type: "false" },
+    ],
+  },
+  {
+    id: 313,
+    Question:
+      "Hesablama zamanı avtobusun xüsusi yanacaq sərfi xətti yanacaq sərfinin hansı göstəricisinə nisbəti ilə təyin edilir?",
+    answers: [
+      {
+        answer:
+          "avtobusun yük və ya sərnişin daşınmasında görülən səmərəli işə",
+        type: "true",
+      },
+      { answer: "avtobusun dövri hərəkətdə yanacaq sərfinə", type: "false" },
+      { answer: "düzxətli yolda avtobusun orta sürətinə", type: "false" },
+      { answer: "avtobusun maksimum yanacaq sərfinə", type: "false" },
+      { answer: "avtobusun minimum yanacaq sərfinə", type: "false" },
+    ],
+  },
+  {
+    id: 314,
+    Question:
+      "Avtobusun dayandırılmasının başlanğıcından onun tam dayanana qədər keçdiyi yol necə adlanır?",
+    answers: [
+      { answer: "dayanma yolu", type: "true" },
+      { answer: "sürüşmə yolu", type: "false" },
+      { answer: "xidməti yol", type: "false" },
+      { answer: "elementar yol", type: "false" },
+      { answer: "təhlükəli yol", type: "false" },
+    ],
+  },
+  {
+    id: 315,
+    Question:
+      "Hansı variantda təkərli nəqliyyat vasitələrinin dönmə üsullarından biri göstərilmişdir?",
+    answers: [
+      { answer: "idarə olunan təkərlərin döndərilməsi", type: "true" },
+      { answer: "idarə olunmayan təkərlərin döndərilməsi", type: "false" },
+      {
+        answer: "avtomobili dayandıraraq sükan trapesiyasının döndərilməsi",
+        type: "false",
+      },
+      { answer: "qabq və arxa təkərlərin oxunun döndərilməsi", type: "false" },
+      {
+        answer: "dönmə istiqamətindəki təkərlərin döndərilməsi",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 316,
+    Question:
+      "Avtobusun mühərrikinin xüsusi yanacaq sərfi onun iş prosesi zamanı neçə saatlıq sərf etdiyi yanacağın kütləsinin effektiv gücünə nisbəti ilə müəyyən olunur?",
+    answers: [
+      { answer: "bir saatlıq", type: "true" },
+      { answer: "iki saatlıq", type: "false" },
+      { answer: "beş saatlıq", type: "false" },
+      { answer: "on saatlıq", type: "false" },
+      { answer: "on iki saatlıq", type: "false" },
+    ],
+  },
+  {
+    id: 317,
+    Question:
+      "Sərnişin avtobusunun dinamik keyfiyyəti onun hansı funksiyası ilə xarakterizə edilir?",
+    answers: [
+      {
+        answer:
+          "alçaq pilləyə keçmədən avtobusun yolun müqavimətini dəf etmək qabiliyyəti",
+        type: "true",
+      },
+      {
+        answer: "avtobusun yüksək tormozlanma qabiliyyətinə malik olması ilə",
+        type: "false",
+      },
+      { answer: "avtobusun yüksək sürətlə hərəkət etməsi ilə", type: "false" },
+      {
+        answer: "avtobusun yüksək etibarlılıq xüsusiyyətinə malik olması ilə",
+        type: "false",
+      },
+      {
+        answer: "avtobusun yanacaq qənaətliliyi xüsusiyyəti ilə",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 318,
+    Question:
+      "Dayandırma zamanı avtobusun son sürəti sıfıra bərabər olarsa o hansı dayandırma adlanar?",
+    answers: [
+      { answer: "tam dayandırma", type: "true" },
+      { answer: "natamam dayandırma", type: "false" },
+      { answer: "mexaniki dayandırma", type: "false" },
+      { answer: "nümunəvi dayandırma", type: "false" },
+      { answer: "etibarlı dayandırma", type: "false" },
+    ],
+  },
+  {
+    id: 319,
+    Question:
+      "Sərnişin avtobuslarında uzununa keçicilik radiusu hansı qiymətlər intervalında qəbul edilir?",
+    answers: [
+      { answer: "2,5...6 m", type: "true" },
+      { answer: "2...2,5 m", type: "false" },
+      { answer: "0.25...0.4 m", type: "false" },
+      { answer: "6...6,5 m", type: "false" },
+      { answer: "6,2...7 m", type: "false" },
+    ],
+  },
+  {
+    id: 320,
+    Question:
+      "Hansı variantda sərnişin avtobusunun idarə olunan təkərlərinin maksimal dönmə bucağı göstərilmişdir?",
+    answers: [
+      { answer: "35 ... 45°- ə", type: "true" },
+      { answer: "50...75° - ə", type: "false" },
+      { answer: "60...80° - ə", type: "false" },
+      { answer: "28...34° - ə", type: "false" },
+      { answer: "25...30° - ə", type: "false" },
+    ],
+  },
+  {
+    id: 321,
+    Question:
+      "Avtobuslarda uzununa keçicilik radiusu hansı qiymətlər intervalında qəbul edilir?",
+    answers: [
+      { answer: "4....9 m", type: "true" },
+      { answer: "3...3,8 m", type: "false" },
+      { answer: "2...3,4 m", type: "false" },
+      { answer: "9,1...9,5 m", type: "false" },
+      { answer: "9,4...10 m", type: "false" },
+    ],
+  },
+  {
+    id: 322,
+    Question:
+      "Avtobusun əylənc pedalı basıldıqdan sonra müəyyən vaxt ərzində dayandırma qüvvəsi pedaldan əylənc mexanizmlərinə ötürülür. Bu kiçik zaman vaxtı necə adlanır?",
+    answers: [
+      { answer: "əylənc intiqalının gecikmə vaxtı", type: "true" },
+      { answer: "təcili dayandırma", type: "false" },
+      { answer: "dayandırma müddəti", type: "false" },
+      { answer: "pedalın gecikmə vaxtı", type: "false" },
+      { answer: "sürətli dayandırma", type: "false" },
+    ],
+  },
+  {
+    id: 323,
+    Question:
+      "Avtobusun nəzarət yanacaq sərfinin müəyyən olunması hansı məqsəd üçün həyata keçirilir?",
+    answers: [
+      { answer: "yanacaq qənaətliliyini qiymətləndirmək üçün", type: "true" },
+      {
+        answer: "avtobusun dəyanətliliyinin təyin olunması üçün",
+        type: "false",
+      },
+      { answer: "avtobusun sürətinin müəyyən olunması üçün", type: "false" },
+      { answer: "yanacağın qiymətinin müəyyən edilməsi üçün", type: "false" },
+      {
+        answer: "avtobusun işlətdiyi yanacağın növünü müəyyən etmək üçün",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 324,
+    Question:
+      "Turoperator və nəqliyyat təşkilatları arasındakı münasibətlər necə nizamlanır?",
+    answers: [
+      { answer: "nəqliyyat hüququ ilə nizamlanır", type: "true" },
+      {
+        answer: "nəqliyyat sahibinin tələbləri əsasında nizamlanır",
+        type: "false",
+      },
+      {
+        answer:
+          "nəqliyyat müəssisəsinin fəaliyyəti haqqında nizamnamə ilə nizamlanır",
+        type: "false",
+      },
+      {
+        answer: "istirahət mərkəzinin fəaliyyəti haqqında sənədlə nizamlanır",
+        type: "false",
+      },
+      {
+        answer: "nəqliyyat şirkətinin tələbləri əsasında nizamlanır",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 325,
+    Question: "Avtobusun natamam dayandırması nəyə deyilir?",
+    answers: [
+      {
+        answer:
+          "dayandırma zamanı avtobusun son sürətinin sıfırdan fərqli olmasına",
+        type: "true",
+      },
+      { answer: "avtobusun tam dayanmasına", type: "false" },
+      { answer: "mexaniki üsulla avtobusun dayandırılmasına", type: "false" },
+      {
+        answer:
+          "dayandırma anından bir neçə saniyə sonra avtobusun dayanmasına",
+        type: "false",
+      },
+      {
+        answer: "dayandırma zamanı avtobusun tədricən dayanmasına",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 326,
+    Question:
+      "Sərnişin avtobuslarının yanacaq sərfinin hesablaması zamanı benzinin sıxlığını hansı ədədi qəbul etmək olar?",
+    answers: [
+      { answer: "0,73 kq/litr", type: "true" },
+      { answer: "0,70 kq/litr", type: "false" },
+      { answer: "0,68 kq/litr", type: "false" },
+      { answer: "0,76 kq/litr", type: "false" },
+      { answer: "0,96 kq/litr", type: "false" },
+    ],
+  },
+  {
+    id: 327,
+    Question:
+      "Dinamik xüsusiyyətlər avtobusun hansı xüsusiyyətlər qrupuna aiddir?",
+    answers: [
+      {
+        answer: "avtobusun dartıcı-sürət və əylənc xüsusiyyətləri",
+        type: "true",
+      },
+      { answer: "avtobusun idarəolunma xüsusiyyətləri", type: "false" },
+      { answer: "avtobusun dəyanətlik xüsusiyyətləri", type: "false" },
+      {
+        answer: "avtobusun yanacaq qənaətliliyi xüsusiyyətləri",
+        type: "false",
+      },
+      { answer: "avtobusun hərəkət səlistliyi xüsusiyyətləri", type: "false" },
+    ],
+  },
+  {
+    id: 328,
+    Question:
+      "Sınaq zamanı avtobusun magistral - təpəli yollarda yanacaq - sürət xarakteristikasının müəyyənləşdirilməsi hansı məqsəd üçün həyata keçirilir?",
+    answers: [
+      {
+        answer: "avtobusun yanacaq qənaətliliyini qiymətləndirmək üçün",
+        type: "true",
+      },
+      {
+        answer: "avtobusun dəyanətliliyinin təyin olunması üçün",
+        type: "false",
+      },
+      { answer: "avtobusun sürətinin müəyyən olunması üçün", type: "false" },
+      {
+        answer: "avtobusun tormozlanma xüsusiyyətinin təyin olunması üçün",
+        type: "false",
+      },
+      {
+        answer: "avtobusun işlətdiyi yanacağın növünü müəyyən etmək üçün",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 329,
+    Question:
+      "Avtobusun əylənc intiqalının gecikmə vaxtı hansı göstəricidən asılıdır?",
+    answers: [
+      {
+        answer:
+          "avtobusun əylənc intiqalının növündən və onun konstruktiv xüsusiyyətlərindən",
+        type: "true",
+      },
+      { answer: "avtobusun istifadə etdiyi yanacağın növündən", type: "false" },
+      { answer: "avtobusun sərf etdiyi yanacağın miqdarından", type: "false" },
+      { answer: "avtobusun təkərinin növü və vəziyyətindən", type: "false" },
+      {
+        answer:
+          "avtobusun əylənc pedalının quruluşundan və materialının elastikliliyindən",
+        type: "false",
+      },
+    ],
+  },
+  {
+    id: 330,
+    Question:
+      "Sərnişin avtobusları üçün havanın müqavimət əmsalının qiyməti hansı intervalda qəbul edilir?",
+    answers: [
+      { answer: "0,25...0,4", type: "true" },
+      { answer: "0,47...0,54", type: "false" },
+      { answer: "0,14...0,23", type: "false" },
+      { answer: "0,1...0,2", type: "false" },
+      { answer: "0,53...0,58", type: "false" },
+    ],
+  },
+  {
+    "id": 330,
+    "Question": "Sərnişin avtobusları üçün havanın müqavimət əmsalının qiyməti hansı intervalda qəbul edilir?",
+    "answers": [
+      { "answer": "0,25...0,4", "type": "true" },
+      { "answer": "0,47...0,54", "type": "false" },
+      { "answer": "0,14...0,23", "type": "false" },
+      { "answer": "0,1...0,2", "type": "false" },
+      { "answer": "0,53...0,58", "type": "false" }
+    ]
+  },
+  {
+    "id": 331,
+    "Question": "Dizel mühərrikli avtobuslarda mühərrikin dövürlər sayına görə uyğunlaşma əmsalı hansı intervalda qəbul edilir?",
+    "answers": [
+      { "answer": "1,4...2", "type": "true" },
+      { "answer": "0,6...1,2", "type": "false" },
+      { "answer": "0,1...0,9", "type": "false" },
+      { "answer": "2...2,8", "type": "false" },
+      { "answer": "2,4...3,2", "type": "false" }
+    ]
+  },
+  {
+    "id": 332,
+    "Question": "Normal reaksiyaların hansı əmsalı yolun normal reaksiyalarının hərəkət edən avtobusun oxlarına düşən çəkiyə nisbəti ilə təyin edilir?",
+    "answers": [
+      { "answer": "dinamik paylanma əmsalı", "type": "true" },
+      { "answer": "momenta görə uyğunlaşma əmsalı", "type": "false" },
+      { "answer": "diyirlənmədə müqavimət əmsalı", "type": "false" },
+      { "answer": "uzununa qüvvə əmsalı", "type": "false" },
+      { "answer": "fırlanma tezliyinə görə uyğunlaşma əmsalı", "type": "false" }
+    ]
+  },
+  {
+    "id": 333,
+    "Question": "Hansı göstərici avtobusun dinamik xüsusiyyətlərinə aid edilir?",
+    "answers": [
+      { "answer": "dartıcı-sürət və tormoz", "type": "true" },
+      { "answer": "dəyanətlik və idarəolunma", "type": "false" },
+      { "answer": "keçicilik və yanacaq qənaətliliyi", "type": "false" },
+      { "answer": "idarəolunma və hərəkət səlistliyi", "type": "false" },
+      { "answer": "hərəkət səlistliyi və keçicilik", "type": "false" }
+    ]
+  },
+  {
+    "id": 334,
+    "Question": "Nəqliyyat vasitələrinin sistemlərində yaranan hansı məxsusi rəqs tezliyi parsial tezlik adlanır?",
+    "answers": [
+      { "answer": "parsial rəqs", "type": "true" },
+      { "answer": "dinamiki rəqs", "type": "false" },
+      { "answer": "dövri rəqs", "type": "false" },
+      { "answer": "mikro rəqs", "type": "false" },
+      { "answer": "ilkin rəqs", "type": "false" }
+    ]
+  },
+  {
+    "id": 335,
+    "Question": "İşıqlıq məsafəsi avtobusun ən aşağı nöqtəsi ilə hansı hissəsinə qədər olan məsafə adlanır?",
+    "answers": [
+      { "answer": "dayaq müstəvisi arasındakı", "type": "true" },
+      { "answer": "sürətlər qutusu arasındakı", "type": "false" },
+      { "answer": "təkərlərin oxlarına qədər olan məsafə", "type": "false" },
+      { "answer": "avtobusun çərçivəsinə qədər olan məsafə", "type": "false" },
+      { "answer": "qabaq və arxa işıqlandırıcılar arasındakı məsafə", "type": "false" }
+    ]
+  },
+  {
+    "id": 336,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. İngiltərə zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə A qrupuna", "type": "true" },
+      { "answer": "zona üzrə C qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə F qrupuna", "type": "false" },
+      { "answer": "zona üzrə E qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 337,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. İspaniya zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə F qrupuna", "type": "true" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" },
+      { "answer": "zona üzrə G qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 338,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. İsveç zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə B qrupuna", "type": "true" },
+      { "answer": "zona üzrə C qrupuna", "type": "false" },
+      { "answer": "zona üzrə E qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 339,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Polşa zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə D qrupuna", "type": "true" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" },
+      { "answer": "zona üzrə A qrupuna", "type": "false" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" },
+      { "answer": "zona üzrə E qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 340,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. İtaliya zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə G qrupuna", "type": "true" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə A qrupuna", "type": "false" },
+      { "answer": "zona üzrə E qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 341,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Fransa zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə E qrupuna", "type": "true" },
+      { "answer": "zona üzrə A qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə C qrupuna", "type": "false" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 342,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Türkiyə zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə G qrupuna", "type": "true" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" },
+      { "answer": "zona üzrə A qrupuna", "type": "false" },
+      { "answer": "zona üzrə E qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 343,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Almaniya zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə C qrupuna", "type": "true" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" },
+      { "answer": "zona üzrə A qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 344,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Portuqaliya zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə F qrupuna", "type": "true" },
+      { "answer": "zona üzrə A qrupuna", "type": "false" },
+      { "answer": "zona üzrə C qrupuna", "type": "false" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" },
+      { "answer": "zona üzrə E qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 345,
+    "Question": "İnter Rail sisteminə üzv ölkələrin dəmiryolu idarələri coğrafi zona üzrə qruplaşdırılır. Avstriya zona üzrə hansı qrupa daxildir?",
+    "answers": [
+      { "answer": "zona üzrə C qrupuna", "type": "true" },
+      { "answer": "zona üzrə B qrupuna", "type": "false" },
+      { "answer": "zona üzrə D qrupuna", "type": "false" },
+      { "answer": "zona üzrə F qrupuna", "type": "false" },
+      { "answer": "zona üzrə H qrupuna", "type": "false" }
+    ]
+  },
+  {
+    "id": 346,
+    "Question": "Sürücünün iştirakı olmadan xarici qüvvələrin təsiri altında olan avtobusun hərəkət istiqamətini saxlaya bilmək xüsusiyyəti necə adlanır?",
+    "answers": [
+      { "answer": "dəyanətlik", "type": "true" },
+      { "answer": "etibarlılıq", "type": "false" },
+      { "answer": "sərbəst hərəkət", "type": "false" },
+      { "answer": "düzxətli hərəkət", "type": "false" },
+      { "answer": "dövrüi hərəkət", "type": "false" }
+    ]
+  },
+  {
+    "id": 347,
+    "Question": "Sınaq zamanı avtobusun hansı xüsusiyyətini qiymətləndirən zaman seçilmiş yolun maili sahəsinin uzunluğu 50 metrədən çox olmamalıdır?",
+    "answers": [
+      { "answer": "dartıcı-sürət xüsusiyyətlərini", "type": "true" },
+      { "answer": "keçicilik xüsusiyyətlərini", "type": "false" },
+      { "answer": "idarəolunma xüsusiyyətlərini", "type": "false" },
+      { "answer": "dəyanətlik xüsusiyyətlərini", "type": "false" },
+      { "answer": "hərəkət səlistliyi xüsusiyyətlərini", "type": "false" }
+    ]
+  },
+  {
+    "id": 348,
+    "Question": "Sərnişin avtobusunun şininin deformasiyaya məruz qalması hansı təsirdən baş verir?",
+    "answers": [
+      { "answer": "təkərə düşən normal yükün təsirindən", "type": "true" },
+      { "answer": "avtobusun yüksək sürətindən", "type": "false" },
+      { "answer": "çevrəvi qüvvənin təsirindən", "type": "false" },
+      { "answer": "avtobusun tormozlanmasından", "type": "false" },
+      { "answer": "yol örtüyünün asfaltbeton olmasından", "type": "false" }
+    ]
+  },
+  {
+    "id": 349,
+    "Question": "Avtobusun idarə olunan təkərlərin maksimal döndərilmə halında qabaq xarici təkərin izinə uyğun çevrənin radiusu necə adlanır?",
+    "answers": [
+      { "answer": "avtobusun minimal dönmə radiusu", "type": "true" },
+      { "answer": "avtobusun maksimal dönmə radiusu", "type": "false" },
+      { "answer": "avtobusun radial dönmə radiusu", "type": "false" },
+      { "answer": "avtobusun mərkəzi dönmə radiusu", "type": "false" },
+      { "answer": "avtobusun nisbi dönmə radiusu", "type": "false" }
+    ]
+  },
+  {
+    "id": 350,
+    "Question": "Avtobusa təsir edən bütün qüvvələrin dayaq səthinə paralel müstəvi üzrə proyeksiyalarının cəmi hansı qüvvəyə bərabərdir?",
+    "answers": [
+      { "answer": "avtobusun ətalət qüvvəsinə", "type": "true" },
+      { "answer": "avtobusun radial qüvvəyə", "type": "false" },
+      { "answer": "avtobusun çevrəvi qüvvəyə", "type": "false" },
+      { "answer": "avtobusun mərkəzdənqaçma qüvvəsinə", "type": "false" },
+      { "answer": "havanın müqavimət qüvvəsi", "type": "false" }
+    ]
+  },
+  {
+  id: 351,
+  Question: "351. Hansı variantda avtobusun yanacaq qənaətliliyini qiymətləndirmək üçün istifadə olunan göstəricilərdən biri göstərilmişdir?",
+  answers: [
+    { answer: "dövri hərəkətdə yanacaq xarakteristikası", type: "true" },
+    { answer: "minimum sürətdə yanacaq xarakteristikası", type: "false" },
+    { answer: "maksimum sürətdə yanacaq xarakteristikası", type: "false" },
+    { answer: "10 km məsafəyə yanacaq sərfi", type: "false" },
+    { answer: "20 km məsafəyə yanacaq sərfi", type: "false" },
+  ],
+},
+{
+  id: 352,
+  Question: "352. Avtobusun təkərindən onun çərçivəsinə ötürülən qüvvə necə adlanır?",
+  answers: [
+    { answer: "dartıcı qüvvə", type: "true" },
+    { answer: "ətalət qüvvəsi", type: "false" },
+    { answer: "çevrəvi qüvvə", type: "false" },
+    { answer: "normal qüvvə", type: "false" },
+    { answer: "radial qüvvə", type: "false" },
+  ],
+},
+{
+  id: 353,
+  Question: "353. Hansı qiymətlər intervalında dizel mühərrikləri üçün momentə görə uyğunlaşma əmsalı qəbul edilir?",
+  answers: [
+    { answer: "1,1...1,3", type: "true" },
+    { answer: "0,1...0,14", type: "false" },
+    { answer: "0,08...1", type: "false" },
+    { answer: "2,4...2,8", type: "false" },
+    { answer: "2,9...3,4", type: "false" },
+  ],
+},
+{
+  id: 354,
+  Question: "354. Avtobusun maksimal sürəti yolun üfüqi hamar sahəsində neçə metr uzunluqlu ölçü sahəsini keçmə vaxtını ölçməklə əldə edilir?",
+  answers: [
+    { answer: "1000 m uzunluqlu ölçü sahəsini", type: "true" },
+    { answer: "1200 m uzunluqlu ölçü sahəsini", type: "false" },
+    { answer: "500 m uzunluqlu ölçü sahəsini", type: "false" },
+    { answer: "300 m uzunluqlu ölçü sahəsini", type: "false" },
+    { answer: "1800 m uzunluqlu ölçü sahəsini", type: "false" },
+  ],
+},
+{
+  id: 355,
+  Question: "355. Avtobusun uzununa qüvvənin təsiri ilə diyirlənən təkərinə hərəkət istiqamətinin əksinə çevrəvi qüvvə təsir edərsə belə diyirlənmə rejimi necə adlanır?",
+  answers: [
+    { answer: "əylənc rejimi", type: "true" },
+    { answer: "sürətlənmə rejimi", type: "false" },
+    { answer: "dövrü hərəkət rejimi", type: "false" },
+    { answer: "neytral hərəkət rejimi", type: "false" },
+    { answer: "sərbəst rejim", type: "false" },
+  ],
+},
+{
+  id: 356,
+  Question: "356. Sınaq zamanı avtobusun yanacaq qənaətliliyini qiymətləndirmək üçün istifadə olunan göstəricilərdən biri hansı variantda göstərilmişdir?",
+  answers: [
+    { answer: "dövri hərəkətdə yanacaq xarakteristikası", type: "true" },
+    { answer: "yüksək temperatur şəraitində yanacaq xarakteristikası", type: "false" },
+    { answer: "minimum sürətdə yanacaq xarakteristikası", type: "false" },
+    { answer: "maksimum sürətdə yanacaq xarakteristikası", type: "false" },
+    { answer: "quru torpaq yolda yanacaq xarakteristikası", type: "false" },
+  ],
+},
+{
+  id: 357,
+  Question: "357. Sərnişin avtobuslarının mühərrikinin qərarlaşmış iş rejimində yanacağın yanması zamanı ayrılan ümumi enerjinin neçə faizi itir?",
+  answers: [
+    { answer: "50...55%-i", type: "true" },
+    { answer: "40...45%-i", type: "false" },
+    { answer: "30...35%-i", type: "false" },
+    { answer: "60...75%-i", type: "false" },
+    { answer: "70...90%-i", type: "false" },
+  ],
+},
+{
+  id: 358,
+  Question: "358. Hər bir avtobus müxtəlif funksiyalı bir neçə tormoz sisteminə malik olur. Avtobusun malik olduğu müxtəlif funksiyalı tormoz sistemi hansı variantda düzgün göstərilib?\n1. işçi\n2. əsas\n3. dayanacaq\n4. əlavə\n5. ehtiyat\n6. sadə\n7. köməkçi\n8. mürəkkəb",
+  answers: [
+    { answer: "1; 3; 5; 7", type: "true" },
+    { answer: "2; 4; 6; 8", type: "false" },
+    { answer: "2; 3; 6; 7", type: "false" },
+    { answer: "2; 4; 5; 8", type: "false" },
+    { answer: "1; 4; 5; 8", type: "false" },
+  ],
+},
+{
+  id: 359,
+  Question: "359. Avtobusun təkərinə düşən normal yükün təsirindən onun şini nə edir?",
+  answers: [
+    { answer: "deformasiya edir", type: "true" },
+    { answer: "əyilir", type: "false" },
+    { answer: "burulur", type: "false" },
+    { answer: "irəliyə hərəkət edir", type: "false" },
+    { answer: "diyirlənir", type: "false" },
+  ],
+},
+{
+  id: 360,
+  Question: "360. Avtobusun istismarı prosesində yanacağın yanması zamanı ayrılan enerjinin neçə faizi köməkçi aqreqatların intiqalına, giriş-çıxış borularında və kapotaltı sahələrdə itkilərə sərf olunur?",
+  answers: [
+    { answer: "7...9%-i", type: "true" },
+    { answer: "2,8....3,6%-i", type: "false" },
+    { answer: "3...4,5%-i", type: "false" },
+    { answer: "9,2...9,6%-i", type: "false" },
+    { answer: "9,4...9,8%-i", type: "false" },
+  ],
+},
+{
+  id: 361,
+  Question: "361. Sınaq zamanı avtobusun dartıcı-sürət və yanacaq qənaətliliyi xarakteristikaları əsas etibarı ilə hansı göstəricilərlə müəyyən olunur?",
+  answers: [
+    { answer: "mühərrikin növü və gücü ilə", type: "true" },
+    { answer: "sürətlər qutusu ilə", type: "false" },
+    { answer: "sukan trapesiyası ilə", type: "false" },
+    { answer: "daxiliyanma mühərrikləri ilə", type: "false" },
+    { answer: "dirsəkli valdakı burucu momentlə", type: "false" },
+  ],
+},
+{
+  id: 362,
+  Question: "362. Avtobusun asqısı ilə ötürülən maksimal yükün statik yükə nisbəti necə adlanır?",
+  answers: [
+    { answer: "asqının dinamiklik əmsalı", type: "true" },
+    { answer: "parsial rəqs sistemi", type: "false" },
+    { answer: "asqının statik əyilməsi", type: "false" },
+    { answer: "asqının deformasiyası", type: "false" },
+    { answer: "asqının etibarlığı", type: "false" },
+  ],
+},
+{
+  id: 363,
+  Question: "363. Avtobuslarında alçaq rəqs tezliyi hansı aralıqda dəyişir?",
+  answers: [
+    { answer: "1,5...2,5 Hs", type: "true" },
+    { answer: "0,12...0,21 Hs", type: "false" },
+    { answer: "0,5...0,9 Hs", type: "false" },
+    { answer: "3,2...3,8 Hs", type: "false" },
+    { answer: "2,6...2,9 Hs", type: "false" },
+  ],
+},
+{
+  id: 364,
+  Question: "364. Müasir avtobuslarda əsasən daxiliyanma mühərriklərindən istifadə edilir. Bu avtobusun güc xüsusiyyətləri necə qiymətləndirilir?",
+  answers: [
+    { answer: "onun sürət xarakteristikaları ilə", type: "true" },
+    { answer: "onun yanacaq qənaətliliyi xarakteristikaları ilə", type: "false" },
+    { answer: "dirsəkli valdakı burucu momentin qiyməti ilə", type: "false" },
+    { answer: "onun əylənc xüsusiyyəti ilə", type: "false" },
+    { answer: "onun sukan trapesiyası ilə", type: "false" },
+  ],
+},
+{
+  id: 365,
+  Question: "365. Avtobusların əylənc intiqalının işə düşmə vaxtı standartlarla reqlamentləşdirilir. Bu vaxt neçə saniyədən çox olmamalıdır?",
+  answers: [
+    { answer: "0,6 san-dən", type: "true" },
+    { answer: "0,4 san-dən", type: "false" },
+    { answer: "7 san-dən", type: "false" },
+    { answer: "0,5 san-dən", type: "false" },
+    { answer: "8 san-dən", type: "false" },
+  ],
+},
+{
+  id: 366,
+  Question: "366. Mühərrikin maksimal effektiv stend gücünün avtobusun kütləsinə nisbəti necə adlanır?",
+  answers: [
+    { answer: "xüsusi güc", type: "true" },
+    { answer: "maksimal güc", type: "false" },
+    { answer: "minimal güc", type: "false" },
+    { answer: "aktiv güc", type: "false" },
+    { answer: "passiv güc", type: "false" },
+  ],
+},
+{
+  id: 367,
+  Question: "367. Nisbi sönmə əmsalı \\( \\varphi_a = 1 \\) olarsa, avtobusun məxsusi rəqsləri hansı qiymətə bərabər olar?",
+  answers: [
+    { answer: "sıfıra", type: "true" },
+    { answer: "yeddiyə", type: "false" },
+    { answer: "ikiyə", type: "false" },
+    { answer: "üçə", type: "false" },
+    { answer: "birə", type: "false" },
+  ],
+},
+{
+  id: 368,
+  Question: "368. Avtobus enişdə hərəkət etdikdə verilmiş hərəkət sürətini saxlamaq onun hansı xüsusiyyətinə aiddir?",
+  answers: [
+    { answer: "əylənc xüsusiyyətinə", type: "true" },
+    { answer: "dartıcı-sürət xüsusiyyətinə", type: "false" },
+    { answer: "etibarlıq xüsusiyyətinə", type: "false" },
+    { answer: "funksional xüsusiyyəti", type: "false" },
+    { answer: "idarəolunma xüsusiyyətinə", type: "false" },
+  ],
+},
+{
+  id: 369,
+  Question: "369. Yüksək dağlıq şəraitdə işləyən avtobusda, havanın sıxlığının və uyğun olaraq mühərrikin doldurma əmsalının azalması avtobusun yanacaq sərfinə necə təsir edir?",
+  answers: [
+    { answer: "10...15% artır", type: "true" },
+    { answer: "3...7% artır", type: "false" },
+    { answer: "5...8% azalır", type: "false" },
+    { answer: "21...26% azalır", type: "false" },
+    { answer: "19...24% artır", type: "false" },
+  ],
+},
+{
+  id: 370,
+  Question: "370. Avtobusun məxsusi rəqsləri sıfıra bərabər olan halda onun nisbi sönmə əmsalı hansı qiymətə bərabər olar?",
+  answers: [
+    { answer: "1", type: "true" },
+    { answer: "0,8", type: "false" },
+    { answer: "3,4", type: "false" },
+    { answer: "2", type: "false" },
+    { answer: "0,92", type: "false" },
+  ],
+},
+{
+  id: 371,
+  Question: "371. Avtobusun hansı göstəricidən əylənc intiqalının gecikmə vaxtı asılıdır?",
+  answers: [
+    { answer: "əylənc mexanizmlərinin sayından", type: "true" },
+    { answer: "avtomobilin təkərinin növü və vəziyyətindən", type: "false" },
+    { answer: "dirsəkli valdakı burucu momentin qiymətindən", type: "false" },
+    { answer: "daxiliyanma mühərriklərinin növündən", type: "false" },
+    { answer: "sukan trapesiyasının vəziyyətindən", type: "false" },
+  ],
+},
+{
+  id: 372,
+  Question: "372. Ağırlıq qüvvəsinin təsiri ilə avtobusun asqısının elastiki elementinin deformasiyası nəticəsində təkərlərin onun kuzasına (salonuna) nəzərən yerdəyişməsi necə adlanır?",
+  answers: [
+    { answer: "statik əyilmə", type: "true" },
+    { answer: "deformasiya", type: "false" },
+    { answer: "etibarlıq", type: "false" },
+    { answer: "sürüşmə", type: "false" },
+    { answer: "diyirlənmə", type: "false" },
+  ],
+},
+{
+  id: 373,
+  Question: "373. Avtobusun hansı xüsusiyyətinə onun sürətini tam dayanma halına qədər tez azaltmaq və dayandırmaq aid edilir?",
+  answers: [
+    { answer: "əylənc xüsusiyyətinə", type: "true" },
+    { answer: "etibarlıq xüsusiyyətinə", type: "false" },
+    { answer: "dəyanətlilik xüsusiyyətinə", type: "false" },
+    { answer: "funksional xüsusiyyətinə", type: "false" },
+    { answer: "idarəolunma xüsusiyyətinə", type: "false" },
+  ],
+},
+{
+  id: 374,
+  Question: "374. Rəqslər öz xarakterinə görə hansı növlərə bölünür?",
+  answers: [
+    { answer: "sərbəst və məcburi", type: "true" },
+    { answer: "ilkin və son", type: "false" },
+    { answer: "yerli və təcili", type: "false" },
+    { answer: "maksimum və minimum", type: "false" },
+    { answer: "düz və əks", type: "false" },
+  ],
+},
+{
+  id: 375,
+  Question: "375. Rəqslər nəzəriyyəsinə görə hansı rəqslər mövcuddur?",
+  answers: [
+    { answer: "sönən və sönməyən", type: "true" },
+    { answer: "sadə və mürəkkəb", type: "false" },
+    { answer: "məcburi və dəyişən", type: "false" },
+    { answer: "sabit və dövrü olaraq dəyişən", type: "false" },
+    { answer: "parsial və aktiv", type: "false" },
+  ],
+},
+{
+  id: 376,
+  Question: "376. Avtobusa təsadüfi qüvvələr təsir etdikdə onu yerində tərpənməz saxlamaq hansı xüsusiyyətinə aiddir?",
+  answers: [
+    { answer: "əylənc xüsusiyyətinə", type: "true" },
+    { answer: "etibarlıq xüsusiyyətinə", type: "false" },
+    { answer: "funksional xüsusiyyətinə", type: "false" },
+    { answer: "təhlükəsizlik xüsusiyyətinə", type: "false" },
+    { answer: "dəyanətlik xüsusiyyətinə", type: "false" },
+  ],
+},
+{
+  id: 377,
+  Question: "377. Avtobuslarda hidravlik amortizatorlar üçün söndürücü elementin müqavimət qüvvəsi necə təyin edilir?",
+  answers: [
+    { answer: "Fa = - Ka z", type: "true" },
+    { answer: "Fa = - Ka /2z", type: "false" },
+    { answer: "Fa = - 2Ka /z", type: "false" },
+    { answer: "Fa = - Ka - z", type: "false" },
+    { answer: "Fa = - Ka +z", type: "false" },
+  ],
+},
+{
+  id: 378,
+  Question: "378. Avtobuslarda asqının statik əyilməsi artarsa məxsusi rəqs tezliyi necə dəyişər?",
+  answers: [
+    { answer: "azalacaq", type: "true" },
+    { answer: "artacaq", type: "false" },
+    { answer: "maksimum qiymət alar", type: "false" },
+    { answer: "minimum qiymət alar", type: "false" },
+    { answer: "sönər", type: "false" },
+  ],
+},
+{
+  id: 379,
+  Question: "379. Avtobusun kuzası (salonu) və onun oxu neçə sərbəstlik dərəcəsinə malikdir?",
+  answers: [
+    { answer: "6", type: "true" },
+    { answer: "10", type: "false" },
+    { answer: "12", type: "false" },
+    { answer: "8", type: "false" },
+    { answer: "7", type: "false" },
+  ],
+},
+{
+  id: 380,
+  Question: "380. Avtobusun malik olduğu məxsusi rəqs tezliyindən neçəsi qeyri-ressoraltı kütlələrin ressor və şinlər üzərindəki rəqs tezliyidir?",
+  answers: [
+    { answer: "2", type: "true" },
+    { answer: "6", type: "false" },
+    { answer: "4", type: "false" },
+    { answer: "3", type: "false" },
+    { answer: "7", type: "false" },
+  ],
+},
+{
+  id: 381,
+  Question: "381. Avtobusun əylənc intiqalının gecikmə vaxtı hansı göstəricidən asılıdır?",
+  answers: [
+    { answer: "texniki vəziyyətindən və boruların uzunluğundan", type: "true" },
+    { answer: "avtomobilin təkərinin növü və vəziyyətindən", type: "false" },
+    { answer: "sükan trapesiyasından", type: "false" },
+    { answer: "asqıların materialının növündən", type: "false" },
+    { answer: "yanacağın keyfiyyətindən", type: "false" },
+  ],
+},
+{
+  id: 382,
+  Question: "382. Sürətin dəyişməsi ilə avtobusun trayektoriya əyriliyini dəyişmə qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "statik dönmə qabiliyyəti", type: "true" },
+    { answer: "kinematik dönmə radiusu", type: "false" },
+    { answer: "dönmə radiusu", type: "false" },
+    { answer: "nisbi dönmə qabiliyyəti", type: "false" },
+    { answer: "məcburi dönmə qabiliyyəti", type: "false" },
+  ],
+},
+{
+  id: 383,
+  Question: "383. Avtobusun kuzasının (salonunun) rəqsləri neçə mürəkkəb alçaq tezlikli və yüksək tezlikli harmonik rəqsdən ibarətdir?",
+  answers: [
+    { answer: "2", type: "true" },
+    { answer: "4", type: "false" },
+    { answer: "5", type: "false" },
+    { answer: "7", type: "false" },
+    { answer: "9", type: "false" },
+  ],
+},
+{
+  id: 384,
+  Question: "384. Avtobusun kuzasının (salonunun) rəqsləri hansı mürəkkəb harmonik rəqslərdən ibarətdir?",
+  answers: [
+    { answer: "alçaq tezlikli və yüksək tezlikli", type: "true" },
+    { answer: "parsial rəqsdən", type: "false" },
+    { answer: "məxsusi rəqs tezliyindən", type: "false" },
+    { answer: "sərbəst və məcburi rəqs sistemindən", type: "false" },
+    { answer: "dövrü və sönən rəqs sistemindən", type: "false" },
+  ],
+},
+{
+  id: 385,
+  Question: "385. Sərnişin avtobusu neçə məxsusi rəqs tezliyinə malikdir?",
+  answers: [
+    { answer: "4", type: "true" },
+    { answer: "5", type: "false" },
+    { answer: "8", type: "false" },
+    { answer: "12", type: "false" },
+    { answer: "10", type: "false" },
+  ],
+},
+{
+  id: 386,
+  Question: "386. Sərnişin avtobusları üçün nisbi sönmə əmsalının optimal qiyməti \\( \\varphi_a = 0,3 \\) olduqda bir period kənarlaşma zamanı rəqslər neçə dəfə azalır?",
+  answers: [
+    { answer: "8", type: "true" },
+    { answer: "9", type: "false" },
+    { answer: "14", type: "false" },
+    { answer: "12", type: "false" },
+    { answer: "10", type: "false" },
+  ],
+},
+{
+  id: 387,
+  Question: "387. Sərnişin avtobusunun malik olduğu məxsusi rəqs tezliyindən neçəsi kuzasının (salonunun) ressorlar üzərində rəqs tezliyidir?",
+  answers: [
+    { answer: "2", type: "true" },
+    { answer: "3", type: "false" },
+    { answer: "5", type: "false" },
+    { answer: "7", type: "false" },
+    { answer: "10", type: "false" },
+  ],
+},
+{
+  id: 388,
+  Question: "388. Xidmətə həmçinin onun keyfiyyətini qiymətləndirmə üsullarına aid tələbləri əks etdirən sənəd necə adlanır?",
+  answers: [
+    { answer: "normativ sənəd", type: "true" },
+    { answer: "akt", type: "false" },
+    { answer: "standart", type: "false" },
+    { answer: "lisenziya", type: "false" },
+    { answer: "qaimə", type: "false" },
+  ],
+},
+{
+  id: 389,
+  Question: "389. Hansı variantda nəqliyyat ekspedisiya xidməti müəssisəsi öz üzərinə götürdüyü şərtlərdən biri göstərilmişdir?",
+  answers: [
+    { answer: "sərnişinlərin (sahibkarların) qiymətli yüklərinə yolda nəzarət etmək", type: "true" },
+    { answer: "sərnişinlərin yükünün standarta uyğunluğu barədə yük sahibinə məlumat vermək", type: "false" },
+    { answer: "sərnişinlərin yükünün sertifikatlaşdırıldığı barədə yük sahibinə məlumat vermək", type: "false" },
+    { answer: "istehsal müəssisəsinin akkreditasiya olunması barədə məlumat vermək", type: "false" },
+    { answer: "qiymətli yüklərin istehsal tarixi barədə məlumat vermək", type: "false" },
+  ],
+},
+{
+  id: 390,
+  Question: "390. Hava nəqliyyatında istifadə edilən güzəştli tariflərin neçə növü daha çox tətbiq edilir?",
+  answers: [
+    { answer: "üç növü", type: "true" },
+    { answer: "bir növü", type: "false" },
+    { answer: "iki növü", type: "false" },
+    { answer: "altı növü", type: "false" },
+    { answer: "yeddi növü", type: "false" },
+  ],
+},
+{
+  id: 391,
+  Question: "391. Avtomobil nəqliyyatı ittifaqı nə vaxt beynəlxalq səviyyədə yaradılmışdır?",
+  answers: [
+    { answer: "1948-ci ilin mart ayında", type: "true" },
+    { answer: "1978-ci ilin mart ayında", type: "false" },
+    { answer: "1982-ci ilin may ayında", type: "false" },
+    { answer: "1942-ci ilin dekabr ayında", type: "false" },
+    { answer: "1946-cı ilin mart ayında", type: "false" },
+  ],
+},
+{
+  id: 392,
+  Question: "392. Əsas beynəlxalq təşkilat hava nəqliyyatı üzrə hansıdır?",
+  answers: [
+    { answer: "beynəlxalq mülki aviasiya təşkilatı", type: "true" },
+    { answer: "avropa hava nəqliyyatı assosiasiyası", type: "false" },
+    { answer: "ölkə daxili mülki aviasiya təşkilatı", type: "false" },
+    { answer: "şəhərlər arası mülki aviasiya təşkilatı", type: "false" },
+    { answer: "asiya hava nəqliyyatı assosiasiyası", type: "false" },
+  ],
+},
+{
+  id: 393,
+  Question: "393. Neçənci ildə beynəlxalq mülki aviasiya təşkilatı yaranmışdır?",
+  answers: [
+    { answer: "1947-ci ildə", type: "true" },
+    { answer: "1985-ci ildə", type: "false" },
+    { answer: "1978-ci ildə", type: "false" },
+    { answer: "1946-cı ildə", type: "false" },
+    { answer: "1942-ci ildə", type: "false" },
+  ],
+},
+{
+  id: 394,
+  Question: "394. Digər beynəlxalq təşkilat 'Beynəlxalq mülki aviasiya təşkilatı'ndan sonra hansı hesab edilir?",
+  answers: [
+    { answer: "beynəlxalq hava nəqliyyatı assosiasiyası", type: "true" },
+    { answer: "avropa hava nəqliyyatı assosiasiyası", type: "false" },
+    { answer: "asiya hava nəqliyyatı assosiasiyası", type: "false" },
+    { answer: "ölkə daxili mülki aviasiya təşkilatı", type: "false" },
+    { answer: "afrika hava nəqliyyatı assosiasiyası", type: "false" },
+  ],
+},
+{
+  id: 395,
+  Question: "395. Beynəlxalq hava nəqliyyatı assosiasiyası necə təşkilatdır?",
+  answers: [
+    { answer: "qeyri-dövlət təşkilatı", type: "true" },
+    { answer: "dövlət təşkilatı", type: "false" },
+    { answer: "həmkarlar ittifaqının nəzdində dövlət təşkilatı", type: "false" },
+    { answer: "nəqliyyat nazirliyinin nəzdində dövlət təşkilatı", type: "false" },
+    { answer: "akkreditləşdirmə üzrə orqanın nəzdində dövlət təşkilatı", type: "false" },
+  ],
+},
+{
+  id: 396,
+  Question: "396. Su nəqliyyatında əsas beynəlxalq təşkilat hansıdır?",
+  answers: [
+    { answer: "Beynəlxalq su nəqliyyatı təşkilatı", type: "true" },
+    { answer: "Avropa su nəqliyyatı təşkilatı", type: "false" },
+    { answer: "Afrika su nəqliyyatı təşkilatı", type: "false" },
+    { answer: "Asiya su nəqliyyatı təşkilatı", type: "false" },
+    { answer: "Amerika su nəqliyyatı təşkilatı", type: "false" },
+  ],
+},
+{
+  id: 397,
+  Question: "397. Beynəlxalq dəniz təşkilatı neçənci ildə yaradılmışdır?",
+  answers: [
+    { answer: "1958-ci ildə", type: "true" },
+    { answer: "1982-ci ildə", type: "false" },
+    { answer: "1985-ci ildə", type: "false" },
+    { answer: "1957-ci ildə", type: "false" },
+    { answer: "152-ci ildə", type: "false" },
+  ],
+},
+{
+  id: 398,
+  Question: "398. Beynəlxalq dəniz təşkilatı harada yerləşir?",
+  answers: [
+    { answer: "Londonda", type: "true" },
+    { answer: "Parisdə", type: "false" },
+    { answer: "Romada", type: "false" },
+    { answer: "Bakıda", type: "false" },
+    { answer: "Berlində", type: "false" },
+  ],
+},
+{
+  id: 399,
+  Question: "399. Azərbaycan beynəlxalq dəniz təşkilatının neçənci ildən üzvüdür?",
+  answers: [
+    { answer: "1995-ci ildən", type: "true" },
+    { answer: "1998-ci ildən", type: "false" },
+    { answer: "2008-ci ildən", type: "false" },
+    { answer: "2005-ci ildən", type: "false" },
+    { answer: "2002-ci ildən", type: "false" },
+  ],
+},
+{
+  id: 400,
+  Question: "400. Aşağıdakı müqavilələrdən və yaxud konvensiyalardan hansı dəniz nəqliyyatında hazırda qüvvədədir?",
+  answers: [
+    { answer: "dəniz hüquq üzrə BMT-nin 1982-ci il konvensiyası", type: "true" },
+    { answer: "beynəlxalq sərnişin daşınmaları haqqında 1984-cü il konvensiyası", type: "false" },
+    { answer: "beynəlxalq yük daşınmaları haqqında 1988-ci il konvensiyası", type: "false" },
+    { answer: "beynəlxalq yük daşınmaları haqqında 1978-ci il konvensiyası", type: "false" },
+    { answer: "beynəlxalq sərnişin daşınmaları haqqında 1981-ci il konvensiyası", type: "false" },
+  ],
+},
+{
+  id: 401,
+  Question: "401. Daşınma ilə bağlı yaranan nəqliyyat iqtisadi münasibətlərin hüquqi forması necə adlanır?",
+  answers: [
+    { answer: "nəqliyyat müqaviləsi", type: "true" },
+    { answer: "iqtisadi səmərə", type: "false" },
+    { answer: "nəqliyyat sahibi", type: "false" },
+    { answer: "məhsulun satışı", type: "false" },
+    { answer: "ticarət bazası", type: "false" },
+  ],
+},
+{
+  id: 402,
+  Question: "402. Nəqliyyat müqavilələri əsasında yaranan mülki hüquqi münasibətlər necə adlanır?",
+  answers: [
+    { answer: "nəqliyyat öhdəlikləri", type: "true" },
+    { answer: "nəqliyyatın növünün seçilməsi", type: "false" },
+    { answer: "nəqliyyatın hüququ", type: "false" },
+    { answer: "mülki münasibət", type: "false" },
+    { answer: "hüquqi münasibətlər", type: "false" },
+  ],
+},
+{
+  id: 403,
+  Question: "403. Nəqliyyat müqaviləsinin bağlanmasında neçə tərəf iştirak edir?",
+  answers: [
+    { answer: "2", type: "true" },
+    { answer: "3", type: "false" },
+    { answer: "5", type: "false" },
+    { answer: "4", type: "false" },
+    { answer: "8", type: "false" },
+  ],
+},
+{
+  id: 404,
+  Question: "404. Nəqliyyat müqaviləsinə görə daşıyıcı funksiyasını kimlər icra edə bilərlər?",
+  answers: [
+    { answer: "hüquqi şəxslər və fərdi sahibkar", type: "true" },
+    { answer: "istirahət mərkəzinin işçiləri", type: "false" },
+    { answer: "istirahət mərkəzinə gələnlər", type: "false" },
+    { answer: "istirahət mərkəzinin sahibi", type: "false" },
+    { answer: "sərnişinlər", type: "false" },
+  ],
+},
+{
+  id: 405,
+  Question: "405. Aşağıdakı sıraların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəriciləri göstərilmişdir?\n1. nəqliyyat vasitəsinin təmirə yararlığı\n2. nəqliyyat vasitəsinin rəngi\n3. nəqliyyat vasitəsinin etibarlığı və uzunömürlülüyü\n4. nəqliyyat vasitəsinin uzunluğu\n5. imtinasızlığı və təmirə yararlılığı\n6. nəqliyyat vasitələrinin estetik görünüşü",
+  answers: [
+    { answer: "1; 3; 5", type: "true" },
+    { answer: "2; 4; 5", type: "false" },
+    { answer: "1; 2; 6", type: "false" },
+    { answer: "2; 4; 6", type: "false" },
+    { answer: "3; 4; 6", type: "false" },
+  ],
+},
+{
+  id: 406,
+  Question: "406. Sərnişinlərin istirahət yerlərinə gəlmələrinin təşkili haqqında müqavilə hansı nəqliyyat növünün sahibləri ilə bağlana bilər?",
+  answers: [
+    { answer: "nəqliyyatın bütün növlərinin sahibləri ilə", type: "true" },
+    { answer: "yalnız çay nəqliyyatı sahibləri ilə", type: "false" },
+    { answer: "yalnız gəmi sahibləri ilə", type: "false" },
+    { answer: "yalnız dəmir yolu nəqliyyatı sahibləri ilə", type: "false" },
+    { answer: "yalnız hərbi nəqliyyat vasitələrinin sahibləri ilə", type: "false" },
+  ],
+},
+{
+  id: 407,
+  Question: "407. Hava nəqliyyatı sahəsində daşımaların təşkili haqqında müqavilə hansı müqavilə şəklində qəbul olunur?",
+  answers: [
+    { answer: "təşkilati müqavilə", type: "true" },
+    { answer: "fərdi müqavilə", type: "false" },
+    { answer: "lisenziya müqaviləsi", type: "false" },
+    { answer: "gömrük müqaviləsi", type: "false" },
+    { answer: "ticarət müqaviləsi", type: "false" },
+  ],
+},
+{
+  id: 408,
+  Question: "408. Azərbaycan Respublikasının hava nəqliyyatı haqqında qanunda xüsusi müqavilənin bağlanması üçün neçə şərt göstərilmişdir?",
+  answers: [
+    { answer: "2", type: "true" },
+    { answer: "4", type: "false" },
+    { answer: "3", type: "false" },
+    { answer: "6", type: "false" },
+    { answer: "8", type: "false" },
+  ],
+},
+{
+  id: 409,
+  Question: "409. Avtobusun dinamikliyi əsasən hansı göstəricilərlə qiymətləndirilir?",
+  answers: [
+    { answer: "avtobusun texniki və istismar sürətləri ilə", type: "true" },
+    { answer: "avtobusun dəyanətlilik xüsusiyyəti ilə", type: "false" },
+    { answer: "avtobusun etibarlılıq xüsusiyyəti ilə", type: "false" },
+    { answer: "avtobusun keçicilik xüsusiyyəti ilə", type: "false" },
+    { answer: "avtobusun işləmə qabiliyyəti ilə", type: "false" },
+  ],
+},
+{
+  id: 410,
+  Question: "410. Aşağıda göstərilmiş variantların hansını yanacaq sərfinin hesablaması zamanı benzinin sıxlığı qəbul etmək olar?",
+  answers: [
+    { answer: "0,73 kq/litr", type: "true" },
+    { answer: "0,87 kq/litr", type: "false" },
+    { answer: "0,69 kq/litr", type: "false" },
+    { answer: "0,83 kq/litr", type: "false" },
+    { answer: "0,71 kq/litr", type: "false" },
+  ],
+},
+{
+  id: 411,
+  Question: "411. Avtomobil nəqliyyatı sahəsində daşımanın təşkili haqqında müqavilə necə adlanır?",
+  answers: [
+    { answer: "illik", type: "true" },
+    { answer: "aylıq", type: "false" },
+    { answer: "müvəqqəti", type: "false" },
+    { answer: "daimi", type: "false" },
+    { answer: "mövsümü", type: "false" },
+  ],
+},
+{
+  id: 412,
+  Question: "412. Daxili su nəqliyyatı sahəsində daşımanın təşkili haqqında bağlanmış müqavilə necə adlanır?",
+  answers: [
+    { answer: "naviqasiya müqaviləsi", type: "true" },
+    { answer: "fərdi müqavilə", type: "false" },
+    { answer: "lisenziya müqaviləsi", type: "false" },
+    { answer: "gömrük müqaviləsi", type: "false" },
+    { answer: "ticarət müqaviləsi", type: "false" },
+  ],
+},
+{
+  id: 413,
+  Question: "413. Nəqliyyat vasitələrinin hansı keyfiyyət göstəricisinə zərərli hissəciklərin, qazların və şüalanmanın ətraf mühitə normadan artıq qatılıqda atılmasının müəyyənləşdirilməsi aiddir?",
+  answers: [
+    { answer: "ekoloji", type: "true" },
+    { answer: "standartlaşdırma", type: "false" },
+    { answer: "təhlükəsizlik", type: "false" },
+    { answer: "estetik", type: "false" },
+    { answer: "təyinat", type: "false" },
+  ],
+},
+{
+  id: 414,
+  Question: "414. Sadə yazılı formada olan daşıma müqaviləsi hansı sənəddir?",
+  answers: [
+    { answer: "daşıma sənədi", type: "true" },
+    { answer: "istirahət mərkəzinin sənədi", type: "false" },
+    { answer: "normativ sənəd", type: "false" },
+    { answer: "lisenziya müqaviləsi", type: "false" },
+    { answer: "gömrük müqaviləsi", type: "false" },
+  ],
+},
+{
+  id: 415,
+  Question: "415. Sürücünün iştirakı olmadan xarici qüvvələrin təsiri altında olan avtomobilin hərəkət istiqamətini saxlaya bilmək xüsusiyyəti necə adlanır?",
+  answers: [
+    { answer: "dəyanətlik", type: "true" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "sərbəst hərəkət", type: "false" },
+    { answer: "düzxətli hərəkət", type: "false" },
+    { answer: "dövrü hərəkət", type: "false" },
+  ],
+},
+{
+  id: 416,
+  Question: "416. Avtomobilin sınağı zamanı onun maksimal sürəti yolun üfüqi hamar sahəsində neçə metr uzunluqlu ölçü sahəsini keçmə vaxtını ölçməklə əldə edilir?",
+  answers: [
+    { answer: "1000 m uzunluqlu ölçü sahəsini", type: "true" },
+    { answer: "1800 m uzunluqlu ölçü sahəsini", type: "false" },
+    { answer: "500 m uzunluqlu ölçü sahəsini", type: "false" },
+    { answer: "1200 m uzunluqlu ölçü sahəsini", type: "false" },
+    { answer: "200 m uzunluqlu ölçü sahəsini", type: "false" },
+  ],
+},
+{
+  id: 417,
+  Question: "417. Aşağıda göstərilmiş variantların birində nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir? Bu hansı variantdır?",
+  answers: [
+    { answer: "nəqliyyat vasitəsinin yanacaq qənaətliliyi", type: "true" },
+    { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+    { answer: "nəqliyyat vasitəsinin minimum yük götürmə qabiliyyəti", type: "false" },
+    { answer: "nəqliyyat vasitəsinin eni və uzunluğu", type: "false" },
+    { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
+  ],
+},
+{
+  id: 418,
+  Question: "418. Sərnişin avtobuslarının alçaq rəqs tezliyi hansı intervalda dəyişir?",
+  answers: [
+    { answer: "1,5...2,5 Hs", type: "true" },
+    { answer: "1,15...1,45 Hs", type: "false" },
+    { answer: "2,6...3,5 Hs", type: "false" },
+    { answer: "0,5....1,2 Hs", type: "false" },
+    { answer: "2,5....3 Hs", type: "false" },
+  ],
+},
+{
+  id: 419,
+  Question: "419. Tə'yinatına görə avtomobilin müəyyən edilmiş funksiyaları yerinə yetirmək imkanı onun hansı xüsusiyyəti adlanır?",
+  answers: [
+    { answer: "funksional xüsusiyyəti", type: "true" },
+    { answer: "etibarlıq xüsusiyyəti", type: "false" },
+    { answer: "aqreqatlaşdırma xüsusiyyəti", type: "false" },
+    { answer: "unifikasiya xüsusiyyəti", type: "false" },
+    { answer: "təhlükəsizlik xüsusiyyəti", type: "false" },
+  ],
+},
+{
+  id: 420,
+  Question: "420. Nəqliyyat vasitələrinin hansı keyfiyyət göstəricisinə ətraf mühitə atılan zərərli qarışığın miqdarının təyin olunması aiddir?",
+  answers: [
+    { answer: "ekoloji", type: "true" },
+    { answer: "erqonomik", type: "false" },
+    { answer: "təhlükəsizlik", type: "false" },
+    { answer: "standartlaşdırma", type: "false" },
+    { answer: "sertifikatlaşdırma", type: "false" },
+  ],
+},
+{
+  id: 421,
+  Question: "421. Aşağıdakı variantların hansında nəqliyyat vasitələrinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
+  answers: [
+    { answer: "nəqliyyat vasitəsinin təmirə yararlığı", type: "true" },
+    { answer: "nəqliyyat vasitəsinin rəngi", type: "false" },
+    { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+    { answer: "nəqliyyat vasitəsinin eni", type: "false" },
+    { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
+  ],
+},
+{
+  id: 422,
+  Question: "422. Nəqliyyat prosesi zamanı işçi personalın və sərnişinlərin təhlükəsizliyini təmin edən xüsusiyyətin xarakterizə edilməsi nəqliyyatın hansı keyfiyyət göstəricisinə aiddir?",
+  answers: [
+    { answer: "təhlükəsizlik", type: "true" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "təyinat", type: "false" },
+    { answer: "nəqletməyə yararlılıq", type: "false" },
+    { answer: "istismar", type: "false" },
+  ],
+},
+{
+  id: 423,
+  Question: "423. Sərnişin nəqliyyat vasitəsinin öz funksiyasını minimum yanacaq sərfi ilə yerinə yetirmə qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "yanacaq qənaətliliyi", type: "true" },
+    { answer: "maksimum yanacaq sərfiyyatı", type: "false" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "nəqletməyə yararlılıq", type: "false" },
+    { answer: "təhlükəsizlik", type: "false" },
+  ],
+},
+{
+  id: 424,
+  Question: "424. Göstərilmiş variantların hansında sərnişin nəqliyyat vasitəsinin istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
+  answers: [
+    { answer: "nəqliyyat vasitəsinin sərnişin tutumu", type: "true" },
+    { answer: "nəqliyyat vasitəsinin minimum sürəti", type: "false" },
+    { answer: "nəqliyyat vasitəsinin uzunluğu", type: "false" },
+    { answer: "nəqliyyat vasitəsinin hündürlüyü", type: "false" },
+    { answer: "nəqliyyat vasitələrinin estetik görünüşü", type: "false" },
+  ],
+},
+{
+  id: 425,
+  Question: "425. Aşağıda göstərilmiş hansı göstərici ilə avtomobilin yanacaq qənaətliliyi qiymətləndirilir?",
+  answers: [
+    { answer: "xüsusi yanacaq sərfi ilə", type: "true" },
+    { answer: "yanacağın keyfiyyəti ilə", type: "false" },
+    { answer: "yanacağın növü ilə", type: "false" },
+    { answer: "yanacağın maksimum miqdarı ilə", type: "false" },
+    { answer: "nəqliyyatın növü ilə", type: "false" },
+  ],
+},
+{
+  id: 426,
+  Question: "426. Dəniz nəqliyyatı vasitəsinin minimum vaxtda nəzərdə tutulmuş işi yerinə yetirmə üzrə qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "dinamiklik", type: "true" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "manevrlilik", type: "false" },
+    { answer: "səmərəlilik", type: "false" },
+    { answer: "akkreditləşdirmə", type: "false" },
+  ],
+},
+{
+  id: 427,
+  Question: "427. Sərnişin nəqliyyatı vasitəsinin minimum vaxtda yerinə yetirmə üzrə iş qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "dinamiklik", type: "true" },
+    { answer: "dəyanətlilik", type: "false" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "keçicilik", type: "false" },
+    { answer: "işləmə qabiliyyəti", type: "false" },
+  ],
+},
+{
+  id: 428,
+  Question: "428. Sərnişin avtobusunun minimum vaxtda yerinə yetirmə üzrə iş qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "dinamiklik", type: "true" },
+    { answer: "manevrlilik", type: "false" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "uzunömürlülük", type: "false" },
+    { answer: "səmərəlilik", type: "false" },
+  ],
+},
+{
+  id: 429,
+  Question: "429. Sərnişin təyyarəsinin minimum vaxtda yerinə yetirmə üzrə iş qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "dinamiklik", type: "true" },
+    { answer: "işgüzarlıq", type: "false" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "sınaq", type: "false" },
+    { answer: "keyfiyyət", type: "false" },
+  ],
+},
+{
+  id: 430,
+  Question: "430. Dəmiryol nəqliyyatının minimum vaxtda yerinə yetirmə üzrə iş qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "dinamiklik", type: "true" },
+    { answer: "dəyanətlilik", type: "false" },
+    { answer: "səmərəlilik", type: "false" },
+    { answer: "keçicilik", type: "false" },
+    { answer: "keyfiyyət", type: "false" },
+  ],
+},
+{
+  id: 431,
+  Question: "431. Çay nəqliyyatı vasitəsinin minimum vaxtda nəzərdə tutulmuş işi yerinə yetirmə üzrə qabiliyyəti necə adlanır?",
+  answers: [
+    { answer: "dinamiklik", type: "true" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "keçicilik", type: "false" },
+    { answer: "səmərəlilik", type: "false" },
+    { answer: "yararlılıq", type: "false" },
+  ],
+},
+{
+  id: 432,
+  Question: "432. Ölkə daxili su nəqliyyatı vasitəsi ilə daşımanın təşkili haqqında bağlanmış müqavilə necə adlanır?",
+  answers: [
+    { answer: "naviqasiya müqaviləsi", type: "true" },
+    { answer: "su nəqliyyatı müqaviləsi", type: "false" },
+    { answer: "lisenziya müqaviləsi", type: "false" },
+    { answer: "gömrük müqaviləsi", type: "false" },
+    { answer: "ticarət müqaviləsi", type: "false" },
+  ],
+},
+{
+  id: 433,
+  Question: "433. Avtomobil nəqliyyatı ilə istirahət yerlərinə sərnişinlərin gəlməsinə xidmət göstərən zaman ətraf mühitin ekoloji təhlükəsizliyinin təmin edilməsi hansı keyfiyyət göstəricisinə aiddir?",
+  answers: [
+    { answer: "ekaloji", type: "true" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "dayanıqlılıq", type: "false" },
+    { answer: "nəqletməyə yararlılıq", type: "false" },
+    { answer: "istismar", type: "false" },
+  ],
+},
+{
+  id: 434,
+  Question: "434. Hansı müqavilə kimi hava nəqliyyatı sahəsində daşımaların təşkili haqqında müqavilə qəbul olunur?",
+  answers: [
+    { answer: "təşkilati müqavilə", type: "true" },
+    { answer: "məcburi müqavilə", type: "false" },
+    { answer: "könüllü müqavilə", type: "false" },
+    { answer: "ümumi müqavilə", type: "false" },
+    { answer: "qarışıq müqavilə", type: "false" },
+  ],
+},
+{
+  id: 435,
+  Question: "435. Coğrafi zona üzrə inter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələrinin A qrupuna daxil olan ölkələri seçib, düzgün variantı müəyyən edin?\n1.İngiltərə 2.Polşa 3.Cənubi İrlandiya\n4.Almaniya 5.Türkiyə 6.Şimali İrlandiya",
+  answers: [
+    { answer: "1; 3; 6", type: "true" },
+    { answer: "1; 2; 4", type: "false" },
+    { answer: "2; 3; 6", type: "false" },
+    { answer: "2; 4; 5", type: "false" },
+    { answer: "2; 5; 6", type: "false" },
+  ],
+},
+{
+  id: 436,
+  Question: "436. Coğrafi zona üzrə inter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələrinin B qrupuna daxil olan ölkələri seçib, düzgün variantı müəyyən edin?\n1. İsveç 2. Norveç 3. İngiltərə 4. Polşa 5. Finlandiya 6. Almaniya",
+  answers: [
+    { answer: "1; 2; 5", type: "true" },
+    { answer: "1; 2; 6", type: "false" },
+    { answer: "2; 3; 4", type: "false" },
+    { answer: "2; 4; 6", type: "false" },
+    { answer: "1; 4; 6", type: "false" },
+  ],
+},
+{
+  id: 437,
+  Question: "437. Coğrafi zona üzrə inter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələrinin C qrupuna daxil olan ölkələri seçib, düzgün variantı müəyyən edin?\n1. Danimarka 2. Çexiya 3. Almaniya 4. İsveçrə\n5. Rumıniya 6. Yunanıstan 7. Avstriya",
+  answers: [
+    { answer: "1; 3; 4; 7", type: "true" },
+    { answer: "1; 2; 3; 6", type: "false" },
+    { answer: "2; 3; 6; 7", type: "false" },
+    { answer: "2; 4; 5; 7", type: "false" },
+    { answer: "1; 2; 5; 6", type: "false" },
+  ],
+},
+{
+  id: 438,
+  Question: "438. Coğrafi zona üzrə inter Rail sisteminə üzv olan ölkələrin dəmiryolu idarələrinin D qrupuna daxil olan ölkələri seçib, düzgün variantı müəyyən edin?\n1. Polşa 2. İngiltərə 3. Çexiya 4. Türkiyə 5. Slovakiya 6. Macarıstan 7. Xorvatiya",
+  answers: [
+    { answer: "1; 3; 5; 6; 7", type: "true" },
+    { answer: "1; 2; 4; 5; 6", type: "false" },
+    { answer: "2; 3; 4; 6; 7", type: "false" },
+    { answer: "2; 4; 5; 6", type: "false" },
+    { answer: "2; 4; 6; 7", type: "false" },
+  ],
+},
+{
+  id: 439,
+  Question: "439. Sərnişin avtobuslarının texniki istismar göstəricilərinin qiymətləndirilməsi zamanı yanacaq qənaətliliyi hansı göstərici ilə qiymətləndirilir?",
+  answers: [
+    { answer: "xüsusi yanacaq sərfi ilə", type: "true" },
+    { answer: "yanacağın keyfiyyəti ilə", type: "false" },
+    { answer: "nəqliyyatın sürəti ilə", type: "false" },
+    { answer: "yanacağın növü ilə", type: "false" },
+    { answer: "nəqliyyatın növü ilə", type: "false" },
+  ],
+},
+{
+  id: 440,
+  Question: "440. Sərnişin təyyarələri hansı oxa nəzərən simmetrikdir?",
+  answers: [
+    { answer: "uzununa", type: "true" },
+    { answer: "eninə", type: "false" },
+    { answer: "maili", type: "false" },
+    { answer: "eninə və üfüqi", type: "false" },
+    { answer: "maili və üfüqi", type: "false" },
+  ],
+},
+{
+  id: 454,
+  Question: "454. Aşağıdakı variantların hansında sərnişin avtobuslarının istismarı üçün keyfiyyət göstəricisi göstərilmişdir?",
+  answers: [
+    { answer: "avtobusun təmirə yararlığı", type: "true" },
+    { answer: "avtobusun rəngi", type: "false" },
+    { answer: "avtobusun uzunluğu", type: "false" },
+    { answer: "avtobusun eni", type: "false" },
+    { answer: "avtobusun estetik görünüşü", type: "false" },
+  ],
+},
+{
+  id: 455,
+  Question: "455. İşləmə qabiliyyətini itirmiş avtobusun texniki vəziyyətinin bərpasına yönəlmiş texniki təsirlərin məcmusu necə adlanır?",
+  answers: [
+    { answer: "avtobusun təmiri", type: "true" },
+    { answer: "avtobusun nasazlığı", type: "false" },
+    { answer: "avtobusun etibarlılığı", type: "false" },
+    { answer: "avtobusun dəyanətliliyi", type: "false" },
+    { answer: "avtobusun sərnişin tutumu", type: "false" },
+  ],
+},
+{
+  id: 456,
+  Question: "456. Normativ texniki sənədlərin tələblərinə uyğun olaraq sərnişin avtomobilinin istehsalı və təmiri zamanı yüksək əmək məhsuldarlığını təmin etmək üçün konstruktiv-texnoloji işlərin effektivliyinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisidir?",
+  answers: [
+    { answer: "texnolojilik", type: "true" },
+    { answer: "təhlükəsizlik", type: "false" },
+    { answer: "standartlaşdırma", type: "false" },
+    { answer: "təyinat", type: "false" },
+    { answer: "unifikasiya", type: "false" },
+  ],
+},
+{
+  id: 457,
+  Question: "457. Normativ texniki sənədlərin tələblərinə uyğun olaraq avtomobilin bir yerdən başqa yerə bütün növ nəqliyyat vasitələri ilə nəql edilməsinin mümkünlüyünün və asanlığının xarakterizə edilməsi onun hansı keyfiyyət göstəricisinə aiddir?",
+  answers: [
+    { answer: "nəqletməyə yararlılıq", type: "true" },
+    { answer: "patent-hüquq", type: "false" },
+    { answer: "təhlükəsizlik", type: "false" },
+    { answer: "standartlaşdırma", type: "false" },
+    { answer: "təyinat", type: "false" },
+  ],
+},
+{
+  id: 458,
+  Question: "458. Dənizlə sərnişinlərin və baqajın daşınması haqqında Afina konvensiyası neçənci ildə qəbul edilib?",
+  answers: [
+    { answer: "1974-cü ildə", type: "true" },
+    { answer: "1972-ci ildə", type: "false" },
+    { answer: "1987-ci ildə", type: "false" },
+    { answer: "1967-ci ildə", type: "false" },
+    { answer: "1994-cü ildə", type: "false" },
+  ],
+},
+{
+  id: 459,
+  Question: "459. Normativ texniki sənədlərin tələblərinə uyğun olaraq sərnişin avtomobilinin imtinasız işləməsi, uzunömürlülüyü və təmirə yararlılığı xassələrinin xarakterizə edilməsi onun hansı keyfiyyət göstəricisi adlanır?",
+  answers: [
+    { answer: "etibarlılıq", type: "true" },
+    { answer: "təyinat", type: "false" },
+    { answer: "təhlükəsizlik", type: "false" },
+    { answer: "standartlaşdırma", type: "false" },
+    { answer: "estetik", type: "false" },
+  ],
+},
+{
+  id: 460,
+  Question: "460. Normativ texniki sənədlərin tələblərinə uyğun olaraq sərnişin avtobusunda istifadə olunmuş texniki həllərin yenilik dərəcəsi, onların patent müdafiəsi, həmçinin onun ölkədə və xaricdə maneəsiz realizə olunmasının mümkünlüyü hansı göstəricidə xarakterizə edilir?",
+  answers: [
+    { answer: "patent-hüquq", type: "true" },
+    { answer: "etibarlılıq", type: "false" },
+    { answer: "standartlaşdırma", type: "false" },
+    { answer: "təyinat", type: "false" },
+    { answer: "erqonomik", type: "false" },
+  ],
+},
+{
+  id: 461,
+  Question: "461. Dəmir yolu, avtomobil və daxili su (çay) daşımalarında tətbiq olunan əsas daşıma sənədi necə adlanır?",
+  answers: [
+    { answer: "qaimə", type: "true" },
+    { answer: "standart", type: "false" },
+    { answer: "akt", type: "false" },
+    { answer: "sertifikat", type: "false" },
+    { answer: "pratokol", type: "false" },
+  ],
+},
+{
+  id: 462,
+  Question: "462. Dəmir yolu nəqliyyatında adətən, hansı sənədlər daxili və beynəlxalq daşımalarda nəqliyyat sənədləridir?",
+  answers: [
+    { answer: "qaimə və onun dublikat nüsxəsi", type: "true" },
+    { answer: "normativ texniki sənədlər", type: "false" },
+    { answer: "nəqliyyat vasitəsinin texniki pasportu", type: "false" },
+    { answer: "pratakol və akt", type: "false" },
+    { answer: "sərnişin bileti", type: "false" },
+  ],
+},
+{
+  id: 463,
+  Question: "463. Sərnişinlərə nəqliyyat xidmətini hüquqi cəhətdən rəsmiləşdirən, nəqliyyat vasitəsinin formasından və yerinə yetirdiyi funksiyadan asılı olaraq nəqliyyat xidmətinin neçə növü fərqləndirilir?",
+  answers: [
+    { answer: "3", type: "true" },
+    { answer: "4", type: "false" },
+    { answer: "7", type: "false" },
+    { answer: "6", type: "false" },
+    { answer: "5", type: "false" },
+  ],
+},
+{
+  id: 464,
+  Question: "464. Sərnişinlərə nəqliyyat xidmətinin yüksəldilməsi məqsədi ilə dünyanın bir sıra ölkələrində dəmir yolu şəbəkəsinin yaranmasına səbəb nə oldu?",
+  answers: [
+    { answer: "paravozun ixtira edilməsi", type: "true" },
+    { answer: "ekspeditorların fəaliyyətinin genişlənməsi", type: "false" },
+    { answer: "dünyanın bir sıra ölkələrində dəniz nəqliyyatının yaranması", type: "false" },
+    { answer: "ölkələr arası ticarətin genişlənməsi", type: "false" },
+    { answer: "dəmir yolu ilə daşınması nəzərdə tutulan yüklərin həcminin artması", type: "false" },
+  ],
+},
+{
+  id: 465,
+  Question: "465. Sərnişinlərə nəqliyyat xidmətinin yüksəldilməsi məqsədi ilə avtomobillər nə zaman meydana gəldilər?",
+  answers: [
+    { answer: "XIX əsrin sonu XX əsrin əvvəllərində", type: "true" },
+    { answer: "XVI əsrin sonu XVII əsrin əvvəllərində", type: "false" },
+    { answer: "XV əsrin sonu XVI əsrin əvvəllərində", type: "false" },
+    { answer: "XV əsrin sonunda", type: "false" },
+    { answer: "XXI əsrin əvvəllərində", type: "false" },
+  ],
+},
+{
+  id: 466,
+  Question: "466. Sərnişinlərə nəqliyyat xidmətinin yüksəldilməsi məqsədi ilə təyyarələr nə zaman meydana gəldilər?",
+  answers: [
+    { answer: "XIX əsrin sonu XX əsrin əvvəllərində", type: "true" },
+    { answer: "XVII əsrin sonu XVIII əsrin əvvəllərində", type: "false" },
+    { answer: "XVI əsrin sonu XVII əsrin əvvəllərində", type: "false" },
+    { answer: "XXI əsrin əvvəllərində", type: "false" },
+    { answer: "XIV əsrin sonunda", type: "false" },
+  ],
+},
+{
+  id: 467,
+  Question: "467. Sərnişinlərə nəqliyyat xidmətinin yüksəldilməsi ilə əlaqədar olaraq nəyə imkan yarandı?",
+  answers: [
+    { answer: "sərnişinlərə nəqliyyat xidmətinin aşağı maya dəyəri ilə yerinə yetirilməsinə", type: "true" },
+    { answer: "sərnişinlərə nəqliyyat xidmətinə nəzarəti artırmağa", type: "false" },
+    { answer: "sərnişinlərə nəqliyyat xidməti zamanı yüksək gəlir əldə etməyə", type: "false" },
+    { answer: "nəqliyyatın təmir olunmasına", type: "false" },
+    { answer: "sərnişinlərə nəqliyyat xidmətinin keyfiyyətini vaxtında qiymətləndirməyə", type: "false" },
+  ],
+},
+{
+  id: 468,
+  Question: "468. Su nəqliyyatı hansı nəqliyyat növünə aiddir?",
+  answers: [
+    { answer: "texniki nəqliyyat", type: "true" },
+    { answer: "tibbi nəqliyyat", type: "false" },
+    { answer: "hərbi nəqliyyat", type: "false" },
+    { answer: "hava nəqliyyatı", type: "false" },
+    { answer: "kombinə edilmiş", type: "false" },
+  ],
+},
+{
+  id: 469,
+  Question: "469. Hava yolları nəqliyyatı hansı nəqliyyat növünə aiddir?",
+  answers: [
+    { answer: "texniki nəqliyyat", type: "true" },
+    { answer: "tibbi nəqliyyat", type: "false" },
+    { answer: "hərbi nəqliyyat", type: "false" },
+    { answer: "gəmi nəqliyyatı", type: "false" },
+    { answer: "elektrik nəqliyyatı", type: "false" },
+  ],
+},
+{
+  id: 470,
+  Question: "470. Sərnişinlərə nəqliyyat xidmətinin göstərilməsi zamanı kommersiya təşkilatları tərəfindən həyata keçirilən daşımalar hansı daşınmalara aid edilir?",
+  answers: [
+    { answer: "ümumi təyinatlı daşımalar", type: "true" },
+    { answer: "məqsədli daşımalar", type: "false" },
+    { answer: "kommersiya daşımaları", type: "false" },
+    { answer: "dövrü daşımalar", type: "false" },
+    { answer: "sərbəst daşımalar", type: "false" },
+  ],
+},
+{
+  id: 471,
+  Question: "471. Nəqliyyatın hansı keyfiyyət göstəricisi onun istismarı zamanı xammalın, materialın, yanacağın və əmək resurslarından istifadə dərəcəsinə görə texniki təkmilləşdirilməsi səviyyəsini xarakterizə edir?",
+  answers: [
+    { answer: "xammalın, materialın, yanacağın, enerjinin və əmək resurslarından qənaətlə istifadəsi göstəricisi", type: "true" },
+    { answer: "standartlaşdırma və nəqletməyə yararlılıq göstəricisi", type: "false" },
+    { answer: "standartlaşdırma və sertifikatlaşdırma göstəricisi", type: "false" },
+    { answer: "təhlükəsizlik və nəqletməyə yararlılıq göstəricisi", type: "false" },
+    { answer: "", type: "false" },
+  ],
+},
+{
+  id: 472,
+  Question: "472. Sərnişinlərə nəqliyyat xidmətinin göstərilməsi üçün qaimə hansı nəqliyyat növü üzrə əsas sənədi hesab edilir?",
+  answers: [
+    { answer: "su nəqliyyatında", type: "true" },
+    { answer: "daxili hava nəqliyyatında", type: "false" },
+    { answer: "xarici hava nəqliyyatında", type: "false" },
+    { answer: "hərbi təyyarələrdə", type: "false" },
+    { answer: "hərbi vertaliyotlarda", type: "false" },
+  ],
+},
+{
+  id: 473,
+  Question: "473. Nəqliyyat vasitələri neçə cür xüsusiyyətlərə malikdir?",
+  answers: [
+    { answer: "2", type: "true" },
+    { answer: "3", type: "false" },
+    { answer: "4", type: "false" },
+    { answer: "5", type: "false" },
+    { answer: "8", type: "false" },
+  ],
+},
+{
+  id: 474,
+  Question: "474. Turoperator və nəqliyyat təşkilatları arasındakı münasibətlər necə nizamlanır?",
+  answers: [
+    { answer: "nəqliyyat hüququ ilə", type: "true" },
+    { answer: "maliyyələşdirmə yolu ilə", type: "false" },
+    { answer: "turistlərin sayına görə", type: "false" },
+    { answer: "istirahət mərkəzinin gəlirinə görə", type: "false" },
+    { answer: "nəqliyyatın sərnişin tutumuna görə", type: "false" },
+  ],
+},
+{
+  id: 475,
+  Question: "475. Hazırda respublikamızda neçə turizm müəssisəsi lisenziya əsasında fəaliyyət göstərir?",
+  answers: [
+    { answer: "123", type: "true" },
+    { answer: "42", type: "false" },
+    { answer: "54", type: "false" },
+    { answer: "108", type: "false" },
+    { answer: "79", type: "false" },
+  ],
+},
+{
+  id: 476,
+  Question: "476. Standart və ya xidmətlər paketi əsasında tam kompleks xidmətlərlə təmin olunmaqla səyahət iştirakçılarının zaman-məkan yerdəyişməsi necə adlanır?",
+  answers: [
+    { answer: "tur", type: "true" },
+    { answer: "xidmətlər paketi", type: "false" },
+    { answer: "səyahət", type: "false" },
+    { answer: "fəaliyyət", type: "false" },
+    { answer: "gəzinti", type: "false" },
+  ],
+},
+{
+  id: 477,
+  Question: "477. Xidmət paketinin tərkibinə turun nəqliyyat xidməti kim tərəfindən daxil edilir?",
+  answers: [
+    { answer: "turoperator", type: "true" },
+    { answer: "nəqliyyat sahibi", type: "false" },
+    { answer: "istirahət mərkəzinin xidmətçiləri", type: "false" },
+    { answer: "nəqliyyat müəssisəsinin rəhbəri", type: "false" },
+    { answer: "istirahətdə olan turistlər", type: "false" },
+  ],
+},
+{
+  id: 478,
+  Question: "478. Turistlərin marşrutunu layihələndirən və tur iştirakçılarının səyahətdə olma proqramını işləyib hazırlayan mütəxəssis necə adlanır?",
+  answers: [
+    { answer: "turoperator", type: "true" },
+    { answer: "texnoloq", type: "false" },
+    { answer: "müfəttiş", type: "false" },
+    { answer: "mühafizəçi", type: "false" },
+    { answer: "tur iştirakçısı", type: "false" },
+  ],
+},
+{
+  id: 479,
+  Question: "479. Müxtəlif avadanlıqlar və üsullar vasitəsilə nəqliyyat parkının texniki vəziyyətinin səmərəli şəkildə idarə edilməsi ilə məşğul olan elm necə adlanır?",
+  answers: [
+    { answer: "nəqliyyat vasitələrinin texniki istismarı", type: "true" },
+    { answer: "nəqliyyatın istismarı", type: "false" },
+    { answer: "istehsal avadanlıqları", type: "false" },
+    { answer: "nəqliyyat vasitələri və istehsal avadanlıqları", type: "false" },
+    { answer: "nəqliyyat parkının akkreditasiyası", type: "false" },
+  ],
+},
+{
+  id: 480,
+  Question: "480. Hava nəqliyyatı sahəsində sərnişinlərə xidmətin təşkili haqqında müqavilə hansı şəklində qəbul olunur?",
+  answers: [
+    { answer: "təşkilati müqavilə", type: "true" },
+    { answer: "fərdi müqavilə", type: "false" },
+    { answer: "lisenziya müqaviləsi", type: "false" },
+    { answer: "gömrük müqaviləsi", type: "false" },
+    { answer: "ticarət müqaviləsi", type: "false" },
+  ],
+},
+{
+  id: 481,
+  Question: "481. Turizm sahəsində sərnişinlərə nəqliyyat xidmətinin təşkili haqqında müqavilə hansı nəqliyyat növünün sahibləri ilə bağlana bilər?",
+  answers: [
+    { answer: "nəqliyyatın bütün növlərinin sahibləri ilə", type: "true" },
+    { answer: "yalnız yük maşınlarının sahibləri ilə", type: "false" },
+    { answer: "yalnız gəmi sahibləri ilə", type: "false" },
+    { answer: "yalnız minik avtomobillərinin sahibləri ilə", type: "false" },
+    { answer: "yalnız çay nəqliyyatı vasitələrinin sahibləri ilə", type: "false" },
+  ],
+},
+{
+  id: 482,
+  Question: "482. Sərnişinlərə nəqliyyat xidmətinin təşkili zamanı ümumi təyinatlı nəqliyyat xidmətləri hansı təşkilatlar tərəfindən həyata keçirilir?",
+  answers: [
+    { answer: "komersiya təşkilatları tərəfindən", type: "true" },
+    { answer: "istirahət mərkəzi tərəfindən", type: "false" },
+    { answer: "akkreditləşdirmə üzrə orqan tərəfindən", type: "false" },
+    { answer: "sertifikatlaşdırma üzrə orqan tərəfindən", type: "false" },
+    { answer: "fərdi nəqliyyat sahibi tərəfindən", type: "false" },
+  ],
+},
+{
+  id: 483,
+  Question: "483. Hava nəqliyyatı vasitəsi turistlərin olduğu yerdən istirahət mərkəzi olan əraziyə çatdırılması (yerdəyişməsi) üzrə göstərilən xidmət necə adlanır?",
+  answers: [
+    { answer: "turistlərə nəqliyyat xidməti", type: "true" },
+    { answer: "turistlərə servis xidməti", type: "false" },
+    { answer: "nəqliyyatda ekspedisiya xidməti", type: "false" },
+    { answer: "sərnişinlərə fərdi xidmət", type: "false" },
+    { answer: "turistlərə mehmanxana xidməti", type: "false" },
+  ],
+},
+{
+  id: 484,
+  Question: "484. Gəmi vasitəsi ilə turistlərin olduğu yerdən istirahət mərkəzi olan əraziyə çatdırılması (yerdəyişməsi) üzrə göstərilən xidmət necə adlanır?",
+  answers: [
+    { answer: "turistlərə nəqliyyat xidməti", type: "true" },
+    { answer: "nümunəvi xidmət", type: "false" },
+    { answer: "turistlərə servis xidməti", type: "false" },
+    { answer: "turistlərə gəmi xidməti", type: "false" },
+    { answer: "nəqliyyatda ekspedisiya xidməti", type: "false" },
+  ],
+},
+{
+  id: 485,
+  Question: "485. Avtomobil nəqliyyat vasitəsi ilə turistlərin olduğu yerdən istirahət mərkəzi olan əraziyə çatdırılması (yerdəyişməsi) üzrə göstərilən xidmət necə adlanır?",
+  answers: [
+    { answer: "turistlərə nəqliyyat xidməti", type: "true" },
+    { answer: "turistlərə servis xidməti", type: "false" },
+    { answer: "turistlərə avtomobil xidməti", type: "false" },
+    { answer: "nəqliyyatda ekspedisiya xidməti", type: "false" },
+    { answer: "turistlərə məişət xidməti", type: "false" },
+  ],
+},
+{
+  id: 486,
+  Question: "486. Dəmir yolu nəqliyyat vasitəsi ilə turistlərin olduğu yerdən istirahət mərkəzi olan əraziyə çatdırılması (yerdəyişməsi) üzrə göstərilən xidmət necə adlanır?",
+  answers: [
+    { answer: "turistlərə nəqliyyat xidməti", type: "true" },
+    { answer: "turistlərə nümunəvi xidmət", type: "false" },
+    { answer: "turistlərə fərdi xidmət", type: "false" },
+    { answer: "turistlərə servis xidməti", type: "false" },
+    { answer: "nəqliyyatda ekspedisiya xidməti", type: "false" },
+  ],
+},
+{
+  id: 487,
+  Question: "487. Müntəzəm reyslərdən fərqli olaraq hansı reyslər bir və ya bir neçə daşınma yerinə yetirmək üçün bütün təyyarələri icarəyə verən avia şirkətlər və ya turizm agentlikləri tərəfindən təşkil edilir?",
+  answers: [
+    { answer: "çarter reysləri", type: "true" },
+    { answer: "xüsusi reyslər", type: "false" },
+    { answer: "qrafik üzrə müntəzəm reyslər", type: "false" },
+    { answer: "dövlət əhəmiyyətli reyslər", type: "false" },
+    { answer: "fərdi reyslər", type: "false" },
+  ],
+},
+{
+  id: 488,
+  Question: "488. Turizm sahəsində daşımaların dəyəri (qiyməti) neçə tərkib üzrə bölüşdürülür?",
+  answers: [
+    { answer: "3", type: "true" },
+    { answer: "2", type: "false" },
+    { answer: "4", type: "false" },
+    { answer: "5", type: "false" },
+    { answer: "6", type: "false" },
+  ],
+},
+{
+  id: 489,
+  Question: "489. Uzaq məsafəyə nəzərdə tutulmuş turist-eksursiya qatarın tərkibi adətən neçə vaqonla formalaşır?",
+  answers: [
+    { answer: "15", type: "true" },
+    { answer: "8", type: "false" },
+    { answer: "10", type: "false" },
+    { answer: "12", type: "false" },
+    { answer: "9", type: "false" },
+  ],
+},
+{
+  id: 490,
+  Question: "490. Skyliner modelli turist avtobusu neçə nəfər sərnişin daşıya bilər?",
+  answers: [
+    { answer: "69 nəfər", type: "true" },
+    { answer: "78 nəfər", type: "false" },
+    { answer: "52 nəfər", type: "false" },
+    { answer: "75 nəfər", type: "false" },
+    { answer: "48 nəfər", type: "false" },
+  ],
+},
+{
+  id: 491,
+  Question: "491. Tourliner C modifikasiyalı turist avtobusu neçə nəfər sərnişin tutumuna malikdir?",
+  answers: [
+    { answer: "55 nəfər", type: "true" },
+    { answer: "65 nəfər", type: "false" },
+    { answer: "48 nəfər", type: "false" },
+    { answer: "68 nəfər", type: "false" },
+    { answer: "42 nəfər", type: "false" },
+  ],
+},
+{
+  id: 492,
+  Question: "492. Starliner modelli turist avtobusu neçənci ildən istismara buraxıldı?",
+  answers: [
+    { answer: "2004-cü ildən", type: "true" },
+    { answer: "1992-ci ildən", type: "false" },
+    { answer: "1996-cı ildən", type: "false" },
+    { answer: "2012-ci ildən", type: "false" },
+    { answer: "2008-ci ildən", type: "false" },
+  ],
+},
+{
+  id: 493,
+  Question: "493. İki qapılı Skyliner modelli turist avtobusunun uzunluğu nə qədərdir?",
+  answers: [
+    { answer: "12440 mm", type: "true" },
+    { answer: "22440mm", type: "false" },
+    { answer: "24400mm", type: "false" },
+    { answer: "12000mm", type: "false" },
+    { answer: "1240 mm", type: "false" },
+  ],
+},
+{
+  id: 494,
+  Question: "494. Tourliner L modifikasiyalı turist avtobusu neçə nəfər sərnişin tutumuna malikdir?",
+  answers: [
+    { answer: "59 nəfər", type: "true" },
+    { answer: "65 nəfər", type: "false" },
+    { answer: "48 nəfər", type: "false" },
+    { answer: "52 nəfər", type: "false" },
+    { answer: "72 nəfər", type: "false" },
+  ],
+},
+{
+  id: 495,
+  Question: "495. QolAZ-52911 Kruiz turist avtobusu neçə nəfər sərnişin tutumuna malikdir?",
+  answers: [
+    { answer: "47 nəfər", type: "true" },
+    { answer: "42 nəfər", type: "false" },
+    { answer: "52 nəfər", type: "false" },
+    { answer: "38 nəfər", type: "false" },
+    { answer: "36 nəfər", type: "false" },
+  ],
+},
+{
+  id: 496,
+  Question: "496. Hansı sahə sürətlə inkişaf edən biznes sahələrindən biridir?",
+  answers: [
+    { answer: "turizm sahəsi", type: "true" },
+    { answer: "təhsil sahəsi", type: "false" },
+    { answer: "tibbi sahə", type: "false" },
+    { answer: "hərbi sahə", type: "false" },
+    { answer: "kənd təsərrüfatı sahəsi", type: "false" },
+  ],
+},
+{
+  id: 497,
+  Question: "497. Beynəlxalq avtokirayə şirkətlərinin kirayə xidmətləri üçün təklif etdikləri əsas tariflərdən biri hansı variantda göstərilmişdir?",
+  answers: [
+    { answer: "gün ərzində limit qoyulmuş yürüşə görə", type: "true" },
+    { answer: "avtomobilin markasına görə", type: "false" },
+    { answer: "avtomobilin sürətinə görə", type: "false" },
+    { answer: "avtomobilin ilinə görə", type: "false" },
+    { answer: "avtomobilin sərnişin tutumuna görə", type: "false" },
+  ],
+},
+{
+  id: 498,
+  Question: "498. Turistlərə kütləvi xidmət göstərilməsi üçün turist kruiz şirkətləri hansı dərəcəyə uyğun gəmilər təklif edirlər?",
+  answers: [
+    { answer: "servis səviyyəsi 4-5* (ulduz) dərəcəsinə uyğun", type: "true" },
+    { answer: "servis səviyyəsi 1-2* (ulduz) dərəcəsinə uyğun", type: "false" },
+    { answer: "servis səviyyəsi 3* (ulduz) dərəcəsinə uyğun", type: "false" },
+    { answer: "servis səviyyəsi 2* (ulduz) dərəcəsinə uyğun", type: "false" },
+    { answer: "servis səviyyəsi 2-3* (ulduz) dərəcəsinə uyğun", type: "false" },
+  ],
+},
+{
+  id: 499,
+  Question: "499. Turistlərə təqdim olunan xidmətlər üzrə hansı xidmət bütün dünyada turist biznesində müşayiət olunan ən gəlirli fəaliyyət növlərindən biridir?",
+  answers: [
+    { answer: "turistlərə avtomobillərin kirayəyə təqdim olunması üzrə xidmət", type: "true" },
+    { answer: "turistlərə kənd təsərrüfatı məhsullarının təqdim olunması üzrə xidmət", type: "false" },
+    { answer: "turistlərə yüngül sənaye məmulatlarının təqdim olunması üzrə xidmət", type: "false" },
+    { answer: "turistlərə qənnadı məmulatlarının təqdim olunması üzrə xidmət", type: "false" },
+    { answer: "turistlərin şəxsi avtomobillərinin təmiri üzrə xidmət", type: "false" },
+  ],
+},
+{
+  id: 500,
+  Question: "500. Turistlərin təşkil olunmuş qrup şəklində daşınması (10 nəfərdən az olmamalı) üçün dəmiryolu gediş sənədlərinin tərtib olunması, yerlərin bronlaşdırılması kimlərin qabaqcadan verdikləri sifarişlər əsasında həyata keçirilir?",
+  answers: [
+    { answer: "turoperatorun və ya turagentliklərin", type: "true" },
+    { answer: "turist bələdçisinin", type: "false" },
+    { answer: "nəqliyyata texniki baxış üzrə orqanın", type: "false" },
+    { answer: "nəqliyyat müəssisəsinin bilet satışı məntəqəsinin üzvünün", type: "false" },
+    { answer: "nəqliyyat müəssisəsinin bilet satışı məntəqəsinin rəhbərinin", type: "false" },
+  ],
+},
+
+
 ];
 
 export default Questions;
+

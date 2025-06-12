@@ -1,8 +1,12 @@
 .quiz-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: Arial, sans-serif;
   padding: 20px;
   background-color: #f9f9f9;
   color: #333;
+  min-height: 100dvh;
 }
 
 .quiz-title {
@@ -123,5 +127,45 @@
   .results-title {
     font-size: 1.5rem;
     margin-bottom: 15px;
+  }
+}
+
+
+.range-selection {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #ccc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 40px auto;
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .range-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .range-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #2980b9;
+    }
   }
 }
