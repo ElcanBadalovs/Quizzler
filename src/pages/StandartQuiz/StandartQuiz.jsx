@@ -14,7 +14,11 @@ const saveCountsToStorage = (countsObj) => {
 
 const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
-const formatHTML = (text) => text.replace(/\n/g, "<br />");
+// 🛠️ Təhlükəsiz formatHTML funksiyası
+const formatHTML = (text) => {
+  if (typeof text !== "string") return "";
+  return text.replace(/\n/g, "<br />");
+};
 
 const StandartQuiz = () => {
   const navigate = useNavigate();
@@ -23,7 +27,7 @@ const StandartQuiz = () => {
   const [showResults, setShowResults] = useState(false);
   const [results, setResults] = useState({ correct: 0, incorrect: 0 });
   const [isDisabled, setIsDisabled] = useState(false);
-  const [selectedRange, setSelectedRange] = useState(null); // NEW
+  const [selectedRange, setSelectedRange] = useState(null);
 
   const ranges = [
     { label: "0-50", start: 0, end: 50 },
@@ -39,7 +43,7 @@ const StandartQuiz = () => {
   ];
 
   useEffect(() => {
-    if (selectedRange === null) return; // sadece seçim yapıldıktan sonra yükle
+    if (selectedRange === null) return;
 
     const localCounts = loadCountsFromStorage();
     Questions.forEach((q) => {
@@ -53,18 +57,17 @@ const StandartQuiz = () => {
       .slice(0, 50)
       .map((question) => ({
         ...question,
-        answers: shuffleArray([...question.answers]),
+        answers: Array.isArray(question.answers)
+          ? shuffleArray([...question.answers])
+          : [],
       }));
 
     setQuizQuestions(selectedQuestions);
-
-    window.MathJax && window.MathJax.typesetPromise().catch((err) => console.error(err));
+    window.MathJax?.typesetPromise().catch((err) => console.error(err));
   }, [selectedRange]);
 
   useEffect(() => {
-    if (window.MathJax) {
-      window.MathJax.typesetPromise().catch((err) => console.error(err));
-    }
+    window.MathJax?.typesetPromise().catch((err) => console.error(err));
   }, [quizQuestions, showResults]);
 
   const handleAnswerClick = (questionIndex, selectedAnswer) => {
@@ -117,7 +120,7 @@ const StandartQuiz = () => {
     setResults({ correct: 0, incorrect: 0 });
     setShowResults(false);
     setIsDisabled(false);
-    setSelectedRange(null); // tekrar seçim ekranına dön
+    setSelectedRange(null);
   };
 
   const handleHome = () => {
@@ -160,32 +163,47 @@ const StandartQuiz = () => {
             >
               <h3 className="question-title">
                 {index + 1}.{" "}
-                <span dangerouslySetInnerHTML={{ __html: formatHTML(q.Question) }}></span>
+                <span dangerouslySetInnerHTML={{ __html: formatHTML(q.Question || "") }}></span>
               </h3>
-              {q.answers.map((answer, answerIndex) => {
-                const isSelected = answers[index] === answer.answer;
-                const isCorrect = answer.type === "true";
-                const isIncorrect = answer.type === "false";
 
-                return (
-                  <button
-                    key={answerIndex}
-                    onClick={() => handleAnswerClick(index, answer.answer)}
-                    className={`answer-button ${
-                      isSelected ? "selected-answer" : ""
-                    } ${
-                      showResults && isSelected && isIncorrect
-                        ? "incorrect-answer"
-                        : ""
-                    } ${
-                      showResults && isCorrect ? "correct-answer" : ""
-                    } ${showResults && isSelected && isCorrect ? "highlight-correct" : ""}`}
-                    disabled={isDisabled}
-                  >
-                    <span dangerouslySetInnerHTML={{ __html: formatHTML(answer.answer) }}></span>
-                  </button>
-                );
-              })}
+              {!Array.isArray(q.answers) || q.answers.length === 0 ? (
+                <div style={{ color: "red" }}>
+                  <strong>⚠ Sualın cavabları tapılmadı — ID: {q.id}</strong>
+                </div>
+              ) : (
+                q.answers.map((answer, answerIndex) => {
+                  const isSelected = answers[index] === answer.answer;
+                  const isCorrect = answer.type === "true";
+                  const isIncorrect = answer.type === "false";
+
+                  return (
+                    <button
+                      key={answerIndex}
+                      onClick={() => handleAnswerClick(index, answer.answer)}
+                      className={`answer-button ${
+                        isSelected ? "selected-answer" : ""
+                      } ${
+                        showResults && isSelected && isIncorrect
+                          ? "incorrect-answer"
+                          : ""
+                      } ${
+                        showResults && isCorrect ? "correct-answer" : ""
+                      } ${
+                        showResults && isSelected && isCorrect
+                          ? "highlight-correct"
+                          : ""
+                      }`}
+                      disabled={isDisabled}
+                    >
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: formatHTML(answer.answer || ""),
+                        }}
+                      ></span>
+                    </button>
+                  );
+                })
+              )}
             </div>
           ))}
 
